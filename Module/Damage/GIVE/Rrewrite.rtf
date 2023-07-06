@@ -1,0 +1,3028 @@
+{\rtf1\ansi\ansicpg936\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 using Interpolations, Mimi\
+\
+"""\
+Return the name of the module of a given component with `comp_name` in model `m`.\
+This is a small helper function useful for internals like the mcs.\
+"""\
+function _get_module_name(m::Model, comp_name::Symbol)\
+    return nameof(m.md.namespace[comp_name].comp_id.module_obj)\
+end\
+\
+using Query, NetCDF, StatsBase, DataFrames, CSVFiles\
+\
+# Supporting Functions to Downscale BRICK from GMSL to LSL\
+# Adapted from https://github.com/raddleverse/CIAM_uncertainty_propagation\
+\
+"""\
+Retrieve BRICK fingerprints from NetCDF file\
+"""\
+function get_fingerprints(;fp_file::String = joinpath(@__DIR__, "../../data/CIAM/FINGERPRINTS_SLANGEN_Bakker.nc"))\
+\
+    fplat = ncread(fp_file,"lat")\
+    fplon = ncread(fp_file,"lon")\
+    fpAIS = ncread(fp_file,"AIS")\
+    fpGSIC = ncread(fp_file,"GLAC")\
+    fpGIS = ncread(fp_file,"GIS")\
+    ncclose()\
+\
+    return fplat,fplon,fpAIS,fpGSIC,fpGIS\
+end\
+\
+"""\
+Get segment specific fingerprints for segments in segIDs_file using fingerprints in\
+fp_file as the baseline information. Write out these segment specific fingerprints.\
+"""\
+function get_segment_fingerprints(;fp_file::String = joinpath(@__DIR__, "../../data/CIAM/FINGERPRINTS_SLANGEN_Bakker.nc"),\
+                            segIDs_file::String = joinpath(@__DIR__, "../../data/CIAM/diva_segment_latlon.csv"),\
+                            fp_segments_file::String = joinpath(@__DIR__, "../../data/CIAM/segment_fingerprints.csv"))\
+\
+    # getfingerprints from FINGERPRINTS_SLANGEN_Bakker\
+    # the fplat and fplon are -90 to 90 and 0 to 360 respectively\
+    (fplat,fplon,fpAIS,fpGSIC,fpGIS) = get_fingerprints(fp_file = fp_file)\
+\
+    # segment data\
+    ciamlonlat = load(segIDs_file) |> DataFrame |> i -> sort!(i, :segments)\
+    ciamlonlat.longi[findall(i -> i < 0, ciamlonlat.longi)] .+= 360 # Convert Longitude to degrees East, CIAM Lat is already in (-90,90) by default\
+\
+    df = DataFrame(:segments => [], :segid => [], :lon => [], :lat => [], :rgn => [],\
+                    :fpGIS_loc => [], \
+                    :fpAIS_loc => [], \
+                    :fpGSIC_loc => [], \
+                    :fpTE_loc => [], \
+                    :fpLWS_loc => []\
+    )\
+\
+    for i in 1:size(ciamlonlat,1)\
+\
+        lon = ciamlonlat.longi[i]\
+        lat = ciamlonlat.lati[i]\
+        segid = ciamlonlat.segid[i]\
+        segment = ciamlonlat.segments[i]\
+        rgn = ciamlonlat.rgn[i]\
+\
+        # Find fingerprint degrees nearest to lat,lon\
+        ilat = findall(isequal(minimum(abs.(fplat.-lat))),abs.(fplat.-lat))\
+        ilon = findall(isequal(minimum(abs.(fplon.-lon))),abs.(fplon.-lon))\
+\
+        # Take average of closest lat/lon values\
+        fpAIS_flat = collect(skipmissing(Iterators.flatten(fpAIS[ilon,ilat])))\
+        fpGSIC_flat = collect(skipmissing(Iterators.flatten(fpGSIC[ilon,ilat])))\
+        fpGIS_flat = collect(skipmissing(Iterators.flatten(fpGIS[ilon,ilat])))\
+\
+        fpAIS_loc = mean(fpAIS_flat[isnan.(fpAIS_flat).==false],dims=1)[1] # [1] converts Vector to Float64\
+        fpGSIC_loc = mean(fpGSIC_flat[isnan.(fpGSIC_flat).==false],dims=1)[1] # [1] converts Vector to Float64\
+        fpGIS_loc = mean(fpGIS_flat[isnan.(fpGIS_flat).==false],dims=1)[1] # [1] converts Vector to Float64\
+        fpTE_loc = 1.0\
+        fpLWS_loc=1.0\
+\
+        # Keep searching nearby lat/lon values if fingerprint value is NaN unless limit is hit\
+        inc = 1\
+\
+        while isnan(fpAIS_loc) || isnan(fpGIS_loc) || isnan(fpGSIC_loc) && inc<5\
+\
+            newlonStart = next_lon.(fplon[ilon], inc, :decrease)[1]\
+            newlatStart = next_lat.(fplat[ilat], inc, :decrease)[1]\
+            newlonEnd = next_lon.(fplon[ilon], inc, :increase)[1]\
+            newlatEnd = next_lat.(fplat[ilat], inc, :increase)[1]\
+\
+            latInd1 = minimum(findall(isequal(minimum(abs.(fplat.-newlatStart))),abs.(fplat.-newlatStart)))\
+            latInd2 = maximum(findall(isequal(minimum(abs.(fplat.-newlatEnd))),abs.(fplat.-newlatEnd)))\
+\
+            lonInd1 = minimum(findall(isequal(minimum(abs.(fplon.-newlonStart))),abs.(fplon.-newlonStart)))\
+            lonInd2 = maximum(findall(isequal(minimum(abs.(fplon.-newlonEnd))),abs.(fplon.-newlonEnd)))\
+\
+            if latInd2 < latInd1\
+                latInds=[latInd1; 1:latInd2]\
+            else\
+                latInds=latInd1:latInd2\
+            end\
+\
+            if lonInd2 < lonInd1\
+                lonInds=[lonInd1; 1:lonInd2]\
+            else\
+                lonInds = lonInd1:lonInd2\
+            end\
+\
+            fpAIS_flat = collect(skipmissing(Iterators.flatten(fpAIS[lonInds,latInds])))\
+            fpGSIC_flat = collect(skipmissing(Iterators.flatten(fpGSIC[lonInds,latInds])))\
+            fpGIS_flat = collect(skipmissing(Iterators.flatten(fpGIS[lonInds,latInds])))\
+\
+            fpAIS_loc = mean(fpAIS_flat[isnan.(fpAIS_flat).==false],dims=1)[1]\
+            fpGSIC_loc = mean(fpGSIC_flat[isnan.(fpGSIC_flat).==false],dims=1)[1]\
+            fpGIS_loc = mean(fpGIS_flat[isnan.(fpGIS_flat).==false],dims=1)[1]\
+\
+            inc = inc + 1\
+\
+        end\
+\
+        # If still NaN, throw an error\
+        if isnan(fpAIS_loc) || isnan(fpGIS_loc) || isnan(fpGSIC_loc)\
+            println("Error: no fingerprints found for ($(lon),$(lat))")\
+            return nothing\
+        end\
+\
+        #append to the DataFrame\
+        append!(df, DataFrame(:segments => segment, :segid => segid, :lon => lon, :lat => lat, :rgn => rgn,\
+            :fpGIS_loc => fpGIS_loc, \
+            :fpAIS_loc => fpAIS_loc, \
+            :fpGSIC_loc => fpGSIC_loc, \
+            :fpTE_loc => fpTE_loc, \
+            :fpLWS_loc => fpLWS_loc)\
+        )\
+    end # End lonlat tuple\
+\
+    df |> save(fp_segments_file)\
+end\
+\
+##==============================================================================\
+## Small Helper Functions for dealing with sea level fingerprints near land\
+\
+"""\
+    next_lat(lat::Float64, inc::Int64, direction::Symbol)\
+Increment latitude by `inc` in either positive direction (`direction=:increase`)\
+or in the negative direction (`direction=:decrease`).\
+Assumes latitude runs from -90 to 90 (deg N).\
+"""\
+function next_lat(lat::Float64, inc::Int64, direction::Symbol)\
+    if lat < -90 || lat > 90\
+        error("Latitude must be between -90 and 90")\
+    end\
+\
+    if direction == :increase\
+        new_lat = lat + inc\
+        if new_lat > 90\
+            new_lat = new_lat - 180 #wrap around\
+        end\
+\
+    elseif direction == :decrease\
+        new_lat = lat - inc\
+        if new_lat < -90\
+            new_lat = new_lat + 180\
+        end\
+    end\
+    return new_lat\
+end\
+\
+"""\
+    next_lon(lon::Float64, inc::Int64, direction::Symbol)\
+Increment longitude by `inc` in either positive direction\
+(`direction=:increase`) or in the negative direction (`direction=:decrease`).\
+Assumes longitude runs from 0 to 360 (deg E).\
+"""\
+function next_lon(lon::Float64, inc::Int64, direction::Symbol)\
+    if lon < 0 || lon > 360\
+        error("Longitude must be between 0 and 360")\
+    end\
+\
+    if direction == :increase\
+        new_lon = lon + inc\
+        if new_lon > 360\
+            new_lon = new_lon - 360\
+        end\
+    elseif direction == :decrease\
+        new_lon = lon - inc\
+        if new_lon < 0\
+            new_lon = new_lon + 360\
+        end\
+    end\
+    return new_lon\
+end\
+\
+\
+using MimiCIAM, Query, DataFrames, CSVFiles\
+\
+# Supporting functions to support setting CIAM parameters\
+# Adapted from scripts in MimiCIAM.jl\
+\
+"""\
+Process the segment-country mapping file (xsc) in CIAM by (1) Reads from CSV\
+and outputs list of dictionaries and arrays (2) Filters xsc file to desired\
+segments/regions\
+"""\
+function prep_ciam_xsc(xsc_params_path::String)\
+\
+    xsc_params = load(xsc_params_path) |> DataFrame\
+    \
+    # Read in csv and convert to dictionary format\
+    xsc_char = Dict\{Any,Any\}(xsc_params.seg[i] => (xsc_params.rgn[i],xsc_params.greenland[i], xsc_params.island[i]) for i in 1:length(xsc_params.seg))\
+\
+    # Create region and segment indices\
+    rgns = sort(unique([i[1] for i in collect(values(xsc_char))]))\
+    segs = string.(sort(unique(collect(keys(xsc_char)))))\
+\
+    xsc_ind = Dict\{Int,Tuple\{Int,Int,Int\}\}()      # numeric seg -> (numeric rgn, greenland bool)\
+    xsc_segmap = Dict\{Any,Any\}()   # Numeric seg/rgn -> char seg/rgn\
+    xsc_rgnmap = Dict\{Any,Any\}()\
+\
+    for i in 1:length(segs)\
+        r = xsc_char[segs[i]][1]   # Region character\
+        grn = xsc_char[segs[i]][2] # 0 = non-Greenland, 1 = greenland bool\
+        isl = xsc_char[segs[i]][3] # 0 = non-island, 1 = island bool\
+        r_ind = MimiCIAM.findind(r, rgns)   # Region index\
+\
+        new_val = (r_ind, grn, isl)     # New tuple w/ region index instead of character\
+\
+        # Build XSC Seg/rgn Maps\
+        r2 = rgns[r_ind]           # New region char\
+        s = segs[i]\
+        xsc_segmap[i] = s\
+        if !(r2 in values(xsc_rgnmap))\
+            xsc_rgnmap[r_ind] = r2\
+        end\
+\
+        xsc_ind[i] = new_val\
+    end\
+\
+    return (xsc_ind, rgns, segs, xsc_rgnmap)\
+\
+end\
+\
+"""\
+Obtain the CIAM parameters for the ciam_countries using the key in xsc_params_path\
+for a model with time dimension first:tstep:last and adaptation starting in `adaptation_firsts`.\
+"""\
+function get_ciam_params(;tstep::Int64, first::Int64, last::Int64, ciam_countries::Vector, xsc_params_path::String, adaptation_firsts::Array)\
+\
+    # --------------------------------------------------------------------------\
+    # Get CIAM Default Parameters\
+    # Pull in main parameters and select just our countries\
+    ciam_params = MimiCIAM.load_ciam_params()\
+    for (k,v) in ciam_params \
+        if "country" in names(v)\
+            filter!(row -> row.country in ciam_countries, ciam_params[k])\
+        end\
+    end\
+\
+    # Process XSC (segment-country mapping dictionary)\
+    xsc_ind, rgns, segs, xsc_rgnmap  = prep_ciam_xsc(xsc_params_path)\
+    rgns != ciam_countries && error("The provided ciam_countries in the get_ciam_params function must match those in the provided xsc_params_path File.") : nothing\
+\
+    # Process params using xsc\
+    MimiCIAM.parse_ciam_params!(ciam_params, rgns, segs, 0)\
+\
+    # --------------------------------------------------------------------------\
+	# Adjust, Delete, and Add Parameters\
+\
+    # --> Delete Parameters that never get used\
+    for p in ["s1000", "s100", "s10", "smax", "land_appr_canada", "ypc_usa", "gtapland_canada", "wbvm", "fundland_canada", "refpopdens_usa"]\
+        delete!(ciam_params, p)\
+    end\
+\
+    # --> Time Related\
+    ciam_params["tstep"] = tstep # Length of individual time-step (years)\
+    ciam_params["at"] = adaptation_firsts # times that start each adaptation period\
+    ciam_params["ntsteps"] = length(first:tstep:last)\
+\
+    # --> Metadata; not used in run\
+    ciam_params["rcp"] = 0\
+    ciam_params["percentile"] = 50\
+    ciam_params["ssp"] = 0\
+\
+    # --> Default Settings\
+    ciam_params["fixed"] = true\
+    ciam_params["noRetreat"] = false\
+    ciam_params["allowMaintain"] = false\
+    ciam_params["popinput"] = 0\
+    ciam_params["discountrate"] = 0.04\
+\
+    # --> IDs and Dimensions\
+\
+    # Dynamically find indices corresponding to USA and CAN and manually set time steps\
+    # If the lengths are 0, then assume those segments are not used. Note that\
+    # if including Greenland, need Canada too as a reference for land appreciation\
+\
+    rgn_ind_canada = [k for (k,v) in xsc_rgnmap if v=="CAN"]\
+    rgn_ind_canada = (length(rgn_ind_canada) > 0) ? rgn_ind_canada[1] : 0\
+\
+    rgn_ind_usa = [k for (k,v) in xsc_rgnmap if v=="USA"]\
+    rgn_ind_usa = (length(rgn_ind_usa) > 0) ? rgn_ind_usa[1] : 0\
+\
+    segID = MimiCIAM.segStr_to_segID(segs)\
+\
+    ciam_params["segID"] = segID\
+    ciam_params["xsc"] = xsc_ind\
+    ciam_params["rgn_ind_canada"] = rgn_ind_canada\
+    ciam_params["rgn_ind_usa"] = rgn_ind_usa\
+\
+    # --> Population and GDP Parameters - need to be connected to Socioeconomics\
+\
+    delete!(ciam_params, "pop") # pop = Parameter(index = [time, regions])      # Population of region (million people)\
+    delete!(ciam_params, "ypcc") # ypcc = Parameter(index = [time, regions])     # GDP per capita per region ($2010 per capita)\
+\
+    # --> Storm Damage Parameters - we adjust these to be consistent with the VSL\
+    # component, so remove these two parameters (see calc of vsl_ciam_country in\
+    # main_ciam.jl))\
+    delete!(ciam_params, "vslel")\
+    delete!(ciam_params, "vslmult")\
+    \
+    return (rgns, segs, ciam_params)\
+end\
+\
+# Local Helper Components\
+\
+using Mimi\
+\
+# -------------------------------------------------------------------------------------------------\
+# Aggregate from countries to FUND regions using sum function\
+# -------------------------------------------------------------------------------------------------\
+\
+@defcomp Agriculture_RegionAggregatorSum begin\
+    \
+    ag_mapping_input_regions = Index()\
+    ag_mapping_output_regions = Index()\
+\
+    input_output_mapping = Parameter\{String\}(index=[ag_mapping_input_regions]) # one element per input region containing it's corresponding output region\
+    input_output_mapping_int = Variable\{Int\}(index=[ag_mapping_input_regions]) # internally computed for speed up\
+\
+    input_region_names = Parameter\{Vector\{String\}\}(index=ag_mapping_input_regions)\
+    output_region_names = Parameter\{Vector\{String\}\}(index=ag_mapping_output_regions)\
+\
+    input = Parameter(index=[time, ag_mapping_input_regions])\
+    output = Variable(index=[time, ag_mapping_output_regions])\
+\
+    function init(p,v,d)\
+        idxs = indexin(p.input_output_mapping, p.output_region_names)\
+        !isnothing(findfirst(i -> isnothing(i), idxs)) ? error("All provided region names in the Agriculture_RegionAggregatorSum's input_output_mapping Parameter must exist in the output_region_names Parameter.") : nothing\
+        v.input_output_mapping_int[:] = idxs\
+    end\
+\
+    function run_timestep(p,v,d,t)\
+        v.output[t, :] .= 0.\
+\
+        for i in d.ag_mapping_input_regions\
+            v.output[t, v.input_output_mapping_int[i]] += p.input[t,i]\
+        end\
+    end\
+end\
+\
+# same as above but without a time dimension\
+\
+@defcomp Agriculture_RegionAggregatorSum_NoTime begin\
+    \
+    ag_mapping_input_regions = Index()\
+    ag_mapping_output_regions = Index()\
+\
+    input_output_mapping = Parameter\{String\}(index=[ag_mapping_input_regions]) # one element per input region containing it's corresponding output region\
+    input_output_mapping_int = Variable\{Int\}(index=[ag_mapping_input_regions]) # internally computed for speed up\
+\
+    input_region_names = Parameter\{Vector\{String\}\}(index=ag_mapping_input_regions)\
+    output_region_names = Parameter\{Vector\{String\}\}(index=ag_mapping_output_regions)\
+\
+    input = Parameter(index=[ag_mapping_input_regions])\
+    output = Variable(index=[ag_mapping_output_regions])\
+\
+    function init(p,v,d)\
+        idxs = indexin(p.input_output_mapping, p.output_region_names)\
+        !isnothing(findfirst(i -> isnothing(i), idxs)) ? error("All provided region names in the Agriculture_RegionAggregatorSum's input_output_mapping Parameter must exist in the output_region_names Parameter.") : nothing\
+        v.input_output_mapping_int[:] = idxs\
+\
+        # fill in the data because there's no time dimensions\
+        v.output[:] .= 0.\
+        for i in d.ag_mapping_input_regions\
+            v.output[v.input_output_mapping_int[i]] += p.input[i]\
+        end\
+    end\
+\
+    function run_timestep(p,v,d,t)\
+        # blank\
+    end\
+end\
+\
+\
+\
+using Mimi\
+\
+# ------------------------------------------------------------------------------\
+# Calculate the Per Capita GDP\
+# ------------------------------------------------------------------------------\
+\
+@defcomp PerCapitaGDP begin\
+\
+    country = Index()\
+\
+    gdp         = Parameter(index=[time, country], unit="billion US\\$2005/yr")\
+    population  = Parameter(index=[time, country], unit="million")\
+\
+    pc_gdp      = Variable(index=[time, country], unit = "US\\$2005/yr/person") # Country-level per capita GDP ($/person).\
+    global_pc_gdp       = Variable(index=[time], unit = "US\\$2005/yr/person")\
+\
+    function run_timestep(p, v, d, t)\
+\
+        # calculate global per capita gdp\
+        v.global_pc_gdp[t] = sum(p.gdp[t,:]) / sum(p.population[t,:]) * 1e3 \
+\
+        # calculate country level per capita gdp\
+        for c in d.country\
+            v.pc_gdp[t, c] = (p.gdp[t, c]) ./ (p.population[t, c]) * 1e3 \
+        end\
+    end\
+end\
+\
+using Mimi\
+\
+# ------------------------------------------------------------------------------\
+# Calculate the Value of a Statistical Life (following the FUND equations & \
+# parameterization).\
+# ------------------------------------------------------------------------------\
+\
+@defcomp VSL begin\
+\
+    country       = Index()\
+\
+    \uc0\u945              = Parameter(unit = "US\\$2005")    # VSL scaling parameter\
+    \uc0\u1013              = Parameter()                     # Income elasticity of the value of a statistical life.\
+    y\uc0\u8320             = Parameter(unit = "US\\$2005")    # Normalization constant.\
+    pc_gdp        = Parameter(index=[time, country], unit = "US\\$2005/yr/person") # Country-level per capita GDP ($/person).\
+\
+    vsl           = Variable(index=[time, country], unit = "US\\$2005/yr")   # Value of a statistical life ($).\
+    \
+    function run_timestep(p, v, d, t)\
+        for c in d.country\
+            v.vsl[t,c] = p.\uc0\u945  * (p.pc_gdp[t,c] / p.y\u8320 ) ^ p.\u1013 \
+        end\
+    end\
+end\
+\
+using Mimi\
+\
+@defcomp DamageAggregator begin\
+\
+    fund_regions = Index()\
+    country = Index()\
+    energy_countries = Index()\
+\
+    include_cromar_mortality = Parameter\{Bool\}(default=true) # default TRUE\
+    include_ag = Parameter\{Bool\}(default=true) # default TRUE\
+    include_slr = Parameter\{Bool\}(default=true) # default TRUE - will run SLR after the main model\
+    include_energy = Parameter\{Bool\}(default=true) # default TRUE\
+    include_dice2016R2 = Parameter\{Bool\}(default=false)\
+    include_hs_damage = Parameter\{Bool\}(default=false)\
+\
+    damage_cromar_mortality = Parameter(index=[time,country], unit="US\\$2005/yr")\
+    damage_ag = Parameter(index=[time,fund_regions], unit="billion US\\$2005/yr")\
+    damage_energy = Parameter(index=[time,energy_countries], unit="billion US\\$2005/yr")\
+    damage_dice2016R2 = Parameter(index=[time], unit="billion US\\$2005/yr")\
+    damage_hs = Parameter(index=[time], unit="billion US\\$2005/yr")\
+\
+    gdp = Parameter(index=[time,country], unit="billion US\\$2005/yr")\
+\
+    total_damage = Variable(index=[time], unit="US\\$2005/yr")\
+    total_damage_share = Variable(index=[time])\
+    total_damage_domestic = Variable(index=[time], unit="US\\$2005/yr")\
+\
+    ## global annual aggregates - for interim model outputs and partial SCCs\
+    cromar_mortality_damage         = Variable(index=[time], unit="US\\$2005/yr")\
+    agriculture_damage              = Variable(index=[time], unit="US\\$2005/yr")\
+    energy_damage                   = Variable(index=[time], unit="US\\$2005/yr")\
+\
+    ## domestic annual aggregates - for interim model outputs and partial SCCs\
+    cromar_mortality_damage_domestic         = Variable(index=[time], unit="US\\$2005/yr")\
+    agriculture_damage_domestic              = Variable(index=[time], unit="US\\$2005/yr")\
+    energy_damage_domestic                   = Variable(index=[time], unit="US\\$2005/yr")\
+  \
+    function run_timestep(p, v, d, t)\
+\
+        ## global annual aggregates - for interim model outputs and partial SCCs\
+        v.cromar_mortality_damage[t]        = sum(p.damage_cromar_mortality[t,:])\
+        v.agriculture_damage[t]             = sum(p.damage_ag[t,:]) * 1e9 \
+        v.energy_damage[t]                  = sum(p.damage_energy[t,:]) * 1e9\
+\
+        v.total_damage[t] =\
+            (p.include_cromar_mortality ? v.cromar_mortality_damage[t] : 0.) +\
+            (p.include_ag               ? v.agriculture_damage[t] : 0.) +\
+            (p.include_energy           ? v.energy_damage[t] : 0.) +\
+            (p.include_dice2016R2       ? p.damage_dice2016R2[t] * 1e9 : 0.) +\
+            (p.include_hs_damage        ? p.damage_hs[t] * 1e9 : 0.)\
+\
+        gdp = sum(p.gdp[t,:]) * 1e9\
+\
+        v.total_damage_share[t] = v.total_damage[t] / gdp\
+\
+        ## domestic annual aggregates - for interim model outputs and partial SCCs\
+        v.cromar_mortality_damage_domestic[t]           = p.damage_cromar_mortality[t,174]\
+        v.agriculture_damage_domestic[t]                = p.damage_ag[t,1] * 1e9 \
+        v.energy_damage_domestic[t]                     = p.damage_energy[t,12] * 1e9\
+        \
+        # Calculate domestic damages\
+        v.total_damage_domestic[t] =\
+            (p.include_cromar_mortality ? v.cromar_mortality_damage_domestic[t] : 0.) +\
+            (p.include_ag               ? v.agriculture_damage_domestic[t] : 0.) +\
+            (p.include_energy           ? v.energy_damage_domestic[t] : 0.)\
+    end\
+end\
+\
+\
+using Mimi\
+\
+@defcomp GlobalNetConsumption begin\
+    country = Index()\
+\
+    gdp = Parameter(index=[time,country], unit="billion US\\$2005/yr")\
+    population  = Parameter(index=[time, country], unit="million")\
+    total_damage = Parameter(index=[time], unit="US\\$2005/yr")\
+\
+    net_consumption = Variable(index=[time])\
+    net_cpc = Variable(index=[time])\
+\
+    global_gdp = Variable(index=[time])\
+    global_population = Variable(index=[time])\
+\
+    function run_timestep(p, v, d, t)\
+\
+        # Sum the population and gdp of all countries for the current timestep\
+        v.global_population[t] = sum(p.population[t,:])\
+        v.global_gdp[t] = sum(p.gdp[t,:])\
+\
+        # Convert damages to billions\
+        total_damage = p.total_damage[t] / 1e9\
+\
+        # Compute net consumption as GDP - damages\
+        v.net_consumption[t] = v.global_gdp[t] - total_damage\
+\
+        # We multiply by 1e3 because net_consumption is in billion, and population is in million\
+        v.net_cpc[t] = v.net_consumption[t] * 1e3 / v.global_population[t]\
+\
+    end\
+end\
+\
+using Mimi\
+\
+@defcomp IdentityComponent_co2 begin\
+    input_co2 = Parameter(index=[time])\
+    output_co2 = Variable(index=[time])\
+\
+    function run_timestep(p, v, d, t)\
+        v.output_co2[t] = p.input_co2[t]\
+    end\
+end\
+\
+@defcomp IdentityComponent_n2o begin\
+    input_n2o = Parameter(index=[time])\
+    output_n2o = Variable(index=[time])\
+\
+    function run_timestep(p, v, d, t)\
+        v.output_n2o[t] = p.input_n2o[t]\
+    end\
+end\
+\
+@defcomp IdentityComponent_ch4 begin\
+    input_ch4 = Parameter(index=[time])\
+    output_ch4 = Variable(index=[time])\
+\
+    function run_timestep(p, v, d, t)\
+        v.output_ch4[t] = p.input_ch4[t]\
+    end\
+end\
+\
+using Mimi\
+\
+# ------------------------------------------------------------------------------\
+# Normalize global temperature to a provided list of years - template component to be used by different components\
+# ------------------------------------------------------------------------------\
+\
+@defcomp GlobalTempNorm begin\
+\
+    global_temperature = Parameter(index=[time], unit = "degC") # Global temperature deviation (\'b0C).\
+\
+    norm_range_start = Parameter() # the first year of the range of years to normalize to\
+    norm_range_end = Parameter() # the last year of the range of years to normalize to\
+\
+    global_temperature_norm = Variable(index=[time], unit = "degC") # Global temperature deviation normalized to the new baseline (\'b0C).\
+    global_temperature_norm_range_mean = Variable(unit="degC")\
+\
+    function run_timestep(p, v, d, t)\
+\
+        if gettime(t) == p.norm_range_end\
+            t_values = TimestepValue.(collect(p.norm_range_start:1:p.norm_range_end)) # Mimi errors if you use a `:` to index with timesteps. This is a workaround for now.\
+            v.global_temperature_norm_range_mean = mean(p.global_temperature[t_values])\
+        end\
+\
+        if gettime(t) >= p.norm_range_end\
+            v.global_temperature_norm[t] = p.global_temperature[t] - v.global_temperature_norm_range_mean\
+        end\
+\
+    end\
+end\
+\
+using Mimi\
+\
+# ------------------------------------------------------------------------------\
+# Accumulate the Ocean Heat Content from BRICK Over Time\
+# ------------------------------------------------------------------------------\
+\
+@defcomp OceanHeatAccumulator begin\
+\
+    del_ohc         = Parameter(index=[time], unit="J") # year over year Ocean heat content anomaly\
+    del_ohc_accum   = Variable(index=[time], unit="1e22 J") # accumulated Ocean heat content anomaly\
+\
+    function run_timestep(p, v, d, t)\
+\
+        # The BRICK TE component multiplies ocean heat by 1e22 because it's assuming \
+        # the SNEASY units. FAIR ocean heat is already in units of 10^22, so this\
+        # divides by 1e22 just so it can be re-scaled again in the BRICK TE component.\
+        if is_first(t)\
+            v.del_ohc_accum[t] = 0. # FAIR won't provide del_ohc for first period so leave at 0.\
+        else\
+            v.del_ohc_accum[t] = v.del_ohc_accum[t-1] + (p.del_ohc[t] ./ 1e22)\
+        end\
+    end\
+end\
+\
+\
+\
+using Mimi\
+\
+# ------------------------------------------------------------------------------\
+# Normalize global SLR to a provided list of years - template component to be used by different components\
+# ------------------------------------------------------------------------------\
+\
+@defcomp GlobalSLRNorm begin\
+\
+    global_slr = Parameter(index=[time], unit = "m")  # total sea level rise from all components (includes landwater storage for projection periods).\
+\
+    norm_range_start = Parameter() # the first year of the range of years to normalize to\
+    norm_range_end = Parameter() # the last year of the range of years to normalize to\
+\
+    global_slr_norm = Variable(index=[time], unit = "degC") # Global sea level rise deviation normalized to the new baseline (m).\
+    global_slr_norm_range_mean = Variable(unit="m")\
+\
+    function run_timestep(p, v, d, t)\
+\
+        if gettime(t) == p.norm_range_end\
+            t_values = TimestepValue.(collect(p.norm_range_start:1:p.norm_range_end)) # Mimi errors if you use a `:` to index with timesteps. This is a workaround for now.\
+            v.global_slr_norm_range_mean = mean(p.global_slr[t_values])\
+        end\
+\
+        if gettime(t) >= p.norm_range_end\
+            v.global_slr_norm[t] = p.global_slr[t] - v.global_slr_norm_range_mean\
+        end\
+\
+    end\
+end\
+\
+# Local Damage Components\
+\
+using Mimi\
+\
+# --------------------------------------------------\
+# Energy-Use Damages (based on Clarke et al. 2018)\
+# --------------------------------------------------\
+\
+@defcomp energy_damages begin\
+\
+	energy_countries    = Index() 							        # Index for countries in the GCAM regions used for energy damage functions.\
+\
+   	\uc0\u946 _energy            = Parameter(index=[energy_countries])       # Coefficient relating global tempeature to change in energy expenditures as a share of GDP.\
+  	gdp 				= Parameter(index=[time, energy_countries], unit="billion US\\$2005/yr") # Country-level GDP (billions US $2005 / yr").\
+ 	temperature         = Parameter(index=[time], unit="degC") # Global average surface temperature anomaly relative to pre-industrial (\'b0C).\
+\
+   	energy_costs_dollar = Variable(index=[time, energy_countries], unit="billion US\\$2005/yr")  # Change in energy expenditures in dollars (billions US $2005 / yr).\
+   	energy_costs_share  = Variable(index=[time, energy_countries])  # Change in energy expenditures as a share of GDP (\uc0\u916  gdp share / \'b0C).\
+\
+\
+    function run_timestep(p, v, d, t)\
+\
+        for c in d.energy_countries\
+\
+        	# Calculate additional energy expenditures as a share of GDP (coefficient gives percentages, so divide by 100 to get share).\
+        	v.energy_costs_share[t,c] = p.\uc0\u946 _energy[c] * p.temperature[t] / 100.0\
+\
+        	# Calculate additoinal energy expenditures in monetary terms.\
+        	v.energy_costs_dollar[t,c] = v.energy_costs_share[t,c] * p.gdp[t,c]\
+        end\
+    end\
+end\
+\
+using Mimi\
+\
+# ------------------------------------------------------------\
+# Temperature Mortality Damages (based on Cromar et al. 2021)\
+# ------------------------------------------------------------\
+\
+@defcomp cromar_mortality_damages begin\
+\
+    country                 = Index() # Index for countries in the regions used for the Cromar et al. temperature-mortality damage functions.\
+\
+   	\uc0\u946 _mortality             = Parameter(index=[country]) # Coefficient relating global temperature to change in mortality rates.\
+    baseline_mortality_rate = Parameter(index=[time, country]) # Crude death rate in a given country (deaths per 1,000 population).\
+ 	temperature             = Parameter(index=[time], unit="degC") # Global average surface temperature anomaly relative to pre-industrial (\'b0C).\
+\
+    population              = Parameter(index=[time, country], unit="million") # Population in a given country (millions of persons).\
+    vsl                     = Parameter(index=[time, country], unit="US\\$2005/yr") # Value of a statistical life ($).\
+\
+    mortality_change        = Variable(index=[time, country])  # Change in a country's baseline mortality rate due to combined effects of cold and heat (with positive values indicating increasing mortality rates).\
+   	mortality_costs         = Variable(index=[time, country], unit="US\\$2005/yr")  # Costs of temperature mortality based on the VSL ($).\
+    excess_death_rate       = Variable(index=[time, country], unit = "deaths/1000 persons/yr")  # Change in a country's baseline death rate due to combined effects of cold and heat (additional deaths per 1,000 population).\
+    excess_deaths           = Variable(index=[time, country], unit="persons")  # Additional deaths that occur in a country due to the combined effects of cold and heat (individual persons).\
+\
+\
+      function run_timestep(p, v, d, t)\
+\
+        for c in d.country\
+\
+            # Calculate change in a country's baseline mortality rate due to combined effects of heat and cold.\
+            v.mortality_change[t,c] = p.\uc0\u946 _mortality[c] * p.temperature[t]\
+\
+            # Calculate additional deaths per 1,000 population due to cold and heat.\
+            v.excess_death_rate[t,c] = p.baseline_mortality_rate[t,c] * v.mortality_change[t,c]\
+\
+            # Calculate additional deaths that occur due to cold and heat (assumes population units in millions of persons so converts to thousands to match deathrates units).\
+            v.excess_deaths[t,c] = (p.population[t,c] .* 1000) * v.excess_death_rate[t,c]\
+\
+            # Multiply excess deaths by the VSL.\
+            v.mortality_costs[t,c] = p.vsl[t,c] * v.excess_deaths[t,c]\
+        end\
+    end\
+end\
+\
+using Mimi\
+\
+@defcomp dice2016R2_damage begin\
+    country     = Index()\
+\
+    temperature = Parameter(index=[time], unit="degC")\
+    gdp         = Parameter(index=[time, country])\
+    \
+    a2          = Parameter(default=0.00236)\
+\
+    damfrac     = Variable(index=[time])\
+    damages     = Variable(index=[time])\
+\
+    function run_timestep(p, v, d, t)\
+        if p.temperature[t] < 0.\
+            v.damfrac[t] = 0.\
+        else\
+            v.damfrac[t] = 1 - (1/(1+(p.a2 * p.temperature[t]^2)))  # log transform to keep damages < 100%, only relevant for bad draws of the mcs. \
+        end\
+\
+        v.damages[t] = v.damfrac[t] * sum(p.gdp[t,:])\
+    end\
+end\
+\
+\
+using Mimi\
+\
+@defcomp hs_damage begin\
+    country          = Index()\
+\
+    temperature      = Parameter(index=[time], unit="degC")\
+    gdp              = Parameter(index=[time, country])\
+\
+    effects          = Parameter\{Symbol\}(default = :base)\
+    add25pct         = Parameter\{Bool\}(default = false)\
+    specification    = Parameter\{Int64\}(default = 7)\
+    \
+    t2_base_3        = Parameter\{Float64\}(default = 0.595382733860703)\
+    t2_prod_3        = Parameter\{Float64\}(default = 0.)\
+    t2_cat_3         = Parameter\{Float64\}(default = 0.259851128136597)\
+\
+    t2_base_4        = Parameter\{Float64\}(default = 0.595382733860703)\
+    t2_prod_4        = Parameter\{Float64\}(default = 0.113324887895228)\
+    t2_cat_4         = Parameter\{Float64\}(default = 0.259851128136597)\
+\
+    t2_base_7        = Parameter\{Float64\}(default = 0.318149737017145)\
+    t2_prod_7        = Parameter\{Float64\}(default = 0.)\
+    t2_cat_7         = Parameter\{Float64\}(default = 0.362274271711041)\
+\
+    t2_base_8        = Parameter\{Float64\}(default = 0.318149737017145)\
+    t2_prod_8        = Parameter\{Float64\}(default = 0.398230480262918)\
+    t2_cat_8         = Parameter\{Float64\}(default = 0.362274271711041)\
+\
+    t2               = Variable()\
+    t2_base          = Variable()\
+    t2_prod          = Variable()\
+    t2_cat           = Variable()\
+\
+    damfrac          = Variable(index=[time])\
+    damages          = Variable(index=[time])\
+\
+    function run_timestep(p, v, d, t)\
+\
+        if p.specification == 3\
+            v.t2_base = p.t2_base_3\
+            v.t2_prod = p.t2_prod_3\
+            v.t2_cat  = p.t2_cat_3\
+        elseif p.specification == 4\
+            v.t2_base = p.t2_base_4\
+            v.t2_prod = p.t2_prod_4\
+            v.t2_cat  = p.t2_cat_4\
+        elseif p.specification == 7\
+            v.t2_base = p.t2_base_7\
+            v.t2_prod = p.t2_prod_7\
+            v.t2_cat  = p.t2_cat_7\
+        elseif p.specification == 8\
+            v.t2_base = p.t2_base_8\
+            v.t2_prod = p.t2_prod_8\
+            v.t2_cat  = p.t2_cat_8\
+        else\
+            error("Invalid effects argument of p.hs_specification")\
+        end\
+        \
+        ## effects options\
+        if p.effects == :base\
+            v.t2 = v.t2_base\
+        elseif p.effects == :productivity\
+            (p.specification==3 || p.specification==7 ?  error("Invalid effects argument of p.effects. This effect is not estimated in the Howard and Sterner (2017) specification p.specification") : v.t2 = v.t2_base + v.t2_prod)\
+        elseif p.effects == :catastrophic\
+            v.t2 = v.t2_base + v.t2_cat\
+        elseif p.effects == :total\
+            v.t2 = v.t2_base + v.t2_prod + v.t2_cat\
+        else\
+            error("Invalid effects argument of p.effects.")\
+        end\
+\
+        ## 25 percent adder option\
+        v.t2 = p.add25pct ? v.t2*1.25 : v.t2\
+\
+        ## damage function\
+        v.damfrac[t] = 1-(1/(1+(v.t2/100) * p.temperature[t]^2))\
+        v.damages[t] = v.damfrac[t] * sum(p.gdp[t,:])\
+\
+    end\
+end\
+\
+using Mimi, CSVFiles, DataFrames, Query, StatsBase, XLSX, Interpolations, DelimitedFiles, Distributions\
+\
+"""\
+Get a GIVE Model with the given argument Settings\
+\
+-- Socioeconomic -- \
+\
+- socioeconomics_source (default :RFF) - The options are :RFF, which uses data from \
+    the RFF socioeconomic projections, or :SSP, which uses data from one of the \
+    Shared Socioeconomic Pathways\
+\
+- SSP_scenario (default to nothing) - This setting is used only if one is using \
+    the SSPs as the socioeconomics_source, and the current options are "SSP119", \
+    "SSP126", "SSP245", "SSP370", "SSP585", and this will be used as follows.\
+    See the SSPs component here: https://github.com/anthofflab/MimiSSPs.jl for more information.\
+\
+    (1) Select the population and GDP trajectories for 2020 through 2300, mapping\
+        each RCMIP scenario to the SSP (SSP1, 2, 3, 5 respectively)\
+    \
+    (2) Choose the ar6 scenario for data from 1750 - 2019 and the RCMIP emissions \
+        scenario from the MimiSSPs component to pull Leach et al. RCMIP scenario\
+        data for 2020 to 2300 for CO2, CH4, and N2O.\
+\
+    (NOTE) that if the socioeconomics_source is :RFF this will not be consequential \
+        and ssp245 will be used for the ar6 data from 1750 - 2019 and trace gases \
+        from 2020 onwards, while emissions for CO2, CH4, and N2O will come from\
+        the MimiRFFSPs component.\
+\
+- RFFSPsample (default to nothing, which will pull the in MimiRFFSPs) - choose\
+    the sample for which to run the RFF SP. See the RFFSPs component here: \
+    https://github.com/rffscghg/MimiRFFSPs.jl.\
+\
+-- Agriculture -- \
+\
+- Agriculture_gtap (default midDF) - specify the `Agriculture_gtap_gtap` input parameter as one of \
+    `["AgMIP_AllDF", "AgMIP_NoNDF", "highDF", "lowDF", "midDF"]`, indicating which \
+    gtap damage function the component should use. \
+ - Agriculture_floor_on_damages (default true) - If `Agriculture_gtap_floor_on_damages` = true, then \
+    the agricultural damages (negative values of the `agcost` variable) in each \
+    timestep will not be allowed to exceed 100% of the size of the  agricultural \
+    sector in each region.\
+- Agriculture_ceiling_on_benefits (default false) - If `Agriculture_gtap_ceiling_on_benefits` = true, \
+    then the agricultural benefits (positive values of the `agcost` variable) in \
+    each timestep will not be allowed to exceed 100% of the size of the agricultural \
+    sector in each region.\
+\
+-- Other --\
+\
+- vsl (default :epa) - specify the soruce of the value of statistical life (VSL) being used in the model\
+\
+"""\
+function get_model(; Agriculture_gtap::String = "midDF",\
+                    socioeconomics_source::Symbol = :RFF,\
+                    SSP_scenario::Union\{Nothing, String\} = nothing,       \
+                    RFFSPsample::Union\{Nothing, Int\} = nothing,\
+                    Agriculture_floor_on_damages::Bool = true,\
+                    Agriculture_ceiling_on_benefits::Bool = false,\
+                    vsl::Symbol= :epa\
+                )\
+\
+    # --------------------------------------------------------------------------\
+    # MODEL - Check Arguments\
+    # --------------------------------------------------------------------------    \
+\
+    if socioeconomics_source == :SSP && isnothing(SSP_scenario)\
+        error("The socioeconomics_source argument :SSP requires setting a SSP_scenario")\
+    end    \
+    \
+    if socioeconomics_source == :RFF && !isnothing(SSP_scenario)\
+        @warn("You have set a SSP_scenario to a non-nothing value, but note that setting the socioeconomics_source argument to :RFF means that this will have no effect on the model.")\
+    end\
+\
+    # Restrictions on arguments\
+    socioeconomics_source_options = [:SSP, :RFF]\
+    socioeconomics_source in socioeconomics_source_options ? nothing : error("The socioeconomics_source must be one of $(socioeconomics_source_options)")\
+    Agriculture_gtap in MooreAg.gtaps ? nothing : error("Unknown GTAP dataframe specification: \\"$gtap\\". Must be one of the following: $(MooreAg.gtaps)")\
+\
+    SSP_scenario_options = [nothing, "SSP119", "SSP126", "SSP245", "SSP370", "SSP585"]\
+    SSP_scenario in SSP_scenario_options ? nothing : error("The SSP_scenario must be one of $(SSP_scenario_options)")\
+\
+    # --------------------------------------------------------------------------\
+    # MODEL - Model Data and Settings\
+    # --------------------------------------------------------------------------    \
+\
+    # dimensions and countries/regions lists\
+    countries           = (load(joinpath(@__DIR__, "..", "data", "Dimension_countries.csv")) |> @select(:CountryISO) |> DataFrame |> Matrix)[:]\
+    ciam_countries      = (load(joinpath(@__DIR__, "..", "data", "Dimension_ciam_countries.csv")) |> @select(:CountryISO) |> DataFrame |> Matrix)[:]\
+    fund_regions        = (load(joinpath(@__DIR__, "..", "data", "Dimension_fund_regions.csv")) |> @select(:fund_region) |> DataFrame |> Matrix)[:]\
+    gcam_regions        = (load(joinpath(@__DIR__, "..", "data", "Dimension_gcam_energy_regions.csv")) |> @select(:gcam_energy_region) |> DataFrame |> Matrix)[:] # not currently a dimension in model\
+    cromar_regions      = (load(joinpath(@__DIR__, "..", "data", "Dimension_cromar_mortality_regions.csv")) |> @select(:cromar_mortality_region) |> DataFrame |> Matrix)[:] # not currently a dimension in model\
+\
+    # Create country-region (FUND derived) mapping for Agriculture damage function\
+    ag_mapping = load(joinpath(@__DIR__, "..", "data", "Mapping_countries_to_fund_regions.csv")) |> DataFrame\
+    ag_mapping.ISO3 != countries && error("FUND mapping file ISO3 column must match model countries vector exactly.")\
+    sort(unique(ag_mapping.fundregion)) != sort(fund_regions) && error("FUND mapping file fund_regions column must match model fund_regions vector exactly (when both are sorted).")\
+    ag_mapping = ag_mapping.fundregion\
+\
+    # Create country-region mapping for GCAM energy damage function.\
+    energy_mapping = load(joinpath(@__DIR__, "..", "data", "Mapping_countries_to_gcam_energy_regions.csv")) |> DataFrame\
+    energy_mapping.ISO3 != countries && error("GCAM mapping file ISO3 column must match model countries vector exactly.")\
+    sort(unique(energy_mapping.gcamregion)) != sort(gcam_regions) && error("GCAM mapping file gcam_regions column must match model gcamregions vector exactly (when both are sorted).")\
+    energy_mapping = energy_mapping.gcamregion\
+\
+    # Create country-region mapping for Cromar et al. temperature-mortality damage function.\
+    cromar_mapping = load(joinpath(@__DIR__, "..", "data", "Mapping_countries_to_cromar_mortality_regions.csv")) |> DataFrame\
+    cromar_mapping.ISO3 != countries && error("Cromar mortality mapping file ISO3 column must match model countries vector exactly.")\
+    sort(unique(cromar_mapping.cromar_region)) != sort(cromar_regions) && error("Cromar mortality mapping file gcam_regions column must match model gcamregions vector exactly (when both are sorted).")\
+    cromar_mapping = cromar_mapping.cromar_region\
+\
+    # BRICK Fingerprinting\
+    segment_fingerprints = load(joinpath(@__DIR__, "../data/CIAM/segment_fingerprints.csv"))  |>\
+        DataFrame |>\
+        @filter(_.rgn in ciam_countries) |> # reduce to the segments in the coastal countries we are using\
+        DataFrame\
+\
+    # get the ar6 forcing scenario to be used for the FAIR model and Mortality component\
+    if socioeconomics_source == :RFF\
+        ar6_scenario = "ssp245" # use SSP245 emissions scenario as the basis for trace gases for RFF SP\
+    elseif socioeconomics_source == :SSP\
+        ar6_scenario = lowercase(SSP_scenario)\
+    end\
+\
+    # Baseline mortality use SSP2 as a proxy for SSP4 and\
+    # SSP1 as a proxy for SSP5 per instructions from the literature (relayed\
+    # by David Smith and Bryan Parthum)\
+    mortality_SSP_map = Dict("SSP1" => "SSP1", "SSP2" => "SSP2", "SSP3" => "SSP3", "SSP4" => "SSP2", "SSP5" => "SSP1")\
+\
+    # Grab the SSP name from the full scenario ie. SSP2 from SSP245\
+    if socioeconomics_source == :SSP \
+        SSP = SSP_scenario[1:4]\
+    else\
+        SSP = nothing\
+    end\
+\
+    # --------------------------------------------------------------------------    \
+    # MODEL CONSTRUCTION\
+    # --------------------------------------------------------------------------    \
+\
+    # component first and lasts\
+    model_first = 1750\
+    brick_first = 1850\
+    damages_first = 2020\
+    model_last = 2300\
+\
+	# Start with an instance of the FAIR model.\
+	m = MimiFAIRv1_6_2.get_model(start_year=model_first, end_year=model_last, ar6_scenario = ar6_scenario)\
+\
+    # Set Dimensions\
+    set_dimension!(m, :time, model_first:model_last) # used in all components - already set in FAIR but reset for clarity\
+    set_dimension!(m, :country, countries) # used in most components\
+\
+    set_dimension!(m, :fund_regions, fund_regions) # Agriculture components\
+    set_dimension!(m, :segments, segment_fingerprints.segments) # BRICK components\
+    set_dimension!(m, :ag_mapping_input_regions, countries) # Agriculture Aggregator components\
+    set_dimension!(m, :ag_mapping_output_regions, fund_regions) # Agriculture Aggregator components\
+    set_dimension!(m, :energy_countries, countries) # Countries used in energy damage function (TODO: Update to GCAM subset? Just using all countries for now)\
+\
+    # Add Socioeconomics component BEFORE the FAIR model to allow for emissions feedbacks after damages_first year\
+    if socioeconomics_source == :RFF\
+        add_comp!(m, MimiRFFSPs.SPs, :Socioeconomic, first = damages_first, before = :ch4_cycle);\
+    elseif socioeconomics_source == :SSP\
+        add_comp!(m, MimiSSPs.SSPs, :Socioeconomic, first = damages_first, before = :ch4_cycle);\
+    end\
+\
+    # Add PerCapitaGDP component\
+	add_comp!(m, PerCapitaGDP, :PerCapitaGDP, first=damages_first, after = :Socioeconomic);\
+\
+    # Add VSL component\
+	add_comp!(m, VSL, :VSL, first=damages_first, after = :PerCapitaGDP);\
+\
+    # We add an identity component that simply passes values through here\
+    # This makes it easier to later insert the marginal emission modification component\
+    # between two components that don't use backup data\
+    # NOTE we have to add different components instead of the Identity cookie cutter\
+    # due to the Mimi bug in #865 and the use of backup data with connector comps later -- fix coming\
+    add_comp!(m, IdentityComponent_co2, :co2_emissions_identity, before = :co2_cycle);\
+    add_comp!(m, IdentityComponent_ch4, :ch4_emissions_identity, before = :ch4_cycle);\
+    add_comp!(m, IdentityComponent_n2o, :n2o_emissions_identity, before = :n2o_cycle);\
+\
+    # Add Temperature Normalization Components\
+    add_comp!(m, GlobalTempNorm, :TempNorm_1880, after = :temperature); # Howard and Sterner\
+    add_comp!(m, GlobalTempNorm, :TempNorm_1900, after = :TempNorm_1880); # DICE\
+    add_comp!(m, GlobalTempNorm, :TempNorm_1850to1900, after = :TempNorm_1900); # Useful Reference to IPCC\
+    add_comp!(m, GlobalTempNorm, :TempNorm_1995to2005, after = :TempNorm_1850to1900); # Agriculture\
+\
+    # Add Ocean Heat Accumulator to Link FAIR and BRICK\
+    add_comp!(m, OceanHeatAccumulator, after = :TempNorm_1995to2005);\
+\
+    # Add BRICK components\
+    add_comp!(m, MimiBRICK.antarctic_ocean, first = brick_first, after = :OceanHeatAccumulator);\
+    add_comp!(m, MimiBRICK.antarctic_icesheet, first = brick_first, after = :antarctic_ocean);\
+    add_comp!(m, MimiBRICK.glaciers_small_icecaps, first = brick_first, after = :antarctic_icesheet);\
+    add_comp!(m, MimiBRICK.greenland_icesheet, first = brick_first, after = :glaciers_small_icecaps);\
+    add_comp!(m, MimiBRICK.thermal_expansion, first = brick_first, after = :greenland_icesheet);\
+    add_comp!(m, MimiBRICK.landwater_storage, first = brick_first, after = :thermal_expansion);\
+    add_comp!(m, MimiBRICK.global_sea_level, first = brick_first, after = :landwater_storage);\
+\
+    # Add SLR Normalization components\
+    add_comp!(m, GlobalSLRNorm, :GlobalSLRNorm_1900, first = brick_first, after = :global_sea_level)\
+\
+    # Add OceanPH components\
+    add_comp!(m, Mimi_NAS_pH.ocean_pH, :OceanPH, after = :GlobalSLRNorm_1900);\
+\
+    # Add CromarMortality component\
+    add_comp!(m, cromar_mortality_damages, :CromarMortality, first = damages_first, after = :OceanPH)\
+\
+    # Add Agriculture components\
+    add_comp!(m, Agriculture_RegionAggregatorSum, :Agriculture_aggregator_population, first = damages_first, after = :CromarMortality);\
+    add_comp!(m, Agriculture_RegionAggregatorSum, :Agriculture_aggregator_gdp, first = damages_first, after = :Agriculture_aggregator_population);\
+    add_comp!(m, MooreAg.Agriculture, :Agriculture, first = damages_first, after = :Agriculture_aggregator_gdp);\
+\
+    # add aggregators for 1990 population and GDP if we are using the GIVE model\
+    socioeconomics_source == :RFF ? add_comp!(m, Agriculture_RegionAggregatorSum_NoTime, :Agriculture_aggregator_pop90, first = damages_first, after = :Agriculture_aggregator_gdp) : nothing\
+    socioeconomics_source == :RFF ? add_comp!(m, Agriculture_RegionAggregatorSum_NoTime, :Agriculture_aggregator_gdp90, first = damages_first, after = :Agriculture_aggregator_pop90) : nothing\
+\
+    # Add Energy components\
+    add_comp!(m, energy_damages, :energy_damages, first = damages_first, after = :Agriculture);\
+\
+    # Add DICE2016R2 damage component\
+    add_comp!(m, dice2016R2_damage, :dice2016R2_damage, first = damages_first, after = :energy_damages);\
+\
+    # Add Howard and Sterner damage components\
+    add_comp!(m, hs_damage, :hs_damage, first = damages_first, after = :dice2016R2_damage);\
+       \
+    # Add DamageAggregator component\
+    add_comp!(m, DamageAggregator, first = damages_first);\
+\
+    # Add net consumption component\
+    add_comp!(m, GlobalNetConsumption, :global_netconsumption, first = damages_first, after=:DamageAggregator)\
+\
+    # --------------------------------------------------------------------------\
+	# Shared Model Parameters\
+    # --------------------------------------------------------------------------\
+\
+    add_shared_param!(m, :model_country_names, countries, dims = [:country])\
+    add_shared_param!(m, :model_fund_regions, fund_regions, dims = [:fund_regions])\
+\
+    # Agriculture\
+    add_shared_param!(m, :model_ag_mapping_input_regions, countries, dims = [:ag_mapping_input_regions])\
+    add_shared_param!(m, :model_ag_mapping_output_regions, fund_regions, dims = [:ag_mapping_output_regions])\
+    add_shared_param!(m, :model_ag_mapping,  ag_mapping, dims = [:ag_mapping_input_regions])\
+\
+    # BRICK\
+    add_shared_param!(m, :model_brick_seawater_freeze, -1.8)\
+\
+    # Mortality\
+    if socioeconomics_source == :SSP\
+        mortality_data  = load(joinpath(@__DIR__, "..", "data", "Mortality_cdr_spp_country_extensions_annual.csv")) |>\
+            DataFrame |>\
+            @filter(_.year in damages_first:model_last && _.scenario == mortality_SSP_map[SSP]) |>\
+            DataFrame |>\
+            @select(:year, :ISO, :cdf) |>\
+            DataFrame |>\
+            @orderby(:ISO) |>\
+            DataFrame |>\
+            i -> unstack(i, :year, :ISO, :cdf) |>\
+            DataFrame |>\
+            i -> select!(i, Not(:year))\
+\
+        # make sure the columns match the mortality countries\
+        names(mortality_data) == countries ? nothing : "Countries in mortality data must match model countries."\
+        add_shared_param!(m, :model_ssp_baseline_mortality_rate, vcat(fill(NaN, (length(model_first:damages_first-1), size(mortality_data)[2])), mortality_data |> Matrix), dims = [:time, :country]) # Pad with NaN b/c starting component in later year.\
+    end\
+\
+    # --------------------------------------------------------------------------\
+	# Component-Specific Parameters and Connections\
+    # --------------------------------------------------------------------------\
+\
+    # --------------------------------------------------------------------------    \
+    # BRICK\
+    # --------------------------------------------------------------------------\
+\
+    # ----- Ocean Heat Accumulator ----- #\
+\
+    connect_param!(m, :OceanHeatAccumulator, :del_ohc, :temperature, :del_ohc)\
+\
+    # ----- Antarctic Ocean ----- #\
+\
+    update_param!(m, :antarctic_ocean, :anto_\uc0\u945 , 0.28)\
+    update_param!(m, :antarctic_ocean, :anto_\uc0\u946 , 0.95)\
+\
+    # ----- Antarctic Ice Sheet ----- #\
+\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u961 _ice, 917.0)\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u961 _seawater, 1030.0)\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u961 _rock, 4000.0)\
+    update_param!(m, :antarctic_icesheet, :ais_sea_level\uc0\u8320 , 0.0)\
+    update_param!(m, :antarctic_icesheet, :ais_ocean_temperature\uc0\u8320 , 0.72)\
+    update_param!(m, :antarctic_icesheet, :ais_radius\uc0\u8320 , 1.864e6)\
+    update_param!(m, :antarctic_icesheet, :ais_bedheight\uc0\u8320 , 781.0)\
+    update_param!(m, :antarctic_icesheet, :ais_slope, 0.0006)\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u956 , 11.0)\
+    update_param!(m, :antarctic_icesheet, :ais_runoffline_snowheight\uc0\u8320 , 1400.0)\
+    update_param!(m, :antarctic_icesheet, :ais_c, 100.0)\
+    update_param!(m, :antarctic_icesheet, :ais_precipitation\uc0\u8320 , 0.37)\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u954 , 0.062)\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u957 , 0.0086)\
+    update_param!(m, :antarctic_icesheet, :ais_iceflow\uc0\u8320 , 1.2)\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u947 , 2.9)\
+    update_param!(m, :antarctic_icesheet, :ais_\uc0\u945 , 0.23)\
+    update_param!(m, :antarctic_icesheet, :ais_temperature_coefficient, 0.8365)\
+    update_param!(m, :antarctic_icesheet, :ais_temperature_intercept, 15.42)\
+    update_param!(m, :antarctic_icesheet, :ais_local_fingerprint, -1.18)\
+    update_param!(m, :antarctic_icesheet, :ocean_surface_area, 3.619e14)\
+    update_param!(m, :antarctic_icesheet, :temperature_threshold, -15.0)\
+    update_param!(m, :antarctic_icesheet, :\uc0\u955 , 0.0093)\
+    update_param!(m, :antarctic_icesheet, :include_ais_DSL, true)\
+\
+    # ----- Glaciers & Small Ice Caps ----- #\
+\
+    update_param!(m, :glaciers_small_icecaps, :gsic_\uc0\u946 \u8320 , 0.0013)\
+    update_param!(m, :glaciers_small_icecaps, :gsic_v\uc0\u8320 , 0.376)\
+    update_param!(m, :glaciers_small_icecaps, :gsic_s\uc0\u8320 , -0.0138)\
+    update_param!(m, :glaciers_small_icecaps, :gsic_n, 0.847)\
+    update_param!(m, :glaciers_small_icecaps, :gsic_teq, -0.15)\
+\
+    # ----- Greenland Ice Sheet ----- #\
+\
+    update_param!(m, :greenland_icesheet, :greenland_a, -1.37)\
+    update_param!(m, :greenland_icesheet, :greenland_b, 8.06)\
+    update_param!(m, :greenland_icesheet, :greenland_\uc0\u945 , 0.0008)\
+    update_param!(m, :greenland_icesheet, :greenland_\uc0\u946 , 0.00009)\
+    update_param!(m, :greenland_icesheet, :greenland_v\uc0\u8320 , 7.52)\
+\
+    # ----- Thermal Expansion ----- #\
+\
+    update_param!(m, :thermal_expansion, :te_A, 3.619e14)\
+    update_param!(m, :thermal_expansion, :te_C, 3991.86795711963)\
+    update_param!(m, :thermal_expansion, :te_\uc0\u961 , 1027.0)\
+    update_param!(m, :thermal_expansion, :te_\uc0\u945 , 0.16)\
+    update_param!(m, :thermal_expansion, :te_s\uc0\u8320 , 0.0)\
+\
+    update_param!(m, :thermal_expansion, :ocean_heat_mixed, zeros(length(model_first:model_last)))\
+    connect_param!(m, :thermal_expansion, :ocean_heat_interior, :OceanHeatAccumulator, :del_ohc_accum)\
+\
+    # ----- Landwater Storage ----- #\
+\
+    update_param!(m, :landwater_storage, :lws\uc0\u8320 , 0.0)\
+    update_param!(m, :landwater_storage, :first_projection_year, 2018)\
+    update_param!(m, :landwater_storage, :lws_random_sample, fill(0.0003, model_last-model_first+1))\
+\
+    # ----- Set Parameters With Common Values Across Components ----- #\
+\
+    connect_param!(m, :antarctic_icesheet, :seawater_freeze, :model_brick_seawater_freeze)\
+    connect_param!(m, :antarctic_ocean, :seawater_freeze, :model_brick_seawater_freeze)\
+\
+    update_param!(m, :GlobalSLRNorm_1900, :norm_range_start, 1900)\
+    update_param!(m, :GlobalSLRNorm_1900, :norm_range_end, 1900)\
+\
+    # --------------------------------------------------------------------------    \
+    # Create Component Connections\
+\
+    connect_param!(m, :global_sea_level => :slr_glaciers_small_ice_caps, :glaciers_small_icecaps => :gsic_sea_level)\
+    connect_param!(m, :global_sea_level => :slr_greeland_icesheet,       :greenland_icesheet     => :greenland_sea_level)\
+    connect_param!(m, :global_sea_level => :slr_antartic_icesheet,       :antarctic_icesheet     => :ais_sea_level)\
+    connect_param!(m, :global_sea_level => :slr_thermal_expansion,       :thermal_expansion      => :te_sea_level)\
+    connect_param!(m, :global_sea_level => :slr_landwater_storage,       :landwater_storage      => :lws_sea_level)\
+\
+    connect_param!(m, :antarctic_icesheet => :antarctic_ocean_temperature, :antarctic_ocean  => :anto_temperature)\
+    connect_param!(m, :antarctic_icesheet => :global_sea_level,            :global_sea_level => :sea_level_rise)\
+\
+    connect_param!(m, :antarctic_icesheet => :global_surface_temperature, :temperature => :T)\
+    connect_param!(m, :antarctic_ocean => :global_surface_temperature, :temperature => :T)\
+    connect_param!(m, :glaciers_small_icecaps => :global_surface_temperature, :temperature => :T)\
+    connect_param!(m, :greenland_icesheet => :global_surface_temperature, :temperature => :T)\
+    \
+    connect_param!(m, :GlobalSLRNorm_1900 => :global_slr, :global_sea_level => :sea_level_rise)\
+    \
+    # --------------------------------------------------------------------------    \
+    # OceanPH\
+    # --------------------------------------------------------------------------\
+\
+    update_param!(m, :OceanPH, :\uc0\u946 1, -0.3671)\
+	update_param!(m, :OceanPH, :\uc0\u946 2, 10.2328)\
+	update_param!(m, :OceanPH, :pH_0, 8.123)\
+\
+	connect_param!(m, :OceanPH => :atm_co2_conc, :co2_cycle => :co2)\
+\
+    # --------------------------------------------------------------------------    \
+    # Socioeconomic\
+    # --------------------------------------------------------------------------\
+\
+    if socioeconomics_source == :SSP\
+        update_param!(m, :Socioeconomic, :SSP_source, "Benveniste") # only available source to 2300 at this time in MimiSSPs\
+        update_param!(m, :Socioeconomic, :SSP, SSP) # select the SSP from RCMIP name ie. SSP2\
+        update_param!(m, :Socioeconomic, :emissions_source, "Leach") # only available source to 2300 at this time in MimiSSPs\
+        update_param!(m, :Socioeconomic, :emissions_scenario, SSP_scenario) # full name ie. SSSP245\
+\
+    elseif socioeconomics_source == :RFF\
+        isnothing(RFFSPsample) ? nothing : update_param!(m, :Socioeconomic, :id, RFFSPsample)\
+    end\
+    connect_param!(m, :Socioeconomic, :country_names, :model_country_names)\
+\
+    # Feedback of Socioeconomic Emissions back to FAIR\
+\
+    # Load IPCC AR6 emissions scenario used for FAIRv1.6.2 ensemble runs (options = "ssp119", "ssp126", "ssp245", "ssp370", "ssp460", "ssp585").\
+    ar6_emissions_raw = DataFrame(load(joinpath(@__DIR__, "..", "data", "FAIR_ar6", "AR6_emissions_"*ar6_scenario*"_1750_2300.csv")))\
+    \
+    # Subset AR6 emissions to proper years.\
+    emission_indices = indexin(collect(model_first:model_last), ar6_emissions_raw.Year)\
+    ar6_emissions = ar6_emissions_raw[emission_indices, :]\
+\
+    # Here we couple the identity component co2_emissions to the SSP output, and then the\
+    # FAIR emissions component to that identity component co2_emissions\
+    connect_param!(m, :co2_emissions_identity => :input_co2, :Socioeconomic => :co2_emissions, ar6_emissions.FossilCO2 .+ ar6_emissions.OtherCO2)\
+    connect_param!(m, :co2_cycle => :E_co2, :co2_emissions_identity => :output_co2)\
+\
+    # do the same for n2o_emissions\
+    connect_param!(m, :n2o_emissions_identity => :input_n2o, :Socioeconomic => :n2o_emissions, ar6_emissions.N2O)\
+    connect_param!(m, :n2o_cycle => :fossil_emiss_N\uc0\u8322 O, :n2o_emissions_identity => :output_n2o)\
+\
+    # do the same for ch4_emissions\
+    connect_param!(m, :ch4_emissions_identity => :input_ch4, :Socioeconomic => :ch4_emissions, ar6_emissions.CH4)\
+    connect_param!(m, :ch4_cycle => :fossil_emiss_CH\uc0\u8324 , :ch4_emissions_identity => :output_ch4)\
+\
+    # Land Use CO2 Emissions - FAIRv1.6.2 component :landuse_forcing and parameter :landuse_emiss\
+    #\
+    # For the SSPs, the MimiSSPs component does not break carbon dioxide out by industrial \
+    # and other, so we will simply let FAIR1.6.2 run with its original settings for land use CO2, which is \
+    # consistent with Leach (FAIRv2.0) but just not broken out in that dataset, so this is consistent. \
+    # For the RFF SPs we can either let them run with the middle-of the road and best matched (pop and emissions)\
+    # ssp245 AR6 scenario, or explicitly connect new data.  Currently do the former.\
+\
+    # --------------------------------------------------------------------------    \
+    # PerCapitaGDP\
+    # -------------------------------------------------------------------------- \
+\
+    connect_param!(m, :PerCapitaGDP => :gdp, :Socioeconomic => :gdp)\
+    connect_param!(m, :PerCapitaGDP => :population, :Socioeconomic => :population)\
+\
+    # --------------------------------------------------------------------------    \
+    # VSL\
+    # --------------------------------------------------------------------------\
+\
+    if vsl==:fund\
+	    update_param!(m, :VSL, :\uc0\u945 ,  4.99252262888626e6 * pricelevel_1995_to_2005)   # convert from FUND USD $1995 to USD $2005\
+        update_param!(m, :VSL, :y\uc0\u8320 , 24_962.6131444313  * pricelevel_1995_to_2005)   # convert from FUND USD $1995 to USD $2005\
+    elseif vsl==:epa\
+	    update_param!(m, :VSL, :\uc0\u945 ,  7.73514707e6)                                   # 2020 EPA VSL in 2005$. See DataExplainer.ipynb for information\
+        update_param!(m, :VSL, :y\uc0\u8320 , 48_726.60)                                      # 2020 U.S. income per capita in 2005$; See DataExplainer.ipynb for information  \
+    else\
+        error("Invalid vsl argument of $vsl.")\
+    end\
+\
+	update_param!(m,  :VSL, :\uc0\u1013 , 1.0)\
+	connect_param!(m, :VSL => :pc_gdp, :PerCapitaGDP => :pc_gdp)\
+\
+    # --------------------------------------------------------------------------    \
+    # Temperature Normlization Components\
+    # --------------------------------------------------------------------------\
+    \
+    # TempNorm_1880 - Normalize temperature to deviation from 1880 for Howard and Sterner damage function\
+    update_param!(m, :TempNorm_1880, :norm_range_start, 1880)\
+    update_param!(m, :TempNorm_1880, :norm_range_end, 1880)\
+    connect_param!(m, :TempNorm_1880 => :global_temperature, :temperature => :T)\
+\
+    # TempNorm_1900 - Normalize temperature to deviation from 1900 for DICE2016 damage function\
+    update_param!(m, :TempNorm_1900, :norm_range_start, 1900)\
+    update_param!(m, :TempNorm_1900, :norm_range_end, 1900)\
+    connect_param!(m, :TempNorm_1900 => :global_temperature, :temperature => :T)\
+\
+    # TempNorm_1850to1900 - Normalize temperature to deviation from 1850 to 1900 for IPCC Comparison Graphics\
+    update_param!(m, :TempNorm_1850to1900, :norm_range_start, 1850)\
+    update_param!(m, :TempNorm_1850to1900, :norm_range_end, 1900)\
+    connect_param!(m, :TempNorm_1850to1900 => :global_temperature, :temperature => :T)\
+\
+	# TempNorm_1995to2005 - Normalize temperature to deviation from 1995 to 2005 for Agriculture Component\
+    update_param!(m, :TempNorm_1995to2005, :norm_range_start, 1995)\
+    update_param!(m, :TempNorm_1995to2005, :norm_range_end, 2005)\
+    connect_param!(m, :TempNorm_1995to2005 => :global_temperature, :temperature => :T)\
+\
+    # --------------------------------------------------------------------------\
+    # Cromar et al. Temperature-Mortality Damages\
+    # --------------------------------------------------------------------------\
+\
+    # Assign Cromar et al. regional temperature mortality coefficients to appropriate countries.\
+\
+    # Load raw data.\
+    cromar_coeffs       = load(joinpath(@__DIR__, "..", "data", "CromarMortality_damages_coefficients.csv")) |> DataFrame\
+    cromar_mapping_raw  = load(joinpath(@__DIR__, "..", "data", "Mapping_countries_to_cromar_mortality_regions.csv")) |> DataFrame\
+\
+    # Initialize an array to store country-level coefficients\
+    country_\uc0\u946 _mortality = zeros(length(cromar_mapping_raw.ISO3))\
+\
+    # Loop through the regions and assign regional coefficients to proper sets of countries.\
+    for r = 1:length(cromar_regions)\
+        # Find country indices for region "r"\
+        r_index = findall(x->x==cromar_regions[r], cromar_mapping_raw.cromar_region)\
+        # Find index for region "r" coefficient.\
+        \uc0\u946 _index = findfirst(x->x==cromar_regions[r], cromar_coeffs[!, "Cromar Region Name"])\
+        # Assign all countries in that region proper coefficient.\
+        country_\uc0\u946 _mortality[r_index] .= cromar_coeffs[\u946 _index, "Pooled Beta"]\
+    end\
+\
+    # Get indices to reorder Cromar countries mapped to countries dimension (could be correct oder already, this is a safety check)\
+    cromar_indices = indexin(countries, cromar_mapping_raw.ISO3)\
+    country_\uc0\u946 _mortality = country_\u946 _mortality[cromar_indices]\
+\
+    update_param!(m, :CromarMortality, :\uc0\u946 _mortality, country_\u946 _mortality)\
+\
+    if socioeconomics_source == :SSP\
+        connect_param!(m, :CromarMortality, :baseline_mortality_rate, :model_ssp_baseline_mortality_rate) # shared model parameter\
+    elseif socioeconomics_source == :RFF\
+        connect_param!(m, :CromarMortality => :baseline_mortality_rate, :Socioeconomic => :deathrate)\
+    end\
+\
+    connect_param!(m, :CromarMortality => :population,  :Socioeconomic => :population)\
+    connect_param!(m, :CromarMortality => :temperature, :temperature => :T)\
+    connect_param!(m, :CromarMortality => :vsl, :VSL => :vsl)\
+\
+    # --------------------------------------------------------------------------\
+	# Agriculture Aggregators\
+    # --------------------------------------------------------------------------\
+\
+    connect_param!(m, :Agriculture_aggregator_population, :input_region_names, :model_ag_mapping_input_regions)\
+    connect_param!(m, :Agriculture_aggregator_population, :output_region_names, :model_ag_mapping_output_regions)\
+    connect_param!(m, :Agriculture_aggregator_population, :input_output_mapping, :model_ag_mapping)\
+    connect_param!(m, :Agriculture_aggregator_population => :input, :Socioeconomic => :population)\
+\
+    connect_param!(m, :Agriculture_aggregator_gdp, :input_region_names, :model_ag_mapping_input_regions)\
+    connect_param!(m, :Agriculture_aggregator_gdp, :output_region_names, :model_ag_mapping_output_regions)\
+    connect_param!(m, :Agriculture_aggregator_gdp, :input_output_mapping, :model_ag_mapping)\
+    connect_param!(m, :Agriculture_aggregator_gdp => :input, :Socioeconomic => :gdp)\
+\
+    if socioeconomics_source == :RFF\
+        connect_param!(m, :Agriculture_aggregator_gdp90, :input_region_names, :model_ag_mapping_input_regions)\
+        connect_param!(m, :Agriculture_aggregator_gdp90, :output_region_names, :model_ag_mapping_output_regions)\
+        connect_param!(m, :Agriculture_aggregator_gdp90, :input_output_mapping, :model_ag_mapping)\
+        connect_param!(m, :Agriculture_aggregator_gdp90 => :input, :Socioeconomic => :gdp1990)\
+\
+        connect_param!(m, :Agriculture_aggregator_pop90, :input_region_names, :model_ag_mapping_input_regions)\
+        connect_param!(m, :Agriculture_aggregator_pop90, :output_region_names, :model_ag_mapping_output_regions)\
+        connect_param!(m, :Agriculture_aggregator_pop90, :input_output_mapping, :model_ag_mapping)\
+        connect_param!(m, :Agriculture_aggregator_pop90 => :input, :Socioeconomic => :population1990)\
+    end\
+\
+    # --------------------------------------------------------------------------\
+	# Agriculture\
+    # --------------------------------------------------------------------------\
+\
+    fund_regions != MooreAg.fund_regions && error("FUND regions for RFF Model do not match FUND regions for Agriculture.")\
+\
+    # Handle in pop and gdp 1990 baseline values\
+    if socioeconomics_source == :SSP\
+\
+        data1990 = load(joinpath(@__DIR__, "..", "data", "Benveniste_SSPs", "Agriculture_1990vals.csv")) |> \
+                    DataFrame |>\
+                    @filter(_.SSP == SSP) |>\
+                    DataFrame    \
+        idxs = indexin(data1990.fund_region, fund_regions) # get the ordering of 1990 regions matched to fund regions in model\
+        !isnothing(findfirst(i -> isnothing(i), idxs)) ? error("FUND regions for RFF Model do not match FUND regions for Agriculture 1990 values.") : nothing\
+        data1990 = data1990[idxs,:] # reorder based on idxs\
+\
+        update_param!(m, :Agriculture, :pop90, data1990.pop)\
+        update_param!(m, :Agriculture, :gdp90, data1990.gdp)\
+\
+    elseif socioeconomics_source == :RFF\
+        connect_param!(m, :Agriculture => :pop90, :Agriculture_aggregator_pop90 => :output)\
+        connect_param!(m, :Agriculture => :gdp90, :Agriculture_aggregator_gdp90 => :output)\
+    end  \
+\
+    # Access which of the 5 possible DFs to use for the damage function\
+    gtap_idx = findfirst(isequal(Agriculture_gtap), MooreAg.gtaps)\
+    gtap_df = MooreAg.gtap_df_all[:, :, gtap_idx]\
+\
+    update_param!(m, :Agriculture, :gtap_df, gtap_df)\
+    update_param!(m, :Agriculture, :floor_on_damages, Agriculture_floor_on_damages)\
+    update_param!(m, :Agriculture, :ceiling_on_benefits, Agriculture_ceiling_on_benefits)\
+    update_param!(m, :Agriculture, :agrish0, Array\{Float64, 1\}(readdlm(joinpath(MooreAg.fund_datadir, "agrish0.csv"), ',', skipstart=1)[:,2]))\
+    update_param!(m, :Agriculture, :gtap_df, gtap_df)\
+\
+    connect_param!(m, :Agriculture => :population, :Agriculture_aggregator_population => :output)\
+    connect_param!(m, :Agriculture => :income, :Agriculture_aggregator_gdp => :output)\
+	connect_param!(m, :Agriculture => :temp, :TempNorm_1995to2005 => :global_temperature_norm)\
+\
+    # --------------------------------------------------------------------------\
+    # Energy\
+    # --------------------------------------------------------------------------\
+\
+    # Assign GCAM regional energy damage coefficients to appropriate countries.\
+\
+    # Load raw data.\
+    energy_coeffs = load(joinpath(@__DIR__, "..", "data", "energy_damages_gcam_region_coefficients.csv")) |> DataFrame\
+    gcam_mapping_raw = load(joinpath(@__DIR__, "..", "data", "Mapping_countries_to_gcam_energy_regions.csv")) |> DataFrame\
+\
+    # Initialize an array to store country-level coefficients\
+    country_\uc0\u946 _energy = zeros(length(gcam_mapping_raw.ISO3))\
+\
+    # Loop through the regions and assign regional coefficients to proper subset of countries.\
+    for r = 1:length(gcam_regions)\
+        # Find country indices for region "r"\
+        r_index = findall(x->x==gcam_regions[r], gcam_mapping_raw.gcamregion)\
+        # Find index for region "r" coefficient.\
+        \uc0\u946 _index = findfirst(x->x==gcam_regions[r], energy_coeffs.gcam_region)\
+        # Assign all countries in that region proper coefficient.\
+        country_\uc0\u946 _energy[r_index] .= energy_coeffs[\u946 _index, "coefficient"]\
+    end\
+\
+    set_param!(m, :energy_damages, :\uc0\u946 _energy, country_\u946 _energy)\
+    connect_param!(m, :energy_damages => :gdp,         :Socioeconomic => :gdp)\
+    connect_param!(m, :energy_damages => :temperature, :temperature => :T)\
+\
+    # --------------------------------------------------------------------------\
+    # DICE2016R2 damages\
+    # --------------------------------------------------------------------------\
+\
+    connect_param!(m, :dice2016R2_damage => :temperature, :TempNorm_1900 => :global_temperature_norm)\
+    connect_param!(m, :dice2016R2_damage => :gdp, :Socioeconomic => :gdp)\
+\
+    # --------------------------------------------------------------------------\
+    # Howard and Sterner damages\
+    # --------------------------------------------------------------------------\
+\
+    connect_param!(m, :hs_damage => :temperature, :TempNorm_1880 => :global_temperature_norm)\
+    connect_param!(m, :hs_damage => :gdp,  :Socioeconomic => :gdp)\
+\
+    # --------------------------------------------------------------------------\
+	# Damage aggregation\
+    # --------------------------------------------------------------------------\
+\
+    connect_param!(m, :DamageAggregator => :damage_ag, :Agriculture => :agcost)\
+    connect_param!(m, :DamageAggregator => :damage_cromar_mortality, :CromarMortality => :mortality_costs)\
+    connect_param!(m, :DamageAggregator => :gdp, :Socioeconomic => :gdp)\
+    connect_param!(m, :DamageAggregator => :damage_energy, :energy_damages => :energy_costs_dollar)\
+    connect_param!(m, :DamageAggregator => :damage_dice2016R2, :dice2016R2_damage => :damages)\
+    connect_param!(m, :DamageAggregator => :damage_hs, :hs_damage => :damages)\
+\
+    # --------------------------------------------------------------------------\
+	# Net consumption\
+    # --------------------------------------------------------------------------\
+    \
+    connect_param!(m, :global_netconsumption => :gdp, :Socioeconomic => :gdp)\
+    connect_param!(m, :global_netconsumption => :population, :Socioeconomic => :population)\
+    connect_param!(m, :global_netconsumption => :total_damage, :DamageAggregator => :total_damage)\
+    \
+    return m\
+end\
+\
+using Distributions, Dates, Mimi, CSVFiles, DataFrames, MooreAg, StatsBase\
+import Mimi: SampleStore, add_RV!, add_transform!, add_save!\
+\
+"""\
+    get_mcs(trials; \
+        socioeconomics_source::Symbol = :RFF, \
+        mcs_years = 1750:2300, \
+        fair_parameter_set::Symbol = :random,\
+        fair_parameter_set_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+        rffsp_sampling::Symbol = :random,\
+        rffsp_sampling_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+        save_list::Vector = []\
+    )\
+\
+Return a Monte Carlo Simulation definition of type Mimi.SimulationDefinition that\
+holds all random variables and distributions, as assigned to model component/parameter\
+pairs, that will be used in a Monte Carlo Simulation. \
+\
+- `trials` (required) - number of trials to be run, used for presampling\
+- `socioeconomics_source` (default :RFF) - which source the Socioeconomics component uses\
+- `fair_parameter_set_ids` - (default nothing) - if `fair_parameter_set` is set \
+to :deterministic, this `n` element vector provides the fair parameter set ids \
+that will be run, otherwise it is set to `nothing` and ignored.\
+- `rffsp_sampling` (default :random) - which sampling strategy to use for the RFF \
+SPs, :random means RFF SPs will be chosen randomly, while :deterministic means they \
+will be based on the provided vector of to `rffsp_sampling_ids` keyword argument. \
+- `rffsp_sampling_ids` - (default nothing) - if `rffsp_sampling` is set to :deterministic, \
+this `n` element vector provides the RFF SP ids that will be run, otherwise it is \
+set to `nothing` and ignored.\
+- `save_list` (default []) - which parameters and varaibles to save for each trial,\
+entered as a vector of Tuples (:component_name, :variable_name)\
+"""\
+function get_mcs(trials; \
+                    socioeconomics_source::Symbol = :RFF, \
+                    mcs_years = 1750:2300, \
+                    fair_parameter_set::Symbol = :random,\
+                    fair_parameter_set_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+                    rffsp_sampling::Symbol = :random,\
+                    rffsp_sampling_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+                    save_list::Vector = []           \
+        )\
+\
+    # check some argument conditions\
+    if fair_parameter_set == :deterministic \
+        isnothing(fair_parameter_set_ids) && error("If `fair_parameter_set` is :determinsitic, must provide a `fair_parameter_set_ids` vector.")\
+        length(fair_parameter_set_ids) !== trials && error("The length of the provided `fair_parameter_set_ids` vector must be equal to the number of trials ($trials) run.")\
+        sum(fair_parameter_set_ids .> 2237) > 0. || sum(fair_parameter_set_ids .< 1) > 0. && error("FAIR parameter set ids must be between 1 and 2237, inclusive.")\
+    end\
+\
+    if rffsp_sampling == :deterministic \
+        isnothing(rffsp_sampling_ids) && error("If `rffsp_sampling` is :determinsitic, must provide a `rffsp_sampling_ids` vector.")\
+        length(rffsp_sampling_ids) !== trials && error("The length of the provided `rffsp_sampling_ids` vector must be equal to the number of trials ($trials) run.")\
+        sum(rffsp_sampling_ids .> 10_000) > 0. || sum(rffsp_sampling_ids .< 1) > 0. && error("RFF SP sample ids must be between 1 and 10,000, inclusive.")\
+    end   \
+    \
+    # define the Monte Carlo Simulation and add some simple random variables\
+    mcs = @defsim begin\
+        dice2016R2_damage.a2 = Normal(0.00236, 0.00236/2) # Nordhaus (2017, PNAS) DICE2016 RV \
+    end\
+\
+    # Howard and Sterner (2017) Damage specification table 2 column 3\
+    hs_\uc0\u956 _3 = [ 0.595382733860703;  0.259851128136597]\
+    hs_\uc0\u963 _3 = [ 0.0322523508274087 -0.0373892045213768\
+                -0.0373892045213768  0.063496518648112]\
+    hs_distribution_3 = MvNormal(hs_\uc0\u956 _3, hs_\u963 _3)\
+    hs_coefficients_3 = rand(hs_distribution_3, trials)\
+    \
+    add_RV!(mcs, :rv_hs_damage_t2_base_3, SampleStore(hs_coefficients_3[1,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_base_3, :(=), :rv_hs_damage_t2_base_3)\
+\
+    add_RV!(mcs, :rv_hs_damage_t2_cat_3, SampleStore(hs_coefficients_3[2,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_cat_3, :(=), :rv_hs_damage_t2_cat_3)\
+\
+    # Howard and Sterner (2017) Damage specification table 2 column 4\
+    hs_\uc0\u956 _4 = [ 0.595382733860703;    0.259851128136597;  0.113324887895228]\
+    hs_\uc0\u963 _4 = [ 0.0362838946808348   -0.0420628550865489  0.\
+                -0.0420628550865489    0.0714335834791260  0.\
+                0.                    0.                  0.0157459807497214]\
+    hs_distribution_4 = MvNormal(hs_\uc0\u956 _4, hs_\u963 _4)\
+    hs_coefficients_4 = rand(hs_distribution_4, trials)\
+    add_RV!(mcs, :rv_hs_damage_t2_base_4, SampleStore(hs_coefficients_4[1,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_base_4, :(=), :rv_hs_damage_t2_base_4)\
+\
+    add_RV!(mcs, :rv_hs_damage_t2_cat_4, SampleStore(hs_coefficients_4[2,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_cat_4, :(=), :rv_hs_damage_t2_cat_4)\
+    \
+    add_RV!(mcs, :rv_hs_damage_t2_prod_4, SampleStore(hs_coefficients_4[3,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_prod_4, :(=), :rv_hs_damage_t2_prod_4)\
+\
+    # Howard and Sterner (2017) Damage specification table 2 column 7\
+    hs_\uc0\u956 _7 = [ 0.318149737017145;   0.362274271711041]\
+    hs_\uc0\u963 _7 = [ 0.00953254601993184 -0.00956576259414058\
+                -0.00956576259414058  0.00970956896549987]\
+    hs_distribution_7 = MvNormal(hs_\uc0\u956 _7, hs_\u963 _7)\
+    hs_coefficients_7 = rand(hs_distribution_7, trials)\
+\
+    add_RV!(mcs, :rv_hs_damage_t2_base_7, SampleStore(hs_coefficients_7[1,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_base_7, :(=), :rv_hs_damage_t2_base_7)\
+\
+    add_RV!(mcs, :rv_hs_damage_t2_cat_7, SampleStore(hs_coefficients_7[2,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_cat_7, :(=), :rv_hs_damage_t2_cat_7)\
+\
+    # Howard and Sterner (2017) Damage specification table 2 column 8\
+    hs_\uc0\u956 _8 = [ 0.318149737017145;    0.362274271711041;   0.398230480262918]\
+    hs_\uc0\u963 _8 = [ 0.0104404075456397   -0.0104767876031064   0.\
+                -0.0104767876031064    0.010634289819357    0.\
+                0.                    0.                   0.0563560833680617]\
+    hs_distribution_8 = MvNormal(hs_\uc0\u956 _8, hs_\u963 _8)\
+    hs_coefficients_8 = rand(hs_distribution_8, trials)\
+\
+    add_RV!(mcs, :rv_hs_damage_t2_base_8, SampleStore(hs_coefficients_8[1,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_base_8, :(=), :rv_hs_damage_t2_base_8)\
+\
+    add_RV!(mcs, :rv_hs_damage_t2_cat_8, SampleStore(hs_coefficients_8[2,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_cat_8, :(=), :rv_hs_damage_t2_cat_8)\
+    \
+    add_RV!(mcs, :rv_hs_damage_t2_prod_8, SampleStore(hs_coefficients_8[3,:]))\
+    add_transform!(mcs,  :hs_damage, :t2_prod_8, :(=), :rv_hs_damage_t2_prod_8)\
+\
+\
+    # add the socioeconomics RV if the socioeconomics source is Mimi RFF SPs\
+    # use SampleStore for a deterministic RFF SP sampling approach, otherwise\
+    # use an EmpiricalDistribution across all ids (equal probability is assumed \
+    # if probabilities not provided)\
+    if socioeconomics_source == :RFF\
+        distrib = rffsp_sampling == :random ? EmpiricalDistribution(collect(1:10_000)) : SampleStore(rffsp_sampling_ids)\
+        add_RV!(mcs, :socio_id_rv, distrib)\
+        add_transform!(mcs, :Socioeconomic, :id, :(=), :socio_id_rv)\
+    end\
+\
+    #add BRICK random variable - assign one Normally distributed RV per year\
+    for year in mcs_years\
+        rv_name = Symbol("rv_landwater_storage_$year")\
+        add_RV!(mcs, rv_name, Normal(0.0003, 0.00018))\
+        add_transform!(mcs, :landwater_storage, :lws_random_sample, :(=), rv_name, [year])\
+    end\
+\
+    BRICK_parameters = load(joinpath(@__DIR__, "..", "data", "BRICK_posterior_parameters_10k.csv")) |> DataFrame\
+\
+    BRICK_uncertain_parameters = [\
+        (source_name=:thermal_s0, comp_name=:thermal_expansion, param_name=:te_s\uc0\u8320 ),\
+        (source_name=:thermal_alpha, comp_name=:thermal_expansion, param_name=:te_\uc0\u945 ),\
+\
+        (source_name=:glaciers_v0, comp_name=:glaciers_small_icecaps, param_name=:gsic_v\uc0\u8320 ),\
+        (source_name=:glaciers_s0, comp_name=:glaciers_small_icecaps, param_name=:gsic_s\uc0\u8320 ),\
+        (source_name=:glaciers_beta0, comp_name=:glaciers_small_icecaps, param_name=:gsic_\uc0\u946 \u8320 ),\
+        (source_name=:glaciers_n, comp_name=:glaciers_small_icecaps, param_name=:gsic_n),\
+        \
+        (source_name=:greenland_v0, comp_name=:greenland_icesheet, param_name=:greenland_v\uc0\u8320 ),\
+        (source_name=:greenland_a, comp_name=:greenland_icesheet, param_name=:greenland_a),\
+        (source_name=:greenland_b, comp_name=:greenland_icesheet, param_name=:greenland_b),\
+        (source_name=:greenland_alpha, comp_name=:greenland_icesheet, param_name=:greenland_\uc0\u945 ),\
+        (source_name=:greenland_beta, comp_name=:greenland_icesheet, param_name=:greenland_\uc0\u946 ),\
+\
+        (source_name=:anto_alpha, comp_name=:antarctic_ocean, param_name=:anto_\uc0\u945 ),\
+        (source_name=:anto_beta, comp_name=:antarctic_ocean, param_name=:anto_\uc0\u946 ),\
+\
+        (source_name=:ais_gamma, comp_name=:antarctic_icesheet, param_name=:ais_\uc0\u947 ),\
+        (source_name=:ais_alpha, comp_name=:antarctic_icesheet, param_name=:ais_\uc0\u945 ),\
+        (source_name=:ais_mu, comp_name=:antarctic_icesheet, param_name=:ais_\uc0\u956 ),\
+        (source_name=:ais_v, comp_name=:antarctic_icesheet, param_name=:ais_\uc0\u957 ),\
+        (source_name=:ais_precip0, comp_name=:antarctic_icesheet, param_name=:ais_precipitation\uc0\u8320 ),\
+        (source_name=:ais_kappa, comp_name=:antarctic_icesheet, param_name=:ais_\uc0\u954 ),\
+        (source_name=:ais_flow0, comp_name=:antarctic_icesheet, param_name=:ais_iceflow\uc0\u8320 ),\
+        (source_name=:ais_runoff_height0, comp_name=:antarctic_icesheet, param_name=:ais_runoffline_snowheight\uc0\u8320 ),\
+        (source_name=:ais_c, comp_name=:antarctic_icesheet, param_name=:ais_c),\
+        (source_name=:ais_bedheight0, comp_name=:antarctic_icesheet, param_name=:ais_bedheight\uc0\u8320 ),\
+        (source_name=:ais_slope, comp_name=:antarctic_icesheet, param_name=:ais_slope),\
+        (source_name=:ais_lambda, comp_name=:antarctic_icesheet, param_name=:\uc0\u955 ),\
+        (source_name=:ais_temp_threshold, comp_name=:antarctic_icesheet, param_name=:temperature_threshold),\
+        (source_name=:antarctic_s0, comp_name=:antarctic_icesheet, param_name=:ais_sea_level\uc0\u8320 ), # DOUBLE CHECK\
+    ]\
+    \
+    for p in BRICK_uncertain_parameters\
+        rv_name = Symbol("rv_brick_$(p.source_name)")\
+        add_RV!(mcs, rv_name, SampleStore(BRICK_parameters[:,p.source_name]))\
+        add_transform!(mcs, p.comp_name, p.param_name, :(=), rv_name)\
+    end\
+\
+    # add Agriculture mcs over gtap region damage function parameterizations\
+    ag_sample_stores = MooreAg.get_probdists_gtap_df(trials)\
+    for coef in [1,2,3] # three coefficients defined with an anonymous dimension\
+        for (i, region) in enumerate(["USA","CAN","WEU","JPK","ANZ","EEU","FSU","MDE","CAM","LAM","SAS","SEA","CHI","MAF","SSA","SIS"]) # fund regions for ag\
+            rv_name = Symbol("rv_gtap_coef$(coef)_$region")\
+            add_RV!(mcs, rv_name, ag_sample_stores[i, coef])\
+            add_transform!(mcs, :Agriculture, :gtap_df, :(=), rv_name, [region, coef])\
+        end\
+    end\
+\
+    # add Cromar uncertainty based on coefficients from Cromar et al.\
+    cromar_coeffs       = load(joinpath(@__DIR__, "..", "data", "CromarMortality_damages_coefficients.csv")) |> DataFrame\
+    cromar_mapping_raw  = load(joinpath(@__DIR__, "..", "data", "Mapping_countries_to_cromar_mortality_regions.csv")) |> DataFrame\
+\
+    # Get one random variable per region\
+    for (i, region) in enumerate(cromar_coeffs[!, "Cromar Region Name"])\
+        rv_name = Symbol("rv_\uc0\u946 _mortality_$(region)")\
+        add_RV!(mcs, rv_name, Normal(cromar_coeffs[i, "Pooled Beta"], cromar_coeffs[i, "Pooled SE"]))\
+    end\
+\
+    # add one transform per country asigning each to the appropriate regional random variable\
+    for row in 1:size(cromar_mapping_raw, 1)\
+        rv_name = Symbol("rv_\uc0\u946 _mortality_$(cromar_mapping_raw.cromar_region[row])")\
+        add_transform!(mcs, :CromarMortality, :\uc0\u946 _mortality, :(=), rv_name, [cromar_mapping_raw.ISO3[row]])\
+    end\
+\
+    # add the FAIR random variables and transforms - note this could be done within\
+    # the @defsim macro but we can use the dictionary to make this less verbose\
+\
+    # Note that if a parameter component is not included in add_transform!, the \
+    # parameters are shared model parameters, and each line will create ONE random \
+    # variable and assign all component parameters connected to that shared model \
+    # parameter to the value taken on by that random variable\
+\
+    fair_samples_map, fair_samples = get_fair_mcs_params(trials; fair_parameter_set=fair_parameter_set, fair_parameter_set_ids=fair_parameter_set_ids)\
+    fair_samples_left = deepcopy(fair_samples) # we know we've added everything when this is empty!\
+\
+    # add and assign all random variables for single dimensional parameters\
+    for (k,v) in fair_samples_left\
+        if size(v, 2) == 1 # one column of values\
+            rv_name = Symbol("rv_$k")\
+            add_RV!(mcs, rv_name, SampleStore(fair_samples[k][!, 1]))\
+            add_transform!(mcs, k, :(=), rv_name)\
+            delete!(fair_samples_left, k)\
+        end\
+    end\
+\
+    # assign one random variable per year with a unique distribution from fair_samples\
+    # TODO handle dimensions - what years does F_solar include?  Assuming 1750 onwards for 361 years \
+    for year in 1750:2110\
+        rv_name = Symbol("rv_F_solar_$year")\
+        add_RV!(mcs, rv_name, SampleStore(fair_samples[:F_solar][!,string(year)]))\
+        add_transform!(mcs, :F_solar, :(=), rv_name, [year])\
+    end\
+    delete!(fair_samples_left, :F_solar)\
+\
+    # Radiative forcing scaling - one distribution per "other" greenhouse gas, and\
+    # one per ods\
+\
+    for gas in names(fair_samples[:scale_other_ghg])\
+        rv_name = Symbol("rv_scale_other_ghg_$(gas)")\
+        add_RV!(mcs, rv_name, SampleStore(fair_samples[:scale_other_ghg][!, gas]))\
+        add_transform!(mcs, :scale_other_ghg, :(=), rv_name, [gas])\
+    end\
+    delete!(fair_samples_left, :scale_other_ghg)\
+\
+    for ods in names(fair_samples[:scale_ods])\
+        rv_name = Symbol("rv_scale_ods_$(ods)")\
+        add_RV!(mcs, rv_name, SampleStore(fair_samples[:scale_ods][!, ods]))\
+        add_transform!(mcs, :scale_ods, :(=), rv_name, [ods])\
+    end\
+    delete!(fair_samples_left, :scale_ods)\
+\
+    # ocean_heat_capacity takes an anonymous dim of 2 (deep and mixed, should label \
+    # explicilty) - anonymouse dims are named with Ints 1 and 2\
+    rv_name = Symbol("rv_ocean_heat_capacity_1")\
+    add_RV!(mcs, rv_name, SampleStore(fair_samples[:ocean_heat_capacity][!, "1"]))\
+    add_transform!(mcs, :ocean_heat_capacity, :(=), rv_name, [1])\
+\
+    rv_name = Symbol("rv_ocean_heat_capacity_2")\
+    add_RV!(mcs, rv_name, SampleStore(fair_samples[:ocean_heat_capacity][!, "2"]))\
+    add_transform!(mcs, :ocean_heat_capacity, :(=), rv_name, [2])\
+\
+    delete!(fair_samples_left, :ocean_heat_capacity)\
+\
+    # check if we've added all FAIR parameters\
+    isempty(fair_samples_left) ? nothing : error("The following FAIR mcs uncertain parameters has not been added to the simulation: $(keys(fair_samples_left))")\
+    \
+    # add the requested saved variables \
+    for i in save_list\
+        add_save!(mcs, i)\
+    end\
+\
+    return mcs\
+end\
+\
+"""\
+    run_mcs(;trials::Int64 = 10000, \
+        output_dir::Union\{String, Nothing\} = nothing, \
+        save_trials::Bool = false,\
+        fair_parameter_set::Symbol = :random,\
+        fair_parameter_set_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+        rffsp_sampling::Symbol = :random,\
+        rffsp_sampling_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+        m::Mimi.Model = get_model(),\
+        results_in_memory::Bool = true,\
+    )\
+\
+Return the results of a Monte Carlo Simulation with the defined number of trials\
+and save data into the `output_dir` folder, optionally also saving trials if \
+`save_trials` is set to `true.` If no model is provided, use the default model \
+returned by get_model().\
+\
+- `trials` (required) - number of trials to be run, used for presampling\
+- `output_dir` (default constructed folder name) - folder to hold results \
+- `save_trials` (default false) - whether to save all random variables for all trials to trials.csv \
+- `fair_parameter_set_ids` - (default nothing) - if `fair_parameter_set` is set \
+to :deterministic, this `n` element vector provides the fair parameter set ids \
+that will be run, otherwise it is set to `nothing` and ignored.\
+- `rffsp_sampling` (default :random) - which sampling strategy to use for the RFF \
+SPs, :random means RFF SPs will be chosen randomly, while :deterministic means they \
+will be based on the provided vector of to `rffsp_sampling_ids` keyword argument. \
+- `rffsp_sampling_ids` - (default nothing) - if `rffsp_sampling` is set to :deterministic, \
+this `n` element vector provides the RFF SP ids that will be run, otherwise it is \
+set to `nothing` and ignored.\
+- `m` (default get_model()) - the model to run the simulation for\
+- `save_list` (default []) - which parameters and variables to save for each trial,\
+entered as a vector of Tuples (:component_name, :variable_name)\
+- `results_in_memory` (default true) - this should be turned off if you are running \
+into memory problems, data will be streamed out to disk but not saved in memory \
+to the mcs object\
+"""\
+function run_mcs(;trials::Int64 = 10000, \
+                    output_dir::Union\{String, Nothing\} = nothing, \
+                    save_trials::Bool = false,\
+                    fair_parameter_set::Symbol = :random,\
+                    fair_parameter_set_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+                    rffsp_sampling::Symbol = :random,\
+                    rffsp_sampling_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+                    m::Mimi.Model = get_model(), \
+                    save_list::Vector = [],\
+                    results_in_memory::Bool = true,\
+                )\
+\
+    m = deepcopy(m) # in the case that an `m` was provided, be careful that we don't modify the original\
+    \
+    trials < 2 && error("Must run `run_mcs` function with a `trials` argument greater than 1 due to a Mimi specification about SampleStores.  TO BE FIXED SOON!")\
+    \
+    # Set up output directories\
+    output_dir = output_dir === nothing ? joinpath(@__DIR__, "../output/mcs/", "MCS $(Dates.format(now(), "yyyy-mm-dd HH-MM-SS")) MC$trials") : output_dir\
+    isdir("$output_dir/results") || mkpath("$output_dir/results")\
+\
+    trials_output_filename = save_trials ?  joinpath("$output_dir/trials.csv") : nothing\
+\
+    # TODO could make this more elegant :)\
+    socioeconomics_module = _get_module_name(m, :Socioeconomic)\
+    if socioeconomics_module == :MimiSSPs\
+        socioeconomics_source = :SSP\
+    elseif socioeconomics_module == :MimiRFFSPs\
+        socioeconomics_source = :RFF\
+    end\
+\
+    # Get an instance of the mcs\
+    mcs = get_mcs(trials; \
+                    socioeconomics_source = socioeconomics_source, \
+                    mcs_years = Mimi.time_labels(m), \
+                    fair_parameter_set = fair_parameter_set, \
+                    fair_parameter_set_ids = fair_parameter_set_ids,\
+                    rffsp_sampling = rffsp_sampling,\
+                    rffsp_sampling_ids = rffsp_sampling_ids,\
+                    save_list = save_list,\
+                )\
+\
+    # run monte carlo trials\
+    results = run(mcs,\
+                    m, \
+                    trials; \
+                    trials_output_filename = trials_output_filename, \
+                    results_output_dir = "$output_dir/results", \
+                    results_in_memory = results_in_memory\
+                )\
+\
+    return results\
+end\
+\
+"""\
+    get_fair_mcs_params(n::Int; fair_parameter_set::Symbol = :random, fair_parameter_set_ids::Union\{Nothing, Vector\{Int\}\})\
+\
+Return the FAIR mcs parameters mapped from parameter name to string name, and a dictionary\
+using the parameter names as keys and a DataFrame holding the values as a value.\
+If fair_parameter_set is :random (default), then FAIR mcs samples will be chosen \
+randomly from the provided sets. If it set to :deterministic they will be the vector\
+provided by fair_parameter_set_ids.\
+"""\
+function get_fair_mcs_params(n::Int; fair_parameter_set::Symbol = :random, fair_parameter_set_ids::Union\{Nothing, Vector\{Int\}\})\
+\
+    # check some argument conditions\
+    if fair_parameter_set == :deterministic \
+        isnothing(fair_parameter_set_ids) && error("If `fair_parameter_set` is :determinsitic, must provide a `fair_parameter_set_ids` vector.")\
+        length(fair_parameter_set_ids) !== n && error("The length of the provided `fair_parameter_set_ids` vector must be equal to the number of trials ($n) run.")\
+        sum(fair_parameter_set_ids .> 2237) .> 0 || sum(fair_parameter_set_ids .< 1) > 0. && error("FAIR parameter set ids must be between 1 and 2237, inclusive.")\
+    end\
+\
+    names_map = get_fair_mcs_params_map()\
+    params_dict = Dict()\
+\
+    if fair_parameter_set == :deterministic\
+        samples = fair_parameter_set_ids\
+    elseif fair_parameter_set == :random\
+        samples = sample(collect(1:2237), n, replace=true) # randomly sample n sample sets of 2237 options, with replacement\
+    end\
+    \
+    for (k,v) in names_map\
+        values = load(joinpath(@__DIR__, "..", "data", "FAIR_mcs", "fair_mcs_params_$v.csv")) |> DataFrame # load the deterministic set of 2237 parameters\
+        push!(params_dict, k => values[samples,:])\
+    end\
+    return names_map, params_dict\
+\
+end\
+\
+"""\
+    get_fair_mcs_params_map()\
+\
+Return a dictionary of FAIR elements with the FAIR v1.6.2 parameter name being \
+the component, parameter pair and the value being the parameter csv name. \
+"""\
+function get_fair_mcs_params_map()\
+    return Dict(\
+        :\uc0\u946 _CO                          => "b_aero_CO",\
+        :scale_CH\uc0\u8324                      => "scale_CH4",\
+        :F_solar                       => "F_solar",\
+        :\uc0\u936 _CH\u8324                          => "b_tro3_CH4",\
+        :scale_N\uc0\u8322 O                     => "scale_N2O",\
+        :CO\uc0\u8322 _pi                        => "C_pi",\
+        :deep_ocean_efficacy           => "deep_ocean_efficacy",\
+        :scale_bcsnow                  => "scale_bcsnow",\
+        :scale_aerosol_direct_OC       => "scale_aerosol_direct_OC",\
+        :b_SOx                         => "ghan_params_SOx",\
+        :feedback                      => "ozone_feedback",\
+        :scale_O\uc0\u8323                       => "scale_O3",\
+        :b_POM                         => "ghan_params_b_POM",\
+        :r0_co2                        => "r0",\
+        :\uc0\u946 _NH3                         => "b_aero_NH3",\
+        :lambda_global                 => "lambda_global",\
+        :scale_landuse                 => "scale_landuse",\
+        :scale_volcanic                => "scale_volcanic",\
+        :scale_aerosol_direct_SOx      => "scale_aerosol_direct_SOx",\
+        :\uc0\u946 _NOx                         => "b_aero_NOx",\
+        :\uc0\u936 _N\u8322 O                         => "b_tro3_N2O",\
+        :ocean_heat_capacity           => "ocean_heat_capacity",\
+        :\uc0\u946 _OC                          => "b_aero_OC",\
+        :scale_solar                   => "scale_solar",\
+        :rC_co2                        => "rc",\
+        :scale_aerosol_direct_BC       => "scale_aerosol_direct_BC",\
+        :scale_CH\uc0\u8324 _H\u8322 O                 => "scale_CH4_H2O",\
+        :scale_aerosol_indirect        => "scale_aerosol_indirect",\
+        :scale_ods                     => "scale_ods",\
+        :\uc0\u936 _CO                          => "b_tro3_CO",\
+        :scale_aerosol_direct_NOx_NH3  => "scale_aerosol_direct_NOx_NH3",\
+        :scale_other_ghg               => "scale_other_ghg",\
+        :\uc0\u936 _NMVOC                       => "b_tro3_NMVOC",\
+        :F2x                           => "F2x",\
+        :\uc0\u946 _SOx                         => "b_aero_SOx",\
+        :\uc0\u946 _NMVOC                       => "b_aero_NMVOC",\
+        :rT_co2                        => "rt",\
+        :\uc0\u946 _BC                          => "b_aero_BC",\
+        :scale_CO\uc0\u8322                      => "scale_CO2",\
+        :\uc0\u936 _ODS                         => "b_tro3_ODS",\
+        :scale_aerosol_direct_CO_NMVOC => "scale_aerosol_direct_CO_NMVOC",\
+        :\uc0\u936 _NOx                         => "b_tro3_NOx",\
+        :ocean_heat_exchange           => "ocean_heat_exchange",\
+        :
+\f1 \uc0\u981 
+\f0                              => "ghan_params_Pi"\
+    )\
+end\
+\
+using Mimi, CSVFiles, DataFrames, Query, StatsBase, XLSX, Interpolations, DelimitedFiles, Distributions\
+\
+function get_ciam(m_give::Mimi.Model)\
+    \
+    # --------------------------------------------------------------------------\
+    # Model Parameters\
+\
+    # load the list of countries to use for CIAM, these are CIAM countries intersected\
+    # with available CIAM components\
+    ciam_countries  = (load(joinpath(@__DIR__, "..", "data", "Dimension_ciam_countries.csv")) |> @select(:CountryISO) |> DataFrame |> Matrix)[:]\
+    countries = Mimi.dim_keys(m_give, :country)\
+    segments = Mimi.dim_keys(m_give, :segments)\
+\
+    # get segment fingerprint information\
+    segment_fingerprints = load(joinpath(@__DIR__, "../data/CIAM/segment_fingerprints.csv"))  |>\
+        DataFrame |>\
+        @filter(_.rgn in ciam_countries) |> # only the segments in the coastal countries we are using\
+        DataFrame\
+    segments != segment_fingerprints.segments && error("The segments in segment_fingerprints key need to match the segments in m_give.")\
+\
+    # time parameters\
+    tstep = 10 # this is assumed within the slrcost component -- DO NOT CHANGE\
+    period_length = 50\
+    start_year = 2020\
+    end_year = 2300\
+    times = start_year:tstep:end_year\
+    adaptPers = convert.(Int64, indexin(unique([start_year, start_year:period_length:end_year..., end_year]), times))\
+\
+    # --------------------------------------------------------------------------\
+    # Model Construction\
+\
+    m = Model()\
+    set_dimension!(m, :time, length(times))\
+    set_dimension!(m, :ciam_country, ciam_countries) # countries used in CIAM that overlap with socioeconomics \
+    set_dimension!(m, :segments, segments) # segments in the ciam_countries\
+    set_dimension!(m, :adaptPers, length(adaptPers))\
+    \
+    # Add CIAM components\
+    add_comp!(m, MimiCIAM.slrcost)\
+\
+    # --------------------------------------------------------------------------\
+    # The Rest of the Parameters\
+    \
+    rgns, segs, ciam_params = get_ciam_params(;first = start_year, tstep = tstep, last = end_year, \
+                    adaptation_firsts = adaptPers, ciam_countries = ciam_countries,\
+                    xsc_params_path = joinpath(@__DIR__,"..","data","CIAM", "xsc_ciam_countries.csv")\
+                    )\
+    \
+	# Check Dimensions\
+    Mimi.dim_keys(m, :ciam_country) != rgns && error("The countries in xsc key need to match the segments in m_give.")\
+    Mimi.dim_keys(m, :segments) != segs && error("The segments in xsc key need to match the segments in m_give.")\
+\
+    for (k,v) in ciam_params\
+        # these are parameters we don't need to set, the correct one for the run\
+        # is held in "surgeexposure"\
+        if !(k in ["surgeexposure_dc-gtsr", "surgeexposure_gtsr"]) \
+            update_param!(m, :slrcost, Symbol(k), v) \
+        end\
+    end\
+\
+    # Set dummy variables\
+\
+    update_param!(m, :slrcost, :lslr, zeros(length(times), length(segments))) # local sea level rise in meters\
+    update_param!(m, :slrcost, :pop, zeros(length(times), length(ciam_countries))) # population in millions\
+    update_param!(m, :slrcost, :ypcc, zeros(length(times), length(ciam_countries))) # ypcc in USD in $2010/yr/person\
+    update_param!(m, :slrcost, :vsl_ciam_country, zeros(length(times), length(ciam_countries)))\
+\
+    return m, segment_fingerprints\
+end\
+ \
+function update_ciam!(m, m_give, segment_fingerprints)\
+    # time parameters\
+    tstep = 10 # this is assumed within the slrcost component -- DO NOT CHANGE\
+    start_year = 2020\
+    end_year = 2300\
+    normalization_year = 2000 # normalize sea level rise to 2000\
+    times = start_year:tstep:end_year\
+\
+    # --------------------------------------------------------------------------\
+    # Parameters from GIVE Model m_give\
+\
+    # Indices from GIVE Model m_give to slrcost\
+    m_give_years = Mimi.dim_keys(m_give, :time)\
+    time_idxs = convert.(Int64, indexin(start_year:tstep:end_year, m_give_years))\
+    idx_2000 = findfirst(i -> i == normalization_year, m_give_years)\
+    country_idxs = convert.(Int64, indexin(Mimi.dim_keys(m, :ciam_country), Mimi.dim_keys(m_give, :country)))\
+\
+    segments = Mimi.dim_keys(m, :segments)\
+\
+	# Downscale GMSL to LSL for CIAM segemnts\
+    lslr = zeros(length(times), length(segments))\
+    for i in 1:length(times)\
+        lslr[i,:] = segment_fingerprints.fpGSIC_loc .*  (m_give[:glaciers_small_icecaps, :gsic_sea_level][time_idxs][i] .-  m_give[:glaciers_small_icecaps, :gsic_sea_level][idx_2000]) +\
+                    segment_fingerprints.fpGIS_loc  .*  (m_give[:greenland_icesheet, :greenland_sea_level][time_idxs][i] .-  m_give[:greenland_icesheet, :greenland_sea_level][idx_2000])+\
+                    segment_fingerprints.fpAIS_loc  .*  (m_give[:antarctic_icesheet, :ais_sea_level][time_idxs][i] .-  m_give[:antarctic_icesheet, :ais_sea_level][idx_2000])+\
+                    segment_fingerprints.fpTE_loc   .*  (m_give[:thermal_expansion, :te_sea_level][time_idxs][i] .-  m_give[:thermal_expansion, :te_sea_level][idx_2000])+\
+                    segment_fingerprints.fpLWS_loc  .*  (m_give[:landwater_storage, :lws_sea_level][time_idxs][i] .-  m_give[:landwater_storage, :lws_sea_level][idx_2000])\
+    end\
+\
+    update_param!(m, :slrcost, :lslr, lslr) # local sea level rise in meters\
+\
+    # Socioeconomics\
+    #   (1) select the ciam countries from the full set of countries \
+    #   (2) convert GDP and Population into Per Capita GDP (2010\\$ USD per year) \
+    #   per capita) for the slrcost component\
+    #   (3) get the VSL for each CIAM country\
+    \
+    population  = m_give[:Socioeconomic, :population][time_idxs,country_idxs] # millions \
+    gdp         = m_give[:Socioeconomic, :gdp][time_idxs,country_idxs] .* 1/pricelevel_2010_to_2005 # billion US $2005/yr -> billion US $2010/yr\
+    ypcc        = gdp ./ population .* 1000 # USD $2010/yr/person\
+\
+    update_param!(m, :slrcost, :pop, population) # population in millions\
+    update_param!(m, :slrcost, :ypcc, ypcc) # ypcc in USD in $2010/yr/person\
+\
+    # Calculate the VSL\
+    \uc0\u945        = m_give[:VSL, :\u945 ]   # VSL scaling parameter.\
+    \uc0\u1013        = m_give[:VSL, :\u1013 ]   # Income elasticity of the value of a statistical life.\
+    y\uc0\u8320       = m_give[:VSL, :y\u8320 ]  # Normalization constant.\
+    # mirror the VSL component which follows the FUND mortality equation:  v.vsl[t,c] = p.\uc0\u945  * (p.pc_gdp[t,c] / p.y\u8320 ) ^ p.\u1013 \
+    # component expects vsl in millions of US $2010 dollars\
+    vsl_ciam_country = (\uc0\u945  * (ypcc ./ y\u8320 ) .^  \u1013 ) ./ 1e6\
+    update_param!(m, :slrcost, :vsl_ciam_country, vsl_ciam_country)\
+end\
+\
+function compute_PerfectForesight_OptimalCosts_typestable(protect_cost, retreat_cost, no_adapt_cost, ntsteps, nsegments)\
+    # These are the decision options, each is a permutation of choice and level,\
+    # that we will allow. Note we ignore ProtectCost0 and RetreatCost0, with idxs \
+    # 4 and 5 respectively, because we use allowMaintain = false.\
+    decision_options = [(label = :ProtectCost10, choice = :ProtectCost, level = 10, idx = 1),\
+                        (label = :ProtectCost100, choice = :ProtectCost, level = 100, idx = 2),\
+                        (label = :ProtectCost1000, choice = :ProtectCost, level = 1000, idx = 3),\
+                        (label = :ProtectCost10000, choice = :ProtectCost, level = 10000, idx = 4),\
+                        (label = :RetreatCost1, choice = :RetreatCost, level = 1, idx = 1),\
+                        (label = :RetreatCost10, choice = :RetreatCost, level = 10, idx = 2),\
+                        (label = :RetreatCost100, choice = :RetreatCost, level = 100, idx = 3),\
+                        (label = :RetreatCost1000, choice = :RetreatCost, level = 1000, idx = 4),\
+                        (label = :RetreatCost10000, choice = :RetreatCost, level = 10000, idx = 5),\
+                        (label = :NoAdaptCost0, choice = :NoAdaptCost, level = 1, idx = 1)\
+                    ]\
+    noptions = length(decision_options)\
+\
+    # this will hold the optimal costs for each segment after considering Perfect Foresight\
+    optimal_costs = Array\{Float64\}(undef, ntsteps, nsegments) \
+\
+    # Preallocate this array and reuse for each segment\
+    npv = Vector\{Float64\}(undef, noptions)\
+\
+    # Precompute discount factor\
+    df = [(1.04)^((1-t)*10) for t in 1:ntsteps]\
+\
+    # loop over segments finding the optimal decision for each in light of perfect foresight\
+    # NPV and filling in the optimal costs with the undiscounted costs for that decision\
+    for segment in 1:nsegments\
+        npv[1:4] .= (sum(protect_cost[t,segment,level] * df[t] * 10 for t in 1:ntsteps) for level in 1:4) # remove the Maintain level (allowMaintain = false for these runs) which is index 5\
+        npv[5:9] .= (sum(retreat_cost[t,segment,level] * df[t] * 10 for t in 1:ntsteps) for level in 1:5) # remove the Maintain level (allowMaintain = false for these runs) which is index 6\
+        npv[10]  = sum(no_adapt_cost[t,segment] * df[t] * 10 for t in 1:ntsteps)\
+\
+        optimal_decision = decision_options[findmin(npv)[2]]\
+        if optimal_decision.choice == :ProtectCost\
+            optimal_costs[:, segment] .= view(protect_cost, :, segment, optimal_decision.idx)\
+        elseif optimal_decision.choice == :RetreatCost\
+            optimal_costs[:, segment] .= view(retreat_cost, :, segment, optimal_decision.idx)\
+        elseif optimal_decision.choice == :NoAdaptCost\
+            optimal_costs[:, segment] .= view(no_adapt_cost, :, segment, optimal_decision.idx)\
+        else\
+            error("Unknown option.")\
+        end\
+    end\
+    \
+    return optimal_costs\
+end\
+\
+# NPV foresight correction\
+# This correction accounts for the fact that the new version of CIAM considers NPV \
+# over the current adaptation period (50 years), whereas the previous \
+# GAMS version assumes NPV is known across the entire model time horizon (2000-2100, \
+# for example).\
+function compute_PerfectForesight_OptimalCosts(m::Mimi.ModelInstance)\
+    ntsteps = length(Mimi.dim_keys(m, :time))\
+    nsegments = length(Mimi.dim_keys(m, :segments))\
+\
+    optimal_costs = compute_PerfectForesight_OptimalCosts_typestable(\
+        m[:slrcost, :ProtectCost],\
+        m[:slrcost, :RetreatCost],\
+        m[:slrcost, :NoAdaptCost],\
+        ntsteps,\
+        nsegments,\
+    )\
+\
+    return optimal_costs\
+end\
+\
+using Dates, CSVFiles, DataFrames\
+\
+const _model_years = collect(1750:2300)\
+const _damages_years = collect(2020:2300)\
+const _damages_idxs = indexin(_damages_years, _model_years)\
+\
+const scc_gas_molecular_conversions = Dict(:CO2 => 12/44, # C to CO2\
+                                            :N2O => 28/44, # N2 to N2O,\
+                                            :CH4 => 1., # CH4 to CH4\
+                                            :HFC23 => 1., # HFC23 to HFC23\
+                                            :HFC32 => 1., # HFC32 to HFC32\
+                                            :HFC43_10 => 1., # HFC43_10 to HFC43_10\
+                                            :HFC125 => 1., # HFC125 to HFC125\
+                                            :HFC134a => 1., # HFC134a to HFC134a\
+                                            :HFC143a => 1., # HFC143a to HFC143a\
+                                            :HFC227ea => 1., # HFC227ea to HFC227ea\
+                                            :HFC245fa => 1.) # HFC245fa to HFC245fa\
+\
+const scc_gas_pulse_size_conversions = Dict(:CO2 => 1e9, # Gt to t\
+                                        :N2O => 1e6, # Mt to t\
+                                        :CH4 => 1e6, # Mt to t\
+                                        :HFC23 => 1e3, # kt to t\
+                                        :HFC32 => 1e3, # kt to t\
+                                        :HFC43_10 => 1e3, # kt to t\
+                                        :HFC125 => 1e3, # kt to t\
+                                        :HFC134a => 1e3, # kt to t\
+                                        :HFC143a => 1e3, # kt to t\
+                                        :HFC227ea => 1e3, # kt to t\
+                                        :HFC245fa => 1e3) # kt to t\
+"""\
+    compute_scc(m::Model=get_model(); \
+            year::Union\{Int, Nothing\} = nothing,\
+            last_year::Int = _model_years[end],\
+            prtp::Union\{Float64,Nothing\} = 0.015,\
+            eta::Union\{Float64,Nothing\}=1.45,\
+            discount_rates=nothing,\
+            certainty_equivalent=false,\
+            fair_parameter_set::Symbol = :random,\
+            fair_parameter_set_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+            rffsp_sampling::Symbol = :random,\
+            rffsp_sampling_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+            n=0,\
+            gas::Symbol = :CO2,\
+            save_list::Vector = [],\
+            output_dir::Union\{String, Nothing\} = nothing,\
+            save_md::Bool = false,\
+            save_cpc::Bool = false,\
+            save_slr_damages::Bool = false,\
+            compute_sectoral_values::Bool = false,\
+            compute_domestic_values::Bool = false,\
+            CIAM_foresight::Symbol = :perfect,\
+            CIAM_GDPcap::Bool = false,\
+            post_mcs_creation_function=nothing,\
+            pulse_size::Float64=1.\
+        )\
+\
+Compute the SC of a gas for the GIVE in USD \\$2005\
+\
+- `m` (default get_model()) - If no model is provided, the default model from MimiGIVE.get_model() is used. \
+- `prtp` (default 0.015) and `eta` (1.45) - Ramsey discounting parameterization\
+- `discount_rates` (default nothing) - a vector of Named Tuples ie. [(prpt = 0.03., eta = 1.45), (prtp = 0.015, eta = 1.45)] - required if running n > 1\
+- `certainty_equivalent` (default false) - whether to compute the certainty equivalent or expected SCC\
+- `fair_parameter_set` (default :random) - :random means FAIR mcs samples will be \
+chosen randomly from the provided sets, while :deterministic means they will be \
+based on the provided vector of to `fair_parameter_set_ids` keyword argument. \
+- `fair_parameter_set_ids` - (default nothing) - if `fair_parameter_set` is set \
+to :deterministic, this `n` element vector provides the fair parameter set ids \
+that will be run, otherwise it is set to `nothing` and ignored.\
+- `rffsp_sampling` (default :random) - which sampling strategy to use for the RFF \
+SPs, :random means RFF SPs will be chosen randomly, while :deterministic means they \
+will be based on the provided vector of to `rffsp_sampling_ids` keyword argument. \
+- `rffsp_sampling_ids` - (default nothing) - if `rffsp_sampling` is set to :deterministic, \
+this `n` element vector provides the RFF SP ids that will be run, otherwise it is \
+set to `nothing` and ignored.\
+- `n` (default 0) - If `n` is 0, the deterministic version will be run, otherwise, a monte carlo simulation will be run. \
+- `gas` (default :CO2) - the gas for which to compute the SC, options are :CO2, :CH4, and :N2O. \
+- `save_list` (default []) - which parameters and varaibles to save for each trial,\
+entered as a vector of Tuples (:component_name, :variable_name)\
+- `output_dir` (default constructed folder name) - folder to hold results \
+- `save_md` (default is false) - save and return the marginal damages from a monte carlo simulation\
+- `save_cpc` (default is false) - save and return the per capita consumption from a monte carlo simulation\
+- `save_slr_damages`(default is false) - save global sea level rise damages from CIAM to disk\
+- `compute_sectoral_values` (default is false) - compute and return sectoral values as well as total\
+- `compute_domestic_values` (default is false) - compute and return domestic values in addition to global\
+- CIAM_foresight(default is :perfect) - Use limited foresight (:limited) or perfect foresight (:perfect) for MimiCIAM cost calculations\
+- CIAM_GDPcap (default is false) - Limit SLR damages to country-level annual GDP\
+- `pulse_size` (default 1.) - This determines the size of the additional pulse of emissions. Default of `1.` implies the standard pulse size \
+of 1Gt of C for CO2, 1Mt of CH4, and 1Mt of N2O. \
+\
+"""\
+function compute_scc(m::Model=get_model(); \
+            year::Union\{Int, Nothing\} = nothing, \
+            last_year::Int = _model_years[end], \
+            prtp::Union\{Float64,Nothing\} = 0.015, \
+            eta::Union\{Float64,Nothing\}=1.45,\
+            discount_rates=nothing,\
+            certainty_equivalent=false,\
+            fair_parameter_set::Symbol = :random,\
+            fair_parameter_set_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+            rffsp_sampling::Symbol = :random,\
+            rffsp_sampling_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+            n=0,\
+            gas::Symbol = :CO2,\
+            save_list::Vector = [],\
+            output_dir::Union\{String, Nothing\} = nothing,\
+            save_md::Bool = false,\
+            save_cpc::Bool = false,\
+            save_slr_damages::Bool = false,\
+            compute_sectoral_values::Bool = false,\
+            compute_domestic_values::Bool = false,\
+            CIAM_foresight::Symbol = :perfect,\
+            CIAM_GDPcap::Bool = false,\
+            post_mcs_creation_function=nothing,\
+            pulse_size::Float64=1.\
+        )\
+\
+    hfc_list = [:HFC23, :HFC32, :HFC43_10, :HFC125, :HFC134a, :HFC143a, :HFC227ea, :HFC245fa]\
+    gases_list = [:CO2, :CH4, :N2O, hfc_list ...]\
+\
+    m = deepcopy(m) # in the case that an `m` was provided, be careful that we don't modify the original\
+\
+    year === nothing ? error("Must specify an emission year. Try `compute_scc(m, year=2020)`.") : nothing\
+    !(last_year in _model_years) ? error("Invalid value of $last_year for last_year. last_year must be within the model's time index $_model_years.") : nothing\
+    !(year in _model_years) ? error("Cannot compute the scc for year $year, year must be within the model's time index $_model_years.") : nothing\
+    !(gas in gases_list) ? error("Invalid value of $gas for gas, gas must be one of $(gases_list).") : nothing\
+    n>0 && certainty_equivalent && !save_cpc && error("certainty_equivalent=true also requires save_cpc=true")\
+    \
+    mm = get_marginal_model(m; year = year, gas = gas, pulse_size = pulse_size)\
+\
+    if n==0\
+        return _compute_scc(mm, \
+                            year=year, \
+                            last_year=last_year, \
+                            prtp=prtp, \
+                            eta=eta, \
+                            discount_rates=discount_rates, \
+                            gas=gas, domestic=compute_domestic_values, \
+                            CIAM_foresight=CIAM_foresight,\
+                            CIAM_GDPcap=CIAM_GDPcap,\
+                            pulse_size=pulse_size\
+                        )\
+    else\
+        isnothing(discount_rates) ? error("To run the Monte Carlo compute_scc function (n != 0), please use the `discount_rates` argument.") : nothing\
+        \
+        # Set up output directories\
+        output_dir = output_dir === nothing ? joinpath(@__DIR__, "../output/mcs-SC/", "MCS $(Dates.format(now(), "yyyy-mm-dd HH-MM-SS")) MC$n") : output_dir\
+        isdir("$output_dir/results") || mkpath("$output_dir/results")\
+\
+        return _compute_scc_mcs(mm, \
+                                n, \
+                                year=year, \
+                                last_year=last_year, \
+                                discount_rates=discount_rates, \
+                                certainty_equivalent=certainty_equivalent,\
+                                fair_parameter_set = fair_parameter_set,\
+                                fair_parameter_set_ids = fair_parameter_set_ids,\
+                                rffsp_sampling = rffsp_sampling,\
+                                rffsp_sampling_ids = rffsp_sampling_ids,\
+                                gas = gas, \
+                                save_list = save_list, \
+                                output_dir = output_dir,\
+                                save_md = save_md,\
+                                save_cpc = save_cpc,\
+                                save_slr_damages = save_slr_damages,\
+                                compute_sectoral_values = compute_sectoral_values,\
+                                compute_domestic_values = compute_domestic_values,\
+                                CIAM_foresight = CIAM_foresight,\
+                                CIAM_GDPcap = CIAM_GDPcap,\
+                                post_mcs_creation_function = post_mcs_creation_function,\
+                                pulse_size=pulse_size\
+                            )\
+    end\
+end\
+\
+# helper function for computing SCC from a MarginalModel, not to be exported or advertised to users\
+function _compute_scc(mm::MarginalModel; \
+                        year::Int, \
+                        last_year::Int, \
+                        prtp, \
+                        eta, \
+                        discount_rates, \
+                        gas::Symbol,\
+                        domestic::Bool,\
+                        CIAM_foresight::Symbol,\
+                        CIAM_GDPcap::Bool,\
+                        pulse_size::Float64\
+                    )\
+                    \
+    # Run all model years even if taking a shorter last_year - running unnecessary \
+    # timesteps but simplifies accumulation             \
+    run(mm)\
+\
+    # at this point create identical copies ciam_base and ciam_modified, they will \
+    # be updated in _compute_ciam_marginal_damages with update_ciam!\
+    ciam_base, segment_fingerprints = get_ciam(mm.base)\
+    ciam_modified, _ = get_ciam(mm.base) \
+\
+    ciam_base = Mimi.build(ciam_base)\
+    ciam_modified = Mimi.build(ciam_modified)\
+\
+    # Units Note:\
+    #   main_marginal_damages: the marginal model will handle pulse size, we handle molecular mass conversion explicilty\
+    #   ciam_marginal_damages: within the _compute_ciam_marginal_damages function we handle both pulse size and molecular mass\
+    if domestic\
+        main_marginal_damages = mm[:DamageAggregator, :total_damage_domestic] .* scc_gas_molecular_conversions[gas] \
+        ciam_marginal_damages = mm.base[:DamageAggregator, :include_slr] ? _compute_ciam_marginal_damages(mm.base, mm.modified, gas, ciam_base, ciam_modified, segment_fingerprints; CIAM_foresight=CIAM_foresight, CIAM_GDPcap=CIAM_GDPcap,  pulse_size=pulse_size).domestic : fill(0., length(_model_years)) \
+    else\
+        main_marginal_damages = mm[:DamageAggregator, :total_damage] .* scc_gas_molecular_conversions[gas] \
+        ciam_marginal_damages = mm.base[:DamageAggregator, :include_slr] ? _compute_ciam_marginal_damages(mm.base, mm.modified, gas, ciam_base, ciam_modified, segment_fingerprints; CIAM_foresight=CIAM_foresight, CIAM_GDPcap=CIAM_GDPcap, pulse_size=pulse_size).globe : fill(0., length(_model_years)) \
+    end\
+\
+    marginal_damages = main_marginal_damages .+ ciam_marginal_damages\
+    \
+    # We don't care about units here because we are only going to use ratios\
+    cpc = mm.base[:global_netconsumption, :net_cpc]\
+\
+    year_index = findfirst(isequal(year), _model_years)\
+    last_year_index = findfirst(isequal(last_year), _model_years)\
+\
+    if discount_rates!==nothing\
+        sccs = Dict\{NamedTuple\{(:dr_label, :prtp,:eta),Tuple\{Any, Float64,Float64\}\}, Float64\}()\
+\
+        for dr in discount_rates\
+            df = [((cpc[year_index]/cpc[i])^dr.eta * 1/(1+dr.prtp)^(t-year) for (i,t) in enumerate(_model_years) if year<=t<=last_year)...]\
+            scc = sum(df .* marginal_damages[year_index:last_year_index])\
+\
+            sccs[(dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)] = scc\
+        end\
+\
+        return sccs\
+    else\
+        df = [((cpc[year_index]/cpc[i])^eta * 1/(1+prtp)^(t-year) for (i,t) in enumerate(_model_years) if year<=t<=last_year)...]\
+        scc = sum(df .* marginal_damages[year_index:last_year_index])\
+\
+        return scc\
+    end\
+end\
+\
+function post_trial_func(mcs::SimulationInstance, trialnum::Int, ntimesteps::Int, tup)\
+\
+    # Unpack the payload object \
+    scc_values, intermediate_ce_scc_values, md_values, cpc_values, slr_damages, year, last_year, discount_rates, gas, ciam_base, ciam_modified, segment_fingerprints, options = Mimi.payload2(mcs)\
+\
+    # Compute some useful indices\
+    year_index = findfirst(isequal(year), _model_years)\
+    last_year_index = findfirst(isequal(last_year), _model_years)\
+\
+    # Access the models\
+    base, marginal = mcs.models \
+    damages_base = base[:DamageAggregator, :total_damage]\
+    damages_marginal = marginal[:DamageAggregator, :total_damage]\
+\
+    if options.compute_domestic_values\
+        damages_base_domestic = base[:DamageAggregator, :total_damage_domestic]\
+        damages_marginal_domestic = marginal[:DamageAggregator, :total_damage_domestic]\
+    end\
+\
+    # Compute marginal damages\
+    # Units Note:\
+    #   main_mds and non-ciam sectoral damages: we explicitly need to handle both pulse size and molecular mass so we use gas_units_multiplier\
+    #   slr_mds: within the _compute_ciam_marginal_damages function we handle both pulse size and molecular mass\
+    gas_units_multiplier = scc_gas_molecular_conversions[gas] ./ (scc_gas_pulse_size_conversions[gas] .* options.pulse_size)\
+    include_slr = base[:DamageAggregator, :include_slr]\
+\
+    if include_slr\
+        ciam_mds = _compute_ciam_marginal_damages(base, marginal, gas, ciam_base, ciam_modified, segment_fingerprints; CIAM_foresight=options.CIAM_foresight, CIAM_GDPcap=options.CIAM_GDPcap, pulse_size=options.pulse_size) # NamedTuple with globe and domestic\
+        # zero out the CIAM marginal damages from start year (2020) through emissions\
+        # year - they will be non-zero due to foresight but saved marginal damages\
+        # should be zeroed out pre-emissions year\
+        ciam_mds.globe[1:year_index] .= 0.\
+        ciam_mds.domestic[1:year_index] .= 0.\
+    end\
+\
+    main_mds = (damages_marginal .- damages_base) .* gas_units_multiplier\
+    slr_mds = include_slr ? ciam_mds.globe : fill(0., length(_model_years))\
+    total_mds = main_mds .+ slr_mds\
+\
+    if options.compute_domestic_values\
+        main_mds_domestic = (damages_marginal_domestic .- damages_base_domestic) .* gas_units_multiplier\
+        slr_mds_domestic = include_slr ? ciam_mds.domestic : fill(0., length(_model_years))\
+        total_mds_domestic = main_mds_domestic .+ slr_mds_domestic\
+    end\
+\
+    if options.compute_sectoral_values\
+        cromar_mortality_mds    = (marginal[:DamageAggregator, :cromar_mortality_damage] .- base[:DamageAggregator, :cromar_mortality_damage]) .* gas_units_multiplier\
+        agriculture_mds         = (marginal[:DamageAggregator, :agriculture_damage] .- base[:DamageAggregator, :agriculture_damage]) .* gas_units_multiplier\
+        energy_mds              = (marginal[:DamageAggregator, :energy_damage] .- base[:DamageAggregator, :energy_damage]) .* gas_units_multiplier \
+    \
+        if options.compute_domestic_values\
+            cromar_mortality_mds_domestic    = (marginal[:DamageAggregator, :cromar_mortality_damage_domestic] .- base[:DamageAggregator, :cromar_mortality_damage_domestic]) .* gas_units_multiplier\
+            agriculture_mds_domestic         = (marginal[:DamageAggregator, :agriculture_damage_domestic] .- base[:DamageAggregator, :agriculture_damage_domestic]) .* gas_units_multiplier\
+            energy_mds_domestic              = (marginal[:DamageAggregator, :energy_damage_domestic] .- base[:DamageAggregator, :energy_damage_domestic]) .* gas_units_multiplier \
+        end\
+    end\
+\
+    # Save marginal damages\
+    if options.save_md\
+\
+        # global\
+        md_values[(region=:globe, sector=:total)][trialnum, :] = total_mds[_damages_idxs]\
+        if options.compute_sectoral_values\
+            md_values[(region=:globe, sector=:cromar_mortality)][trialnum, :]   = cromar_mortality_mds[_damages_idxs]\
+            md_values[(region=:globe, sector=:agriculture)][trialnum, :]        = agriculture_mds[_damages_idxs]\
+            md_values[(region=:globe, sector=:energy)][trialnum, :]             = energy_mds[_damages_idxs]\
+            md_values[(region=:globe, sector=:slr)][trialnum, :]                = slr_mds[_damages_idxs]\
+        end\
+\
+        # domestic\
+        if options.compute_domestic_values\
+            md_values[(region=:domestic, sector=:total)][trialnum, :] = total_mds_domestic[_damages_idxs]\
+            if options.compute_sectoral_values\
+                md_values[(region=:domestic, sector=:cromar_mortality)][trialnum, :]   = cromar_mortality_mds_domestic[_damages_idxs]\
+                md_values[(region=:domestic, sector=:agriculture)][trialnum, :]        = agriculture_mds_domestic[_damages_idxs]\
+                md_values[(region=:domestic, sector=:energy)][trialnum, :]             = energy_mds_domestic[_damages_idxs]\
+                md_values[(region=:domestic, sector=:slr)][trialnum, :]                = slr_mds_domestic[_damages_idxs]\
+            end\
+        end\
+    end\
+\
+    # Save slr damages\
+    if options.save_slr_damages\
+\
+        # get a dummy ciam model to be sure to accurately assign segment names to \
+        # segment level damages\
+        m = MimiGIVE.get_model()\
+        m_ciam, ~ = MimiGIVE.get_ciam(m)\
+\
+        if include_slr\
+\
+            # global\
+            slr_damages[:base][trialnum,:] = ciam_mds.damages_base[_damages_idxs]\
+            slr_damages[:modified][trialnum,:] = ciam_mds.damages_modified[_damages_idxs]\
+            slr_damages[:base_lim_cnt][trialnum,:,:] = ciam_mds.base_lim_cnt\
+            slr_damages[:modified_lim_cnt][trialnum,:,:] = ciam_mds.modified_lim_cnt\
+            slr_damages[:base_segments_2100][trialnum, :] = ciam_mds.damages_base_segments_2100\
+\
+            # domestic - these Dictionary entries will only exist if we are computing\
+            # domestic values\
+            if options.compute_domestic_values\
+                slr_damages[:base_domestic][trialnum,:] = ciam_mds.damages_base_domestic[_damages_idxs]\
+                slr_damages[:modified_domestic][trialnum,:] = ciam_mds.damages_modified_domestic[_damages_idxs]\
+            end\
+\
+        else\
+\
+            # global\
+            slr_damages[:base][trialnum,:] .= 0.\
+            slr_damages[:modified][trialnum,:] .= 0.\
+            slr_damages[:base_lim_cnt][trialnum,:,:] .= 0.\
+            slr_damages[:modified_lim_cnt][trialnum,:,:] .= 0.\
+            slr_damages[:base_segments_2100][trialnum, :] .= 0.\
+\
+            # domestic - these Dictionary entries will only exist if we are computing\
+            # domestic values\
+            if options.compute_domestic_values\
+                slr_damages[:base_domestic][trialnum,:] .= 0.\
+                slr_damages[:modified_domestic][trialnum,:] .= 0.\
+            end\
+        end\
+    end\
+\
+    # Get per capita consumption\
+    # We don't care about units here because we are only going to use ratios\
+    cpc = base[:global_netconsumption, :net_cpc]\
+    \
+    # Save per capita consumption\
+    if options.save_cpc\
+        cpc_values[(region=:globe, sector=:total)][trialnum, :] = cpc[_damages_idxs]\
+    end\
+\
+    # Calculate the SCC for each discount rate\
+    for dr in discount_rates\
+        df = [((cpc[year_index]/cpc[i])^dr.eta * 1/(1+dr.prtp)^(t-year) for (i,t) in enumerate(_model_years) if year<=t<=last_year)...]\
+        if options.certainty_equivalent\
+            df_ce = [((1. / cpc[i])^dr.eta * 1/(1+dr.prtp)^(t-year) for (i,t) in enumerate(_model_years) if year<=t<=last_year)...] # only used if optionas.certainty_equivalent=true\
+        end\
+\
+        # totals (sector=:total)\
+        scc = sum(df .* total_mds[year_index:last_year_index])\
+        scc_values[(region=:globe, sector=:total, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+        if options.certainty_equivalent\
+            intermediate_ce_scc = sum(df_ce .* total_mds[year_index:last_year_index])\
+            intermediate_ce_scc_values[(region=:globe, sector=:total, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+        end\
+\
+        # domestic totals (sector=:total)\
+        if options.compute_domestic_values\
+            scc = sum(df .* total_mds_domestic[year_index:last_year_index])\
+            scc_values[(region=:domestic, sector=:total, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+\
+            if options.certainty_equivalent\
+                intermediate_ce_scc = sum(df_ce .* total_mds_domestic[year_index:last_year_index])\
+                intermediate_ce_scc_values[(region=:domestic, sector=:total, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+            end\
+        end\
+\
+        # sectoral\
+        if options.compute_sectoral_values\
+            scc = sum(df .* cromar_mortality_mds[year_index:last_year_index])\
+            scc_values[(region=:globe, sector=:cromar_mortality, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+\
+            scc = sum(df .* agriculture_mds[year_index:last_year_index])\
+            scc_values[(region=:globe, sector=:agriculture, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+\
+            scc = sum(df .* energy_mds[year_index:last_year_index])\
+            scc_values[(region=:globe, sector=:energy, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+\
+            scc = sum(df .* slr_mds[year_index:last_year_index])\
+            scc_values[(region=:globe, sector=:slr, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+\
+            if options.certainty_equivalent\
+                intermediate_ce_scc = sum(df_ce .* cromar_mortality_mds[year_index:last_year_index])\
+                intermediate_ce_scc_values[(region=:globe, sector=:cromar_mortality, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+    \
+                intermediate_ce_scc = sum(df_ce .* agriculture_mds[year_index:last_year_index])\
+                intermediate_ce_scc_values[(region=:globe, sector=:agriculture, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+    \
+                intermediate_ce_scc = sum(df_ce .* energy_mds[year_index:last_year_index])\
+                intermediate_ce_scc_values[(region=:globe, sector=:energy, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+    \
+                intermediate_ce_scc = sum(df_ce .* slr_mds[year_index:last_year_index])\
+                intermediate_ce_scc_values[(region=:globe, sector=:slr, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc    \
+            end\
+\
+            # sectoral domestic (region=:domestic)\
+            if options.compute_domestic_values\
+\
+                scc = sum(df .* cromar_mortality_mds_domestic[year_index:last_year_index])\
+                scc_values[(region=:domestic, sector= :cromar_mortality, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+    \
+                scc = sum(df .* agriculture_mds_domestic[year_index:last_year_index])\
+                scc_values[(region=:domestic, sector= :agriculture, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+    \
+                scc = sum(df .* energy_mds_domestic[year_index:last_year_index])\
+                scc_values[(region=:domestic, sector= :energy, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+    \
+                scc = sum(df .* slr_mds_domestic[year_index:last_year_index])\
+                scc_values[(region=:domestic, sector= :slr, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = scc\
+    \
+                if options.certainty_equivalent\
+                    intermediate_ce_scc = sum(df_ce .* cromar_mortality_mds_domestic[year_index:last_year_index])\
+                    intermediate_ce_scc_values[(region=:domestic, sector= :cromar_mortality, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+        \
+                    intermediate_ce_scc = sum(df_ce .* agriculture_mds_domestic[year_index:last_year_index])\
+                    intermediate_ce_scc_values[(region=:domestic, sector= :agriculture, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+        \
+                    intermediate_ce_scc = sum(df_ce .* energy_mds_domestic[year_index:last_year_index])\
+                    intermediate_ce_scc_values[(region=:domestic, sector= :energy, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc\
+        \
+                    intermediate_ce_scc = sum(df_ce .* slr_mds_domestic[year_index:last_year_index])\
+                    intermediate_ce_scc_values[(region=:domestic, sector= :slr, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta)][trialnum] = intermediate_ce_scc    \
+                end\
+            end\
+        end\
+    end\
+end\
+\
+function _compute_scc_mcs(mm::MarginalModel, \
+                            n; \
+                            year::Int, \
+                            last_year::Int, \
+                            discount_rates, \
+                            certainty_equivalent::Bool,\
+                            fair_parameter_set::Symbol = :random,\
+                            fair_parameter_set_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+                            rffsp_sampling::Symbol = :random,\
+                            rffsp_sampling_ids::Union\{Vector\{Int\}, Nothing\} = nothing,\
+                            gas::Symbol, \
+                            save_list::Vector, \
+                            output_dir::String,\
+                            save_md::Bool,\
+                            save_cpc::Bool,\
+                            save_slr_damages::Bool,\
+                            compute_sectoral_values::Bool,\
+                            compute_domestic_values::Bool,\
+                            CIAM_foresight::Symbol,\
+                            CIAM_GDPcap::Bool,\
+                            post_mcs_creation_function,\
+                            pulse_size::Float64\
+                        )\
+                        \
+    models = [mm.base, mm.modified]\
+\
+    socioeconomics_module = _get_module_name(mm.base, :Socioeconomic)\
+    if socioeconomics_module == :MimiSSPs\
+        socioeconomics_source = :SSP\
+    elseif socioeconomics_module == :MimiRFFSPs\
+        socioeconomics_source = :RFF\
+    end\
+\
+    mcs = get_mcs(n; \
+                    socioeconomics_source=socioeconomics_source, \
+                    mcs_years = _model_years, \
+                    fair_parameter_set = fair_parameter_set,\
+                    fair_parameter_set_ids = fair_parameter_set_ids,\
+                    rffsp_sampling = rffsp_sampling,\
+                    rffsp_sampling_ids = rffsp_sampling_ids,\
+                    save_list = save_list\
+                )\
+    \
+    if post_mcs_creation_function!==nothing\
+        post_mcs_creation_function(mcs)\
+    end\
+\
+    regions = compute_domestic_values ? [:globe, :domestic] : [:globe]\
+    sectors = compute_sectoral_values ? [:total,  :cromar_mortality, :agriculture, :energy, :slr] : [:total]\
+\
+    scc_values = Dict((region=r, sector=s, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta) => Vector\{Float64\}(undef, n) for dr in discount_rates, r in regions, s in sectors)\
+    intermediate_ce_scc_values = certainty_equivalent ? Dict((region=r, sector=s, dr_label=dr.label, prtp=dr.prtp, eta=dr.eta) => Vector\{Float64\}(undef, n) for dr in discount_rates, r in regions, s in sectors) : nothing\
+    md_values = save_md ? Dict((region=r, sector=s) => Array\{Float64\}(undef, n, length(_damages_years)) for r in regions, s in sectors) : nothing\
+    cpc_values = save_cpc ? Dict((region=r, sector=s) => Array\{Float64\}(undef, n, length(_damages_years)) for r in [:globe], s in [:total]) : nothing # just global and total for now\
+    \
+    if save_slr_damages\
+\
+        # global\
+        slr_damages = Dict(\
+            :base               => Array\{Float64\}(undef, n, length(_damages_years)),\
+            :modified           => Array\{Float64\}(undef, n, length(_damages_years)),\
+            :base_lim_cnt       => Array\{Float64\}(undef, n, length(_damages_years), 145), # 145 CIAM countries\
+            :modified_lim_cnt   => Array\{Float64\}(undef, n, length(_damages_years), 145), # 145 CIAM countries\
+            :base_segments_2100 => Array\{Float64\}(undef, n, 11835) # 11,835 segments\
+        )\
+\
+        # domestic\
+        # optionally add arrays to hold the domestic base and modified damages\
+        if compute_domestic_values\
+            slr_damages[:base_domestic] = Array\{Float64\}(undef, n, length(_damages_years))\
+            slr_damages[:modified_domestic] = Array\{Float64\}(undef, n, length(_damages_years))\
+        end\
+    else\
+        slr_damages = nothing\
+    end\
+\
+    ciam_base, segment_fingerprints = get_ciam(mm.base)\
+    ciam_modified, _ = get_ciam(mm.base)\
+\
+    ciam_base = Mimi.build(ciam_base)\
+    ciam_modified = Mimi.build(ciam_modified)\
+\
+    # set some computation options\
+    options = (\
+                compute_sectoral_values=compute_sectoral_values, \
+                compute_domestic_values=compute_domestic_values,\
+                save_md=save_md,\
+                save_cpc=save_cpc,\
+                save_slr_damages=save_slr_damages,\
+                CIAM_foresight=CIAM_foresight,\
+                CIAM_GDPcap=CIAM_GDPcap,\
+                certainty_equivalent=certainty_equivalent,\
+                pulse_size=pulse_size\
+            )\
+\
+    payload = [scc_values, intermediate_ce_scc_values, md_values, cpc_values, slr_damages, year, last_year, discount_rates, gas, ciam_base, ciam_modified, segment_fingerprints, options]\
+\
+    Mimi.set_payload2!(mcs, payload)\
+\
+    # Run all model years even if taking a shorter last_year - running unnecessary \
+    # timesteps but simplifies accumulation     \
+    sim_results = run(mcs, \
+                        models, \
+                        n, \
+                        post_trial_func = post_trial_func,\
+                        results_in_memory = false,\
+                        results_output_dir = "$output_dir/results"\
+                    )\
+\
+    # unpack the payload object\
+    scc_values, intermediate_ce_scc_values, md_values, cpc_values, slr_damages, year, last_year, discount_rates, gas, ciam_base, ciam_modified, segment_fingerprints, options = Mimi.payload2(sim_results)\
+    \
+    # Write out the slr damages to disk in the same place that variables from the save_list would be written out\
+    if save_slr_damages\
+        isdir("$output_dir/results/model_1") || mkpath("$output_dir/results/model_1")\
+        isdir("$output_dir/results/model_2") || mkpath("$output_dir/results/model_2")\
+\
+        # global \
+        df = DataFrame(slr_damages[:base], :auto) |> \
+            i -> rename!(i, Symbol.(_damages_years)) |> \
+            i -> insertcols!(i, 1, :trial => 1:n) |> \
+            i -> stack(i, Not(:trial)) |>\
+            i -> rename!(i, [:trial, :time, :slr_damages]) |>\
+            save("$output_dir/results/model_1/slr_damages.csv")\
+\
+        df = DataFrame(slr_damages[:modified], :auto) |> \
+            i -> rename!(i, Symbol.(_damages_years)) |> \
+            i -> insertcols!(i, 1, :trial => 1:n) |> \
+            i -> stack(i, Not(:trial)) |>\
+            i -> rename!(i, [:trial, :time, :slr_damages]) |>\
+            save("$output_dir/results/model_2/slr_damages.csv")\
+\
+        segments = Symbol.(dim_keys(ciam_base, :segments))\
+        df = DataFrame(slr_damages[:base_segments_2100], :auto) |> \
+            i -> rename!(i, segments) |>\
+            i -> insertcols!(i, 1, :trial => 1:n) |> \
+            i -> stack(i, Not(:trial)) |>\
+            i -> rename!(i, [:trial, :segment, :slr_damages_2100]) |>\
+            save("$output_dir/results/model_1/slr_damages_2100_by_segment.csv")\
+            \
+        # domestic \
+        if compute_domestic_values\
+                df = DataFrame(slr_damages[:base_domestic], :auto) |> \
+                    i -> rename!(i, Symbol.(_damages_years)) |> \
+                    i -> insertcols!(i, 1, :trial => 1:n) |> \
+                    i -> stack(i, Not(:trial)) |>\
+                    i -> rename!(i, [:trial, :time, :slr_damages_domestic]) |>\
+                    save("$output_dir/results/model_1/slr_damages_domestic.csv")\
+\
+                df = DataFrame(slr_damages[:modified_domestic], :auto) |> \
+                    i -> rename!(i, Symbol.(_damages_years)) |> \
+                    i -> insertcols!(i, 1, :trial => 1:n) |> \
+                    i -> stack(i, Not(:trial)) |>\
+                    i -> rename!(i, [:trial, :time, :slr_damages_domestic]) |>\
+                    save("$output_dir/results/model_2/slr_damages_domestic.csv")\
+        end\
+\
+        ciam_country_names = Symbol.(dim_keys(ciam_base, :ciam_country))\
+\
+        ciam_country_names = Symbol.(dim_keys(ciam_base, :ciam_country))\
+        df = DataFrame(:trial => [], :time => [], :country => [], :capped_flag => [])\
+        for trial in 1:n # loop over trials\
+            trial_df = DataFrame(slr_damages[:base_lim_cnt][trial,:,:], :auto) |>\
+                i -> rename!(i, ciam_country_names) |>\
+                i -> insertcols!(i, 1, :time => _damages_years) |> \
+                i -> stack(i, Not(:time)) |>\
+                i -> insertcols!(i, 1, :trial => fill(trial, length(_damages_years) * 145)) |>\
+                i -> rename!(i, [:trial, :time, :country, :capped_flag]) |>\
+                i -> @filter(i, _.capped_flag == 1) |>\
+                DataFrame\
+            append!(df, trial_df)\
+        end\
+        df |> save("$output_dir/results/slr_damages_base_lim_counts.csv")\
+\
+        df = DataFrame(:trial => [], :time => [], :country => [], :capped_flag => [])\
+        ciam_country_names = Symbol.(dim_keys(ciam_base, :ciam_country))\
+        for trial in 1:n # loop over trials\
+            trial_df = DataFrame(slr_damages[:modified_lim_cnt][trial,:,:], :auto) |>\
+                i -> rename!(i, ciam_country_names) |>\
+                i -> insertcols!(i, 1, :time => _damages_years) |> \
+                i -> stack(i, Not(:time)) |>\
+                i -> insertcols!(i, 1, :trial => fill(trial, length(_damages_years) * 145)) |>\
+                i -> rename!(i, [:trial, :time, :country, :capped_flag]) |>\
+                i -> @filter(i, _.capped_flag == 1) |>\
+                DataFrame\
+            append!(df, trial_df)\
+        end\
+        df |> save("$output_dir/results/slr_damages_modified_lim_counts.csv")\
+    end\
+\
+    expected_mu_in_year_of_emission = Dict()\
+\
+    if certainty_equivalent\
+        year_index = findfirst(isequal(year), _damages_years)\
+        # In this case the normalization from utils to $ hasn't happened in the post trial function\
+        # and instead we now do this here, based on expected per capita consumption in the year\
+        # of the marginal emission pulse\
+        cpc_in_year_of_emission = view(cpc_values[(region=:globe, sector=:total)], :, year_index)\
+        \
+        for k in keys(scc_values)\
+            expected_mu_in_year_of_emission[k] = mean(1 ./ (cpc_in_year_of_emission .^ k.eta))\
+        end    \
+    end\
+\
+    # Construct the returned result object\
+    result = Dict()\
+\
+    # add an :scc dictionary, where key value pairs (k,v) are NamedTuples with keys(prtp, eta, region, sector) => values are 281 element vectors (2020:2300)\
+    result[:scc] = Dict()\
+    for (k,v) in scc_values\
+        if certainty_equivalent\
+            result[:scc][k] = (\
+                expected_scc = mean(v),\
+                se_expected_scc = std(v) / sqrt(n),\
+                ce_scc = mean(intermediate_ce_scc_values[k]) ./ expected_mu_in_year_of_emission[k],\
+                ce_sccs= intermediate_ce_scc_values[k] ./ expected_mu_in_year_of_emission[k],\
+                sccs = v,                \
+            )\
+        else\
+            result[:scc][k] = (\
+                expected_scc = mean(v),\
+                se_expected_scc = std(v) / sqrt(n),\
+                sccs = v\
+            )\
+        end\
+    end\
+\
+    # add a :mds dictionary, where key value pairs (k,v) are NamedTuples with keys(region, sector) => values are (n x 281 (2020:2300)) matrices\
+    if save_md\
+        result[:mds] = Dict()\
+        for (k,v) in md_values\
+            result[:mds][k] = v\
+        end\
+    end\
+\
+    # add a :cpc dictionary, where key value pairs (k,v) are NamedTuples with keys(region, sector) => values are (n x 281 (2020:2300)) matrices\
+    if save_cpc\
+        result[:cpc] = Dict()\
+        for (k,v) in cpc_values\
+            result[:cpc][k] = v\
+        end\
+    end\
+\
+    return result\
+end\
+\
+function _compute_ciam_marginal_damages(base, modified, gas, ciam_base, ciam_modified, segment_fingerprints; CIAM_foresight, CIAM_GDPcap, pulse_size)\
+    update_ciam!(ciam_base, base, segment_fingerprints)\
+    update_ciam!(ciam_modified, modified, segment_fingerprints)\
+\
+    run(ciam_base)\
+    run(ciam_modified)\
+\
+    # Adjust to use perfect foresight if CIAM_foresight == :perfect\
+    if CIAM_foresight == :perfect\
+        OptimalCost_base = compute_PerfectForesight_OptimalCosts(ciam_base)\
+        OptimalCost_modified = compute_PerfectForesight_OptimalCosts(ciam_modified)\
+    elseif CIAM_foresight == :limited\
+        OptimalCost_base = ciam_base[:slrcost, :OptimalCost]\
+        OptimalCost_modified = ciam_modified[:slrcost, :OptimalCost]\
+    else\
+        error("CIAM_foresight must be either :limited or :perfect.")\
+    end\
+\
+    # Aggregate to Country-Level Damages\
+    \
+    # Obtain a key mapping segment ids to ciam country ids, both of which\
+    # line up with the orders of dim_keys of ciam_base\
+    xsc = ciam_base[:slrcost, :xsc]::Dict\{Int, Tuple\{Int, Int, Int\}\} \
+    ciam_country_mapping = DataFrame(:segment_id => collect(keys(xsc)), :ciam_country_id => first.(collect(values(xsc))))\
+    \
+    num_ciam_countries = length(dim_keys(ciam_base, :ciam_country))\
+\
+    OptimalCost_base_country = Array\{Float64\}(undef, length(_damages_years), num_ciam_countries)\
+    OptimalCost_modified_country = Array\{Float64\}(undef, length(_damages_years), num_ciam_countries)\
+\
+    for country in 1:num_ciam_countries # 145 consecutive Region IDs mapping to the 145 countries in ciam_base dimension ciam_country\
+\
+        rows = [findall(i -> i == country, ciam_country_mapping.ciam_country_id)...] # rows of the mapping DataFrame that have this ciam country\
+        matching_segment_ids = [ciam_country_mapping.segment_id[rows]...] # the actual segment IDs that map to this ciam country\
+\
+        base_damages = sum(view(OptimalCost_base, :, matching_segment_ids), dims=2)\
+        OptimalCost_base_country[:, country] = [repeat(base_damages[1:end-1], inner=10); base_damages[end]] # repeat to annual from decadal\
+\
+        modified_damages = sum(view(OptimalCost_modified, :, matching_segment_ids), dims=2)\
+        OptimalCost_modified_country[:, country] = [repeat(modified_damages[1:end-1], inner=10); modified_damages[end]] # repeat to annual from decadal\
+    end\
+\
+    # Limit Country-Level Sea Level Rise Damages to Country-Level GDP\
+\
+    if CIAM_GDPcap\
+        # Obtain annual country-level GDP, select 2020:2300 and CIAM countries, convert from $2005 to $2010 to match CIAM\
+        gdp = base[:Socioeconomic, :gdp][_damages_idxs, indexin(dim_keys(ciam_base, :ciam_country), dim_keys(base, :country))] .* 1 / pricelevel_2010_to_2005\
+\
+        base_lim_cnt = Int64.(OptimalCost_base_country .> gdp)\
+        modified_lim_cnt = Int64.(OptimalCost_modified_country .> gdp)\
+\
+        OptimalCost_base_country = min.(OptimalCost_base_country, gdp)\
+        OptimalCost_modified_country = min.(OptimalCost_modified_country, gdp)\
+    else\
+        base_lim_cnt = fill(0., length(_damages_years), num_ciam_countries)\
+        modified_lim_cnt = fill(0., length(_damages_years), num_ciam_countries)\
+    end\
+\
+    # domestic\
+    damages_base_domestic = vec(sum(OptimalCost_base_country[:,138],dims=2)) .* pricelevel_2010_to_2005 # Unit of CIAM is billion USD $2010, convert to billion USD $2005\
+    damages_modified_domestic = vec(sum(OptimalCost_modified_country[:,138],dims=2)) .* pricelevel_2010_to_2005 # Unit of CIAM is billion USD $2010, convert to billion USD $2005\
+\
+    damages_marginal_domestic = (damages_modified_domestic .- damages_base_domestic) .* scc_gas_molecular_conversions[gas] ./ (scc_gas_pulse_size_conversions[gas] .* pulse_size) # adjust for the (1) molecular mass and (2) pulse size\
+    damages_marginal_domestic = damages_marginal_domestic .* 1e9  # Unit at this point is billion USD $2005, we convert to just USD here\
+    \
+    # global\
+    damages_base = vec(sum(OptimalCost_base_country,dims=2)) .* pricelevel_2010_to_2005 # Unit of CIAM is billion USD $2010, convert to billion USD $2005\
+    damages_modified = vec(sum(OptimalCost_modified_country,dims=2)) .* pricelevel_2010_to_2005 # Unit of CIAM is billion USD $2010, convert to billion USD $2005\
+\
+    damages_marginal = (damages_modified .- damages_base) .* scc_gas_molecular_conversions[gas] ./ (scc_gas_pulse_size_conversions[gas] .* pulse_size) # adjust for the (1) molecular mass and (2) pulse size\
+    damages_marginal = damages_marginal .* 1e9 # Unit at this point is billion USD $2005, we convert to just USD here\
+\
+    # CIAM starts in 2020 so pad with zeros at the beginning\
+    return (globe               = [fill(0., 2020 - _model_years[1]); damages_marginal], # billion USD $2005\
+            domestic            = [fill(0., 2020 - _model_years[1]); damages_marginal_domestic], # billion USD $2005\
+            damages_base        = [fill(0., 2020 - _model_years[1]); damages_base], # billion USD $2005\
+            damages_modified    = [fill(0., 2020 - _model_years[1]); damages_modified], # billion USD $2005\
+            damages_base_domestic       = [fill(0., 2020 - _model_years[1]); damages_base_domestic], # billion USD $2005\
+            damages_modified_domestic = [fill(0., 2020 - _model_years[1]); damages_modified_domestic], # billion USD $2005\
+            base_lim_cnt        = base_lim_cnt, # 2020:2300 x countries\
+            modified_lim_cnt    = modified_lim_cnt, # 2020:2300 x countries\
+            damages_base_segments_2100   = OptimalCost_base[9, :] .* pricelevel_2010_to_2005 # billion USD $2005, 2100 is index 9 in 2020:10:2300, this is uncapped segment-level baseline damages in 2100\
+    )\
+end\
+\
+"""\
+    get_marginal_model(m::Model; year::Union\{Int, Nothing\} = nothing, gas::Symbol, pulse_size::Float64)\
+\
+Creates a Mimi MarginalModel where the provided m is the base model, and the marginal model has additional emissions in year `year`.\
+The marginal model will have an additional `pulse_size` of emissions in the specified `year` for gas `gas`, which will be in \
+units of GtC for CO2, MtN2 for N2O, and MtCH4 for CH4. If no Model m is provided, the default model from MimiGIVE.get_model() \
+is used as the base model.\
+"""\
+function get_marginal_model(m::Model; year::Union\{Int, Nothing\} = nothing, gas::Symbol, pulse_size::Float64)\
+    year === nothing ? error("Must specify an emission year. Try `get_marginal_model(m, year=2020)`.") : nothing\
+    !(year in _model_years) ? error("Cannot add marginal emissions in $year, year must be within the model's time index $_model_years.") : nothing\
+\
+    # note here that the pulse size will be used as the `delta` parameter for \
+    # the `MarginalModel` and thus allow computation of the SCC to return units of\
+    # dollars per ton, as long as `pulse_size` is interpreted as baseline units\
+    # of the given gas, which is units of GtC for CO2, MtN2 for N2O, and MtCH4 for CH4.\
+    mm = create_marginal_model(m, scc_gas_pulse_size_conversions[gas])\
+    add_marginal_emissions!(mm.modified, year, gas, pulse_size)\
+\
+    return mm\
+\
+end\
+\
+"""\
+    add_marginal_emissions!(m::Model, year::Int, gas::Symbol, pulse_size::Float64)\
+\
+Adds a marginal emission component to year m which adds the pulse_size of additional emissions in the specified `year` for gas `gas`, \
+which will be in units of GtC for CO2, MtN2 for N2O, and MtCH4 for CH4.\
+"""\
+function add_marginal_emissions!(m::Model, year::Int, gas::Symbol, pulse_size::Float64) \
+\
+    time = Mimi.dim_keys(m, :time)\
+    pulse_year_index = findfirst(i -> i == year, time)\
+\
+    hfc_list = [:HFC23, :HFC32, :HFC43_10, :HFC125, :HFC134a, :HFC143a, :HFC227ea, :HFC245fa]\
+\
+    if gas == :CO2\
+\
+        add_comp!(m, Mimi.adder, :marginalemission, before=:co2_cycle)\
+\
+        addem = zeros(length(time))\
+        addem[pulse_year_index] = pulse_size     # GtC in this year\
+\
+        set_param!(m, :marginalemission, :add, addem)\
+\
+        connect_param!(m, :marginalemission => :input, :co2_emissions_identity => :output_co2)\
+        connect_param!(m, :co2_cycle => :E_co2, :marginalemission => :output)\
+\
+    elseif gas == :CH4\
+\
+        add_comp!(m, Mimi.adder, :marginalemission, before=:ch4_cycle)\
+\
+        addem = zeros(length(time))\
+        addem[pulse_year_index] = pulse_size     # MtCH4 in this year\
+\
+        set_param!(m, :marginalemission, :add, addem)\
+\
+        connect_param!(m, :marginalemission => :input, :ch4_emissions_identity => :output_ch4)\
+        connect_param!(m, :ch4_cycle => :fossil_emiss_CH\uc0\u8324 , :marginalemission => :output)\
+\
+    elseif gas == :N2O\
+        \
+        add_comp!(m, Mimi.adder, :marginalemission, before=:n2o_cycle)\
+\
+        addem = zeros(length(time))\
+        addem[pulse_year_index] = pulse_size     # MtN2 in this year\
+\
+        set_param!(m, :marginalemission, :add, addem)\
+\
+        connect_param!(m, :marginalemission => :input, :n2o_emissions_identity => :output_n2o)\
+        connect_param!(m, :n2o_cycle => :fossil_emiss_N\uc0\u8322 O, :marginalemission => :output)\
+\
+    elseif gas in hfc_list\
+\
+        # get gas index\
+        other_ghg_gases = Mimi.dim_keys(m, :other_ghg)\
+        gas_index = findfirst(i -> i == gas, Symbol.(other_ghg_gases))\
+\
+        # perturb hfc emissions\
+\
+        # For now this will return :emiss_other_ghg because it is treated as a \
+        # shared parameter in MimiFAIRv1_6_2, and thus also in this model, but this\
+        # line keeps us robust if it becomes an unshared parameter.\
+        model_param_name = Mimi.get_model_param_name(m, :other_ghg_cycles, :emiss_other_ghg)\
+\
+        # Obtain the base emissions values from the model - the following line \
+        # allows us to do so without running the model. If we had run the model\
+        # we can use deepcopy(m[:other_ghg_cycles, :emiss_other_ghg])\
+        new_emissions = deepcopy(Mimi.model_param(m, model_param_name).values.data)\
+\
+        # update emissions parameter with a pulse\
+        new_emissions[pulse_year_index, gas_index] +=  1.0 # add 1 kt hfc\
+        update_param!(m, :emiss_other_ghg, new_emissions)\
+        \
+    else\
+        error("Gas `" + gas + "` is not supported.")\
+    end\
+end\
+\
+end\
+\
+\
+\
+}

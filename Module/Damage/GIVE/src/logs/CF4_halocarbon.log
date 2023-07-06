@@ -1,0 +1,1297 @@
+Tue Mar 21 15:37:28 2023:NOTICE:printLogHeader: hector version 2.5.0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting tau[-1]=50000.0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting rho[-1]=0.00008
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting H0[-1]=35.0,pptv
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1765]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1766]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1767]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1768]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1769]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1770]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1771]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1772]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1773]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1774]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1775]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1776]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1777]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1778]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1779]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1780]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1781]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1782]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1783]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1784]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1785]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1786]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1787]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1788]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1789]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1790]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1791]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1792]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1793]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1794]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1795]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1796]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1797]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1798]=0.010070485
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1799]=0.010071964
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1800]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1801]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1802]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1803]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1804]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1805]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1806]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1807]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1808]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1809]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1810]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1811]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1812]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1813]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1814]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1815]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1816]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1817]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1818]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1819]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1820]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1821]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1822]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1823]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1824]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1825]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1826]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1827]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1828]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1829]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1830]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1831]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1832]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1833]=0.010070485
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1834]=0.010071964
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1835]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1836]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1837]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1838]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1839]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1840]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1841]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1842]=0.010070485
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1843]=0.010071964
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1844]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1845]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1846]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1847]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1848]=0.010070485
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1849]=0.010071964
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1850]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1851]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1852]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1853]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1854]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1855]=0.010070485
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1856]=0.010071964
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1857]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1858]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1859]=0.010071225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1860]=0.010810676
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1861]=0.010810691
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1862]=0.010071254
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1863]=0.010071254
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1864]=0.010071254
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1865]=0.010810706
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1866]=0.01081072
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1867]=0.010070544
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1868]=0.010072023
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1869]=0.010810735
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1870]=0.01081075
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1871]=0.010071314
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1872]=0.010810765
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1873]=0.01081078
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1874]=0.010810794
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1875]=0.010810809
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1876]=0.010810824
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1877]=0.010810839
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1878]=0.010810853
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1879]=0.010810868
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1880]=0.010810144
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1881]=0.011551088
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1882]=0.011550379
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1883]=0.010810957
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1884]=0.010810972
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1885]=0.011550438
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1886]=0.011550467
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1887]=0.011550497
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1888]=0.011550526
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1889]=0.011550556
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1890]=0.011550586
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1891]=0.011550615
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1892]=0.011550645
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1893]=0.012290126
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1894]=0.01229017
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1895]=0.011550763
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1896]=0.012290244
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1897]=0.012290288
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1898]=0.012290333
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1899]=0.012290377
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1900]=0.028558348
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1901]=0.047784449
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1902]=0.050743008
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1903]=0.05591998
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1904]=0.068491568
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1905]=0.087718467
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1906]=0.11138246
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1907]=0.10398923
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1908]=0.12765503
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1909]=0.21121463
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1910]=0.24301505
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1911]=0.27037941
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1912]=0.31844894
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1913]=0.33694139
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1914]=0.36726542
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1915]=0.47153519
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1916]=0.58467971
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1917]=0.61870744
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1918]=0.58914082
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1919]=0.57214502
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1920]=0.41169313
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1921]=0.32444592
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1922]=0.56921203
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1923]=0.77479139
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1924]=0.82730698
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1925]=0.86947278
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1926]=0.96266008
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1927]=1.1076116
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1928]=1.2252077
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1929]=1.2037865
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1930]=0.99750344
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1931]=0.6766021
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1932]=0.51911084
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1933]=0.61081444
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1934]=0.91252255
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1935]=1.3303298
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1936]=1.7570203
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1937]=2.1186454
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1938]=2.4891541
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1939]=2.745053
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1940]=3.2190952
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1941]=4.2240743
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1942]=5.585489
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1943]=5.4576739
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1944]=2.9606569
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1945]=1.5076942
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1946]=2.0726649
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1947]=2.6369074
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1948]=2.6243892
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1949]=2.5926444
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1950]=2.8441101
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1951]=3.0430784
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1952]=3.2228257
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1953]=3.3863087
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1954]=3.4048632
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1955]=3.3346824
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1956]=3.0796375
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1957]=2.8571248
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1958]=2.9954591
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1959]=3.2476716
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1960]=3.3209398
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1961]=3.4304351
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1962]=3.6249821
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1963]=3.9881367
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1964]=4.4326257
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1965]=4.9089192
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1966]=5.6248074
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1967]=6.3547572
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1968]=7.3324415
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1969]=8.4831718
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1970]=9.5318801
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1971]=10.711494
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1972]=12.24311
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1973]=14.085332
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1974]=14.311146
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1975]=14.321042
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1976]=16.011714
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1977]=16.762577
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1978]=16.898235
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1979]=17.898313
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1980]=17.664267
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1981]=16.187192
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1982]=15.97381
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1983]=16.384525
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1984]=14.927399
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1985]=13.863624
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1986]=14.595216
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1987]=15.122737
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1988]=15.295333
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1989]=15.212081
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1990]=14.407865
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1991]=12.924815
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1992]=11.907588
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1993]=11.381334
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1994]=11.006658
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1995]=10.682998
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1996]=10.505743
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1997]=10.417958
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1998]=10.335348
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[1999]=10.216505
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2000]=9.9231457
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2001]=10.593275
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2002]=11.982167
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2003]=12.579882
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2004]=12.194883
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2005]=11.060838
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2006]=10.21735
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2007]=9.3272415
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2008]=9.0353429
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2009]=9.6854874
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2010]=10.48947
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2011]=11.056837
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2012]=9.6609456
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2013]=8.3027436
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2014]=9.8735
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2015]=10.8699
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2016]=10.8519602
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2017]=10.8340204
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2018]=10.8160806
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2019]=10.7981408
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2020]=10.780201
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2021]=10.775021
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2022]=10.769841
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2023]=10.764661
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2024]=10.759481
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2025]=10.754301
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2026]=10.749121
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2027]=10.743941
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2028]=10.738761
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2029]=10.733581
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2030]=10.728401
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2031]=10.6700816
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2032]=10.6117622
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2033]=10.5534428
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2034]=10.4951234
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2035]=10.436804
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2036]=10.3784846
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2037]=10.3201652
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2038]=10.2618458
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2039]=10.2035264
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2040]=10.145207
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2041]=10.0768476
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2042]=10.0084882
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2043]=9.9401288
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2044]=9.8717694
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2045]=9.80341
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2046]=9.7350506
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2047]=9.6666912
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2048]=9.5983318
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2049]=9.5299724
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2050]=9.461613
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2051]=9.27408472
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2052]=9.08655644
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2053]=8.89902816
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2054]=8.71149988
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2055]=8.5239716
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2056]=8.33644332
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2057]=8.14891504
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2058]=7.96138676
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2059]=7.77385848
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2060]=7.5863302
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2061]=7.4556114
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2062]=7.3248926
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2063]=7.1941738
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2064]=7.063455
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2065]=6.9327362
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2066]=6.8020174
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2067]=6.6712986
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2068]=6.5405798
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2069]=6.409861
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2070]=6.2791422
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2071]=6.0402344
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2072]=5.8013266
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2073]=5.5624188
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2074]=5.323511
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2075]=5.0846032
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2076]=4.8456954
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2077]=4.6067876
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2078]=4.3678798
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2079]=4.128972
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2080]=3.8900642
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2081]=3.84606461
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2082]=3.80206502
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2083]=3.75806543
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2084]=3.71406584
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2085]=3.67006625
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2086]=3.62606666
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2087]=3.58206707
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2088]=3.53806748
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2089]=3.49406789
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2090]=3.4500683
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2091]=3.42947849
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2092]=3.40888868
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2093]=3.38829887
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2094]=3.36770906
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2095]=3.34711925
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2096]=3.32652944
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2097]=3.30593963
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2098]=3.28534982
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2099]=3.26476001
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2100]=3.2441702
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2101]=3.222542399
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2102]=3.200914597
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2103]=3.179286796
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2104]=3.157658995
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2105]=3.136031193
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2106]=3.114403392
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2107]=3.092775591
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2108]=3.071147789
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2109]=3.049519988
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2110]=3.027892187
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2111]=3.006264385
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2112]=2.984636584
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2113]=2.963008783
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2114]=2.941380981
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2115]=2.91975318
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2116]=2.898125379
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2117]=2.876497577
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2118]=2.854869776
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2119]=2.833241975
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2120]=2.811614173
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2121]=2.789986372
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2122]=2.768358571
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2123]=2.746730769
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2124]=2.725102968
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2125]=2.703475167
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2126]=2.681847365
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2127]=2.660219564
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2128]=2.638591763
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2129]=2.616963961
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2130]=2.59533616
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2131]=2.573708359
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2132]=2.552080557
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2133]=2.530452756
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2134]=2.508824955
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2135]=2.487197153
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2136]=2.465569352
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2137]=2.443941551
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2138]=2.422313749
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2139]=2.400685948
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2140]=2.379058147
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2141]=2.357430345
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2142]=2.335802544
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2143]=2.314174743
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2144]=2.292546941
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2145]=2.27091914
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2146]=2.249291339
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2147]=2.227663537
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2148]=2.206035736
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2149]=2.184407935
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2150]=2.162780133
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2151]=2.141152332
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2152]=2.119524531
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2153]=2.097896729
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2154]=2.076268928
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2155]=2.054641127
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2156]=2.033013325
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2157]=2.011385524
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2158]=1.989757723
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2159]=1.968129921
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2160]=1.94650212
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2161]=1.924874319
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2162]=1.903246517
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2163]=1.881618716
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2164]=1.859990915
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2165]=1.838363113
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2166]=1.816735312
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2167]=1.795107511
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2168]=1.773479709
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2169]=1.751851908
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2170]=1.730224107
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2171]=1.708596305
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2172]=1.686968504
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2173]=1.665340703
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2174]=1.643712901
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2175]=1.6220851
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2176]=1.600457299
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2177]=1.578829497
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2178]=1.557201696
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2179]=1.535573895
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2180]=1.513946093
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2181]=1.492318292
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2182]=1.470690491
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2183]=1.449062689
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2184]=1.427434888
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2185]=1.405807087
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2186]=1.384179285
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2187]=1.362551484
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2188]=1.340923683
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2189]=1.319295881
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2190]=1.29766808
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2191]=1.276040279
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2192]=1.254412477
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2193]=1.232784676
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2194]=1.211156875
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2195]=1.189529073
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2196]=1.167901272
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2197]=1.146273471
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2198]=1.124645669
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2199]=1.103017868
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2200]=1.081390067
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2201]=1.059762265
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2202]=1.038134464
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2203]=1.016506663
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2204]=0.994878861
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2205]=0.97325106
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2206]=0.951623259
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2207]=0.929995457
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2208]=0.908367656
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2209]=0.886739855
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2210]=0.865112053
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2211]=0.843484252
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2212]=0.821856451
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2213]=0.800228649
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2214]=0.778600848
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2215]=0.756973047
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2216]=0.735345245
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2217]=0.713717444
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2218]=0.692089643
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2219]=0.670461841
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2220]=0.64883404
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2221]=0.627206239
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2222]=0.605578437
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2223]=0.583950636
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2224]=0.562322835
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2225]=0.540695033
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2226]=0.519067232
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2227]=0.497439431
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2228]=0.475811629
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2229]=0.454183828
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2230]=0.432556027
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2231]=0.410928225
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2232]=0.389300424
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2233]=0.367672623
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2234]=0.346044821
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2235]=0.32441702
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2236]=0.302789219
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2237]=0.281161417
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2238]=0.259533616
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2239]=0.237905815
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2240]=0.216278013
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2241]=0.194650212
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2242]=0.173022411
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2243]=0.151394609
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2244]=0.129766808
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2245]=0.108139007
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2246]=0.086511205
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2247]=0.064883404
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2248]=0.043255603
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2249]=0.021627801
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2250]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2251]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2252]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2253]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2254]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2255]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2256]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2257]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2258]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2259]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2260]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2261]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2262]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2263]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2264]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2265]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2266]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2267]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2268]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2269]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2270]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2271]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2272]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2273]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2274]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2275]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2276]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2277]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2278]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2279]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2280]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2281]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2282]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2283]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2284]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2285]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2286]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2287]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2288]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2289]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2290]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2291]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2292]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2293]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2294]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2295]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2296]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2297]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2298]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2299]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2300]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2301]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2302]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2303]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2304]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2305]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2306]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2307]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2308]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2309]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2310]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2311]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2312]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2313]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2314]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2315]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2316]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2317]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2318]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2319]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2320]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2321]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2322]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2323]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2324]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2325]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2326]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2327]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2328]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2329]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2330]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2331]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2332]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2333]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2334]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2335]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2336]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2337]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2338]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2339]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2340]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2341]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2342]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2343]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2344]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2345]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2346]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2347]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2348]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2349]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2350]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2351]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2352]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2353]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2354]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2355]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2356]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2357]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2358]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2359]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2360]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2361]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2362]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2363]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2364]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2365]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2366]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2367]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2368]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2369]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2370]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2371]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2372]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2373]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2374]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2375]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2376]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2377]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2378]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2379]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2380]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2381]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2382]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2383]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2384]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2385]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2386]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2387]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2388]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2389]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2390]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2391]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2392]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2393]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2394]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2395]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2396]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2397]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2398]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2399]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2400]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2401]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2402]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2403]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2404]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2405]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2406]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2407]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2408]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2409]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2410]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2411]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2412]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2413]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2414]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2415]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2416]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2417]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2418]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2419]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2420]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2421]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2422]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2423]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2424]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2425]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2426]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2427]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2428]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2429]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2430]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2431]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2432]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2433]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2434]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2435]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2436]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2437]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2438]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2439]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2440]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2441]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2442]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2443]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2444]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2445]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2446]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2447]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2448]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2449]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2450]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2451]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2452]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2453]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2454]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2455]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2456]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2457]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2458]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2459]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2460]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2461]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2462]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2463]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2464]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2465]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2466]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2467]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2468]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2469]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2470]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2471]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2472]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2473]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2474]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2475]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2476]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2477]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2478]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2479]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2480]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2481]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2482]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2483]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2484]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2485]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2486]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2487]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2488]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2489]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2490]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2491]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2492]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2493]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2494]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2495]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2496]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2497]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2498]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2499]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting CF4_emissions[2500]=0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting molarMass[-1]=88.0043
+Tue Mar 21 15:37:29 2023:DEBUG:prepareToRun: prepareToRun 
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1746 concentration: 34.9999 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1747 concentration: 34.9999 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1748 concentration: 34.9998 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1749 concentration: 34.9997 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1750 concentration: 34.9997 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1751 concentration: 34.9996 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1752 concentration: 34.9996 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1753 concentration: 34.9995 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1754 concentration: 34.9994 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1755 concentration: 34.9994 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1756 concentration: 34.9993 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1757 concentration: 34.9992 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1758 concentration: 34.9992 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1759 concentration: 34.9991 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1760 concentration: 34.999 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1761 concentration: 34.999 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1762 concentration: 34.9989 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1763 concentration: 34.9988 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1764 concentration: 34.9988 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1765 concentration: 34.9987 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1766 concentration: 34.9987 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1767 concentration: 34.9986 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1768 concentration: 34.9985 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1769 concentration: 34.9985 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1770 concentration: 34.9984 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1771 concentration: 34.9983 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1772 concentration: 34.9983 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1773 concentration: 34.9982 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1774 concentration: 34.9981 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1775 concentration: 34.9981 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1776 concentration: 34.998 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1777 concentration: 34.9979 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1778 concentration: 34.9979 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1779 concentration: 34.9978 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1780 concentration: 34.9978 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1781 concentration: 34.9977 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1782 concentration: 34.9976 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1783 concentration: 34.9976 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1784 concentration: 34.9975 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1785 concentration: 34.9974 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1786 concentration: 34.9974 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1787 concentration: 34.9973 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1788 concentration: 34.9972 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1789 concentration: 34.9972 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1790 concentration: 34.9971 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1791 concentration: 34.997 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1792 concentration: 34.997 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1793 concentration: 34.9969 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1794 concentration: 34.9969 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1795 concentration: 34.9968 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1796 concentration: 34.9967 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1797 concentration: 34.9967 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1798 concentration: 34.9966 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1799 concentration: 34.9965 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1800 concentration: 34.9965 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1801 concentration: 34.9964 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1802 concentration: 34.9963 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1803 concentration: 34.9963 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1804 concentration: 34.9962 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1805 concentration: 34.9961 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1806 concentration: 34.9961 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1807 concentration: 34.996 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1808 concentration: 34.996 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1809 concentration: 34.9959 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1810 concentration: 34.9958 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1811 concentration: 34.9958 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1812 concentration: 34.9957 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1813 concentration: 34.9956 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1814 concentration: 34.9956 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1815 concentration: 34.9955 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1816 concentration: 34.9954 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1817 concentration: 34.9954 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1818 concentration: 34.9953 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1819 concentration: 34.9953 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1820 concentration: 34.9952 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1821 concentration: 34.9951 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1822 concentration: 34.9951 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1823 concentration: 34.995 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1824 concentration: 34.9949 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1825 concentration: 34.9949 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1826 concentration: 34.9948 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1827 concentration: 34.9947 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1828 concentration: 34.9947 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1829 concentration: 34.9946 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1830 concentration: 34.9945 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1831 concentration: 34.9945 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1832 concentration: 34.9944 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1833 concentration: 34.9944 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1834 concentration: 34.9943 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1835 concentration: 34.9942 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1836 concentration: 34.9942 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1837 concentration: 34.9941 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1838 concentration: 34.994 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1839 concentration: 34.994 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1840 concentration: 34.9939 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1841 concentration: 34.9938 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1842 concentration: 34.9938 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1843 concentration: 34.9937 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1844 concentration: 34.9936 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1845 concentration: 34.9936 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1846 concentration: 34.9935 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1847 concentration: 34.9935 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1848 concentration: 34.9934 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1849 concentration: 34.9933 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1850 concentration: 34.9933 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1851 concentration: 34.9932 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1852 concentration: 34.9931 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1853 concentration: 34.9931 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1854 concentration: 34.993 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1855 concentration: 34.9929 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1856 concentration: 34.9929 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1857 concentration: 34.9928 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1858 concentration: 34.9928 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1859 concentration: 34.9927 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1860 concentration: 34.9927 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1861 concentration: 34.9927 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1862 concentration: 34.9926 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1863 concentration: 34.9925 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1864 concentration: 34.9925 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1865 concentration: 34.9924 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1866 concentration: 34.9924 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1867 concentration: 34.9924 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1868 concentration: 34.9923 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1869 concentration: 34.9923 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1870 concentration: 34.9923 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1871 concentration: 34.9922 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1872 concentration: 34.9922 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1873 concentration: 34.9922 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1874 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1875 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1876 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1877 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1878 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1879 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1880 concentration: 34.992 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1881 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1882 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1883 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1884 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1885 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1886 concentration: 34.9921 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1887 concentration: 34.9922 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1888 concentration: 34.9922 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1889 concentration: 34.9922 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1890 concentration: 34.9922 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1891 concentration: 34.9923 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1892 concentration: 34.9923 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1893 concentration: 34.9924 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1894 concentration: 34.9925 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1895 concentration: 34.9925 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1896 concentration: 34.9926 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1897 concentration: 34.9926 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1898 concentration: 34.9927 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1899 concentration: 34.9928 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1900 concentration: 34.9939 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1901 concentration: 34.9962 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1902 concentration: 34.9987 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1903 concentration: 35.0015 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1904 concentration: 35.0052 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1905 concentration: 35.01 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1906 concentration: 35.0163 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1907 concentration: 35.0222 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1908 concentration: 35.0296 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1909 concentration: 35.0422 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1910 concentration: 35.0568 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1911 concentration: 35.0732 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1912 concentration: 35.0926 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1913 concentration: 35.1132 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1914 concentration: 35.1356 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1915 concentration: 35.1647 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1916 concentration: 35.2009 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1917 concentration: 35.2393 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1918 concentration: 35.2758 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1919 concentration: 35.3112 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1920 concentration: 35.3365 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1921 concentration: 35.3562 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1922 concentration: 35.3915 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1923 concentration: 35.4397 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1924 concentration: 35.4912 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1925 concentration: 35.5454 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1926 concentration: 35.6054 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1927 concentration: 35.6746 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1928 concentration: 35.7512 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1929 concentration: 35.8265 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1930 concentration: 35.8888 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1931 concentration: 35.9308 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1932 concentration: 35.9628 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1933 concentration: 36.0007 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1934 concentration: 36.0576 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1935 concentration: 36.1408 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1936 concentration: 36.251 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1937 concentration: 36.384 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1938 concentration: 36.5404 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1939 concentration: 36.713 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1940 concentration: 36.9155 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1941 concentration: 37.1814 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1942 concentration: 37.5332 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1943 concentration: 37.877 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1944 concentration: 38.0632 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1945 concentration: 38.1576 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1946 concentration: 38.2877 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1947 concentration: 38.4534 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1948 concentration: 38.6183 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1949 concentration: 38.7811 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1950 concentration: 38.9599 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1951 concentration: 39.1512 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1952 concentration: 39.3539 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1953 concentration: 39.5669 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1954 concentration: 39.781 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1955 concentration: 39.9908 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1956 concentration: 40.1844 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1957 concentration: 40.3639 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1958 concentration: 40.5522 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1959 concentration: 40.7564 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1960 concentration: 40.9652 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1961 concentration: 41.181 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1962 concentration: 41.409 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1963 concentration: 41.6599 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1964 concentration: 41.9389 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1965 concentration: 42.248 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1966 concentration: 42.6022 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1967 concentration: 43.0025 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1968 concentration: 43.4645 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1969 concentration: 43.9992 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1970 concentration: 44.6 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1971 concentration: 45.2753 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1972 concentration: 46.0473 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1973 concentration: 46.9355 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1974 concentration: 47.838 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1975 concentration: 48.7411 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1976 concentration: 49.7509 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1977 concentration: 50.8081 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1978 concentration: 51.8739 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1979 concentration: 53.0027 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1980 concentration: 54.1167 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1981 concentration: 55.1375 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1982 concentration: 56.1448 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1983 concentration: 57.178 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1984 concentration: 58.1192 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1985 concentration: 58.9932 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1986 concentration: 59.9134 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1987 concentration: 60.8668 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1988 concentration: 61.8312 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1989 concentration: 62.7902 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1990 concentration: 63.6985 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1991 concentration: 64.5132 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1992 concentration: 65.2636 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1993 concentration: 65.9807 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1994 concentration: 66.6742 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1995 concentration: 67.3473 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1996 concentration: 68.0092 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1997 concentration: 68.6655 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1998 concentration: 69.3165 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1999 concentration: 69.9601 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2000 concentration: 70.5851 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2001 concentration: 71.2524 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2002 concentration: 72.0074 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2003 concentration: 72.8001 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2004 concentration: 73.5685 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2005 concentration: 74.2653 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2006 concentration: 74.9088 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2007 concentration: 75.4961 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2008 concentration: 76.0649 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2009 concentration: 76.6748 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2010 concentration: 77.3355 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2011 concentration: 78.0319 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2012 concentration: 78.6402 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2013 concentration: 79.1628 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2014 concentration: 79.7845 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2015 concentration: 80.4691 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2016 concentration: 81.1526 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2017 concentration: 81.8349 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2018 concentration: 82.516 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2019 concentration: 83.196 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2020 concentration: 83.8749 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2021 concentration: 84.5534 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2022 concentration: 85.2316 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2023 concentration: 85.9094 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2024 concentration: 86.5869 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2025 concentration: 87.2641 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2026 concentration: 87.9409 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2027 concentration: 88.6174 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2028 concentration: 89.2935 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2029 concentration: 89.9693 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2030 concentration: 90.6448 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2031 concentration: 91.3166 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2032 concentration: 91.9846 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2033 concentration: 92.649 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2034 concentration: 93.3097 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2035 concentration: 93.9667 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2036 concentration: 94.62 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2037 concentration: 95.2696 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2038 concentration: 95.9155 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2039 concentration: 96.5577 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2040 concentration: 97.1962 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2041 concentration: 97.8304 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2042 concentration: 98.4602 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2043 concentration: 99.0857 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2044 concentration: 99.7069 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2045 concentration: 100.324 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2046 concentration: 100.936 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2047 concentration: 101.545 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2048 concentration: 102.148 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2049 concentration: 102.748 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2050 concentration: 103.343 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2051 concentration: 103.927 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2052 concentration: 104.498 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2053 concentration: 105.058 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2054 concentration: 105.606 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2055 concentration: 106.142 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2056 concentration: 106.666 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2057 concentration: 107.178 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2058 concentration: 107.679 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2059 concentration: 108.167 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2060 concentration: 108.644 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2061 concentration: 109.112 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2062 concentration: 109.573 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2063 concentration: 110.025 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2064 concentration: 110.468 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2065 concentration: 110.904 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2066 concentration: 111.331 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2067 concentration: 111.75 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2068 concentration: 112.16 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2069 concentration: 112.563 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2070 concentration: 112.957 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2071 concentration: 113.336 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2072 concentration: 113.7 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2073 concentration: 114.049 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2074 concentration: 114.383 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2075 concentration: 114.701 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2076 concentration: 115.005 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2077 concentration: 115.293 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2078 concentration: 115.567 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2079 concentration: 115.825 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2080 concentration: 116.068 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2081 concentration: 116.309 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2082 concentration: 116.547 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2083 concentration: 116.782 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2084 concentration: 117.014 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2085 concentration: 117.243 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2086 concentration: 117.47 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2087 concentration: 117.693 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2088 concentration: 117.914 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2089 concentration: 118.133 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2090 concentration: 118.348 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2091 concentration: 118.562 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2092 concentration: 118.775 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2093 concentration: 118.986 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2094 concentration: 119.197 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2095 concentration: 119.406 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2096 concentration: 119.613 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2097 concentration: 119.819 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2098 concentration: 120.024 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2099 concentration: 120.228 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2100 concentration: 120.431 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2101 concentration: 120.632 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2102 concentration: 120.831 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2103 concentration: 121.03 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2104 concentration: 121.226 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2105 concentration: 121.422 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2106 concentration: 121.616 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2107 concentration: 121.809 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2108 concentration: 122 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2109 concentration: 122.19 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2110 concentration: 122.379 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2111 concentration: 122.566 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2112 concentration: 122.752 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2113 concentration: 122.937 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2114 concentration: 123.12 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2115 concentration: 123.302 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2116 concentration: 123.483 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2117 concentration: 123.662 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2118 concentration: 123.839 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2119 concentration: 124.016 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2120 concentration: 124.191 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2121 concentration: 124.365 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2122 concentration: 124.537 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2123 concentration: 124.708 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2124 concentration: 124.877 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2125 concentration: 125.045 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2126 concentration: 125.212 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2127 concentration: 125.378 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2128 concentration: 125.542 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2129 concentration: 125.704 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2130 concentration: 125.866 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2131 concentration: 126.026 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2132 concentration: 126.184 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2133 concentration: 126.341 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2134 concentration: 126.497 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2135 concentration: 126.652 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2136 concentration: 126.805 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2137 concentration: 126.957 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2138 concentration: 127.107 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2139 concentration: 127.256 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2140 concentration: 127.404 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2141 concentration: 127.55 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2142 concentration: 127.695 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2143 concentration: 127.838 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2144 concentration: 127.981 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2145 concentration: 128.121 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2146 concentration: 128.261 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2147 concentration: 128.399 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2148 concentration: 128.536 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2149 concentration: 128.671 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2150 concentration: 128.805 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2151 concentration: 128.937 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2152 concentration: 129.069 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2153 concentration: 129.198 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2154 concentration: 129.327 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2155 concentration: 129.454 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2156 concentration: 129.58 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2157 concentration: 129.704 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2158 concentration: 129.827 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2159 concentration: 129.949 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2160 concentration: 130.069 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2161 concentration: 130.188 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2162 concentration: 130.306 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2163 concentration: 130.422 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2164 concentration: 130.537 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2165 concentration: 130.65 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2166 concentration: 130.762 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2167 concentration: 130.873 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2168 concentration: 130.982 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2169 concentration: 131.09 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2170 concentration: 131.197 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2171 concentration: 131.302 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2172 concentration: 131.406 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2173 concentration: 131.508 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2174 concentration: 131.609 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2175 concentration: 131.709 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2176 concentration: 131.808 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2177 concentration: 131.905 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2178 concentration: 132 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2179 concentration: 132.095 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2180 concentration: 132.188 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2181 concentration: 132.279 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2182 concentration: 132.369 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2183 concentration: 132.458 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2184 concentration: 132.546 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2185 concentration: 132.632 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2186 concentration: 132.716 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2187 concentration: 132.8 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2188 concentration: 132.882 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2189 concentration: 132.962 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2190 concentration: 133.042 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2191 concentration: 133.12 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2192 concentration: 133.196 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2193 concentration: 133.271 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2194 concentration: 133.345 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2195 concentration: 133.417 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2196 concentration: 133.488 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2197 concentration: 133.558 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2198 concentration: 133.627 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2199 concentration: 133.693 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2200 concentration: 133.759 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2201 concentration: 133.823 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2202 concentration: 133.886 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2203 concentration: 133.948 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2204 concentration: 134.008 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2205 concentration: 134.067 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2206 concentration: 134.124 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2207 concentration: 134.18 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2208 concentration: 134.235 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2209 concentration: 134.288 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2210 concentration: 134.34 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2211 concentration: 134.39 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2212 concentration: 134.44 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2213 concentration: 134.487 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2214 concentration: 134.534 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2215 concentration: 134.579 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2216 concentration: 134.623 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2217 concentration: 134.665 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2218 concentration: 134.706 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2219 concentration: 134.746 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2220 concentration: 134.784 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2221 concentration: 134.821 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2222 concentration: 134.856 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2223 concentration: 134.891 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2224 concentration: 134.923 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2225 concentration: 134.955 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2226 concentration: 134.985 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2227 concentration: 135.014 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2228 concentration: 135.041 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2229 concentration: 135.067 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2230 concentration: 135.091 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2231 concentration: 135.115 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2232 concentration: 135.137 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2233 concentration: 135.157 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2234 concentration: 135.176 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2235 concentration: 135.194 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2236 concentration: 135.21 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2237 concentration: 135.225 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2238 concentration: 135.239 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2239 concentration: 135.251 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2240 concentration: 135.262 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2241 concentration: 135.272 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2242 concentration: 135.28 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2243 concentration: 135.287 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2244 concentration: 135.293 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2245 concentration: 135.297 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2246 concentration: 135.299 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2247 concentration: 135.301 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2248 concentration: 135.301 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2249 concentration: 135.299 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2250 concentration: 135.297 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2251 concentration: 135.294 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2252 concentration: 135.291 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2253 concentration: 135.289 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2254 concentration: 135.286 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2255 concentration: 135.283 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2256 concentration: 135.281 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2257 concentration: 135.278 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2258 concentration: 135.275 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2259 concentration: 135.272 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2260 concentration: 135.27 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2261 concentration: 135.267 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2262 concentration: 135.264 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2263 concentration: 135.262 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2264 concentration: 135.259 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2265 concentration: 135.256 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2266 concentration: 135.253 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2267 concentration: 135.251 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2268 concentration: 135.248 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2269 concentration: 135.245 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2270 concentration: 135.243 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2271 concentration: 135.24 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2272 concentration: 135.237 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2273 concentration: 135.235 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2274 concentration: 135.232 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2275 concentration: 135.229 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2276 concentration: 135.226 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2277 concentration: 135.224 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2278 concentration: 135.221 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2279 concentration: 135.218 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2280 concentration: 135.216 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2281 concentration: 135.213 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2282 concentration: 135.21 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2283 concentration: 135.208 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2284 concentration: 135.205 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2285 concentration: 135.202 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2286 concentration: 135.199 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2287 concentration: 135.197 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2288 concentration: 135.194 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2289 concentration: 135.191 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2290 concentration: 135.189 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2291 concentration: 135.186 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2292 concentration: 135.183 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2293 concentration: 135.18 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2294 concentration: 135.178 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2295 concentration: 135.175 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2296 concentration: 135.172 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2297 concentration: 135.17 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2298 concentration: 135.167 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2299 concentration: 135.164 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2300 concentration: 135.162 pptv

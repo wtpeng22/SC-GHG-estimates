@@ -1,0 +1,1117 @@
+Tue Mar 21 15:37:28 2023:NOTICE:printLogHeader: hector version 2.5.0
+Tue Mar 21 15:37:28 2023:DEBUG:init: hello temperature
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting S[-1]=3
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting diff[-1]=2.3
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting alpha[-1]=1.0
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting volscl[-1]=1.0
+Tue Mar 21 15:37:29 2023:DEBUG:prepareToRun: prepareToRun 
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1746
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0 degC in 1746
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1747
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0 degC in 1747
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1748
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0 degC in 1748
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1749
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0 degC in 1749
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1750
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0 degC in 1750
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1751
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.000339507 degC in 1751
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1752
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.000923354 degC in 1752
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1753
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00164134 degC in 1753
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1754
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00242911 degC in 1754
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1755
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00324689 degC in 1755
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1756
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00406924 degC in 1756
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1757
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00487947 degC in 1757
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1758
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00566669 degC in 1758
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1759
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00642398 degC in 1759
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1760
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00714711 degC in 1760
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1761
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00783371 degC in 1761
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1762
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00848262 degC in 1762
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1763
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00909356 degC in 1763
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1764
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00966691 degC in 1764
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1765
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0102035 degC in 1765
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1766
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0210217 degC in 1766
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1767
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0401754 degC in 1767
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1768
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0519951 degC in 1768
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1769
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0547838 degC in 1769
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1770
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0564737 degC in 1770
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1771
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0631846 degC in 1771
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1772
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0723299 degC in 1772
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1773
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0808348 degC in 1773
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1774
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.087733 degC in 1774
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1775
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0936822 degC in 1775
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1776
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0986456 degC in 1776
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1777
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.10304 degC in 1777
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1778
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.106893 degC in 1778
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1779
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.110339 degC in 1779
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1780
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.113239 degC in 1780
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1781
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.116166 degC in 1781
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1782
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.116871 degC in 1782
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1783
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.109782 degC in 1783
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1784
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0982049 degC in 1784
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1785
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0941477 degC in 1785
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1786
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0998134 degC in 1786
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1787
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.107726 degC in 1787
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1788
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.113942 degC in 1788
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1789
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.109567 degC in 1789
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1790
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0928364 degC in 1790
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1791
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0828873 degC in 1791
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1792
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0878212 degC in 1792
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1793
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0980806 degC in 1793
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1794
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.106238 degC in 1794
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1795
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.110505 degC in 1795
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1796
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.113133 degC in 1796
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1797
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.117361 degC in 1797
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1798
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.122485 degC in 1798
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1799
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.126946 degC in 1799
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1800
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.130385 degC in 1800
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1801
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.133522 degC in 1801
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1802
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.136044 degC in 1802
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1803
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.138397 degC in 1803
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1804
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.140842 degC in 1804
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1805
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.142688 degC in 1805
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1806
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.144593 degC in 1806
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1807
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.146312 degC in 1807
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1808
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.105396 degC in 1808
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1809
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0276354 degC in 1809
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1810
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.16958 degC in 1810
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1811
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.207645 degC in 1811
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1812
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.172403 degC in 1812
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1813
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.12955 degC in 1813
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1814
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.147649 degC in 1814
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1815
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.296079 degC in 1815
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1816
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.463506 degC in 1816
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1817
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.489265 degC in 1817
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1818
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.402595 degC in 1818
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1819
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.297013 degC in 1819
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1820
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.211169 degC in 1820
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1821
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.149335 degC in 1821
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1822
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.104548 degC in 1822
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1823
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0705149 degC in 1823
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1824
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0435317 degC in 1824
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1825
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.02213 degC in 1825
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1826
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.00433767 degC in 1826
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1827
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0105646 degC in 1827
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1828
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0226937 degC in 1828
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1829
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0301833 degC in 1829
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1830
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0182223 degC in 1830
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1831
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0233997 degC in 1831
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1832
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.063276 degC in 1832
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1833
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0660251 degC in 1833
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1834
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0794994 degC in 1834
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1835
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.147408 degC in 1835
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1836
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.200265 degC in 1836
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1837
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.186401 degC in 1837
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1838
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.138356 degC in 1838
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1839
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0908575 degC in 1839
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1840
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0569982 degC in 1840
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1841
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0328268 degC in 1841
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1842
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0135421 degC in 1842
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1843
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-4.21668e-05 degC in 1843
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1844
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.00991904 degC in 1844
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1845
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0206231 degC in 1845
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1846
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0327993 degC in 1846
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1847
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0441146 degC in 1847
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1848
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0537591 degC in 1848
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1849
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0605279 degC in 1849
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1850
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0642685 degC in 1850
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1851
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0683112 degC in 1851
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1852
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0740232 degC in 1852
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1853
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0806601 degC in 1853
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1854
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0869499 degC in 1854
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1855
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0815863 degC in 1855
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1856
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.037612 degC in 1856
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1857
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0195074 degC in 1857
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1858
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0352887 degC in 1858
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1859
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0157527 degC in 1859
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1860
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.010418 degC in 1860
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1861
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.028549 degC in 1861
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1862
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0338561 degC in 1862
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1863
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0383699 degC in 1863
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1864
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0498272 degC in 1864
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1865
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0633022 degC in 1865
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1866
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0759545 degC in 1866
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1867
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.086646 degC in 1867
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1868
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0953577 degC in 1868
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1869
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.101865 degC in 1869
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1870
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.107011 degC in 1870
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1871
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.111845 degC in 1871
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1872
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.115086 degC in 1872
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1873
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.116676 degC in 1873
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1874
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.119397 degC in 1874
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1875
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.121797 degC in 1875
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1876
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.120433 degC in 1876
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1877
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.119519 degC in 1877
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1878
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.122457 degC in 1878
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1879
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.126944 degC in 1879
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1880
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.131498 degC in 1880
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1881
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.13625 degC in 1881
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1882
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.130473 degC in 1882
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1883
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0466259 degC in 1883
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1884
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0859135 degC in 1884
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1885
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.136906 degC in 1885
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1886
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.125725 degC in 1886
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1887
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.106043 degC in 1887
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1888
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0856289 degC in 1888
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1889
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0775861 degC in 1889
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1890
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0790394 degC in 1890
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1891
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0752235 degC in 1891
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1892
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0569574 degC in 1892
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1893
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=-0.0294686 degC in 1893
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1894
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.000682128 degC in 1894
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1895
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0228492 degC in 1895
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1896
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0265813 degC in 1896
+Tue Mar 21 15:37:30 2023:DEBUG:run: temperature run 1897
+Tue Mar 21 15:37:30 2023:DEBUG:run:  tgav=0.0217479 degC in 1897
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1898
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0273081 degC in 1898
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1899
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0419167 degC in 1899
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1900
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0580491 degC in 1900
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1901
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0699314 degC in 1901
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1902
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0403072 degC in 1902
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1903
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=-0.0196371 degC in 1903
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1904
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=-0.0403107 degC in 1904
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1905
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=-0.021565 degC in 1905
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1906
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.00227302 degC in 1906
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1907
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.015464 degC in 1907
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1908
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0266814 degC in 1908
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1909
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0407039 degC in 1909
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1910
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0543066 degC in 1910
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1911
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0661049 degC in 1911
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1912
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0538893 degC in 1912
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1913
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0330913 degC in 1913
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1914
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0384165 degC in 1914
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1915
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0548531 degC in 1915
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1916
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0684411 degC in 1916
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1917
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0787762 degC in 1917
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1918
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0879373 degC in 1918
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1919
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.098858 degC in 1919
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1920
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0989022 degC in 1920
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1921
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.101705 degC in 1921
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1922
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.111746 degC in 1922
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1923
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.119155 degC in 1923
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1924
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.1244 degC in 1924
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1925
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.129262 degC in 1925
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1926
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.134424 degC in 1926
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1927
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.137955 degC in 1927
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1928
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.137276 degC in 1928
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1929
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.131414 degC in 1929
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1930
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.131884 degC in 1930
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1931
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.139338 degC in 1931
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1932
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.146623 degC in 1932
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1933
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.152027 degC in 1933
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1934
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.157908 degC in 1934
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1935
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.162075 degC in 1935
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1936
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.165305 degC in 1936
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1937
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.166596 degC in 1937
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1938
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.169412 degC in 1938
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1939
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.17095 degC in 1939
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1940
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.172141 degC in 1940
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1941
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.173886 degC in 1941
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1942
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.173586 degC in 1942
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1943
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.173707 degC in 1943
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1944
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.17785 degC in 1944
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1945
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.187455 degC in 1945
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1946
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.197533 degC in 1946
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1947
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.201847 degC in 1947
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1948
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.204711 degC in 1948
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1949
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.208348 degC in 1949
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1950
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.20923 degC in 1950
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1951
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.210747 degC in 1951
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1952
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.212762 degC in 1952
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1953
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.214963 degC in 1953
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1954
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.219303 degC in 1954
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1955
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.223828 degC in 1955
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1956
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.228027 degC in 1956
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1957
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.232868 degC in 1957
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1958
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.240077 degC in 1958
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1959
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.246406 degC in 1959
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1960
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.24605 degC in 1960
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1961
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.232309 degC in 1961
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1962
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.216925 degC in 1962
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1963
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.164384 degC in 1963
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1964
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0919268 degC in 1964
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1965
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0650769 degC in 1965
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1966
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.0827296 degC in 1966
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1967
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.111466 degC in 1967
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1968
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.115628 degC in 1968
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1969
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.111188 degC in 1969
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1970
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.128653 degC in 1970
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1971
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.162061 degC in 1971
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1972
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.19292 degC in 1972
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1973
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.213816 degC in 1973
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1974
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.221399 degC in 1974
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1975
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.223566 degC in 1975
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1976
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.237714 degC in 1976
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1977
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.267309 degC in 1977
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1978
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.293792 degC in 1978
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1979
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.315754 degC in 1979
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1980
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.341131 degC in 1980
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1981
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.36143 degC in 1981
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1982
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.323322 degC in 1982
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1983
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.272134 degC in 1983
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1984
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.286453 degC in 1984
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1985
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.332691 degC in 1985
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1986
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.378061 degC in 1986
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1987
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.4174 degC in 1987
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1988
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.455921 degC in 1988
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1989
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.492433 degC in 1989
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1990
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.525179 degC in 1990
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1991
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.471794 degC in 1991
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1992
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.381962 degC in 1992
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1993
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.382761 degC in 1993
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1994
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.442217 degC in 1994
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1995
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.512423 degC in 1995
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1996
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.574548 degC in 1996
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1997
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.622834 degC in 1997
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1998
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.668449 degC in 1998
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 1999
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.716243 degC in 1999
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2000
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.759513 degC in 2000
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2001
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.797936 degC in 2001
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2002
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.830036 degC in 2002
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2003
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.858222 degC in 2003
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2004
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.887365 degC in 2004
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2005
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.911031 degC in 2005
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2006
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.923709 degC in 2006
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2007
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.937173 degC in 2007
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2008
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.955714 degC in 2008
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2009
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=0.978433 degC in 2009
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2010
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.00332 degC in 2010
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2011
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.02873 degC in 2011
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2012
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.05312 degC in 2012
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2013
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.0795 degC in 2013
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2014
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.10462 degC in 2014
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2015
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.13897 degC in 2015
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2016
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.17338 degC in 2016
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2017
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.20676 degC in 2017
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2018
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.23956 degC in 2018
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2019
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.27211 degC in 2019
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2020
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.30463 degC in 2020
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2021
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.33515 degC in 2021
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2022
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.36387 degC in 2022
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2023
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.39128 degC in 2023
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2024
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.41769 degC in 2024
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2025
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.44332 degC in 2025
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2026
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.46834 degC in 2026
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2027
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.49288 degC in 2027
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2028
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.51699 degC in 2028
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2029
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.54061 degC in 2029
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2030
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.56379 degC in 2030
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2031
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.58731 degC in 2031
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2032
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.61113 degC in 2032
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2033
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.63508 degC in 2033
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2034
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.65905 degC in 2034
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2035
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.68299 degC in 2035
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2036
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.7069 degC in 2036
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2037
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.73068 degC in 2037
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2038
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.75433 degC in 2038
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2039
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.77782 degC in 2039
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2040
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.80116 degC in 2040
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2041
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.82439 degC in 2041
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2042
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.84748 degC in 2042
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2043
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.87042 degC in 2043
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2044
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.8932 degC in 2044
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2045
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.91582 degC in 2045
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2046
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.93827 degC in 2046
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2047
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.96055 degC in 2047
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2048
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=1.98268 degC in 2048
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2049
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.00464 degC in 2049
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2050
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.02646 degC in 2050
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2051
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.04777 degC in 2051
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2052
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.06864 degC in 2052
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2053
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.08911 degC in 2053
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2054
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.10923 degC in 2054
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2055
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.12902 degC in 2055
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2056
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.14848 degC in 2056
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2057
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.16766 degC in 2057
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2058
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.18656 degC in 2058
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2059
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.20518 degC in 2059
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2060
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.22353 degC in 2060
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2061
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.24138 degC in 2061
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2062
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.25877 degC in 2062
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2063
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.27574 degC in 2063
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2064
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.29231 degC in 2064
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2065
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.3085 degC in 2065
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2066
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.32432 degC in 2066
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2067
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.33978 degC in 2067
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2068
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.35489 degC in 2068
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2069
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.36965 degC in 2069
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2070
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.38407 degC in 2070
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2071
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.39815 degC in 2071
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2072
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.41187 degC in 2072
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2073
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.42518 degC in 2073
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2074
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.43807 degC in 2074
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2075
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.45053 degC in 2075
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2076
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.46254 degC in 2076
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2077
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.4741 degC in 2077
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2078
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.4852 degC in 2078
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2079
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.49584 degC in 2079
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2080
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.50603 degC in 2080
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2081
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.51593 degC in 2081
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2082
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.52554 degC in 2082
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2083
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.53481 degC in 2083
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2084
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.54373 degC in 2084
+Tue Mar 21 15:37:31 2023:DEBUG:run: temperature run 2085
+Tue Mar 21 15:37:31 2023:DEBUG:run:  tgav=2.55228 degC in 2085
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2086
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56045 degC in 2086
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2087
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56822 degC in 2087
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2088
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57561 degC in 2088
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2089
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5826 degC in 2089
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2090
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.58918 degC in 2090
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2091
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.59527 degC in 2091
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2092
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6009 degC in 2092
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2093
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6061 degC in 2093
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2094
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.61091 degC in 2094
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2095
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.61535 degC in 2095
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2096
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.61944 degC in 2096
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2097
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62322 degC in 2097
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2098
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62665 degC in 2098
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2099
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62975 degC in 2099
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2100
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.63252 degC in 2100
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2101
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.63504 degC in 2101
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2102
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6373 degC in 2102
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2103
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6393 degC in 2103
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2104
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64104 degC in 2104
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2105
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64253 degC in 2105
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2106
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64376 degC in 2106
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2107
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64475 degC in 2107
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2108
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64552 degC in 2108
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2109
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64607 degC in 2109
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2110
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64641 degC in 2110
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2111
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64656 degC in 2111
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2112
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6465 degC in 2112
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2113
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64626 degC in 2113
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2114
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64582 degC in 2114
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2115
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64519 degC in 2115
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2116
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64437 degC in 2116
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2117
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64339 degC in 2117
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2118
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64225 degC in 2118
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2119
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.64098 degC in 2119
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2120
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.63959 degC in 2120
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2121
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6381 degC in 2121
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2122
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.63652 degC in 2122
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2123
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.63485 degC in 2123
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2124
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.63312 degC in 2124
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2125
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.63132 degC in 2125
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2126
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62947 degC in 2126
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2127
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62758 degC in 2127
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2128
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62567 degC in 2128
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2129
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62375 degC in 2129
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2130
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.62182 degC in 2130
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2131
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.61991 degC in 2131
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2132
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.618 degC in 2132
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2133
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6161 degC in 2133
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2134
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.61422 degC in 2134
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2135
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.61234 degC in 2135
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2136
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.61047 degC in 2136
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2137
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.60861 degC in 2137
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2138
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.60677 degC in 2138
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2139
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.60497 degC in 2139
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2140
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.6032 degC in 2140
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2141
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.60146 degC in 2141
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2142
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.59977 degC in 2142
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2143
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5981 degC in 2143
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2144
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.59647 degC in 2144
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2145
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.59487 degC in 2145
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2146
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5933 degC in 2146
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2147
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.59176 degC in 2147
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2148
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.59026 degC in 2148
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2149
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5888 degC in 2149
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2150
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.58738 degC in 2150
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2151
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.58601 degC in 2151
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2152
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.58467 degC in 2152
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2153
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.58338 degC in 2153
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2154
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.58213 degC in 2154
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2155
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.58091 degC in 2155
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2156
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57973 degC in 2156
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2157
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57858 degC in 2157
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2158
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57746 degC in 2158
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2159
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57639 degC in 2159
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2160
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57536 degC in 2160
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2161
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57437 degC in 2161
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2162
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57342 degC in 2162
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2163
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57251 degC in 2163
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2164
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57164 degC in 2164
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2165
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.57079 degC in 2165
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2166
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56998 degC in 2166
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2167
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5692 degC in 2167
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2168
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56845 degC in 2168
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2169
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56774 degC in 2169
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2170
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56707 degC in 2170
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2171
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56644 degC in 2171
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2172
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56584 degC in 2172
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2173
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56527 degC in 2173
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2174
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5647 degC in 2174
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2175
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56413 degC in 2175
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2176
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56356 degC in 2176
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2177
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56299 degC in 2177
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2178
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56241 degC in 2178
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2179
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56183 degC in 2179
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2180
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56125 degC in 2180
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2181
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56066 degC in 2181
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2182
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.56006 degC in 2182
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2183
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55945 degC in 2183
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2184
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55883 degC in 2184
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2185
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55819 degC in 2185
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2186
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55754 degC in 2186
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2187
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55688 degC in 2187
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2188
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5562 degC in 2188
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2189
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55551 degC in 2189
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2190
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55481 degC in 2190
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2191
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5541 degC in 2191
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2192
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55338 degC in 2192
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2193
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55265 degC in 2193
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2194
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5519 degC in 2194
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2195
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55113 degC in 2195
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2196
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.55035 degC in 2196
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2197
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54956 degC in 2197
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2198
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54875 degC in 2198
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2199
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54794 degC in 2199
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2200
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54711 degC in 2200
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2201
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54628 degC in 2201
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2202
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54543 degC in 2202
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2203
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54457 degC in 2203
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2204
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5437 degC in 2204
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2205
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54281 degC in 2205
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2206
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.5419 degC in 2206
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2207
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54098 degC in 2207
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2208
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.54004 degC in 2208
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2209
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53909 degC in 2209
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2210
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53813 degC in 2210
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2211
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53715 degC in 2211
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2212
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53616 degC in 2212
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2213
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53515 degC in 2213
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2214
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53413 degC in 2214
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2215
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53309 degC in 2215
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2216
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53203 degC in 2216
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2217
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.53095 degC in 2217
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2218
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52985 degC in 2218
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2219
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52874 degC in 2219
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2220
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52761 degC in 2220
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2221
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52647 degC in 2221
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2222
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52531 degC in 2222
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2223
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52413 degC in 2223
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2224
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52293 degC in 2224
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2225
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52172 degC in 2225
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2226
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.52048 degC in 2226
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2227
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.51921 degC in 2227
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2228
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.51793 degC in 2228
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2229
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.51663 degC in 2229
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2230
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.51531 degC in 2230
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2231
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.51398 degC in 2231
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2232
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.51262 degC in 2232
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2233
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.51125 degC in 2233
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2234
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.50985 degC in 2234
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2235
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.50843 degC in 2235
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2236
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.50699 degC in 2236
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2237
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.50552 degC in 2237
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2238
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.50404 degC in 2238
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2239
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.50253 degC in 2239
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2240
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.501 degC in 2240
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2241
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.49946 degC in 2241
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2242
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.49789 degC in 2242
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2243
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.49631 degC in 2243
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2244
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.4947 degC in 2244
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2245
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.49307 degC in 2245
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2246
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.49141 degC in 2246
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2247
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.48974 degC in 2247
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2248
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.48804 degC in 2248
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2249
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.48632 degC in 2249
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2250
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.48458 degC in 2250
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2251
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.48275 degC in 2251
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2252
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.48088 degC in 2252
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2253
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.47899 degC in 2253
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2254
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.4771 degC in 2254
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2255
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.47522 degC in 2255
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2256
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.47336 degC in 2256
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2257
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.47153 degC in 2257
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2258
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.46973 degC in 2258
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2259
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.46795 degC in 2259
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2260
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.46621 degC in 2260
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2261
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.46449 degC in 2261
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2262
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.46281 degC in 2262
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2263
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.46115 degC in 2263
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2264
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.45951 degC in 2264
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2265
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.4579 degC in 2265
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2266
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.45631 degC in 2266
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2267
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.45474 degC in 2267
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2268
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.45319 degC in 2268
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2269
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.45166 degC in 2269
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2270
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.45014 degC in 2270
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2271
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.44865 degC in 2271
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2272
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.44716 degC in 2272
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2273
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.44569 degC in 2273
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2274
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.44423 degC in 2274
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2275
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.44278 degC in 2275
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2276
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.44134 degC in 2276
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2277
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43991 degC in 2277
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2278
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43848 degC in 2278
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2279
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43706 degC in 2279
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2280
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43565 degC in 2280
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2281
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43424 degC in 2281
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2282
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43284 degC in 2282
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2283
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43145 degC in 2283
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2284
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.43006 degC in 2284
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2285
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.42867 degC in 2285
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2286
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.42728 degC in 2286
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2287
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.4259 degC in 2287
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2288
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.42453 degC in 2288
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2289
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.42315 degC in 2289
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2290
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.42178 degC in 2290
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2291
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.42042 degC in 2291
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2292
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.41906 degC in 2292
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2293
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.4177 degC in 2293
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2294
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.41634 degC in 2294
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2295
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.41499 degC in 2295
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2296
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.41364 degC in 2296
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2297
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.4123 degC in 2297
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2298
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.41096 degC in 2298
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2299
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.40962 degC in 2299
+Tue Mar 21 15:37:32 2023:DEBUG:run: temperature run 2300
+Tue Mar 21 15:37:32 2023:DEBUG:run:  tgav=2.40828 degC in 2300

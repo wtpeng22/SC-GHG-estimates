@@ -1,0 +1,1670 @@
+Tue Mar 21 15:37:28 2023:NOTICE:printLogHeader: hector version 2.5.0
+Tue Mar 21 15:37:28 2023:DEBUG:init: hello slr
+Tue Mar 21 15:37:29 2023:DEBUG:prepareToRun: prepareToRun 
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1746
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1747
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1748
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1749
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1750
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1751
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1752
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1753
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1754
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1755
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1756
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1757
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1758
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1759
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1760
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1761
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1762
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1763
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1764
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1765
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1766
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1767
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1768
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1769
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1770
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1771
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1772
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1773
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1774
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1775
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1776
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1777
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1778
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1779
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1780
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1781
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1782
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1783
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1784
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1785
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1786
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1787
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1788
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1789
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1790
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1791
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1792
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1793
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1794
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1795
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1796
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1797
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1798
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1799
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1800
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1801
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1802
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1803
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1804
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1805
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1806
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1807
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1808
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1809
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1810
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1811
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1812
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1813
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1814
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1815
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1816
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1817
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1818
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1819
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1820
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1821
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1822
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1823
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1824
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1825
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1826
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1827
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1828
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1829
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1830
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1831
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1832
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1833
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1834
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1835
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1836
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1837
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1838
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1839
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1840
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1841
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1842
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1843
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1844
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1845
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1846
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1847
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1848
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1849
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1850
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1851
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1852
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1853
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1854
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1855
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1856
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1857
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1858
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1859
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1860
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1861
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1862
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1863
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1864
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1865
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1866
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1867
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1868
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1869
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1870
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1871
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1872
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1873
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1874
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1875
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1876
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1877
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1878
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1879
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1880
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1881
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1882
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1883
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1884
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1885
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1886
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1887
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1888
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1889
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1890
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1891
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1892
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1893
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1894
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1895
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1896
+Tue Mar 21 15:37:30 2023:DEBUG:run: SLR run 1897
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1898
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1899
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1900
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1901
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1902
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1903
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1904
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1905
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1906
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1907
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1908
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1909
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1910
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1911
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1912
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1913
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1914
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1915
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1916
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1917
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1918
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1919
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1920
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1921
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1922
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1923
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1924
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1925
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1926
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1927
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1928
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1929
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1930
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1931
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1932
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1933
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1934
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1935
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1936
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1937
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1938
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1939
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1940
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1941
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1942
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1943
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1944
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1945
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1946
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1947
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1948
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1949
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1950
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1951
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1952
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1953
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1954
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1955
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1956
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1957
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1958
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1959
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1960
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1961
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1962
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1963
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1964
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1965
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1966
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1967
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1968
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1969
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1970
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1971
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1972
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1973
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1974
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1975
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1976
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1977
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1978
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1979
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1980
+Tue Mar 21 15:37:31 2023:DEBUG:run: Computing reference temperature
+Tue Mar 21 15:37:31 2023:DEBUG:run: Computed reference temperature 0.202159 (1951-1980)
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1746 T=-0.202159 degC dTdt=0 dHdt=0.116391 cm/yr slr=0.116391 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1746 T=-0.202159 degC Dtdt=0 DHdt_no_ice=0.0138273 cm/yr slr_no_ice=0.0138273 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1747 T=-0.202159 degC dTdt=0 dHdt=0.116391 cm/yr slr=0.232782 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1747 T=-0.202159 degC Dtdt=0 DHdt_no_ice=0.0138273 cm/yr slr_no_ice=0.0276545 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1748 T=-0.202159 degC dTdt=0 dHdt=0.116391 cm/yr slr=0.349172 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1748 T=-0.202159 degC Dtdt=0 DHdt_no_ice=0.0138273 cm/yr slr_no_ice=0.0414818 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1749 T=-0.202159 degC dTdt=0 dHdt=0.116391 cm/yr slr=0.465563 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1749 T=-0.202159 degC Dtdt=0 DHdt_no_ice=0.0138273 cm/yr slr_no_ice=0.055309 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1750 T=-0.202159 degC dTdt=0.000169754 dHdt=0.115559 cm/yr slr=0.581122 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1750 T=-0.202159 degC Dtdt=0.000169754 DHdt_no_ice=0.0142516 cm/yr slr_no_ice=0.0695607 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1751 T=-0.20182 degC dTdt=0.000461677 dHdt=0.114319 cm/yr slr=0.695441 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1751 T=-0.20182 degC Dtdt=0.000461677 DHdt_no_ice=0.0150086 cm/yr slr_no_ice=0.0845693 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1752 T=-0.201236 degC dTdt=0.000650919 dHdt=0.113718 cm/yr slr=0.809159 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1752 T=-0.201236 degC Dtdt=0.000650919 DHdt_no_ice=0.0155284 cm/yr slr_no_ice=0.100098 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1753 T=-0.200518 degC dTdt=0.000752877 dHdt=0.113621 cm/yr slr=0.92278 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1753 T=-0.200518 degC Dtdt=0.000752877 DHdt_no_ice=0.0158408 cm/yr slr_no_ice=0.115938 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1754 T=-0.19973 degC dTdt=0.000802775 dHdt=0.113817 cm/yr slr=1.0366 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1754 T=-0.19973 degC Dtdt=0.000802775 DHdt_no_ice=0.0160285 cm/yr slr_no_ice=0.131967 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1755 T=-0.198912 degC dTdt=0.000820065 dHdt=0.114191 cm/yr slr=1.15079 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1755 T=-0.198912 degC Dtdt=0.000820065 DHdt_no_ice=0.0161372 cm/yr slr_no_ice=0.148104 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1756 T=-0.19809 degC dTdt=0.000816286 dHdt=0.11467 cm/yr slr=1.26546 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1756 T=-0.19809 degC Dtdt=0.000816286 DHdt_no_ice=0.0161935 cm/yr slr_no_ice=0.164298 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1757 T=-0.19728 degC dTdt=0.000798726 dHdt=0.11521 cm/yr slr=1.38067 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1757 T=-0.19728 degC Dtdt=0.000798726 DHdt_no_ice=0.0162144 cm/yr slr_no_ice=0.180512 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1758 T=-0.196493 degC dTdt=0.000772255 dHdt=0.11578 cm/yr slr=1.49645 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1758 T=-0.196493 degC Dtdt=0.000772255 DHdt_no_ice=0.0162112 cm/yr slr_no_ice=0.196723 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1759 T=-0.195735 degC dTdt=0.00074021 dHdt=0.116361 cm/yr slr=1.61281 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1759 T=-0.195735 degC Dtdt=0.00074021 DHdt_no_ice=0.0161917 cm/yr slr_no_ice=0.212915 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1760 T=-0.195012 degC dTdt=0.000704866 dHdt=0.116939 cm/yr slr=1.72975 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1760 T=-0.195012 degC Dtdt=0.000704866 DHdt_no_ice=0.0161612 cm/yr slr_no_ice=0.229076 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1761 T=-0.194326 degC dTdt=0.000667753 dHdt=0.117506 cm/yr slr=1.84725 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1761 T=-0.194326 degC Dtdt=0.000667753 DHdt_no_ice=0.0161233 cm/yr slr_no_ice=0.245199 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1762 T=-0.193677 degC dTdt=0.000629926 dHdt=0.118054 cm/yr slr=1.96531 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1762 T=-0.193677 degC Dtdt=0.000629926 DHdt_no_ice=0.0160807 cm/yr slr_no_ice=0.26128 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1763 T=-0.193066 degC dTdt=0.000592148 dHdt=0.118582 cm/yr slr=2.08389 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1763 T=-0.193066 degC Dtdt=0.000592148 DHdt_no_ice=0.0160351 cm/yr slr_no_ice=0.277315 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1764 T=-0.192492 degC dTdt=0.000554965 dHdt=0.119085 cm/yr slr=2.20297 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1764 T=-0.192492 degC Dtdt=0.000554965 DHdt_no_ice=0.015988 cm/yr slr_no_ice=0.293303 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1765 T=-0.191956 degC dTdt=0.00567738 dHdt=0.0942856 cm/yr slr=2.29726 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1765 T=-0.191956 degC Dtdt=0.00567738 DHdt_no_ice=0.028837 cm/yr slr_no_ice=0.32214 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1766 T=-0.181138 degC dTdt=0.014986 dHdt=0.0547317 cm/yr slr=2.35199 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1766 T=-0.181138 degC Dtdt=0.014986 DHdt_no_ice=0.0529739 cm/yr slr_no_ice=0.375114 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1767 T=-0.161984 degC dTdt=0.0154867 dHdt=0.063004 cm/yr slr=2.415 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1767 T=-0.161984 degC Dtdt=0.0154867 DHdt_no_ice=0.0557581 cm/yr slr_no_ice=0.430872 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1768 T=-0.150164 degC dTdt=0.0073042 dHdt=0.109717 cm/yr slr=2.52471 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1768 T=-0.150164 degC Dtdt=0.0073042 DHdt_no_ice=0.0362474 cm/yr slr_no_ice=0.46712 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1769 T=-0.147376 degC dTdt=0.00223928 dHdt=0.136097 cm/yr slr=2.66081 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1769 T=-0.147376 degC Dtdt=0.00223928 DHdt_no_ice=0.0238082 cm/yr slr_no_ice=0.490928 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1770 T=-0.145686 degC dTdt=0.00420038 dHdt=0.127434 cm/yr slr=2.78824 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1770 T=-0.145686 degC Dtdt=0.00420038 DHdt_no_ice=0.0288461 cm/yr slr_no_ice=0.519774 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1771 T=-0.138975 degC dTdt=0.00792811 dHdt=0.112926 cm/yr slr=2.90117 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1771 T=-0.138975 degC Dtdt=0.00792811 DHdt_no_ice=0.0387023 cm/yr slr_no_ice=0.558476 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1772 T=-0.129829 degC dTdt=0.00882512 dHdt=0.113652 cm/yr slr=3.01482 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1772 T=-0.129829 degC Dtdt=0.00882512 DHdt_no_ice=0.0416765 cm/yr slr_no_ice=0.600153 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1773 T=-0.121325 degC dTdt=0.00770154 dHdt=0.123921 cm/yr slr=3.13874 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1773 T=-0.121325 degC Dtdt=0.00770154 DHdt_no_ice=0.0395479 cm/yr slr_no_ice=0.639701 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1774 T=-0.114426 degC dTdt=0.00642372 dHdt=0.134045 cm/yr slr=3.27279 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1774 T=-0.114426 degC Dtdt=0.00642372 DHdt_no_ice=0.0369052 cm/yr slr_no_ice=0.676606 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1775 T=-0.108477 degC dTdt=0.00545628 dHdt=0.142117 cm/yr slr=3.41491 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1775 T=-0.108477 degC Dtdt=0.00545628 DHdt_no_ice=0.0349625 cm/yr slr_no_ice=0.711568 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1776 T=-0.103514 degC dTdt=0.00467911 dHdt=0.148705 cm/yr slr=3.56361 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1776 T=-0.103514 degC Dtdt=0.00467911 DHdt_no_ice=0.0334167 cm/yr slr_no_ice=0.744985 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1777 T=-0.0991189 degC dTdt=0.00412374 dHdt=0.153887 cm/yr slr=3.7175 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1777 T=-0.0991189 degC Dtdt=0.00412374 DHdt_no_ice=0.0323798 cm/yr slr_no_ice=0.777365 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1778 T=-0.0952663 degC dTdt=0.00364937 dHdt=0.158369 cm/yr slr=3.87587 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1778 T=-0.0952663 degC Dtdt=0.00364937 DHdt_no_ice=0.0315021 cm/yr slr_no_ice=0.808867 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1779 T=-0.0918201 degC dTdt=0.0031731 dHdt=0.162633 cm/yr slr=4.0385 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1779 T=-0.0918201 degC Dtdt=0.0031731 DHdt_no_ice=0.0305871 cm/yr slr_no_ice=0.839454 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1780 T=-0.0889201 degC dTdt=0.00291317 dHdt=0.16553 cm/yr slr=4.20403 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1780 T=-0.0889201 degC Dtdt=0.00291317 DHdt_no_ice=0.0301693 cm/yr slr_no_ice=0.869623 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1781 T=-0.0859938 degC dTdt=0.00181584 dHdt=0.172546 cm/yr slr=4.37658 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1781 T=-0.0859938 degC Dtdt=0.00181584 DHdt_no_ice=0.0276601 cm/yr slr_no_ice=0.897283 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1782 T=-0.0852884 degC dTdt=-0.00319199 dHdt=0.197479 cm/yr slr=4.57405 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1782 T=-0.0852884 degC Dtdt=-0.00319199 DHdt_no_ice=0.015197 cm/yr slr_no_ice=0.91248 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1783 T=-0.0923778 degC dTdt=-0.009333 dHdt=0.2236 cm/yr slr=4.79766 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1783 T=-0.0923778 degC Dtdt=-0.009333 DHdt_no_ice=-0.000722716 cm/yr slr_no_ice=0.911758 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1784 T=-0.103954 degC dTdt=-0.00781694 dHdt=0.209689 cm/yr slr=5.00734 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1784 T=-0.103954 degC Dtdt=-0.00781694 DHdt_no_ice=0.0021413 cm/yr slr_no_ice=0.913899 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1785 T=-0.108012 degC dTdt=0.000804266 dHdt=0.165173 cm/yr slr=5.17252 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1785 T=-0.108012 degC Dtdt=0.000804266 DHdt_no_ice=0.0233697 cm/yr slr_no_ice=0.937269 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1786 T=-0.102346 degC dTdt=0.00678891 dHdt=0.139021 cm/yr slr=5.31154 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1786 T=-0.102346 degC Dtdt=0.00678891 DHdt_no_ice=0.0387846 cm/yr slr_no_ice=0.976053 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1787 T=-0.0944338 degC dTdt=0.00706431 dHdt=0.142102 cm/yr slr=5.45364 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1787 T=-0.0944338 degC Dtdt=0.00706431 DHdt_no_ice=0.0401061 cm/yr slr_no_ice=1.01616 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1788 T=-0.0882173 degC dTdt=0.000920985 dHdt=0.175686 cm/yr slr=5.62932 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1788 T=-0.0882173 degC Dtdt=0.000920985 DHdt_no_ice=0.0252451 cm/yr slr_no_ice=1.0414 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1789 T=-0.0925918 degC dTdt=-0.0105528 dHdt=0.229457 cm/yr slr=5.85878 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1789 T=-0.0925918 degC Dtdt=-0.0105528 DHdt_no_ice=-0.00378938 cm/yr slr_no_ice=1.03762 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1790 T=-0.109323 degC dTdt=-0.0133401 dHdt=0.233746 cm/yr slr=6.09253 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1790 T=-0.109323 degC Dtdt=-0.0133401 DHdt_no_ice=-0.0120961 cm/yr slr_no_ice=1.02552 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1791 T=-0.119272 degC dTdt=-0.00250763 dHdt=0.175095 cm/yr slr=6.26762 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1791 T=-0.119272 degC Dtdt=-0.00250763 DHdt_no_ice=0.0141892 cm/yr slr_no_ice=1.03971 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1792 T=-0.114338 degC dTdt=0.00759667 dHdt=0.128347 cm/yr slr=6.39597 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1792 T=-0.114338 degC Dtdt=0.00759667 DHdt_no_ice=0.0398446 cm/yr slr_no_ice=1.07955 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1793 T=-0.104079 degC dTdt=0.00920849 dHdt=0.126194 cm/yr slr=6.52216 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1793 T=-0.104079 degC Dtdt=0.00920849 DHdt_no_ice=0.0446949 cm/yr slr_no_ice=1.12425 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1794 T=-0.0959212 degC dTdt=0.00621197 dHdt=0.145446 cm/yr slr=6.66761 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1794 T=-0.0959212 degC Dtdt=0.00621197 DHdt_no_ice=0.0378562 cm/yr slr_no_ice=1.1621 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1795 T=-0.0916548 degC dTdt=0.00344736 dHdt=0.161381 cm/yr slr=6.82899 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1795 T=-0.0916548 degC Dtdt=0.00344736 DHdt_no_ice=0.031286 cm/yr slr_no_ice=1.19339 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1796 T=-0.0890265 degC dTdt=0.00342799 dHdt=0.162948 cm/yr slr=6.99194 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1796 T=-0.0890265 degC Dtdt=0.00342799 DHdt_no_ice=0.0314479 cm/yr slr_no_ice=1.22484 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1797 T=-0.0847988 degC dTdt=0.00467605 dHdt=0.1592 cm/yr slr=7.15114 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1797 T=-0.0847988 degC Dtdt=0.00467605 DHdt_no_ice=0.0349062 cm/yr slr_no_ice=1.25974 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1798 T=-0.0796744 degC dTdt=0.00479269 dHdt=0.161498 cm/yr slr=7.31264 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1798 T=-0.0796744 degC Dtdt=0.00479269 DHdt_no_ice=0.0356078 cm/yr slr_no_ice=1.29535 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1799 T=-0.0752134 degC dTdt=0.00394995 dHdt=0.168126 cm/yr slr=7.48076 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1799 T=-0.0752134 degC Dtdt=0.00394995 DHdt_no_ice=0.0338578 cm/yr slr_no_ice=1.32921 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1800 T=-0.0717745 degC dTdt=0.00328812 dHdt=0.173294 cm/yr slr=7.65406 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1800 T=-0.0717745 degC Dtdt=0.00328812 DHdt_no_ice=0.0324784 cm/yr slr_no_ice=1.36169 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1801 T=-0.0686371 degC dTdt=0.00282965 dHdt=0.177298 cm/yr slr=7.83135 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1801 T=-0.0686371 degC Dtdt=0.00282965 DHdt_no_ice=0.0315831 cm/yr slr_no_ice=1.39327 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1802 T=-0.0661152 degC dTdt=0.00243716 dHdt=0.180633 cm/yr slr=8.01199 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1802 T=-0.0661152 degC Dtdt=0.00243716 DHdt_no_ice=0.0308037 cm/yr slr_no_ice=1.42407 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1803 T=-0.0637628 degC dTdt=0.00239874 dHdt=0.182139 cm/yr slr=8.19413 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1803 T=-0.0637628 degC Dtdt=0.00239874 DHdt_no_ice=0.0308958 cm/yr slr_no_ice=1.45497 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1804 T=-0.0613177 degC dTdt=0.00214591 dHdt=0.184747 cm/yr slr=8.37887 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1804 T=-0.0613177 degC Dtdt=0.00214591 DHdt_no_ice=0.0304594 cm/yr slr_no_ice=1.48543 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1805 T=-0.059471 degC dTdt=0.00187553 dHdt=0.187106 cm/yr slr=8.56598 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1805 T=-0.059471 degC Dtdt=0.00187553 DHdt_no_ice=0.0299311 cm/yr slr_no_ice=1.51536 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1806 T=-0.0575666 degC dTdt=0.00181167 dHdt=0.188485 cm/yr slr=8.75447 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1806 T=-0.0575666 degC Dtdt=0.00181167 DHdt_no_ice=0.0299239 cm/yr slr_no_ice=1.54528 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1807 T=-0.0558476 degC dTdt=-0.0195986 dHdt=0.294358 cm/yr slr=9.04882 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1807 T=-0.0558476 degC Dtdt=-0.0195986 DHdt_no_ice=-0.0234642 cm/yr slr_no_ice=1.52182 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1808 T=-0.0967638 degC dTdt=-0.0869735 dHdt=0.601583 cm/yr slr=9.65041 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1808 T=-0.0967638 degC Dtdt=-0.0869735 DHdt_no_ice=-0.195175 cm/yr slr_no_ice=1.32665 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1809 T=-0.229795 degC dTdt=-0.137488 dHdt=0.774605 cm/yr slr=10.425 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1809 T=-0.229795 degC Dtdt=-0.137488 DHdt_no_ice=-0.332103 cm/yr slr_no_ice=0.994543 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1810 T=-0.371739 degC dTdt=-0.090005 dHdt=0.462451 cm/yr slr=10.8875 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1810 T=-0.371739 degC Dtdt=-0.090005 DHdt_no_ice=-0.224752 cm/yr slr_no_ice=0.769791 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1811 T=-0.409805 degC dTdt=-0.00141143 dHdt=0.00702531 cm/yr slr=10.8945 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1811 T=-0.409805 degC Dtdt=-0.00141143 DHdt_no_ice=-0.00631295 cm/yr slr_no_ice=0.763478 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1812 T=-0.374562 degC dTdt=0.0390478 dHdt=-0.171489 cm/yr slr=10.723 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1812 T=-0.374562 degC Dtdt=0.0390478 DHdt_no_ice=0.0976544 cm/yr slr_no_ice=0.861132 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1813 T=-0.331709 degC dTdt=0.0123769 dHdt=-0.0168039 cm/yr slr=10.7062 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1813 T=-0.331709 degC Dtdt=0.0123769 DHdt_no_ice=0.0344054 cm/yr slr_no_ice=0.895538 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1814 T=-0.349809 degC dTdt=-0.0832645 dHdt=0.441703 cm/yr slr=11.1479 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1814 T=-0.349809 degC Dtdt=-0.0832645 DHdt_no_ice=-0.206146 cm/yr slr_no_ice=0.689392 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1815 T=-0.498238 degC dTdt=-0.157928 dHdt=0.724436 cm/yr slr=11.8723 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1815 T=-0.498238 degC Dtdt=-0.157928 DHdt_no_ice=-0.40468 cm/yr slr_no_ice=0.284712 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1816 T=-0.665665 degC dTdt=-0.096593 dHdt=0.330133 cm/yr slr=12.2025 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1816 T=-0.665665 degC Dtdt=-0.096593 DHdt_no_ice=-0.264736 cm/yr slr_no_ice=0.0199761 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1817 T=-0.691424 degC dTdt=0.0304555 dHdt=-0.306829 cm/yr slr=11.8956 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1817 T=-0.691424 degC Dtdt=0.0304555 DHdt_no_ice=0.0508248 cm/yr slr_no_ice=0.0708009 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1818 T=-0.604754 degC dTdt=0.0961258 dHdt=-0.580079 cm/yr slr=11.3156 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1818 T=-0.604754 degC Dtdt=0.0961258 DHdt_no_ice=0.221934 cm/yr slr_no_ice=0.292735 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1819 T=-0.499173 degC dTdt=0.0957132 dHdt=-0.518931 cm/yr slr=10.7966 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1819 T=-0.499173 degC Dtdt=0.0957132 DHdt_no_ice=0.229349 cm/yr slr_no_ice=0.522084 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1820 T=-0.413328 degC dTdt=0.0738391 dHdt=-0.363675 cm/yr slr=10.433 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1820 T=-0.413328 degC Dtdt=0.0738391 DHdt_no_ice=0.181532 cm/yr slr_no_ice=0.703616 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1821 T=-0.351494 degC dTdt=0.0533104 dHdt=-0.228458 cm/yr slr=10.2045 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1821 T=-0.351494 degC Dtdt=0.0533104 DHdt_no_ice=0.135156 cm/yr slr_no_ice=0.838772 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1822 T=-0.306707 degC dTdt=0.0394101 dHdt=-0.135265 cm/yr slr=10.0692 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1822 T=-0.306707 degC Dtdt=0.0394101 DHdt_no_ice=0.103989 cm/yr slr_no_ice=0.942761 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1823 T=-0.272674 degC dTdt=0.0305081 dHdt=-0.0725873 cm/yr slr=9.99664 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1823 T=-0.272674 degC Dtdt=0.0305081 DHdt_no_ice=0.0844563 cm/yr slr_no_ice=1.02722 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1824 T=-0.245691 degC dTdt=0.0241925 dHdt=-0.02653 cm/yr slr=9.97011 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1824 T=-0.245691 degC Dtdt=0.0241925 DHdt_no_ice=0.0708258 cm/yr slr_no_ice=1.09804 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1825 T=-0.224289 degC dTdt=0.019597 dHdt=0.00797248 cm/yr slr=9.97808 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1825 T=-0.224289 degC Dtdt=0.019597 DHdt_no_ice=0.0610494 cm/yr slr_no_ice=1.15909 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1826 T=-0.206497 degC dTdt=0.0163473 dHdt=0.0338597 cm/yr slr=10.0119 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1826 T=-0.206497 degC Dtdt=0.0163473 DHdt_no_ice=0.0543486 cm/yr slr_no_ice=1.21344 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1827 T=-0.191595 degC dTdt=0.0135157 dHdt=0.0560802 cm/yr slr=10.068 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1827 T=-0.191595 degC Dtdt=0.0135157 DHdt_no_ice=0.0484616 cm/yr slr_no_ice=1.2619 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1828 T=-0.179466 degC dTdt=0.00980933 dHdt=0.0810335 cm/yr slr=10.1491 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1828 T=-0.179466 degC Dtdt=0.00980933 DHdt_no_ice=0.0401661 cm/yr slr_no_ice=1.30207 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1829 T=-0.171976 degC dTdt=-0.0022357 dHdt=0.144248 cm/yr slr=10.2933 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1829 T=-0.171976 degC Dtdt=-0.0022357 DHdt_no_ice=0.0106527 cm/yr slr_no_ice=1.31272 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1830 T=-0.183937 degC dTdt=-0.0267915 dHdt=0.257874 cm/yr slr=10.5512 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1830 T=-0.183937 degC Dtdt=-0.0267915 DHdt_no_ice=-0.0516937 cm/yr slr_no_ice=1.26103 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1831 T=-0.225559 degC dTdt=-0.0407492 dHdt=0.302958 cm/yr slr=10.8541 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1831 T=-0.225559 degC Dtdt=-0.0407492 DHdt_no_ice=-0.0899176 cm/yr slr_no_ice=1.17111 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1832 T=-0.265435 degC dTdt=-0.0213127 dHdt=0.185388 cm/yr slr=11.0395 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1832 T=-0.265435 degC Dtdt=-0.0213127 DHdt_no_ice=-0.0445166 cm/yr slr_no_ice=1.12659 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1833 T=-0.268184 degC dTdt=-0.00811167 dHdt=0.119164 cm/yr slr=11.1587 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1833 T=-0.268184 degC Dtdt=-0.00811167 DHdt_no_ice=-0.0117339 cm/yr slr_no_ice=1.11486 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1834 T=-0.281659 degC dTdt=-0.0406913 dHdt=0.271259 cm/yr slr=11.4299 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1834 T=-0.281659 degC Dtdt=-0.0406913 DHdt_no_ice=-0.094261 cm/yr slr_no_ice=1.0206 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1835 T=-0.349567 degC dTdt=-0.0603827 dHdt=0.329718 cm/yr slr=11.7597 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1835 T=-0.349567 degC Dtdt=-0.0603827 DHdt_no_ice=-0.148922 cm/yr slr_no_ice=0.871676 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1836 T=-0.402424 degC dTdt=-0.0194969 dHdt=0.0997772 cm/yr slr=11.8594 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1836 T=-0.402424 degC Dtdt=-0.0194969 DHdt_no_ice=-0.0509362 cm/yr slr_no_ice=0.82074 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1837 T=-0.388561 degC dTdt=0.0309545 dHdt=-0.139671 cm/yr slr=11.7198 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1837 T=-0.388561 degC Dtdt=0.0309545 DHdt_no_ice=0.0763015 cm/yr slr_no_ice=0.897042 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1838 T=-0.340515 degC dTdt=0.047772 dHdt=-0.195171 cm/yr slr=11.5246 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1838 T=-0.340515 degC Dtdt=0.047772 DHdt_no_ice=0.122189 cm/yr slr_no_ice=1.01923 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1839 T=-0.293017 degC dTdt=0.0406788 dHdt=-0.133815 cm/yr slr=11.3908 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1839 T=-0.293017 degC Dtdt=0.0406788 DHdt_no_ice=0.108256 cm/yr slr_no_ice=1.12749 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1840 T=-0.259158 degC dTdt=0.0290153 dHdt=-0.0577034 cm/yr slr=11.3331 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1840 T=-0.259158 degC Dtdt=0.0290153 DHdt_no_ice=0.0818058 cm/yr slr_no_ice=1.20929 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1841 T=-0.234986 degC dTdt=0.0217281 dHdt=-0.00845983 cm/yr slr=11.3246 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1841 T=-0.234986 degC Dtdt=0.0217281 DHdt_no_ice=0.0655213 cm/yr slr_no_ice=1.27481 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1842 T=-0.215701 degC dTdt=0.0163923 dHdt=0.0284848 cm/yr slr=11.3531 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1842 T=-0.215701 degC Dtdt=0.0163923 DHdt_no_ice=0.0537247 cm/yr slr_no_ice=1.32854 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1843 T=-0.202201 degC dTdt=0.0117306 dHdt=0.0588874 cm/yr slr=11.412 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1843 T=-0.202201 degC Dtdt=0.0117306 DHdt_no_ice=0.0431503 cm/yr slr_no_ice=1.37169 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1844 T=-0.19224 degC dTdt=0.0103326 dHdt=0.0713156 cm/yr slr=11.4833 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1844 T=-0.19224 degC Dtdt=0.0103326 DHdt_no_ice=0.0404523 cm/yr slr_no_ice=1.41214 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1845 T=-0.181536 degC dTdt=0.0114401 dHdt=0.0718831 cm/yr slr=11.5552 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1845 T=-0.181536 degC Dtdt=0.0114401 DHdt_no_ice=0.0440774 cm/yr slr_no_ice=1.45622 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1846 T=-0.16936 degC dTdt=0.0117457 dHdt=0.0772042 cm/yr slr=11.6324 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1846 T=-0.16936 degC Dtdt=0.0117457 DHdt_no_ice=0.0458156 cm/yr slr_no_ice=1.50203 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1847 T=-0.158045 degC dTdt=0.0104799 dHdt=0.0897435 cm/yr slr=11.7221 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1847 T=-0.158045 degC Dtdt=0.0104799 DHdt_no_ice=0.0435561 cm/yr slr_no_ice=1.54559 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1848 T=-0.1484 degC dTdt=0.00820666 dHdt=0.106283 cm/yr slr=11.8284 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1848 T=-0.1484 degC Dtdt=0.00820666 DHdt_no_ice=0.0386446 cm/yr slr_no_ice=1.58423 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1849 T=-0.141631 degC dTdt=0.0052547 dHdt=0.124538 cm/yr slr=11.953 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1849 T=-0.141631 degC Dtdt=0.0052547 DHdt_no_ice=0.0318062 cm/yr slr_no_ice=1.61604 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1850 T=-0.137891 degC dTdt=0.00389165 dHdt=0.133312 cm/yr slr=12.0863 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1850 T=-0.137891 degC Dtdt=0.00389165 DHdt_no_ice=0.0286978 cm/yr slr_no_ice=1.64474 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1851 T=-0.133848 degC dTdt=0.00487738 dHdt=0.130746 cm/yr slr=12.217 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1851 T=-0.133848 degC Dtdt=0.00487738 DHdt_no_ice=0.0314856 cm/yr slr_no_ice=1.67622 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1852 T=-0.128136 degC dTdt=0.00617445 dHdt=0.127589 cm/yr slr=12.3446 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1852 T=-0.128136 degC Dtdt=0.00617445 DHdt_no_ice=0.0351852 cm/yr slr_no_ice=1.71141 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1853 T=-0.121499 degC dTdt=0.00646335 dHdt=0.12989 cm/yr slr=12.4745 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1853 T=-0.121499 degC Dtdt=0.00646335 DHdt_no_ice=0.0364384 cm/yr slr_no_ice=1.74785 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1854 T=-0.115209 degC dTdt=0.000463114 dHdt=0.162813 cm/yr slr=12.6373 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1854 T=-0.115209 degC Dtdt=0.000463114 DHdt_no_ice=0.021941 cm/yr slr_no_ice=1.76979 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1855 T=-0.120573 degC dTdt=-0.024669 dHdt=0.282957 cm/yr slr=12.9203 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1855 T=-0.120573 degC Dtdt=-0.024669 DHdt_no_ice=-0.0413182 cm/yr slr_no_ice=1.72847 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1856 T=-0.164547 degC dTdt=-0.0505469 dHdt=0.385133 cm/yr slr=13.3054 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1856 T=-0.164547 degC Dtdt=-0.0505469 DHdt_no_ice=-0.109531 cm/yr slr_no_ice=1.61894 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1857 T=-0.221667 degC dTdt=-0.0364504 dHdt=0.284073 cm/yr slr=13.5895 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1857 T=-0.221667 degC Dtdt=-0.0364504 DHdt_no_ice=-0.0788592 cm/yr slr_no_ice=1.54008 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1858 T=-0.237448 degC dTdt=0.00187737 dHdt=0.08743 cm/yr slr=13.6769 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1858 T=-0.237448 degC Dtdt=0.00187737 DHdt_no_ice=0.0156976 cm/yr slr_no_ice=1.55578 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1859 T=-0.217912 degC dTdt=0.0228533 dHdt=-0.00441211 cm/yr slr=13.6725 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1859 T=-0.217912 degC Dtdt=0.0228533 DHdt_no_ice=0.0697004 cm/yr slr_no_ice=1.62548 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1860 T=-0.191741 degC dTdt=0.0221508 dHdt=0.0136859 cm/yr slr=13.6862 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1860 T=-0.191741 degC Dtdt=0.0221508 DHdt_no_ice=0.0700377 cm/yr slr_no_ice=1.69552 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1861 T=-0.17361 degC dTdt=0.0117191 dHdt=0.0749548 cm/yr slr=13.7611 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1861 T=-0.17361 degC Dtdt=0.0117191 DHdt_no_ice=0.0454088 cm/yr slr_no_ice=1.74092 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1862 T=-0.168303 degC dTdt=0.00491046 dHdt=0.111289 cm/yr slr=13.8724 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1862 T=-0.168303 degC Dtdt=0.00491046 DHdt_no_ice=0.0288119 cm/yr slr_no_ice=1.76974 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1863 T=-0.163789 degC dTdt=0.00798552 dHdt=0.0987488 cm/yr slr=13.9712 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1863 T=-0.163789 degC Dtdt=0.00798552 DHdt_no_ice=0.0368607 cm/yr slr_no_ice=1.8066 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1864 T=-0.152332 degC dTdt=0.0124661 dHdt=0.0832099 cm/yr slr=14.0544 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1864 T=-0.152332 degC Dtdt=0.0124661 DHdt_no_ice=0.0489788 cm/yr slr_no_ice=1.85558 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1865 T=-0.138857 degC dTdt=0.0130637 dHdt=0.0878281 cm/yr slr=14.1422 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1865 T=-0.138857 degC Dtdt=0.0130637 DHdt_no_ice=0.0515506 cm/yr slr_no_ice=1.90713 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1866 T=-0.126205 degC dTdt=0.0116719 dHdt=0.101733 cm/yr slr=14.2439 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1866 T=-0.126205 degC Dtdt=0.0116719 DHdt_no_ice=0.0490834 cm/yr slr_no_ice=1.95621 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1867 T=-0.115513 degC dTdt=0.00970158 dHdt=0.117375 cm/yr slr=14.3613 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1867 T=-0.115513 degC Dtdt=0.00970158 DHdt_no_ice=0.0450129 cm/yr slr_no_ice=2.00122 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1868 T=-0.106802 degC dTdt=0.00760931 dHdt=0.132505 cm/yr slr=14.4938 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1868 T=-0.106802 degC Dtdt=0.00760931 DHdt_no_ice=0.0404791 cm/yr slr_no_ice=2.0417 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1869 T=-0.100295 degC dTdt=0.00582662 dHdt=0.144885 cm/yr slr=14.6387 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1869 T=-0.100295 degC Dtdt=0.00582662 DHdt_no_ice=0.036543 cm/yr slr_no_ice=2.07824 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1870 T=-0.0951484 degC dTdt=0.00499034 dHdt=0.151864 cm/yr slr=14.7906 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1870 T=-0.0951484 degC Dtdt=0.00499034 DHdt_no_ice=0.034864 cm/yr slr_no_ice=2.11311 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1871 T=-0.090314 degC dTdt=0.00403748 dHdt=0.15924 cm/yr slr=14.9498 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1871 T=-0.090314 degC Dtdt=0.00403748 DHdt_no_ice=0.0328686 cm/yr slr_no_ice=2.14598 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1872 T=-0.0870735 degC dTdt=0.00241546 dHdt=0.169003 cm/yr slr=15.1188 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1872 T=-0.0870735 degC Dtdt=0.00241546 DHdt_no_ice=0.0290728 cm/yr slr_no_ice=2.17505 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1873 T=-0.0854831 degC dTdt=0.00215552 dHdt=0.171167 cm/yr slr=15.29 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1873 T=-0.0854831 degC Dtdt=0.00215552 DHdt_no_ice=0.0285502 cm/yr slr_no_ice=2.2036 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1874 T=-0.0827624 degC dTdt=0.0025606 dHdt=0.170706 cm/yr slr=15.4607 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1874 T=-0.0827624 degC Dtdt=0.0025606 DHdt_no_ice=0.0297805 cm/yr slr_no_ice=2.23338 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1875 T=-0.0803619 degC dTdt=0.000517947 dHdt=0.182059 cm/yr slr=15.6427 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1875 T=-0.0803619 degC Dtdt=0.000517947 DHdt_no_ice=0.0248659 cm/yr slr_no_ice=2.25825 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1876 T=-0.0817265 degC dTdt=-0.00113914 dHdt=0.189415 cm/yr slr=15.8322 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1876 T=-0.0817265 degC Dtdt=-0.00113914 DHdt_no_ice=0.020614 cm/yr slr_no_ice=2.27886 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1877 T=-0.0826402 degC dTdt=0.00101218 dHdt=0.178362 cm/yr slr=16.0105 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1877 T=-0.0826402 degC Dtdt=0.00101218 DHdt_no_ice=0.0259192 cm/yr slr_no_ice=2.30478 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1878 T=-0.0797022 degC dTdt=0.00371241 dHdt=0.166776 cm/yr slr=16.1773 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1878 T=-0.0797022 degC Dtdt=0.00371241 DHdt_no_ice=0.0329049 cm/yr slr_no_ice=2.33769 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1879 T=-0.0752153 degC dTdt=0.00452019 dHdt=0.165331 cm/yr slr=16.3426 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1879 T=-0.0752153 degC Dtdt=0.00452019 DHdt_no_ice=0.0352832 cm/yr slr_no_ice=2.37297 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1880 T=-0.0706618 degC dTdt=0.00465284 dHdt=0.16723 cm/yr slr=16.5099 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1880 T=-0.0706618 degC Dtdt=0.00465284 DHdt_no_ice=0.0359792 cm/yr slr_no_ice=2.40895 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1881 T=-0.0659097 degC dTdt=-0.00051212 dHdt=0.1952 cm/yr slr=16.7051 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1881 T=-0.0659097 degC Dtdt=-0.00051212 DHdt_no_ice=0.0234469 cm/yr slr_no_ice=2.43239 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1882 T=-0.071686 degC dTdt=-0.0448119 dHdt=0.409034 cm/yr slr=17.1141 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1882 T=-0.071686 degC Dtdt=-0.0448119 DHdt_no_ice=-0.0877646 cm/yr slr_no_ice=2.34463 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1883 T=-0.155533 degC dTdt=-0.108193 dHdt=0.672649 cm/yr slr=17.7867 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1883 T=-0.155533 degC Dtdt=-0.108193 DHdt_no_ice=-0.252926 cm/yr slr_no_ice=2.0917 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1884 T=-0.288073 degC dTdt=-0.0917658 dHdt=0.517932 cm/yr slr=18.3047 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1884 T=-0.288073 degC Dtdt=-0.0917658 DHdt_no_ice=-0.22246 cm/yr slr_no_ice=1.86924 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1885 T=-0.339065 degC dTdt=-0.0199059 dHdt=0.137263 cm/yr slr=18.4419 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1885 T=-0.339065 degC Dtdt=-0.0199059 DHdt_no_ice=-0.04689 cm/yr slr_no_ice=1.82235 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1886 T=-0.327885 degC dTdt=0.0154316 dHdt=-0.0296303 cm/yr slr=18.4123 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1886 T=-0.327885 degC Dtdt=0.0154316 DHdt_no_ice=0.0423482 cm/yr slr_no_ice=1.8647 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1887 T=-0.308202 degC dTdt=0.0200482 dHdt=-0.0412294 cm/yr slr=18.3711 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1887 T=-0.308202 degC Dtdt=0.0200482 DHdt_no_ice=0.0554644 cm/yr slr_no_ice=1.92017 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1888 T=-0.287788 degC dTdt=0.0142282 dHdt=-0.00127983 cm/yr slr=18.3698 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1888 T=-0.287788 degC Dtdt=0.0142282 DHdt_no_ice=0.0425476 cm/yr slr_no_ice=1.96271 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1889 T=-0.279745 degC dTdt=0.00329473 dHdt=0.0567984 cm/yr slr=18.4266 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1889 T=-0.279745 degC Dtdt=0.00329473 DHdt_no_ice=0.0158572 cm/yr slr_no_ice=1.97857 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1890 T=-0.281199 degC dTdt=0.00118127 dHdt=0.0663405 cm/yr slr=18.4929 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1890 T=-0.281199 degC Dtdt=0.00118127 DHdt_no_ice=0.0104573 cm/yr slr_no_ice=1.98903 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1891 T=-0.277383 degC dTdt=0.011041 dHdt=0.0201646 cm/yr slr=18.5131 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1891 T=-0.277383 degC Dtdt=0.011041 DHdt_no_ice=0.0354119 cm/yr slr_no_ice=2.02444 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1892 T=-0.259117 degC dTdt=0.0228775 dHdt=-0.0276049 cm/yr slr=18.4855 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1892 T=-0.259117 degC Dtdt=0.0228775 DHdt_no_ice=0.0664643 cm/yr slr_no_ice=2.0909 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1893 T=-0.231628 degC dTdt=0.0288198 dHdt=-0.0413285 cm/yr slr=18.4442 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1893 T=-0.231628 degC Dtdt=0.0288198 DHdt_no_ice=0.0835192 cm/yr slr_no_ice=2.17442 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1894 T=-0.201477 degC dTdt=0.0261589 dHdt=-0.011406 cm/yr slr=18.4328 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1894 T=-0.201477 degC Dtdt=0.0261589 DHdt_no_ice=0.0792791 cm/yr slr_no_ice=2.2537 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1895 T=-0.17931 degC dTdt=0.0129496 dHdt=0.0657334 cm/yr slr=18.4985 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1895 T=-0.17931 degC Dtdt=0.0129496 DHdt_no_ice=0.0480291 cm/yr slr_no_ice=2.30173 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1896 T=-0.175578 degC dTdt=-0.00055066 dHdt=0.133975 cm/yr slr=18.6325 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1896 T=-0.175578 degC Dtdt=-0.00055066 DHdt_no_ice=0.0145771 cm/yr slr_no_ice=2.31631 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1897 T=-0.180411 degC dTdt=0.00036341 dHdt=0.126789 cm/yr slr=18.7593 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1897 T=-0.180411 degC Dtdt=0.00036341 DHdt_no_ice=0.0164756 cm/yr slr_no_ice=2.33278 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1898 T=-0.174851 degC dTdt=0.0100844 dHdt=0.0822697 cm/yr slr=18.8415 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1898 T=-0.174851 degC Dtdt=0.0100844 DHdt_no_ice=0.0412229 cm/yr slr_no_ice=2.37401 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1899 T=-0.160243 degC dTdt=0.0153705 dHdt=0.0645488 cm/yr slr=18.9061 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1899 T=-0.160243 degC Dtdt=0.0153705 DHdt_no_ice=0.0556068 cm/yr slr_no_ice=2.42961 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1900 T=-0.14411 degC dTdt=0.0140073 dHdt=0.0802623 cm/yr slr=18.9863 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1900 T=-0.14411 degC Dtdt=0.0140073 DHdt_no_ice=0.0534895 cm/yr slr_no_ice=2.4831 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1901 T=-0.132228 degC dTdt=-0.00887091 dHdt=0.19902 cm/yr slr=19.1854 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1901 T=-0.132228 degC Dtdt=-0.00887091 DHdt_no_ice=-0.00275551 cm/yr slr_no_ice=2.48035 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1902 T=-0.161852 degC dTdt=-0.0447842 dHdt=0.358406 cm/yr slr=19.5438 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1902 T=-0.161852 degC Dtdt=-0.0447842 DHdt_no_ice=-0.0949087 cm/yr slr_no_ice=2.38544 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1903 T=-0.221796 degC dTdt=-0.040309 dHdt=0.302908 cm/yr slr=19.8467 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1903 T=-0.221796 degC Dtdt=-0.040309 DHdt_no_ice=-0.0885162 cm/yr slr_no_ice=2.29692 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1904 T=-0.24247 degC dTdt=-0.00096398 dHdt=0.0985403 cm/yr slr=19.9452 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1904 T=-0.24247 degC Dtdt=-0.00096398 DHdt_no_ice=0.00819245 cm/yr slr_no_ice=2.30512 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1905 T=-0.223724 degC dTdt=0.0212919 dHdt=-1.57978e-05 cm/yr slr=19.9452 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1905 T=-0.223724 degC Dtdt=0.0212919 DHdt_no_ice=0.0653317 cm/yr slr_no_ice=2.37045 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1906 T=-0.199886 degC dTdt=0.0185145 dHdt=0.0269426 cm/yr slr=19.9721 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1906 T=-0.199886 degC Dtdt=0.0185145 DHdt_no_ice=0.0602953 cm/yr slr_no_ice=2.43074 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1907 T=-0.186695 degC dTdt=0.0122042 dHdt=0.06525 cm/yr slr=20.0374 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1907 T=-0.186695 degC Dtdt=0.0122042 DHdt_no_ice=0.0455749 cm/yr slr_no_ice=2.47632 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1908 T=-0.175478 degC dTdt=0.01262 dHdt=0.0694946 cm/yr slr=20.1069 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1908 T=-0.175478 degC Dtdt=0.01262 DHdt_no_ice=0.0475117 cm/yr slr_no_ice=2.52383 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1909 T=-0.161455 degC dTdt=0.0138126 dHdt=0.0715032 cm/yr slr=20.1784 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1909 T=-0.161455 degC Dtdt=0.0138126 DHdt_no_ice=0.0516151 cm/yr slr_no_ice=2.57544 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1910 T=-0.147853 degC dTdt=0.0127005 dHdt=0.0845701 cm/yr slr=20.263 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1910 T=-0.147853 degC Dtdt=0.0127005 DHdt_no_ice=0.049923 cm/yr slr_no_ice=2.62537 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1911 T=-0.136054 degC dTdt=-0.000208696 dHdt=0.154432 cm/yr slr=20.4174 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1911 T=-0.136054 degC Dtdt=-0.000208696 DHdt_no_ice=0.0185939 cm/yr slr_no_ice=2.64396 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1912 T=-0.14827 degC dTdt=-0.0165068 dHdt=0.227452 cm/yr slr=20.6448 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1912 T=-0.14827 degC Dtdt=-0.0165068 DHdt_no_ice=-0.0231286 cm/yr slr_no_ice=2.62083 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1913 T=-0.169068 degC dTdt=-0.00773639 dHdt=0.17283 cm/yr slr=20.8177 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1913 T=-0.169068 degC Dtdt=-0.00773639 DHdt_no_ice=-0.00286643 cm/yr slr_no_ice=2.61797 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1914 T=-0.163743 degC dTdt=0.0108809 dHdt=0.0845876 cm/yr slr=20.9023 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1914 T=-0.163743 degC Dtdt=0.0108809 DHdt_no_ice=0.0441028 cm/yr slr_no_ice=2.66207 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1915 T=-0.147306 degC dTdt=0.0150123 dHdt=0.0735481 cm/yr slr=20.9758 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1915 T=-0.147306 degC Dtdt=0.0150123 DHdt_no_ice=0.0557463 cm/yr slr_no_ice=2.71782 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1916 T=-0.133718 degC dTdt=0.0119616 dHdt=0.0961062 cm/yr slr=21.0719 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1916 T=-0.133718 degC Dtdt=0.0119616 DHdt_no_ice=0.0492064 cm/yr slr_no_ice=2.76702 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1917 T=-0.123383 degC dTdt=0.00974809 dHdt=0.11274 cm/yr slr=21.1847 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1917 T=-0.123383 degC Dtdt=0.00974809 DHdt_no_ice=0.0444996 cm/yr slr_no_ice=2.81152 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1918 T=-0.114222 degC dTdt=0.0100409 dHdt=0.116435 cm/yr slr=21.3011 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1918 T=-0.114222 degC Dtdt=0.0100409 DHdt_no_ice=0.0459645 cm/yr slr_no_ice=2.85749 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1919 T=-0.103301 degC dTdt=0.00548245 dHdt=0.144887 cm/yr slr=21.446 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1919 T=-0.103301 degC Dtdt=0.00548245 DHdt_no_ice=0.035442 cm/yr slr_no_ice=2.89293 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1920 T=-0.103257 degC dTdt=0.00142346 dHdt=0.164801 cm/yr slr=21.6108 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1920 T=-0.103257 degC Dtdt=0.00142346 DHdt_no_ice=0.0252981 cm/yr slr_no_ice=2.91823 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1921 T=-0.100454 degC dTdt=0.00642167 dHdt=0.141879 cm/yr slr=21.7527 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1921 T=-0.100454 degC Dtdt=0.00642167 DHdt_no_ice=0.0380178 cm/yr slr_no_ice=2.95624 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1922 T=-0.0904138 degC dTdt=0.00872502 dHdt=0.136216 cm/yr slr=21.8889 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1922 T=-0.0904138 degC Dtdt=0.00872502 DHdt_no_ice=0.0445794 cm/yr slr_no_ice=3.00082 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1923 T=-0.0830044 degC dTdt=0.00632717 dHdt=0.152114 cm/yr slr=22.041 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1923 T=-0.0830044 degC Dtdt=0.00632717 DHdt_no_ice=0.0391776 cm/yr slr_no_ice=3.04 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1924 T=-0.0777594 degC dTdt=0.00505347 dHdt=0.161293 cm/yr slr=22.2023 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1924 T=-0.0777594 degC Dtdt=0.00505347 DHdt_no_ice=0.0364129 cm/yr slr_no_ice=3.07641 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1925 T=-0.0728974 degC dTdt=0.00501221 dHdt=0.164218 cm/yr slr=22.3665 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1925 T=-0.0728974 degC Dtdt=0.00501221 DHdt_no_ice=0.0366987 cm/yr slr_no_ice=3.11311 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1926 T=-0.067735 degC dTdt=0.00434642 dHdt=0.170371 cm/yr slr=22.5369 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1926 T=-0.067735 degC Dtdt=0.00434642 DHdt_no_ice=0.0354472 cm/yr slr_no_ice=3.14856 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1927 T=-0.0642046 degC dTdt=0.00142586 dHdt=0.186659 cm/yr slr=22.7235 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1927 T=-0.0642046 degC Dtdt=0.00142586 DHdt_no_ice=0.0284283 cm/yr slr_no_ice=3.17699 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1928 T=-0.0648833 degC dTdt=-0.00327055 dHdt=0.209291 cm/yr slr=22.9328 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1928 T=-0.0648833 degC Dtdt=-0.00327055 DHdt_no_ice=0.016633 cm/yr slr_no_ice=3.19362 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1929 T=-0.0707457 degC dTdt=-0.00269615 dHdt=0.203194 cm/yr slr=23.136 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1929 T=-0.0707457 degC Dtdt=-0.00269615 DHdt_no_ice=0.0176 cm/yr slr_no_ice=3.21122 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1930 T=-0.0702756 degC dTdt=0.00396215 dHdt=0.170831 cm/yr slr=23.3068 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1930 T=-0.0702756 degC Dtdt=0.00396215 DHdt_no_ice=0.0342833 cm/yr slr_no_ice=3.2455 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1931 T=-0.0628214 degC dTdt=0.00736976 dHdt=0.158308 cm/yr slr=23.4652 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1931 T=-0.0628214 degC Dtdt=0.00736976 DHdt_no_ice=0.0433987 cm/yr slr_no_ice=3.2889 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1932 T=-0.0555361 degC dTdt=0.00634465 dHdt=0.167411 cm/yr slr=23.6326 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1932 T=-0.0555361 degC Dtdt=0.00634465 DHdt_no_ice=0.0414188 cm/yr slr_no_ice=3.33032 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1933 T=-0.0501321 degC dTdt=0.00564225 dHdt=0.173879 cm/yr slr=23.8064 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1933 T=-0.0501321 degC Dtdt=0.00564225 DHdt_no_ice=0.0400951 cm/yr slr_no_ice=3.37042 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1934 T=-0.0442516 degC dTdt=0.00502395 dHdt=0.180202 cm/yr slr=23.9866 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1934 T=-0.0442516 degC Dtdt=0.00502395 DHdt_no_ice=0.0390198 cm/yr slr_no_ice=3.40944 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1935 T=-0.0400842 degC dTdt=0.00369849 dHdt=0.18903 cm/yr slr=24.1757 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1935 T=-0.0400842 degC Dtdt=0.00369849 DHdt_no_ice=0.0360395 cm/yr slr_no_ice=3.44548 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1936 T=-0.0368546 degC dTdt=0.00226025 dHdt=0.197886 cm/yr slr=24.3736 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1936 T=-0.0368546 degC Dtdt=0.00226025 DHdt_no_ice=0.0327023 cm/yr slr_no_ice=3.47818 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1937 T=-0.0355637 degC dTdt=0.00205375 dHdt=0.199621 cm/yr slr=24.5732 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1937 T=-0.0355637 degC Dtdt=0.00205375 DHdt_no_ice=0.0322893 cm/yr slr_no_ice=3.51047 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1938 T=-0.0327471 degC dTdt=0.00217696 dHdt=0.200595 cm/yr slr=24.7738 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1938 T=-0.0327471 degC Dtdt=0.00217696 DHdt_no_ice=0.0328226 cm/yr slr_no_ice=3.54329 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1939 T=-0.0312098 degC dTdt=0.00136419 dHdt=0.205438 cm/yr slr=24.9792 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1939 T=-0.0312098 degC Dtdt=0.00136419 DHdt_no_ice=0.0309137 cm/yr slr_no_ice=3.5742 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1940 T=-0.0300187 degC dTdt=0.00146799 dHdt=0.205596 cm/yr slr=25.1848 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1940 T=-0.0300187 degC Dtdt=0.00146799 DHdt_no_ice=0.0312685 cm/yr slr_no_ice=3.60547 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1941 T=-0.0282738 degC dTdt=0.000722547 dHdt=0.210226 cm/yr slr=25.395 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1941 T=-0.0282738 degC Dtdt=0.000722547 DHdt_no_ice=0.0295445 cm/yr slr_no_ice=3.63502 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1942 T=-0.0285736 degC dTdt=-8.93891e-05 dHdt=0.214037 cm/yr slr=25.6091 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1942 T=-0.0285736 degC Dtdt=-8.93891e-05 DHdt_no_ice=0.0274906 cm/yr slr_no_ice=3.66251 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1943 T=-0.0284526 degC dTdt=0.00213217 dHdt=0.203219 cm/yr slr=25.8123 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1943 T=-0.0284526 degC Dtdt=0.00213217 DHdt_no_ice=0.0330542 cm/yr slr_no_ice=3.69556 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1944 T=-0.0243093 degC dTdt=0.00687392 dHdt=0.182305 cm/yr slr=25.9946 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1944 T=-0.0243093 degC Dtdt=0.00687392 DHdt_no_ice=0.0452401 cm/yr slr_no_ice=3.7408 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1945 T=-0.0147047 degC dTdt=0.00984155 dHdt=0.173142 cm/yr slr=26.1677 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1945 T=-0.0147047 degC Dtdt=0.00984155 DHdt_no_ice=0.0534275 cm/yr slr_no_ice=3.79423 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1946 T=-0.00462615 degC dTdt=0.00719613 dHdt=0.191748 cm/yr slr=26.3595 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1946 T=-0.00462615 degC Dtdt=0.00719613 DHdt_no_ice=0.0476202 cm/yr slr_no_ice=3.84185 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1947 T=-0.000312484 degC dTdt=0.00358886 dHdt=0.21184 cm/yr slr=26.5713 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1947 T=-0.000312484 degC Dtdt=0.00358886 DHdt_no_ice=0.0389472 cm/yr slr_no_ice=3.8808 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1948 T=0.00255157 degC dTdt=0.00325082 dHdt=0.2151 cm/yr slr=26.7864 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1948 T=0.00255157 degC Dtdt=0.00325082 DHdt_no_ice=0.0383312 cm/yr slr_no_ice=3.91913 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1949 T=0.00618916 degC dTdt=0.00225943 dHdt=0.221995 cm/yr slr=27.0084 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1949 T=0.00618916 degC Dtdt=0.00225943 DHdt_no_ice=0.0361437 cm/yr slr_no_ice=3.95527 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1950 T=0.00707043 degC dTdt=0.0011995 dHdt=0.227682 cm/yr slr=27.2361 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1950 T=0.00707043 degC Dtdt=0.0011995 DHdt_no_ice=0.0335644 cm/yr slr_no_ice=3.98884 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1951 T=0.00858815 degC dTdt=0.00176625 dHdt=0.225755 cm/yr slr=27.4619 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1951 T=0.00858815 degC Dtdt=0.00176625 DHdt_no_ice=0.0351027 cm/yr slr_no_ice=4.02394 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1952 T=0.0106029 degC dTdt=0.00210797 dHdt=0.225209 cm/yr slr=27.6871 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1952 T=0.0106029 degC Dtdt=0.00210797 DHdt_no_ice=0.0361182 cm/yr slr_no_ice=4.06006 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1953 T=0.0128041 degC dTdt=0.00327049 dHdt=0.220745 cm/yr slr=27.9078 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1953 T=0.0128041 degC Dtdt=0.00327049 DHdt_no_ice=0.0392005 cm/yr slr_no_ice=4.09926 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1954 T=0.0171439 degC dTdt=0.00443239 dHdt=0.217482 cm/yr slr=28.1253 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1954 T=0.0171439 degC Dtdt=0.00443239 DHdt_no_ice=0.0424525 cm/yr slr_no_ice=4.14171 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1955 T=0.0216689 degC dTdt=0.00436191 dHdt=0.220361 cm/yr slr=28.3457 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1955 T=0.0216689 degC Dtdt=0.00436191 DHdt_no_ice=0.0426383 cm/yr slr_no_ice=4.18435 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1956 T=0.0258677 degC dTdt=0.00451972 dHdt=0.221939 cm/yr slr=28.5676 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1956 T=0.0258677 degC Dtdt=0.00451972 DHdt_no_ice=0.0433687 cm/yr slr_no_ice=4.22772 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1957 T=0.0307083 degC dTdt=0.00602507 dHdt=0.217274 cm/yr slr=28.7849 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1957 T=0.0307083 degC Dtdt=0.00602507 DHdt_no_ice=0.0475193 cm/yr slr_no_ice=4.27524 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1958 T=0.0379178 degC dTdt=0.00676913 dHdt=0.217665 cm/yr slr=29.0025 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1958 T=0.0379178 degC Dtdt=0.00676913 DHdt_no_ice=0.0499562 cm/yr slr_no_ice=4.32519 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1959 T=0.0442466 degC dTdt=0.00298639 dHdt=0.239745 cm/yr slr=29.2423 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1959 T=0.0442466 degC Dtdt=0.00298639 DHdt_no_ice=0.0410057 cm/yr slr_no_ice=4.3662 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1960 T=0.0438906 degC dTdt=-0.00704839 dHdt=0.288716 cm/yr slr=29.531 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1960 T=0.0438906 degC Dtdt=-0.00704839 DHdt_no_ice=0.0158903 cm/yr slr_no_ice=4.38209 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1961 T=0.0301498 degC dTdt=-0.0145625 dHdt=0.31784 cm/yr slr=29.8488 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1961 T=0.0301498 degC Dtdt=-0.0145625 DHdt_no_ice=-0.00399437 cm/yr slr_no_ice=4.37809 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1962 T=0.0147655 degC dTdt=-0.0339628 dHdt=0.404286 cm/yr slr=30.2531 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1962 T=0.0147655 degC Dtdt=-0.0339628 DHdt_no_ice=-0.0537256 cm/yr slr_no_ice=4.32437 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1963 T=-0.0377757 degC dTdt=-0.062499 dHdt=0.514691 cm/yr slr=30.7678 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1963 T=-0.0377757 degC Dtdt=-0.062499 DHdt_no_ice=-0.12927 cm/yr slr_no_ice=4.1951 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1964 T=-0.110233 degC dTdt=-0.0496534 dHdt=0.411171 cm/yr slr=31.179 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1964 T=-0.110233 degC Dtdt=-0.0496534 DHdt_no_ice=-0.102952 cm/yr slr_no_ice=4.09215 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1965 T=-0.137082 degC dTdt=-0.00459859 dHdt=0.175367 cm/yr slr=31.3544 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1965 T=-0.137082 degC Dtdt=-0.00459859 DHdt_no_ice=0.00753694 cm/yr slr_no_ice=4.09968 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1966 T=-0.11943 degC dTdt=0.0231945 dHdt=0.0490661 cm/yr slr=31.4034 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1966 T=-0.11943 degC Dtdt=0.0231945 DHdt_no_ice=0.078432 cm/yr slr_no_ice=4.17812 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1967 T=-0.0906934 degC dTdt=0.0164491 dHdt=0.0982109 cm/yr slr=31.5016 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1967 T=-0.0906934 degC Dtdt=0.0164491 DHdt_no_ice=0.0638674 cm/yr slr_no_ice=4.24198 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1968 T=-0.0865314 degC dTdt=-0.000139077 dHdt=0.181824 cm/yr slr=31.6835 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1968 T=-0.0865314 degC Dtdt=-0.000139077 DHdt_no_ice=0.0227298 cm/yr slr_no_ice=4.26471 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1969 T=-0.0909715 degC dTdt=0.00651238 dHdt=0.146745 cm/yr slr=31.8302 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1969 T=-0.0909715 degC Dtdt=0.00651238 DHdt_no_ice=0.0390032 cm/yr slr_no_ice=4.30372 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1970 T=-0.0735066 degC dTdt=0.0254365 dHdt=0.0637973 cm/yr slr=31.894 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1970 T=-0.0735066 degC Dtdt=0.0254365 DHdt_no_ice=0.0877108 cm/yr slr_no_ice=4.39143 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1971 T=-0.0400985 degC dTdt=0.0321339 dHdt=0.0496889 cm/yr slr=31.9437 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1971 T=-0.0400985 degC Dtdt=0.0321339 DHdt_no_ice=0.107127 cm/yr slr_no_ice=4.49855 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1972 T=-0.00923893 degC dTdt=0.0258778 dHdt=0.0976251 cm/yr slr=32.0413 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1972 T=-0.00923893 degC Dtdt=0.0258778 DHdt_no_ice=0.0939553 cm/yr slr_no_ice=4.59251 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1973 T=0.0116571 degC dTdt=0.0142391 dHdt=0.166357 cm/yr slr=32.2077 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1973 T=0.0116571 degC Dtdt=0.0142391 DHdt_no_ice=0.0665302 cm/yr slr_no_ice=4.65904 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1974 T=0.0192392 degC dTdt=0.00487488 dHdt=0.216487 cm/yr slr=32.4242 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1974 T=0.0192392 degC Dtdt=0.00487488 DHdt_no_ice=0.0437263 cm/yr slr_no_ice=4.70277 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1975 T=0.0214068 degC dTdt=0.00815778 dHdt=0.201615 cm/yr slr=32.6258 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1975 T=0.0214068 degC Dtdt=0.00815778 DHdt_no_ice=0.052107 cm/yr slr_no_ice=4.75487 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1976 T=0.0355547 degC dTdt=0.0218712 dHdt=0.142342 cm/yr slr=32.7681 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1976 T=0.0355547 degC Dtdt=0.0218712 DHdt_no_ice=0.0875225 cm/yr slr_no_ice=4.84239 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1977 T=0.0651493 degC dTdt=0.0280389 dHdt=0.128693 cm/yr slr=32.8968 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1977 T=0.0651493 degC Dtdt=0.0280389 DHdt_no_ice=0.105309 cm/yr slr_no_ice=4.9477 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1978 T=0.0916325 degC dTdt=0.0242228 dHdt=0.162222 cm/yr slr=33.059 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1978 T=0.0916325 degC Dtdt=0.0242228 DHdt_no_ice=0.0978877 cm/yr slr_no_ice=5.04559 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1979 T=0.113595 degC dTdt=0.0236696 dHdt=0.177232 cm/yr slr=33.2363 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1979 T=0.113595 degC Dtdt=0.0236696 DHdt_no_ice=0.0982616 cm/yr slr_no_ice=5.14385 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1980 T=0.138972 degC dTdt=0.0253768 dHdt=0.183078 cm/yr slr=33.4193 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1980 T=0.138972 degC Dtdt=0.0253768 DHdt_no_ice=0.10456 cm/yr slr_no_ice=5.24841 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1981
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1981 T=0.15927 degC dTdt=0.0202986 dHdt=0.219328 cm/yr slr=33.6387 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1981 T=0.15927 degC Dtdt=0.0202986 DHdt_no_ice=0.0934882 cm/yr slr_no_ice=5.3419 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1982
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1982 T=0.121163 degC dTdt=-0.0381077 dHdt=0.484179 cm/yr slr=34.1228 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1982 T=0.121163 degC Dtdt=-0.0381077 DHdt_no_ice=-0.0555763 cm/yr slr_no_ice=5.28632 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1983
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1983 T=0.0699742 degC dTdt=-0.0511884 dHdt=0.519609 cm/yr slr=34.6424 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1983 T=0.0699742 degC Dtdt=-0.0511884 DHdt_no_ice=-0.0923731 cm/yr slr_no_ice=5.19395 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1984
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1984 T=0.0842933 degC dTdt=0.014319 dHdt=0.206641 cm/yr slr=34.8491 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1984 T=0.0842933 degC Dtdt=0.014319 DHdt_no_ice=0.072541 cm/yr slr_no_ice=5.26649 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1985
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1985 T=0.130531 degC dTdt=0.046238 dHdt=0.0761312 cm/yr slr=34.9252 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1985 T=0.130531 degC Dtdt=0.046238 DHdt_no_ice=0.156038 cm/yr slr_no_ice=5.42253 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1986
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1986 T=0.175902 degC dTdt=0.0453705 dHdt=0.105789 cm/yr slr=35.031 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1986 T=0.175902 degC Dtdt=0.0453705 DHdt_no_ice=0.157499 cm/yr slr_no_ice=5.58003 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1987
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1987 T=0.21524 degC dTdt=0.0393385 dHdt=0.157376 cm/yr slr=35.1884 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1987 T=0.21524 degC Dtdt=0.0393385 DHdt_no_ice=0.145566 cm/yr slr_no_ice=5.72559 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1988
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1988 T=0.253761 degC dTdt=0.038521 dHdt=0.182954 cm/yr slr=35.3713 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1988 T=0.253761 degC Dtdt=0.038521 DHdt_no_ice=0.146603 cm/yr slr_no_ice=5.8722 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1989
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1989 T=0.290273 degC dTdt=0.0365119 dHdt=0.213245 cm/yr slr=35.5846 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1989 T=0.290273 degC Dtdt=0.0365119 DHdt_no_ice=0.144502 cm/yr slr_no_ice=6.0167 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1990
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1990 T=0.32302 degC dTdt=0.0327469 dHdt=0.250031 cm/yr slr=35.8346 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1990 T=0.32302 degC Dtdt=0.0327469 DHdt_no_ice=0.137709 cm/yr slr_no_ice=6.15441 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1991
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1991 T=0.269635 degC dTdt=-0.053385 dHdt=0.642182 cm/yr slr=36.4768 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1991 T=0.269635 degC Dtdt=-0.053385 DHdt_no_ice=-0.0818917 cm/yr slr_no_ice=6.07252 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1992
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1992 T=0.179803 degC dTdt=-0.0898323 dHdt=0.770468 cm/yr slr=37.2473 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1992 T=0.179803 degC Dtdt=-0.0898323 DHdt_no_ice=-0.180197 cm/yr slr_no_ice=5.89232 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1993
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1993 T=0.180601 degC dTdt=0.000798402 dHdt=0.326825 cm/yr slr=37.5741 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1993 T=0.180601 degC Dtdt=0.000798402 DHdt_no_ice=0.0464441 cm/yr slr_no_ice=5.93876 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1994
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1994 T=0.240058 degC dTdt=0.0594566 dHdt=0.072695 cm/yr slr=37.6468 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1994 T=0.240058 degC Dtdt=0.0594566 DHdt_no_ice=0.197846 cm/yr slr_no_ice=6.13661 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1995
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1995 T=0.310264 degC dTdt=0.0702059 dHdt=0.0593387 cm/yr slr=37.7061 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1995 T=0.310264 degC Dtdt=0.0702059 DHdt_no_ice=0.230336 cm/yr slr_no_ice=6.36695 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1996
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1996 T=0.372388 degC dTdt=0.0621246 dHdt=0.133727 cm/yr slr=37.8399 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1996 T=0.372388 degC Dtdt=0.0621246 DHdt_no_ice=0.215102 cm/yr slr_no_ice=6.58205 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1997
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1997 T=0.420675 degC dTdt=0.0482867 dHdt=0.228573 cm/yr slr=38.0684 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1997 T=0.420675 degC Dtdt=0.0482867 DHdt_no_ice=0.184371 cm/yr slr_no_ice=6.76642 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1998
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1998 T=0.466289 degC dTdt=0.0456142 dHdt=0.267213 cm/yr slr=38.3356 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1998 T=0.466289 degC Dtdt=0.0456142 DHdt_no_ice=0.181339 cm/yr slr_no_ice=6.94776 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 1999
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1999 T=0.514084 degC dTdt=0.0477944 dHdt=0.283294 cm/yr slr=38.6189 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 1999 T=0.514084 degC Dtdt=0.0477944 DHdt_no_ice=0.190613 cm/yr slr_no_ice=7.13837 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2000
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2000 T=0.557354 degC dTdt=0.0432702 dHdt=0.329694 cm/yr slr=38.9486 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2000 T=0.557354 degC Dtdt=0.0432702 DHdt_no_ice=0.182764 cm/yr slr_no_ice=7.32113 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2001
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2001 T=0.595776 degC dTdt=0.0384227 dHdt=0.374964 cm/yr slr=39.3236 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2001 T=0.595776 degC Dtdt=0.0384227 DHdt_no_ice=0.173719 cm/yr slr_no_ice=7.49485 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2002
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2002 T=0.627876 degC dTdt=0.0320997 dHdt=0.423922 cm/yr slr=39.7475 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2002 T=0.627876 degC Dtdt=0.0320997 DHdt_no_ice=0.160479 cm/yr slr_no_ice=7.65533 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2003
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2003 T=0.656062 degC dTdt=0.0281863 dHdt=0.458882 cm/yr slr=40.2064 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2003 T=0.656062 degC Dtdt=0.0281863 DHdt_no_ice=0.152951 cm/yr slr_no_ice=7.80828 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2004
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2004 T=0.685206 degC dTdt=0.0291434 dHdt=0.470513 cm/yr slr=40.6769 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2004 T=0.685206 degC Dtdt=0.0291434 DHdt_no_ice=0.157675 cm/yr slr_no_ice=7.96596 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2005
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2005 T=0.708871 degC dTdt=0.0236654 dHdt=0.510607 cm/yr slr=41.1875 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2005 T=0.708871 degC Dtdt=0.0236654 DHdt_no_ice=0.145873 cm/yr slr_no_ice=8.11183 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2006
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2006 T=0.72155 degC dTdt=0.0126784 dHdt=0.571544 cm/yr slr=41.7591 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2006 T=0.72155 degC Dtdt=0.0126784 DHdt_no_ice=0.11942 cm/yr slr_no_ice=8.23125 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2007
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2007 T=0.735014 degC dTdt=0.013464 dHdt=0.575234 cm/yr slr=42.3343 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2007 T=0.735014 degC Dtdt=0.013464 DHdt_no_ice=0.122461 cm/yr slr_no_ice=8.35371 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2008
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2008 T=0.753555 degC dTdt=0.0185415 dHdt=0.560738 cm/yr slr=42.895 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2008 T=0.753555 degC Dtdt=0.0185415 DHdt_no_ice=0.136638 cm/yr slr_no_ice=8.49035 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2009
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2009 T=0.776274 degC dTdt=0.0227185 dHdt=0.552993 cm/yr slr=43.448 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2009 T=0.776274 degC Dtdt=0.0227185 DHdt_no_ice=0.148898 cm/yr slr_no_ice=8.63925 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2010
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2010 T=0.801161 degC dTdt=0.0248876 dHdt=0.556301 cm/yr slr=44.0043 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2010 T=0.801161 degC Dtdt=0.0248876 DHdt_no_ice=0.156312 cm/yr slr_no_ice=8.79556 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2011
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2011 T=0.826572 degC dTdt=0.0254109 dHdt=0.567967 cm/yr slr=44.5723 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2011 T=0.826572 degC Dtdt=0.0254109 DHdt_no_ice=0.159653 cm/yr slr_no_ice=8.95521 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2012
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2012 T=0.850958 degC dTdt=0.0243858 dHdt=0.586646 cm/yr slr=45.1589 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2012 T=0.850958 degC Dtdt=0.0243858 DHdt_no_ice=0.159041 cm/yr slr_no_ice=9.11425 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2013
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2013 T=0.877345 degC dTdt=0.026387 dHdt=0.591617 cm/yr slr=45.7506 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2013 T=0.877345 degC Dtdt=0.026387 DHdt_no_ice=0.166155 cm/yr slr_no_ice=9.28041 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2014
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2014 T=0.902465 degC dTdt=0.0251204 dHdt=0.61189 cm/yr slr=46.3624 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2014 T=0.902465 degC Dtdt=0.0251204 DHdt_no_ice=0.164998 cm/yr slr_no_ice=9.44541 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2015
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2015 T=0.936813 degC dTdt=0.0343472 dHdt=0.585914 cm/yr slr=46.9484 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2015 T=0.936813 degC Dtdt=0.0343472 DHdt_no_ice=0.190813 cm/yr slr_no_ice=9.63622 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2016
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2016 T=0.971225 degC dTdt=0.0344127 dHdt=0.604864 cm/yr slr=47.5532 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2016 T=0.971225 degC Dtdt=0.0344127 DHdt_no_ice=0.19373 cm/yr slr_no_ice=9.82995 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2017
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2017 T=1.0046 degC dTdt=0.0333745 dHdt=0.628641 cm/yr slr=48.1819 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2017 T=1.0046 degC Dtdt=0.0333745 DHdt_no_ice=0.193804 cm/yr slr_no_ice=10.0238 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2018
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2018 T=1.0374 degC dTdt=0.0328003 dHdt=0.649823 cm/yr slr=48.8317 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2018 T=1.0374 degC Dtdt=0.0328003 DHdt_no_ice=0.194993 cm/yr slr_no_ice=10.2187 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2019
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2019 T=1.06995 degC dTdt=0.0325509 dHdt=0.669273 cm/yr slr=49.501 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2019 T=1.06995 degC Dtdt=0.0325509 DHdt_no_ice=0.196973 cm/yr slr_no_ice=10.4157 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2020
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2020 T=1.10247 degC dTdt=0.0325166 dHdt=0.68765 cm/yr slr=50.1886 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2020 T=1.10247 degC Dtdt=0.0325166 DHdt_no_ice=0.199489 cm/yr slr_no_ice=10.6152 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2021
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2021 T=1.13299 degC dTdt=0.0305203 dHdt=0.714524 cm/yr slr=50.9031 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2021 T=1.13299 degC Dtdt=0.0305203 DHdt_no_ice=0.19694 cm/yr slr_no_ice=10.8121 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2022
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2022 T=1.16171 degC dTdt=0.0287246 dHdt=0.739408 cm/yr slr=51.6425 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2022 T=1.16171 degC Dtdt=0.0287246 DHdt_no_ice=0.194749 cm/yr slr_no_ice=11.0069 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2023
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2023 T=1.18912 degC dTdt=0.0274097 dHdt=0.761201 cm/yr slr=52.4037 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2023 T=1.18912 degC Dtdt=0.0274097 DHdt_no_ice=0.193654 cm/yr slr_no_ice=11.2006 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2024
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2024 T=1.21553 degC dTdt=0.0264101 dHdt=0.780889 cm/yr slr=53.1846 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2024 T=1.21553 degC Dtdt=0.0264101 DHdt_no_ice=0.193268 cm/yr slr_no_ice=11.3938 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2025
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2025 T=1.24116 degC dTdt=0.0256243 dHdt=0.799089 cm/yr slr=53.9837 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2025 T=1.24116 degC Dtdt=0.0256243 DHdt_no_ice=0.193353 cm/yr slr_no_ice=11.5872 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2026
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2026 T=1.26618 degC dTdt=0.0250231 dHdt=0.816048 cm/yr slr=54.7998 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2026 T=1.26618 degC Dtdt=0.0250231 DHdt_no_ice=0.193852 cm/yr slr_no_ice=11.781 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2027
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2027 T=1.29072 degC dTdt=0.0245385 dHdt=0.832163 cm/yr slr=55.6319 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2027 T=1.29072 degC Dtdt=0.0245385 DHdt_no_ice=0.194604 cm/yr slr_no_ice=11.9756 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2028
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2028 T=1.31483 degC dTdt=0.0241078 dHdt=0.847774 cm/yr slr=56.4797 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2028 T=1.31483 degC Dtdt=0.0241078 DHdt_no_ice=0.195455 cm/yr slr_no_ice=12.1711 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2029
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2029 T=1.33845 degC dTdt=0.0236285 dHdt=0.863355 cm/yr slr=57.3431 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2029 T=1.33845 degC Dtdt=0.0236285 DHdt_no_ice=0.196148 cm/yr slr_no_ice=12.3672 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2030
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2030 T=1.36163 degC dTdt=0.0231736 dHdt=0.878561 cm/yr slr=58.2216 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2030 T=1.36163 degC Dtdt=0.0231736 DHdt_no_ice=0.196864 cm/yr slr_no_ice=12.5641 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2031
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2031 T=1.38515 degC dTdt=0.023525 dHdt=0.890013 cm/yr slr=59.1116 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2031 T=1.38515 degC Dtdt=0.023525 DHdt_no_ice=0.199625 cm/yr slr_no_ice=12.7637 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2032
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2032 T=1.40897 degC dTdt=0.0238168 dHdt=0.901921 cm/yr slr=60.0136 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2032 T=1.40897 degC Dtdt=0.0238168 DHdt_no_ice=0.20226 cm/yr slr_no_ice=12.966 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2033
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2033 T=1.43292 degC dTdt=0.0239496 dHdt=0.914682 cm/yr slr=60.9282 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2033 T=1.43292 degC Dtdt=0.0239496 DHdt_no_ice=0.204507 cm/yr slr_no_ice=13.1705 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2034
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2034 T=1.45689 degC dTdt=0.0239717 dHdt=0.927998 cm/yr slr=61.8562 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2034 T=1.45689 degC Dtdt=0.0239717 DHdt_no_ice=0.206481 cm/yr slr_no_ice=13.377 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2035
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2035 T=1.48084 degC dTdt=0.0239442 dHdt=0.941541 cm/yr slr=62.7978 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2035 T=1.48084 degC Dtdt=0.0239442 DHdt_no_ice=0.208327 cm/yr slr_no_ice=13.5853 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2036
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2036 T=1.50474 degC dTdt=0.0239028 dHdt=0.95513 cm/yr slr=63.7529 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2036 T=1.50474 degC Dtdt=0.0239028 DHdt_no_ice=0.210136 cm/yr slr_no_ice=13.7954 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2037
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2037 T=1.52852 degC dTdt=0.0237866 dHdt=0.969019 cm/yr slr=64.7219 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2037 T=1.52852 degC Dtdt=0.0237866 DHdt_no_ice=0.211749 cm/yr slr_no_ice=14.0072 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2038
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2038 T=1.55217 degC dTdt=0.0236447 dHdt=0.982956 cm/yr slr=65.7049 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2038 T=1.55217 degC Dtdt=0.0236447 DHdt_no_ice=0.213285 cm/yr slr_no_ice=14.2205 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2039
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2039 T=1.57566 degC dTdt=0.0234944 dHdt=0.996849 cm/yr slr=66.7017 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2039 T=1.57566 degC Dtdt=0.0234944 DHdt_no_ice=0.214789 cm/yr slr_no_ice=14.4353 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2040
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2040 T=1.599 degC dTdt=0.0233409 dHdt=1.01067 cm/yr slr=67.7124 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2040 T=1.599 degC Dtdt=0.0233409 DHdt_no_ice=0.216273 cm/yr slr_no_ice=14.6515 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2041
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2041 T=1.62223 degC dTdt=0.023224 dHdt=1.02425 cm/yr slr=68.7367 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2041 T=1.62223 degC Dtdt=0.023224 DHdt_no_ice=0.217838 cm/yr slr_no_ice=14.8694 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2042
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2042 T=1.64532 degC dTdt=0.0230914 dHdt=1.03783 cm/yr slr=69.7745 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2042 T=1.64532 degC Dtdt=0.0230914 DHdt_no_ice=0.219354 cm/yr slr_no_ice=15.0887 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2043
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2043 T=1.66826 degC dTdt=0.0229406 dHdt=1.05142 cm/yr slr=70.8259 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2043 T=1.66826 degC Dtdt=0.0229406 DHdt_no_ice=0.220812 cm/yr slr_no_ice=15.3095 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2044
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2044 T=1.69104 degC dTdt=0.0227802 dHdt=1.06496 cm/yr slr=71.8909 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2044 T=1.69104 degC Dtdt=0.0227802 DHdt_no_ice=0.222234 cm/yr slr_no_ice=15.5318 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2045
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2045 T=1.71366 degC dTdt=0.0226156 dHdt=1.07843 cm/yr slr=72.9693 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2045 T=1.71366 degC Dtdt=0.0226156 DHdt_no_ice=0.223631 cm/yr slr_no_ice=15.7554 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2046
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2046 T=1.73611 degC dTdt=0.0224501 dHdt=1.09181 cm/yr slr=74.0611 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2046 T=1.73611 degC Dtdt=0.0224501 DHdt_no_ice=0.225014 cm/yr slr_no_ice=15.9804 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2047
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2047 T=1.75839 degC dTdt=0.022286 dHdt=1.1051 cm/yr slr=75.1662 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2047 T=1.75839 degC Dtdt=0.022286 DHdt_no_ice=0.226386 cm/yr slr_no_ice=16.2068 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2048
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2048 T=1.78052 degC dTdt=0.0221246 dHdt=1.11828 cm/yr slr=76.2845 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2048 T=1.78052 degC Dtdt=0.0221246 DHdt_no_ice=0.227753 cm/yr slr_no_ice=16.4346 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2049
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2049 T=1.80248 degC dTdt=0.0219669 dHdt=1.13135 cm/yr slr=77.4158 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2049 T=1.80248 degC Dtdt=0.0219669 DHdt_no_ice=0.229116 cm/yr slr_no_ice=16.6637 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2050
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2050 T=1.8243 degC dTdt=0.0218136 dHdt=1.14432 cm/yr slr=78.5602 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2050 T=1.8243 degC Dtdt=0.0218136 DHdt_no_ice=0.230478 cm/yr slr_no_ice=16.8941 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2051
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2051 T=1.84561 degC dTdt=0.0213175 dHdt=1.15869 cm/yr slr=79.7188 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2051 T=1.84561 degC Dtdt=0.0213175 DHdt_no_ice=0.230943 cm/yr slr_no_ice=17.1251 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2052
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2052 T=1.86648 degC dTdt=0.0208648 dHdt=1.17259 cm/yr slr=80.8914 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2052 T=1.86648 degC Dtdt=0.0208648 DHdt_no_ice=0.23148 cm/yr slr_no_ice=17.3566 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2053
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2053 T=1.88695 degC dTdt=0.0204732 dHdt=1.18597 cm/yr slr=82.0774 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2053 T=1.88695 degC Dtdt=0.0204732 DHdt_no_ice=0.232139 cm/yr slr_no_ice=17.5887 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2054
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2054 T=1.90707 degC dTdt=0.0201176 dHdt=1.19898 cm/yr slr=83.2764 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2054 T=1.90707 degC Dtdt=0.0201176 DHdt_no_ice=0.23286 cm/yr slr_no_ice=17.8216 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2055
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2055 T=1.92686 degC dTdt=0.0197868 dHdt=1.21168 cm/yr slr=84.4881 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2055 T=1.92686 degC Dtdt=0.0197868 DHdt_no_ice=0.233616 cm/yr slr_no_ice=18.0552 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2056
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2056 T=1.94632 degC dTdt=0.0194668 dHdt=1.22415 cm/yr slr=85.7122 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2056 T=1.94632 degC Dtdt=0.0194668 DHdt_no_ice=0.234373 cm/yr slr_no_ice=18.2896 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2057
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2057 T=1.9655 degC dTdt=0.0191764 dHdt=1.23632 cm/yr slr=86.9485 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2057 T=1.9655 degC Dtdt=0.0191764 DHdt_no_ice=0.235181 cm/yr slr_no_ice=18.5247 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2058
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2058 T=1.9844 degC dTdt=0.0188961 dHdt=1.24827 cm/yr slr=88.1968 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2058 T=1.9844 degC Dtdt=0.0188961 DHdt_no_ice=0.235992 cm/yr slr_no_ice=18.7607 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2059
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2059 T=2.00302 degC dTdt=0.018622 dHdt=1.26004 cm/yr slr=89.4569 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2059 T=2.00302 degC Dtdt=0.018622 DHdt_no_ice=0.236797 cm/yr slr_no_ice=18.9975 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2060
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2060 T=2.02138 degC dTdt=0.0183568 dHdt=1.27162 cm/yr slr=90.7285 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2060 T=2.02138 degC Dtdt=0.0183568 DHdt_no_ice=0.237602 cm/yr slr_no_ice=19.2351 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2061
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2061 T=2.03922 degC dTdt=0.017848 dHdt=1.28411 cm/yr slr=92.0126 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2061 T=2.03922 degC Dtdt=0.017848 DHdt_no_ice=0.237758 cm/yr slr_no_ice=19.4729 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2062
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2062 T=2.05661 degC dTdt=0.0173856 dHdt=1.29611 cm/yr slr=93.3087 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2062 T=2.05661 degC Dtdt=0.0173856 DHdt_no_ice=0.237993 cm/yr slr_no_ice=19.7109 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2063
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2063 T=2.07358 degC dTdt=0.0169665 dHdt=1.30767 cm/yr slr=94.6164 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2063 T=2.07358 degC Dtdt=0.0169665 DHdt_no_ice=0.238302 cm/yr slr_no_ice=19.9492 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2064
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2064 T=2.09015 degC dTdt=0.0165706 dHdt=1.31889 cm/yr slr=95.9353 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2064 T=2.09015 degC Dtdt=0.0165706 DHdt_no_ice=0.238638 cm/yr slr_no_ice=20.1878 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2065
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2065 T=2.10634 degC dTdt=0.0161904 dHdt=1.32982 cm/yr slr=97.2651 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2065 T=2.10634 degC Dtdt=0.0161904 DHdt_no_ice=0.238983 cm/yr slr_no_ice=20.4268 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2066
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2066 T=2.12216 degC dTdt=0.0158218 dHdt=1.34048 cm/yr slr=98.6056 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2066 T=2.12216 degC Dtdt=0.0158218 DHdt_no_ice=0.239327 cm/yr slr_no_ice=20.6661 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2067
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2067 T=2.13762 degC dTdt=0.0154621 dHdt=1.3509 cm/yr slr=99.9565 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2067 T=2.13762 degC Dtdt=0.0154621 DHdt_no_ice=0.239665 cm/yr slr_no_ice=20.9058 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2068
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2068 T=2.15273 degC dTdt=0.0151095 dHdt=1.36109 cm/yr slr=101.318 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2068 T=2.15273 degC Dtdt=0.0151095 DHdt_no_ice=0.239992 cm/yr slr_no_ice=21.1458 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2069
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2069 T=2.16749 degC dTdt=0.014763 dHdt=1.37106 cm/yr slr=102.689 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2069 T=2.16749 degC Dtdt=0.014763 DHdt_no_ice=0.240307 cm/yr slr_no_ice=21.3861 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2070
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2070 T=2.18191 degC dTdt=0.0144217 dHdt=1.38081 cm/yr slr=104.069 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2070 T=2.18191 degC Dtdt=0.0144217 DHdt_no_ice=0.240607 cm/yr slr_no_ice=21.6267 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2071
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2071 T=2.19599 degC dTdt=0.014079 dHdt=1.39037 cm/yr slr=105.46 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2071 T=2.19599 degC Dtdt=0.014079 DHdt_no_ice=0.240877 cm/yr slr_no_ice=21.8676 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2072
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2072 T=2.20971 degC dTdt=0.013714 dHdt=1.39984 cm/yr slr=106.86 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2072 T=2.20971 degC Dtdt=0.013714 DHdt_no_ice=0.241062 cm/yr slr_no_ice=22.1086 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2073
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2073 T=2.22302 degC dTdt=0.0133149 dHdt=1.40925 cm/yr slr=108.269 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2073 T=2.22302 degC Dtdt=0.0133149 DHdt_no_ice=0.241129 cm/yr slr_no_ice=22.3498 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2074
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2074 T=2.23592 degC dTdt=0.0128924 dHdt=1.41854 cm/yr slr=109.687 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2074 T=2.23592 degC Dtdt=0.0128924 DHdt_no_ice=0.241104 cm/yr slr_no_ice=22.5909 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2075
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2075 T=2.24837 degC dTdt=0.0124551 dHdt=1.42766 cm/yr slr=111.115 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2075 T=2.24837 degC Dtdt=0.0124551 DHdt_no_ice=0.241007 cm/yr slr_no_ice=22.8319 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2076
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2076 T=2.26038 degC dTdt=0.0120084 dHdt=1.43657 cm/yr slr=112.552 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2076 T=2.26038 degC Dtdt=0.0120084 DHdt_no_ice=0.240851 cm/yr slr_no_ice=23.0727 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2077
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2077 T=2.27194 degC dTdt=0.0115591 dHdt=1.44525 cm/yr slr=113.997 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2077 T=2.27194 degC Dtdt=0.0115591 DHdt_no_ice=0.240653 cm/yr slr_no_ice=23.3134 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2078
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2078 T=2.28304 degC dTdt=0.0110998 dHdt=1.45371 cm/yr slr=115.451 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2078 T=2.28304 degC Dtdt=0.0110998 DHdt_no_ice=0.240393 cm/yr slr_no_ice=23.5538 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2079
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2079 T=2.29368 degC dTdt=0.0106442 dHdt=1.46191 cm/yr slr=116.913 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2079 T=2.29368 degC Dtdt=0.0106442 DHdt_no_ice=0.240105 cm/yr slr_no_ice=23.7939 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2080
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2080 T=2.30387 degC dTdt=0.0101866 dHdt=1.46985 cm/yr slr=118.382 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2080 T=2.30387 degC Dtdt=0.0101866 DHdt_no_ice=0.239776 cm/yr slr_no_ice=24.0337 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2081
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2081 T=2.31377 degC dTdt=0.00990361 dHdt=1.47678 cm/yr slr=119.859 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2081 T=2.31377 degC Dtdt=0.00990361 DHdt_no_ice=0.239861 cm/yr slr_no_ice=24.2735 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2082
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2082 T=2.32338 degC dTdt=0.00960723 dHdt=1.48362 cm/yr slr=121.343 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2082 T=2.32338 degC Dtdt=0.00960723 DHdt_no_ice=0.239888 cm/yr slr_no_ice=24.5134 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2083
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2083 T=2.33265 degC dTdt=0.00927427 dHdt=1.49044 cm/yr slr=122.833 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2083 T=2.33265 degC Dtdt=0.00927427 DHdt_no_ice=0.239798 cm/yr slr_no_ice=24.7532 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2084
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2084 T=2.34157 degC dTdt=0.00891861 dHdt=1.49718 cm/yr slr=124.33 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2084 T=2.34157 degC Dtdt=0.00891861 DHdt_no_ice=0.239622 cm/yr slr_no_ice=24.9928 cm
+Tue Mar 21 15:37:31 2023:DEBUG:run: SLR run 2085
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2085 T=2.35012 degC dTdt=0.00854797 dHdt=1.50378 cm/yr slr=125.834 cm
+Tue Mar 21 15:37:31 2023:DEBUG:compute_slr: 2085 T=2.35012 degC Dtdt=0.00854797 DHdt_no_ice=0.23938 cm/yr slr_no_ice=25.2322 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2086
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2086 T=2.35829 degC dTdt=0.00816676 dHdt=1.51022 cm/yr slr=127.344 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2086 T=2.35829 degC Dtdt=0.00816676 DHdt_no_ice=0.23908 cm/yr slr_no_ice=25.4713 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2087
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2087 T=2.36607 degC dTdt=0.00777821 dHdt=1.51648 cm/yr slr=128.861 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2087 T=2.36607 degC Dtdt=0.00777821 DHdt_no_ice=0.238731 cm/yr slr_no_ice=25.71 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2088
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2088 T=2.37345 degC dTdt=0.00738473 dHdt=1.52255 cm/yr slr=130.383 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2088 T=2.37345 degC Dtdt=0.00738473 DHdt_no_ice=0.238338 cm/yr slr_no_ice=25.9484 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2089
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2089 T=2.38044 degC dTdt=0.00698756 dHdt=1.52841 cm/yr slr=131.912 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2089 T=2.38044 degC Dtdt=0.00698756 DHdt_no_ice=0.237904 cm/yr slr_no_ice=26.1863 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2090
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2090 T=2.38702 degC dTdt=0.00658717 dHdt=1.53406 cm/yr slr=133.446 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2090 T=2.38702 degC Dtdt=0.00658717 DHdt_no_ice=0.23743 cm/yr slr_no_ice=26.4237 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2091
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2091 T=2.39312 degC dTdt=0.00609091 dHdt=1.5399 cm/yr slr=134.986 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2091 T=2.39312 degC Dtdt=0.00609091 DHdt_no_ice=0.236677 cm/yr slr_no_ice=26.6604 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2092
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2092 T=2.39874 degC dTdt=0.0056222 dHdt=1.54534 cm/yr slr=136.531 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2092 T=2.39874 degC Dtdt=0.0056222 DHdt_no_ice=0.235955 cm/yr slr_no_ice=26.8963 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2093
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2093 T=2.40394 degC dTdt=0.00520095 dHdt=1.55032 cm/yr slr=138.081 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2093 T=2.40394 degC Dtdt=0.00520095 DHdt_no_ice=0.235317 cm/yr slr_no_ice=27.1316 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2094
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2094 T=2.40875 degC dTdt=0.00481171 dHdt=1.55492 cm/yr slr=139.636 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2094 T=2.40875 degC Dtdt=0.00481171 DHdt_no_ice=0.234729 cm/yr slr_no_ice=27.3664 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2095
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2095 T=2.41319 degC dTdt=0.00444396 dHdt=1.55921 cm/yr slr=141.196 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2095 T=2.41319 degC Dtdt=0.00444396 DHdt_no_ice=0.234165 cm/yr slr_no_ice=27.6005 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2096
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2096 T=2.41729 degC dTdt=0.00409134 dHdt=1.56323 cm/yr slr=142.759 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2096 T=2.41729 degC Dtdt=0.00409134 DHdt_no_ice=0.233611 cm/yr slr_no_ice=27.8341 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2097
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2097 T=2.42106 degC dTdt=0.00377373 dHdt=1.5669 cm/yr slr=144.326 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2097 T=2.42106 degC Dtdt=0.00377373 DHdt_no_ice=0.233119 cm/yr slr_no_ice=28.0673 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2098
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2098 T=2.42449 degC dTdt=0.00343351 dHdt=1.57049 cm/yr slr=145.896 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2098 T=2.42449 degC Dtdt=0.00343351 DHdt_no_ice=0.232543 cm/yr slr_no_ice=28.2998 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2099
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2099 T=2.42759 degC dTdt=0.00309503 dHdt=1.57388 cm/yr slr=147.47 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2099 T=2.42759 degC Dtdt=0.00309503 DHdt_no_ice=0.231945 cm/yr slr_no_ice=28.5317 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2100
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2100 T=2.43036 degC dTdt=0.00277207 dHdt=1.57702 cm/yr slr=149.047 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2100 T=2.43036 degC Dtdt=0.00277207 DHdt_no_ice=0.231359 cm/yr slr_no_ice=28.7631 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2101
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2101 T=2.43288 degC dTdt=0.0025214 dHdt=1.57966 cm/yr slr=150.627 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2101 T=2.43288 degC Dtdt=0.0025214 DHdt_no_ice=0.230934 cm/yr slr_no_ice=28.994 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2102
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2102 T=2.43514 degC dTdt=0.00225964 dHdt=1.58221 cm/yr slr=152.209 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2102 T=2.43514 degC Dtdt=0.00225964 DHdt_no_ice=0.23046 cm/yr slr_no_ice=29.2245 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2103
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2103 T=2.43714 degC dTdt=0.00199784 dHdt=1.58461 cm/yr slr=153.794 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2103 T=2.43714 degC Dtdt=0.00199784 DHdt_no_ice=0.229966 cm/yr slr_no_ice=29.4545 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2104
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2104 T=2.43888 degC dTdt=0.00174185 dHdt=1.58684 cm/yr slr=155.38 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2104 T=2.43888 degC Dtdt=0.00174185 DHdt_no_ice=0.229465 cm/yr slr_no_ice=29.6839 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2105
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2105 T=2.44037 degC dTdt=0.00148725 dHdt=1.58892 cm/yr slr=156.969 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2105 T=2.44037 degC Dtdt=0.00148725 DHdt_no_ice=0.228948 cm/yr slr_no_ice=29.9129 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2106
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2106 T=2.4416 degC dTdt=0.00123413 dHdt=1.59085 cm/yr slr=158.56 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2106 T=2.4416 degC Dtdt=0.00123413 DHdt_no_ice=0.228413 cm/yr slr_no_ice=30.1413 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2107
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2107 T=2.44259 degC dTdt=0.000992451 dHdt=1.59259 cm/yr slr=160.153 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2107 T=2.44259 degC Dtdt=0.000992451 DHdt_no_ice=0.227889 cm/yr slr_no_ice=30.3692 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2108
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2108 T=2.44336 degC dTdt=0.000766489 dHdt=1.59413 cm/yr slr=161.747 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2108 T=2.44336 degC Dtdt=0.000766489 DHdt_no_ice=0.227385 cm/yr slr_no_ice=30.5966 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2109
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2109 T=2.44391 degC dTdt=0.000550618 dHdt=1.59549 cm/yr slr=163.342 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2109 T=2.44391 degC Dtdt=0.000550618 DHdt_no_ice=0.226889 cm/yr slr_no_ice=30.8235 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2110
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2110 T=2.44425 degC dTdt=0.000342545 dHdt=1.5967 cm/yr slr=164.939 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2110 T=2.44425 degC Dtdt=0.000342545 DHdt_no_ice=0.226397 cm/yr slr_no_ice=31.0499 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2111
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2111 T=2.4444 degC dTdt=0.00014244 dHdt=1.59776 cm/yr slr=166.537 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2111 T=2.4444 degC Dtdt=0.00014244 DHdt_no_ice=0.225908 cm/yr slr_no_ice=31.2758 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2112
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2112 T=2.44434 degC dTdt=-5.27998e-05 dHdt=1.59869 cm/yr slr=168.136 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2112 T=2.44434 degC Dtdt=-5.27998e-05 DHdt_no_ice=0.225416 cm/yr slr_no_ice=31.5012 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2113
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2113 T=2.4441 degC dTdt=-0.000246581 dHdt=1.5995 cm/yr slr=169.735 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2113 T=2.4441 degC Dtdt=-0.000246581 DHdt_no_ice=0.224911 cm/yr slr_no_ice=31.7261 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2114
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2114 T=2.44366 degC dTdt=-0.000438665 dHdt=1.6002 cm/yr slr=171.335 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2114 T=2.44366 degC Dtdt=-0.000438665 DHdt_no_ice=0.224396 cm/yr slr_no_ice=31.9505 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2115
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2115 T=2.44303 degC dTdt=-0.000628249 dHdt=1.60078 cm/yr slr=172.936 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2115 T=2.44303 degC Dtdt=-0.000628249 DHdt_no_ice=0.223872 cm/yr slr_no_ice=32.1744 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2116
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2116 T=2.44221 degC dTdt=-0.00081568 dHdt=1.60124 cm/yr slr=174.537 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2116 T=2.44221 degC Dtdt=-0.00081568 DHdt_no_ice=0.223338 cm/yr slr_no_ice=32.3977 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2117
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2117 T=2.44123 degC dTdt=-0.000988745 dHdt=1.60153 cm/yr slr=176.139 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2117 T=2.44123 degC Dtdt=-0.000988745 DHdt_no_ice=0.222826 cm/yr slr_no_ice=32.6205 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2118
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2118 T=2.44009 degC dTdt=-0.00113772 dHdt=1.60162 cm/yr slr=177.74 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2118 T=2.44009 degC Dtdt=-0.00113772 DHdt_no_ice=0.222363 cm/yr slr_no_ice=32.8429 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2119
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2119 T=2.43882 degC dTdt=-0.00126812 dHdt=1.60155 cm/yr slr=179.342 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2119 T=2.43882 degC Dtdt=-0.00126812 DHdt_no_ice=0.221935 cm/yr slr_no_ice=33.0648 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2120
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2120 T=2.43743 degC dTdt=-0.00138505 dHdt=1.60135 cm/yr slr=180.943 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2120 T=2.43743 degC Dtdt=-0.00138505 DHdt_no_ice=0.221532 cm/yr slr_no_ice=33.2864 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2121
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2121 T=2.43594 degC dTdt=-0.00149195 dHdt=1.60104 cm/yr slr=182.544 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2121 T=2.43594 degC Dtdt=-0.00149195 DHdt_no_ice=0.221146 cm/yr slr_no_ice=33.5075 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2122
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2122 T=2.43436 degC dTdt=-0.00158617 dHdt=1.60061 cm/yr slr=184.145 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2122 T=2.43436 degC Dtdt=-0.00158617 DHdt_no_ice=0.220783 cm/yr slr_no_ice=33.7283 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2123
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2123 T=2.43269 degC dTdt=-0.00166568 dHdt=1.60007 cm/yr slr=185.745 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2123 T=2.43269 degC Dtdt=-0.00166568 DHdt_no_ice=0.220451 cm/yr slr_no_ice=33.9487 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2124
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2124 T=2.43096 degC dTdt=-0.00173409 dHdt=1.59943 cm/yr slr=187.344 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2124 T=2.43096 degC Dtdt=-0.00173409 DHdt_no_ice=0.220141 cm/yr slr_no_ice=34.1689 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2125
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2125 T=2.42916 degC dTdt=-0.00179437 dHdt=1.59872 cm/yr slr=188.943 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2125 T=2.42916 degC Dtdt=-0.00179437 DHdt_no_ice=0.219847 cm/yr slr_no_ice=34.3887 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2126
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2126 T=2.42731 degC dTdt=-0.00184855 dHdt=1.59795 cm/yr slr=190.541 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2126 T=2.42731 degC Dtdt=-0.00184855 DHdt_no_ice=0.219564 cm/yr slr_no_ice=34.6083 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2127
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2127 T=2.42542 degC dTdt=-0.00188986 dHdt=1.5971 cm/yr slr=192.138 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2127 T=2.42542 degC Dtdt=-0.00188986 DHdt_no_ice=0.219309 cm/yr slr_no_ice=34.8276 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2128
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2128 T=2.42351 degC dTdt=-0.00191321 dHdt=1.59614 cm/yr slr=193.734 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2128 T=2.42351 degC Dtdt=-0.00191321 DHdt_no_ice=0.219098 cm/yr slr_no_ice=35.0467 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2129
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2129 T=2.42159 degC dTdt=-0.00192311 dHdt=1.59511 cm/yr slr=195.33 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2129 T=2.42159 degC Dtdt=-0.00192311 DHdt_no_ice=0.218919 cm/yr slr_no_ice=35.2656 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2130
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2130 T=2.41966 degC dTdt=-0.00192322 dHdt=1.59404 cm/yr slr=196.924 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2130 T=2.41966 degC Dtdt=-0.00192322 DHdt_no_ice=0.218765 cm/yr slr_no_ice=35.4844 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2131
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2131 T=2.41775 degC dTdt=-0.00191603 dHdt=1.59293 cm/yr slr=198.516 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2131 T=2.41775 degC Dtdt=-0.00191603 DHdt_no_ice=0.21863 cm/yr slr_no_ice=35.703 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2132
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2132 T=2.41584 degC dTdt=-0.00190615 dHdt=1.59181 cm/yr slr=200.108 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2132 T=2.41584 degC Dtdt=-0.00190615 DHdt_no_ice=0.218502 cm/yr slr_no_ice=35.9215 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2133
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2133 T=2.41395 degC dTdt=-0.00189696 dHdt=1.5907 cm/yr slr=201.699 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2133 T=2.41395 degC Dtdt=-0.00189696 DHdt_no_ice=0.218373 cm/yr slr_no_ice=36.1399 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2134
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2134 T=2.41206 degC dTdt=-0.00188817 dHdt=1.5896 cm/yr slr=203.289 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2134 T=2.41206 degC Dtdt=-0.00188817 DHdt_no_ice=0.218244 cm/yr slr_no_ice=36.3581 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2135
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2135 T=2.41018 degC dTdt=-0.0018796 dHdt=1.58851 cm/yr slr=204.877 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2135 T=2.41018 degC Dtdt=-0.0018796 DHdt_no_ice=0.218115 cm/yr slr_no_ice=36.5762 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2136
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2136 T=2.40831 degC dTdt=-0.00187132 dHdt=1.58742 cm/yr slr=206.465 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2136 T=2.40831 degC Dtdt=-0.00187132 DHdt_no_ice=0.217986 cm/yr slr_no_ice=36.7942 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2137
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2137 T=2.40645 degC dTdt=-0.00185782 dHdt=1.58631 cm/yr slr=208.051 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2137 T=2.40645 degC Dtdt=-0.00185782 DHdt_no_ice=0.217871 cm/yr slr_no_ice=37.0121 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2138
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2138 T=2.40461 degC dTdt=-0.00183499 dHdt=1.58518 cm/yr slr=209.636 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2138 T=2.40461 degC Dtdt=-0.00183499 DHdt_no_ice=0.217782 cm/yr slr_no_ice=37.2299 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2139
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2139 T=2.40281 degC dTdt=-0.00180543 dHdt=1.58402 cm/yr slr=211.22 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2139 T=2.40281 degC Dtdt=-0.00180543 DHdt_no_ice=0.217711 cm/yr slr_no_ice=37.4476 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2140
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2140 T=2.40104 degC dTdt=-0.00177134 dHdt=1.58286 cm/yr slr=212.803 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2140 T=2.40104 degC Dtdt=-0.00177134 DHdt_no_ice=0.217655 cm/yr slr_no_ice=37.6652 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2141
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2141 T=2.3993 degC dTdt=-0.00173411 dHdt=1.58171 cm/yr slr=214.385 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2141 T=2.3993 degC Dtdt=-0.00173411 DHdt_no_ice=0.217609 cm/yr slr_no_ice=37.8829 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2142
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2142 T=2.39761 degC dTdt=-0.00169707 dHdt=1.58057 cm/yr slr=215.965 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2142 T=2.39761 degC Dtdt=-0.00169707 DHdt_no_ice=0.217566 cm/yr slr_no_ice=38.1004 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2143
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2143 T=2.39594 degC dTdt=-0.00166269 dHdt=1.57948 cm/yr slr=217.545 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2143 T=2.39594 degC Dtdt=-0.00166269 DHdt_no_ice=0.217519 cm/yr slr_no_ice=38.3179 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2144
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2144 T=2.39431 degC dTdt=-0.00163045 dHdt=1.5784 cm/yr slr=219.123 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2144 T=2.39431 degC Dtdt=-0.00163045 DHdt_no_ice=0.217469 cm/yr slr_no_ice=38.5354 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2145
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2145 T=2.39271 degC dTdt=-0.00159994 dHdt=1.57736 cm/yr slr=220.7 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2145 T=2.39271 degC Dtdt=-0.00159994 DHdt_no_ice=0.217417 cm/yr slr_no_ice=38.7528 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2146
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2146 T=2.39114 degC dTdt=-0.00157096 dHdt=1.57634 cm/yr slr=222.277 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2146 T=2.39114 degC Dtdt=-0.00157096 DHdt_no_ice=0.217364 cm/yr slr_no_ice=38.9702 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2147
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2147 T=2.3896 degC dTdt=-0.00153943 dHdt=1.57532 cm/yr slr=223.852 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2147 T=2.3896 degC Dtdt=-0.00153943 DHdt_no_ice=0.21732 cm/yr slr_no_ice=39.1875 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2148
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2148 T=2.3881 degC dTdt=-0.00150231 dHdt=1.5743 cm/yr slr=225.426 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2148 T=2.3881 degC Dtdt=-0.00150231 DHdt_no_ice=0.217292 cm/yr slr_no_ice=39.4048 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2149
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2149 T=2.38664 degC dTdt=-0.00146144 dHdt=1.57328 cm/yr slr=227 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2149 T=2.38664 degC Dtdt=-0.00146144 DHdt_no_ice=0.217277 cm/yr slr_no_ice=39.6221 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2150
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2150 T=2.38522 degC dTdt=-0.00141833 dHdt=1.57227 cm/yr slr=228.572 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2150 T=2.38522 degC Dtdt=-0.00141833 DHdt_no_ice=0.217272 cm/yr slr_no_ice=39.8393 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2151
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2151 T=2.38385 degC dTdt=-0.0013739 dHdt=1.57129 cm/yr slr=230.143 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2151 T=2.38385 degC Dtdt=-0.0013739 DHdt_no_ice=0.217273 cm/yr slr_no_ice=40.0566 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2152
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2152 T=2.38252 degC dTdt=-0.00133075 dHdt=1.57033 cm/yr slr=231.714 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2152 T=2.38252 degC Dtdt=-0.00133075 DHdt_no_ice=0.217274 cm/yr slr_no_ice=40.2739 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2153
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2153 T=2.38122 degC dTdt=-0.00129078 dHdt=1.56941 cm/yr slr=233.283 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2153 T=2.38122 degC Dtdt=-0.00129078 DHdt_no_ice=0.217271 cm/yr slr_no_ice=40.4912 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2154
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2154 T=2.37997 degC dTdt=-0.00125343 dHdt=1.56853 cm/yr slr=234.851 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2154 T=2.37997 degC Dtdt=-0.00125343 DHdt_no_ice=0.217264 cm/yr slr_no_ice=40.7084 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2155
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2155 T=2.37875 degC dTdt=-0.00121824 dHdt=1.56767 cm/yr slr=236.419 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2155 T=2.37875 degC Dtdt=-0.00121824 DHdt_no_ice=0.217255 cm/yr slr_no_ice=40.9257 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2156
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2156 T=2.37757 degC dTdt=-0.00118498 dHdt=1.56684 cm/yr slr=237.986 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2156 T=2.37757 degC Dtdt=-0.00118498 DHdt_no_ice=0.217243 cm/yr slr_no_ice=41.1429 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2157
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2157 T=2.37642 degC dTdt=-0.00115051 dHdt=1.56603 cm/yr slr=239.552 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2157 T=2.37642 degC Dtdt=-0.00115051 DHdt_no_ice=0.217237 cm/yr slr_no_ice=41.3602 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2158
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2158 T=2.37531 degC dTdt=-0.00111248 dHdt=1.56522 cm/yr slr=241.117 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2158 T=2.37531 degC Dtdt=-0.00111248 DHdt_no_ice=0.217243 cm/yr slr_no_ice=41.5774 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2159
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2159 T=2.37423 degC dTdt=-0.0010722 dHdt=1.56442 cm/yr slr=242.682 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2159 T=2.37423 degC Dtdt=-0.0010722 DHdt_no_ice=0.217258 cm/yr slr_no_ice=41.7947 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2160
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2160 T=2.3732 degC dTdt=-0.00103073 dHdt=1.56364 cm/yr slr=244.245 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2160 T=2.3732 degC Dtdt=-0.00103073 DHdt_no_ice=0.217279 cm/yr slr_no_ice=42.0119 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2161
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2161 T=2.37221 degC dTdt=-0.000988737 dHdt=1.56288 cm/yr slr=245.808 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2161 T=2.37221 degC Dtdt=-0.000988737 DHdt_no_ice=0.217305 cm/yr slr_no_ice=42.2293 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2162
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2162 T=2.37127 degC dTdt=-0.000948359 dHdt=1.56216 cm/yr slr=247.37 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2162 T=2.37127 degC Dtdt=-0.000948359 DHdt_no_ice=0.21733 cm/yr slr_no_ice=42.4466 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2163
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2163 T=2.37035 degC dTdt=-0.000911145 dHdt=1.56146 cm/yr slr=248.932 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2163 T=2.37035 degC Dtdt=-0.000911145 DHdt_no_ice=0.21735 cm/yr slr_no_ice=42.6639 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2164
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2164 T=2.36948 degC dTdt=-0.000876548 dHdt=1.5608 cm/yr slr=250.493 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2164 T=2.36948 degC Dtdt=-0.000876548 DHdt_no_ice=0.217367 cm/yr slr_no_ice=42.8813 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2165
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2165 T=2.36863 degC dTdt=-0.00084401 dHdt=1.56017 cm/yr slr=252.053 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2165 T=2.36863 degC Dtdt=-0.00084401 DHdt_no_ice=0.217381 cm/yr slr_no_ice=43.0987 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2166
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2166 T=2.36782 degC dTdt=-0.000813205 dHdt=1.55956 cm/yr slr=253.612 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2166 T=2.36782 degC Dtdt=-0.000813205 DHdt_no_ice=0.217393 cm/yr slr_no_ice=43.3161 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2167
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2167 T=2.36704 degC dTdt=-0.0007813 dHdt=1.55897 cm/yr slr=255.171 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2167 T=2.36704 degC Dtdt=-0.0007813 DHdt_no_ice=0.21741 cm/yr slr_no_ice=43.5335 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2168
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2168 T=2.36629 degC dTdt=-0.000746045 dHdt=1.55838 cm/yr slr=256.73 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2168 T=2.36629 degC Dtdt=-0.000746045 DHdt_no_ice=0.217438 cm/yr slr_no_ice=43.7509 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2169
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2169 T=2.36558 degC dTdt=-0.000708479 dHdt=1.5578 cm/yr slr=258.287 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2169 T=2.36558 degC Dtdt=-0.000708479 DHdt_no_ice=0.217476 cm/yr slr_no_ice=43.9684 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2170
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2170 T=2.36491 degC dTdt=-0.000669751 dHdt=1.55723 cm/yr slr=259.845 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2170 T=2.36491 degC Dtdt=-0.000669751 DHdt_no_ice=0.217519 cm/yr slr_no_ice=44.1859 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2171
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2171 T=2.36428 degC dTdt=-0.00063068 dHdt=1.55669 cm/yr slr=261.401 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2171 T=2.36428 degC Dtdt=-0.00063068 DHdt_no_ice=0.217566 cm/yr slr_no_ice=44.4035 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2172
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2172 T=2.36369 degC dTdt=-0.000598702 dHdt=1.5562 cm/yr slr=262.958 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2172 T=2.36369 degC Dtdt=-0.000598702 DHdt_no_ice=0.217598 cm/yr slr_no_ice=44.6211 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2173
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2173 T=2.36311 degC dTdt=-0.000579166 dHdt=1.55578 cm/yr slr=264.513 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2173 T=2.36311 degC Dtdt=-0.000579166 DHdt_no_ice=0.217601 cm/yr slr_no_ice=44.8387 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2174
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2174 T=2.36254 degC dTdt=-0.000568981 dHdt=1.55541 cm/yr slr=266.069 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2174 T=2.36254 degC Dtdt=-0.000568981 DHdt_no_ice=0.217581 cm/yr slr_no_ice=45.0563 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2175
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2175 T=2.36197 degC dTdt=-0.000565713 dHdt=1.55508 cm/yr slr=267.624 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2175 T=2.36197 degC Dtdt=-0.000565713 DHdt_no_ice=0.217543 cm/yr slr_no_ice=45.2738 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2176
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2176 T=2.3614 degC dTdt=-0.000567828 dHdt=1.55477 cm/yr slr=269.179 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2176 T=2.3614 degC Dtdt=-0.000567828 DHdt_no_ice=0.217493 cm/yr slr_no_ice=45.4913 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2177
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2177 T=2.36083 degC dTdt=-0.000572177 dHdt=1.55447 cm/yr slr=270.733 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2177 T=2.36083 degC Dtdt=-0.000572177 DHdt_no_ice=0.217436 cm/yr slr_no_ice=45.7087 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2178
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2178 T=2.36025 degC dTdt=-0.000576388 dHdt=1.55417 cm/yr slr=272.287 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2178 T=2.36025 degC Dtdt=-0.000576388 DHdt_no_ice=0.217379 cm/yr slr_no_ice=45.9261 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2179
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2179 T=2.35967 degC dTdt=-0.000580722 dHdt=1.55386 cm/yr slr=273.841 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2179 T=2.35967 degC Dtdt=-0.000580722 DHdt_no_ice=0.217322 cm/yr slr_no_ice=46.1434 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2180
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2180 T=2.35909 degC dTdt=-0.000585482 dHdt=1.55356 cm/yr slr=275.395 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2180 T=2.35909 degC Dtdt=-0.000585482 DHdt_no_ice=0.217263 cm/yr slr_no_ice=46.3607 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2181
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2181 T=2.3585 degC dTdt=-0.00059085 dHdt=1.55325 cm/yr slr=276.948 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2181 T=2.3585 degC Dtdt=-0.00059085 DHdt_no_ice=0.217203 cm/yr slr_no_ice=46.5779 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2182
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2182 T=2.3579 degC dTdt=-0.000598207 dHdt=1.55296 cm/yr slr=278.501 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2182 T=2.3579 degC Dtdt=-0.000598207 DHdt_no_ice=0.217136 cm/yr slr_no_ice=46.795 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2183
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2183 T=2.35729 degC dTdt=-0.00060853 dHdt=1.55266 cm/yr slr=280.054 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2183 T=2.35729 degC Dtdt=-0.00060853 DHdt_no_ice=0.217062 cm/yr slr_no_ice=47.0121 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2184
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2184 T=2.35667 degC dTdt=-0.000621265 dHdt=1.55238 cm/yr slr=281.606 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2184 T=2.35667 degC Dtdt=-0.000621265 DHdt_no_ice=0.21698 cm/yr slr_no_ice=47.2291 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2185
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2185 T=2.35603 degC dTdt=-0.00063589 dHdt=1.55209 cm/yr slr=283.158 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2185 T=2.35603 degC Dtdt=-0.00063589 DHdt_no_ice=0.216893 cm/yr slr_no_ice=47.446 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2186
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2186 T=2.35538 degC dTdt=-0.0006517 dHdt=1.55181 cm/yr slr=284.71 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2186 T=2.35538 degC Dtdt=-0.0006517 DHdt_no_ice=0.216801 cm/yr slr_no_ice=47.6628 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2187
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2187 T=2.35472 degC dTdt=-0.000666376 dHdt=1.55151 cm/yr slr=286.261 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2187 T=2.35472 degC Dtdt=-0.000666376 DHdt_no_ice=0.216711 cm/yr slr_no_ice=47.8795 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2188
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2188 T=2.35404 degC dTdt=-0.000678606 dHdt=1.55119 cm/yr slr=287.813 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2188 T=2.35404 degC Dtdt=-0.000678606 DHdt_no_ice=0.216626 cm/yr slr_no_ice=48.0961 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2189
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2189 T=2.35335 degC dTdt=-0.000689373 dHdt=1.55085 cm/yr slr=289.363 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2189 T=2.35335 degC Dtdt=-0.000689373 DHdt_no_ice=0.216544 cm/yr slr_no_ice=48.3127 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2190
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2190 T=2.35265 degC dTdt=-0.000699441 dHdt=1.55051 cm/yr slr=290.914 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2190 T=2.35265 degC Dtdt=-0.000699441 DHdt_no_ice=0.216463 cm/yr slr_no_ice=48.5291 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2191
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2191 T=2.35194 degC dTdt=-0.000709248 dHdt=1.55016 cm/yr slr=292.464 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2191 T=2.35194 degC Dtdt=-0.000709248 DHdt_no_ice=0.216382 cm/yr slr_no_ice=48.7455 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2192
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2192 T=2.35122 degC dTdt=-0.000720218 dHdt=1.54981 cm/yr slr=294.014 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2192 T=2.35122 degC Dtdt=-0.000720218 DHdt_no_ice=0.216297 cm/yr slr_no_ice=48.9618 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2193
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2193 T=2.35049 degC dTdt=-0.000733373 dHdt=1.54947 cm/yr slr=295.563 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2193 T=2.35049 degC Dtdt=-0.000733373 DHdt_no_ice=0.216205 cm/yr slr_no_ice=49.178 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2194
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2194 T=2.34974 degC dTdt=-0.000748289 dHdt=1.54912 cm/yr slr=297.112 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2194 T=2.34974 degC Dtdt=-0.000748289 DHdt_no_ice=0.216108 cm/yr slr_no_ice=49.3941 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2195
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2195 T=2.34897 degC dTdt=-0.000764065 dHdt=1.54877 cm/yr slr=298.661 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2195 T=2.34897 degC Dtdt=-0.000764065 DHdt_no_ice=0.216008 cm/yr slr_no_ice=49.6101 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2196
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2196 T=2.34819 degC dTdt=-0.000779841 dHdt=1.54841 cm/yr slr=300.21 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2196 T=2.34819 degC Dtdt=-0.000779841 DHdt_no_ice=0.215906 cm/yr slr_no_ice=49.826 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2197
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2197 T=2.3474 degC dTdt=-0.000793989 dHdt=1.54803 cm/yr slr=301.758 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2197 T=2.3474 degC Dtdt=-0.000793989 DHdt_no_ice=0.215807 cm/yr slr_no_ice=50.0418 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2198
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2198 T=2.34659 degC dTdt=-0.000805697 dHdt=1.54764 cm/yr slr=303.305 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2198 T=2.34659 degC Dtdt=-0.000805697 DHdt_no_ice=0.215713 cm/yr slr_no_ice=50.2575 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2199
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2199 T=2.34578 degC dTdt=-0.000816036 dHdt=1.54723 cm/yr slr=304.853 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2199 T=2.34578 degC Dtdt=-0.000816036 DHdt_no_ice=0.215622 cm/yr slr_no_ice=50.4732 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2200
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2200 T=2.34495 degC dTdt=-0.000825778 dHdt=1.54682 cm/yr slr=306.399 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2200 T=2.34495 degC Dtdt=-0.000825778 DHdt_no_ice=0.215532 cm/yr slr_no_ice=50.6887 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2201
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2201 T=2.34412 degC dTdt=-0.000835316 dHdt=1.5464 cm/yr slr=307.946 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2201 T=2.34412 degC Dtdt=-0.000835316 DHdt_no_ice=0.215441 cm/yr slr_no_ice=50.9041 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2202
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2202 T=2.34327 degC dTdt=-0.000845951 dHdt=1.54598 cm/yr slr=309.492 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2202 T=2.34327 degC Dtdt=-0.000845951 DHdt_no_ice=0.215347 cm/yr slr_no_ice=51.1195 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2203
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2203 T=2.34241 degC dTdt=-0.000858652 dHdt=1.54556 cm/yr slr=311.037 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2203 T=2.34241 degC Dtdt=-0.000858652 DHdt_no_ice=0.215246 cm/yr slr_no_ice=51.3347 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2204
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2204 T=2.34154 degC dTdt=-0.000873048 dHdt=1.54514 cm/yr slr=312.582 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2204 T=2.34154 degC Dtdt=-0.000873048 DHdt_no_ice=0.215141 cm/yr slr_no_ice=51.5499 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2205
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2205 T=2.34065 degC dTdt=-0.000888795 dHdt=1.54472 cm/yr slr=314.127 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2205 T=2.34065 degC Dtdt=-0.000888795 DHdt_no_ice=0.21503 cm/yr slr_no_ice=51.7649 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2206
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2206 T=2.33974 degC dTdt=-0.000905647 dHdt=1.54429 cm/yr slr=315.671 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2206 T=2.33974 degC Dtdt=-0.000905647 DHdt_no_ice=0.214915 cm/yr slr_no_ice=51.9798 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2207
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2207 T=2.33882 degC dTdt=-0.000922136 dHdt=1.54386 cm/yr slr=317.215 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2207 T=2.33882 degC Dtdt=-0.000922136 DHdt_no_ice=0.2148 cm/yr slr_no_ice=52.1946 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2208
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2208 T=2.33789 degC dTdt=-0.000937176 dHdt=1.54341 cm/yr slr=318.759 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2208 T=2.33789 degC Dtdt=-0.000937176 DHdt_no_ice=0.214688 cm/yr slr_no_ice=52.4093 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2209
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2209 T=2.33693 degC dTdt=-0.000951207 dHdt=1.54294 cm/yr slr=320.302 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2209 T=2.33693 degC Dtdt=-0.000951207 DHdt_no_ice=0.214577 cm/yr slr_no_ice=52.6239 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2210
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2210 T=2.33597 degC dTdt=-0.000964532 dHdt=1.54247 cm/yr slr=321.844 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2210 T=2.33597 degC Dtdt=-0.000964532 DHdt_no_ice=0.214466 cm/yr slr_no_ice=52.8384 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2211
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2211 T=2.33499 degC dTdt=-0.000977319 dHdt=1.54198 cm/yr slr=323.386 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2211 T=2.33499 degC Dtdt=-0.000977319 DHdt_no_ice=0.214356 cm/yr slr_no_ice=53.0527 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2212
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2212 T=2.334 degC dTdt=-0.00099099 dHdt=1.5415 cm/yr slr=324.928 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2212 T=2.334 degC Dtdt=-0.00099099 DHdt_no_ice=0.214243 cm/yr slr_no_ice=53.2669 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2213
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2213 T=2.33299 degC dTdt=-0.00100663 dHdt=1.54101 cm/yr slr=326.469 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2213 T=2.33299 degC Dtdt=-0.00100663 DHdt_no_ice=0.214123 cm/yr slr_no_ice=53.4811 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2214
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2214 T=2.33197 degC dTdt=-0.00102375 dHdt=1.54052 cm/yr slr=328.009 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2214 T=2.33197 degC Dtdt=-0.00102375 DHdt_no_ice=0.213998 cm/yr slr_no_ice=53.6951 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2215
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2215 T=2.33093 degC dTdt=-0.00104198 dHdt=1.54003 cm/yr slr=329.549 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2215 T=2.33093 degC Dtdt=-0.00104198 DHdt_no_ice=0.213869 cm/yr slr_no_ice=53.9089 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2216
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2216 T=2.32987 degC dTdt=-0.00106106 dHdt=1.53953 cm/yr slr=331.089 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2216 T=2.32987 degC Dtdt=-0.00106106 DHdt_no_ice=0.213737 cm/yr slr_no_ice=54.1227 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2217
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2217 T=2.32879 degC dTdt=-0.00107962 dHdt=1.53901 cm/yr slr=332.628 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2217 T=2.32879 degC Dtdt=-0.00107962 DHdt_no_ice=0.213604 cm/yr slr_no_ice=54.3363 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2218
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2218 T=2.32769 degC dTdt=-0.00109665 dHdt=1.53848 cm/yr slr=334.166 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2218 T=2.32769 degC Dtdt=-0.00109665 DHdt_no_ice=0.213474 cm/yr slr_no_ice=54.5498 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2219
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2219 T=2.32658 degC dTdt=-0.00111267 dHdt=1.53794 cm/yr slr=335.704 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2219 T=2.32658 degC Dtdt=-0.00111267 DHdt_no_ice=0.213345 cm/yr slr_no_ice=54.7631 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2220
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2220 T=2.32545 degC dTdt=-0.00112809 dHdt=1.53738 cm/yr slr=337.242 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2220 T=2.32545 degC Dtdt=-0.00112809 DHdt_no_ice=0.213216 cm/yr slr_no_ice=54.9763 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2221
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2221 T=2.32431 degC dTdt=-0.00114315 dHdt=1.53681 cm/yr slr=338.778 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2221 T=2.32431 degC Dtdt=-0.00114315 DHdt_no_ice=0.213087 cm/yr slr_no_ice=55.1894 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2222
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2222 T=2.32315 degC dTdt=-0.00115925 dHdt=1.53624 cm/yr slr=340.315 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2222 T=2.32315 degC Dtdt=-0.00115925 DHdt_no_ice=0.212954 cm/yr slr_no_ice=55.4024 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2223
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2223 T=2.32197 degC dTdt=-0.00117738 dHdt=1.53567 cm/yr slr=341.85 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2223 T=2.32197 degC Dtdt=-0.00117738 DHdt_no_ice=0.212814 cm/yr slr_no_ice=55.6152 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2224
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2224 T=2.32077 degC dTdt=-0.00119708 dHdt=1.5351 cm/yr slr=343.385 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2224 T=2.32077 degC Dtdt=-0.00119708 DHdt_no_ice=0.212669 cm/yr slr_no_ice=55.8278 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2225
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2225 T=2.31956 degC dTdt=-0.00121795 dHdt=1.53452 cm/yr slr=344.92 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2225 T=2.31956 degC Dtdt=-0.00121795 DHdt_no_ice=0.21252 cm/yr slr_no_ice=56.0404 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2226
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2226 T=2.31832 degC dTdt=-0.00123973 dHdt=1.53393 cm/yr slr=346.454 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2226 T=2.31832 degC Dtdt=-0.00123973 DHdt_no_ice=0.212366 cm/yr slr_no_ice=56.2527 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2227
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2227 T=2.31706 degC dTdt=-0.0012611 dHdt=1.53333 cm/yr slr=347.987 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2227 T=2.31706 degC Dtdt=-0.0012611 DHdt_no_ice=0.212212 cm/yr slr_no_ice=56.4649 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2228
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2228 T=2.31577 degC dTdt=-0.00128108 dHdt=1.53271 cm/yr slr=349.52 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2228 T=2.31577 degC Dtdt=-0.00128108 DHdt_no_ice=0.212059 cm/yr slr_no_ice=56.677 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2229
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2229 T=2.31447 degC dTdt=-0.00130009 dHdt=1.53208 cm/yr slr=351.052 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2229 T=2.31447 degC Dtdt=-0.00130009 DHdt_no_ice=0.211908 cm/yr slr_no_ice=56.8889 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2230
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2230 T=2.31316 degC dTdt=-0.00131843 dHdt=1.53143 cm/yr slr=352.583 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2230 T=2.31316 degC Dtdt=-0.00131843 DHdt_no_ice=0.211756 cm/yr slr_no_ice=57.1007 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2231
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2231 T=2.31182 degC dTdt=-0.00133632 dHdt=1.53077 cm/yr slr=354.114 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2231 T=2.31182 degC Dtdt=-0.00133632 DHdt_no_ice=0.211605 cm/yr slr_no_ice=57.3123 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2232
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2232 T=2.31046 degC dTdt=-0.00135498 dHdt=1.5301 cm/yr slr=355.644 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2232 T=2.31046 degC Dtdt=-0.00135498 DHdt_no_ice=0.21145 cm/yr slr_no_ice=57.5237 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2233
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2233 T=2.30909 degC dTdt=-0.00137536 dHdt=1.52943 cm/yr slr=357.174 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2233 T=2.30909 degC Dtdt=-0.00137536 DHdt_no_ice=0.211289 cm/yr slr_no_ice=57.735 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2234
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2234 T=2.30769 degC dTdt=-0.00139698 dHdt=1.52875 cm/yr slr=358.702 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2234 T=2.30769 degC Dtdt=-0.00139698 DHdt_no_ice=0.211123 cm/yr slr_no_ice=57.9461 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2235
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2235 T=2.30627 degC dTdt=-0.00141948 dHdt=1.52807 cm/yr slr=360.23 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2235 T=2.30627 degC Dtdt=-0.00141948 DHdt_no_ice=0.210953 cm/yr slr_no_ice=58.1571 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2236
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2236 T=2.30483 degC dTdt=-0.00144263 dHdt=1.52737 cm/yr slr=361.758 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2236 T=2.30483 degC Dtdt=-0.00144263 DHdt_no_ice=0.21078 cm/yr slr_no_ice=58.3679 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2237
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2237 T=2.30336 degC dTdt=-0.00146526 dHdt=1.52666 cm/yr slr=363.284 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2237 T=2.30336 degC Dtdt=-0.00146526 DHdt_no_ice=0.210606 cm/yr slr_no_ice=58.5785 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2238
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2238 T=2.30188 degC dTdt=-0.00148649 dHdt=1.52594 cm/yr slr=364.81 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2238 T=2.30188 degC Dtdt=-0.00148649 DHdt_no_ice=0.210434 cm/yr slr_no_ice=58.7889 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2239
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2239 T=2.30037 degC dTdt=-0.0015067 dHdt=1.52519 cm/yr slr=366.336 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2239 T=2.30037 degC Dtdt=-0.0015067 DHdt_no_ice=0.210263 cm/yr slr_no_ice=58.9992 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2240
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2240 T=2.29885 degC dTdt=-0.00152621 dHdt=1.52443 cm/yr slr=367.86 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2240 T=2.29885 degC Dtdt=-0.00152621 DHdt_no_ice=0.210092 cm/yr slr_no_ice=59.2093 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2241
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2241 T=2.2973 degC dTdt=-0.0015452 dHdt=1.52366 cm/yr slr=369.384 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2241 T=2.2973 degC Dtdt=-0.0015452 DHdt_no_ice=0.209921 cm/yr slr_no_ice=59.4192 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2242
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2242 T=2.29574 degC dTdt=-0.00156482 dHdt=1.52288 cm/yr slr=370.907 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2242 T=2.29574 degC Dtdt=-0.00156482 DHdt_no_ice=0.209747 cm/yr slr_no_ice=59.6289 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2243
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2243 T=2.29415 degC dTdt=-0.00158592 dHdt=1.52209 cm/yr slr=372.429 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2243 T=2.29415 degC Dtdt=-0.00158592 DHdt_no_ice=0.209567 cm/yr slr_no_ice=59.8385 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2244
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2244 T=2.29254 degC dTdt=-0.0016081 dHdt=1.5213 cm/yr slr=373.95 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2244 T=2.29254 degC Dtdt=-0.0016081 DHdt_no_ice=0.209383 cm/yr slr_no_ice=60.0479 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2245
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2245 T=2.29091 degC dTdt=-0.00163101 dHdt=1.5205 cm/yr slr=375.47 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2245 T=2.29091 degC Dtdt=-0.00163101 DHdt_no_ice=0.209195 cm/yr slr_no_ice=60.2571 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2246
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2246 T=2.28926 degC dTdt=-0.00165446 dHdt=1.51969 cm/yr slr=376.99 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2246 T=2.28926 degC Dtdt=-0.00165446 DHdt_no_ice=0.209004 cm/yr slr_no_ice=60.4661 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2247
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2247 T=2.28758 degC dTdt=-0.00167741 dHdt=1.51886 cm/yr slr=378.509 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2247 T=2.28758 degC Dtdt=-0.00167741 DHdt_no_ice=0.208813 cm/yr slr_no_ice=60.6749 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2248
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2248 T=2.28588 degC dTdt=-0.00169909 dHdt=1.51802 cm/yr slr=380.027 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2248 T=2.28588 degC Dtdt=-0.00169909 DHdt_no_ice=0.208623 cm/yr slr_no_ice=60.8835 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2249
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2249 T=2.28416 degC dTdt=-0.00171982 dHdt=1.51716 cm/yr slr=381.544 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2249 T=2.28416 degC Dtdt=-0.00171982 DHdt_no_ice=0.208433 cm/yr slr_no_ice=61.0919 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2250
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2250 T=2.28242 degC dTdt=-0.00173988 dHdt=1.51628 cm/yr slr=383.06 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2250 T=2.28242 degC Dtdt=-0.00173988 DHdt_no_ice=0.208244 cm/yr slr_no_ice=61.3002 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2251
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2251 T=2.2806 degC dTdt=-0.00182432 dHdt=1.51567 cm/yr slr=384.576 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2251 T=2.2806 degC Dtdt=-0.00182432 DHdt_no_ice=0.207887 cm/yr slr_no_ice=61.5081 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2252
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2252 T=2.27872 degC dTdt=-0.00187399 dHdt=1.51487 cm/yr slr=386.091 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2252 T=2.27872 degC Dtdt=-0.00187399 DHdt_no_ice=0.207613 cm/yr slr_no_ice=61.7157 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2253
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2253 T=2.27683 degC dTdt=-0.00189132 dHdt=1.51389 cm/yr slr=387.605 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2253 T=2.27683 degC Dtdt=-0.00189132 DHdt_no_ice=0.207418 cm/yr slr_no_ice=61.9231 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2254
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2254 T=2.27494 degC dTdt=-0.0018899 dHdt=1.51283 cm/yr slr=389.118 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2254 T=2.27494 degC Dtdt=-0.0018899 DHdt_no_ice=0.20727 cm/yr slr_no_ice=62.1304 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2255
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2255 T=2.27306 degC dTdt=-0.00187714 dHdt=1.51171 cm/yr slr=390.629 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2255 T=2.27306 degC Dtdt=-0.00187714 DHdt_no_ice=0.207152 cm/yr slr_no_ice=62.3375 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2256
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2256 T=2.27121 degC dTdt=-0.00185752 dHdt=1.51058 cm/yr slr=392.14 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2256 T=2.27121 degC Dtdt=-0.00185752 DHdt_no_ice=0.207053 cm/yr slr_no_ice=62.5446 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2257
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2257 T=2.26937 degC dTdt=-0.00183313 dHdt=1.50943 cm/yr slr=393.649 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2257 T=2.26937 degC Dtdt=-0.00183313 DHdt_no_ice=0.206967 cm/yr slr_no_ice=62.7515 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2258
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2258 T=2.26757 degC dTdt=-0.00180526 dHdt=1.50828 cm/yr slr=395.158 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2258 T=2.26757 degC Dtdt=-0.00180526 DHdt_no_ice=0.206892 cm/yr slr_no_ice=62.9584 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2259
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2259 T=2.26579 degC dTdt=-0.00177551 dHdt=1.50714 cm/yr slr=396.665 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2259 T=2.26579 degC Dtdt=-0.00177551 DHdt_no_ice=0.206825 cm/yr slr_no_ice=63.1653 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2260
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2260 T=2.26405 degC dTdt=-0.00174504 dHdt=1.50602 cm/yr slr=398.171 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2260 T=2.26405 degC Dtdt=-0.00174504 DHdt_no_ice=0.206761 cm/yr slr_no_ice=63.372 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2261
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2261 T=2.26233 degC dTdt=-0.00171459 dHdt=1.50491 cm/yr slr=399.676 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2261 T=2.26233 degC Dtdt=-0.00171459 DHdt_no_ice=0.2067 cm/yr slr_no_ice=63.5787 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2262
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2262 T=2.26065 degC dTdt=-0.00168545 dHdt=1.50382 cm/yr slr=401.18 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2262 T=2.26065 degC Dtdt=-0.00168545 DHdt_no_ice=0.206638 cm/yr slr_no_ice=63.7854 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2263
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2263 T=2.25899 degC dTdt=-0.00165853 dHdt=1.50276 cm/yr slr=402.682 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2263 T=2.25899 degC Dtdt=-0.00165853 DHdt_no_ice=0.206573 cm/yr slr_no_ice=63.9919 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2264
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2264 T=2.25735 degC dTdt=-0.0016337 dHdt=1.50172 cm/yr slr=404.184 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2264 T=2.25735 degC Dtdt=-0.0016337 DHdt_no_ice=0.206504 cm/yr slr_no_ice=64.1984 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2265
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2265 T=2.25574 degC dTdt=-0.00161084 dHdt=1.50071 cm/yr slr=405.685 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2265 T=2.25574 degC Dtdt=-0.00161084 DHdt_no_ice=0.206432 cm/yr slr_no_ice=64.4049 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2266
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2266 T=2.25415 degC dTdt=-0.00158984 dHdt=1.49972 cm/yr slr=407.185 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2266 T=2.25415 degC Dtdt=-0.00158984 DHdt_no_ice=0.206358 cm/yr slr_no_ice=64.6112 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2267
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2267 T=2.25258 degC dTdt=-0.00156999 dHdt=1.49874 cm/yr slr=408.683 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2267 T=2.25258 degC Dtdt=-0.00156999 DHdt_no_ice=0.206282 cm/yr slr_no_ice=64.8175 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2268
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2268 T=2.25103 degC dTdt=-0.00155077 dHdt=1.49778 cm/yr slr=410.181 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2268 T=2.25103 degC Dtdt=-0.00155077 DHdt_no_ice=0.206206 cm/yr slr_no_ice=65.0237 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2269
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2269 T=2.2495 degC dTdt=-0.00153234 dHdt=1.49683 cm/yr slr=411.678 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2269 T=2.2495 degC Dtdt=-0.00153234 DHdt_no_ice=0.206129 cm/yr slr_no_ice=65.2298 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2270
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2270 T=2.24799 degC dTdt=-0.00151486 dHdt=1.49589 cm/yr slr=413.174 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2270 T=2.24799 degC Dtdt=-0.00151486 DHdt_no_ice=0.206052 cm/yr slr_no_ice=65.4359 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2271
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2271 T=2.24649 degC dTdt=-0.00149838 dHdt=1.49497 cm/yr slr=414.669 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2271 T=2.24649 degC Dtdt=-0.00149838 DHdt_no_ice=0.205973 cm/yr slr_no_ice=65.6419 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2272
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2272 T=2.245 degC dTdt=-0.0014835 dHdt=1.49407 cm/yr slr=416.163 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2272 T=2.245 degC Dtdt=-0.0014835 DHdt_no_ice=0.205892 cm/yr slr_no_ice=65.8478 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2273
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2273 T=2.24353 degC dTdt=-0.00147067 dHdt=1.49318 cm/yr slr=417.656 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2273 T=2.24353 degC Dtdt=-0.00147067 DHdt_no_ice=0.205806 cm/yr slr_no_ice=66.0536 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2274
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2274 T=2.24207 degC dTdt=-0.00145959 dHdt=1.49231 cm/yr slr=419.148 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2274 T=2.24207 degC Dtdt=-0.00145959 DHdt_no_ice=0.205717 cm/yr slr_no_ice=66.2593 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2275
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2275 T=2.24062 degC dTdt=-0.00144997 dHdt=1.49145 cm/yr slr=420.64 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2275 T=2.24062 degC Dtdt=-0.00144997 DHdt_no_ice=0.205625 cm/yr slr_no_ice=66.4649 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2276
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2276 T=2.23918 degC dTdt=-0.00144165 dHdt=1.49061 cm/yr slr=422.13 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2276 T=2.23918 degC Dtdt=-0.00144165 DHdt_no_ice=0.20553 cm/yr slr_no_ice=66.6704 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2277
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2277 T=2.23775 degC dTdt=-0.00143401 dHdt=1.48977 cm/yr slr=423.62 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2277 T=2.23775 degC Dtdt=-0.00143401 DHdt_no_ice=0.205435 cm/yr slr_no_ice=66.8759 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2278
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2278 T=2.23632 degC dTdt=-0.00142661 dHdt=1.48893 cm/yr slr=425.109 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2278 T=2.23632 degC Dtdt=-0.00142661 DHdt_no_ice=0.205339 cm/yr slr_no_ice=67.0812 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2279
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2279 T=2.2349 degC dTdt=-0.00141949 dHdt=1.4881 cm/yr slr=426.597 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2279 T=2.2349 degC Dtdt=-0.00141949 DHdt_no_ice=0.205243 cm/yr slr_no_ice=67.2865 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2280
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2280 T=2.23349 degC dTdt=-0.00141265 dHdt=1.48728 cm/yr slr=428.084 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2280 T=2.23349 degC Dtdt=-0.00141265 DHdt_no_ice=0.205147 cm/yr slr_no_ice=67.4916 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2281
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2281 T=2.23208 degC dTdt=-0.00140606 dHdt=1.48646 cm/yr slr=429.571 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2281 T=2.23208 degC Dtdt=-0.00140606 DHdt_no_ice=0.205051 cm/yr slr_no_ice=67.6967 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2282
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2282 T=2.23068 degC dTdt=-0.00140013 dHdt=1.48564 cm/yr slr=431.057 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2282 T=2.23068 degC Dtdt=-0.00140013 DHdt_no_ice=0.204954 cm/yr slr_no_ice=67.9016 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2283
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2283 T=2.22929 degC dTdt=-0.00139516 dHdt=1.48484 cm/yr slr=432.541 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2283 T=2.22929 degC Dtdt=-0.00139516 DHdt_no_ice=0.204855 cm/yr slr_no_ice=68.1065 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2284
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2284 T=2.2279 degC dTdt=-0.00139091 dHdt=1.48404 cm/yr slr=434.025 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2284 T=2.2279 degC Dtdt=-0.00139091 DHdt_no_ice=0.204754 cm/yr slr_no_ice=68.3112 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2285
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2285 T=2.22651 degC dTdt=-0.00138719 dHdt=1.48324 cm/yr slr=435.509 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2285 T=2.22651 degC Dtdt=-0.00138719 DHdt_no_ice=0.204653 cm/yr slr_no_ice=68.5159 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2286
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2286 T=2.22513 degC dTdt=-0.00138386 dHdt=1.48245 cm/yr slr=436.991 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2286 T=2.22513 degC Dtdt=-0.00138386 DHdt_no_ice=0.20455 cm/yr slr_no_ice=68.7204 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2287
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2287 T=2.22375 degC dTdt=-0.00138056 dHdt=1.48166 cm/yr slr=438.473 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2287 T=2.22375 degC Dtdt=-0.00138056 DHdt_no_ice=0.204448 cm/yr slr_no_ice=68.9249 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2288
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2288 T=2.22237 degC dTdt=-0.00137701 dHdt=1.48087 cm/yr slr=439.954 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2288 T=2.22237 degC Dtdt=-0.00137701 DHdt_no_ice=0.204347 cm/yr slr_no_ice=69.1292 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2289
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2289 T=2.22099 degC dTdt=-0.00137327 dHdt=1.48009 cm/yr slr=441.434 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2289 T=2.22099 degC Dtdt=-0.00137327 DHdt_no_ice=0.204246 cm/yr slr_no_ice=69.3335 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2290
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2290 T=2.21963 degC dTdt=-0.00136938 dHdt=1.4793 cm/yr slr=442.913 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2290 T=2.21963 degC Dtdt=-0.00136938 DHdt_no_ice=0.204147 cm/yr slr_no_ice=69.5376 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2291
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2291 T=2.21826 degC dTdt=-0.00136538 dHdt=1.47852 cm/yr slr=444.392 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2291 T=2.21826 degC Dtdt=-0.00136538 DHdt_no_ice=0.204047 cm/yr slr_no_ice=69.7417 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2292
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2292 T=2.2169 degC dTdt=-0.00136154 dHdt=1.47773 cm/yr slr=445.869 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2292 T=2.2169 degC Dtdt=-0.00136154 DHdt_no_ice=0.203948 cm/yr slr_no_ice=69.9456 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2293
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2293 T=2.21554 degC dTdt=-0.00135807 dHdt=1.47696 cm/yr slr=447.346 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2293 T=2.21554 degC Dtdt=-0.00135807 DHdt_no_ice=0.203848 cm/yr slr_no_ice=70.1495 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2294
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2294 T=2.21419 degC dTdt=-0.00135484 dHdt=1.47618 cm/yr slr=448.822 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2294 T=2.21419 degC Dtdt=-0.00135484 DHdt_no_ice=0.203748 cm/yr slr_no_ice=70.3532 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2295
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2295 T=2.21283 degC dTdt=-0.00135176 dHdt=1.47541 cm/yr slr=450.298 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2295 T=2.21283 degC Dtdt=-0.00135176 DHdt_no_ice=0.203647 cm/yr slr_no_ice=70.5568 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2296
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2296 T=2.21148 degC dTdt=-0.00134875 dHdt=1.47464 cm/yr slr=451.773 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2296 T=2.21148 degC Dtdt=-0.00134875 DHdt_no_ice=0.203547 cm/yr slr_no_ice=70.7604 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2297
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2297 T=2.21014 degC dTdt=-0.00134568 dHdt=1.47387 cm/yr slr=453.246 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2297 T=2.21014 degC Dtdt=-0.00134568 DHdt_no_ice=0.203447 cm/yr slr_no_ice=70.9638 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2298
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2298 T=2.2088 degC dTdt=-0.00134244 dHdt=1.4731 cm/yr slr=454.719 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2298 T=2.2088 degC Dtdt=-0.00134244 DHdt_no_ice=0.203348 cm/yr slr_no_ice=71.1672 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2299
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2299 T=2.20746 degC dTdt=-0.00133905 dHdt=1.47234 cm/yr slr=456.192 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2299 T=2.20746 degC Dtdt=-0.00133905 DHdt_no_ice=0.203249 cm/yr slr_no_ice=71.3704 cm
+Tue Mar 21 15:37:32 2023:DEBUG:run: SLR run 2300
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2300 T=2.20612 degC dTdt=-0.00133553 dHdt=1.47157 cm/yr slr=457.663 cm
+Tue Mar 21 15:37:32 2023:DEBUG:compute_slr: 2300 T=2.20612 degC Dtdt=-0.00133553 DHdt_no_ice=0.203151 cm/yr slr_no_ice=71.5736 cm

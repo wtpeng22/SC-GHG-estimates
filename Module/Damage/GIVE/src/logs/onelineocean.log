@@ -1,0 +1,4 @@
+Tue Mar 21 15:37:28 2023:NOTICE:printLogHeader: hector version 2.5.0
+Tue Mar 21 15:37:28 2023:DEBUG:init: hello onelineocean
+Tue Mar 21 15:37:28 2023:DEBUG:setData: Setting ocean_c[-1]=38000
+Tue Mar 21 15:37:29 2023:DEBUG:shutDown: goodbye onelineocean

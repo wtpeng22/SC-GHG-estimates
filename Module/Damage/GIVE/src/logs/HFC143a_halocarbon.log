@@ -1,0 +1,1296 @@
+Tue Mar 21 15:37:28 2023:NOTICE:printLogHeader: hector version 2.5.0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting tau[-1]=52.0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting rho[-1]=0.00013
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1765]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1766]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1767]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1768]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1769]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1770]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1771]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1772]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1773]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1774]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1775]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1776]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1777]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1778]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1779]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1780]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1781]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1782]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1783]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1784]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1785]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1786]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1787]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1788]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1789]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1790]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1791]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1792]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1793]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1794]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1795]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1796]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1797]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1798]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1799]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1800]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1801]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1802]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1803]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1804]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1805]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1806]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1807]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1808]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1809]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1810]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1811]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1812]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1813]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1814]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1815]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1816]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1817]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1818]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1819]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1820]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1821]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1822]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1823]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1824]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1825]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1826]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1827]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1828]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1829]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1830]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1831]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1832]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1833]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1834]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1835]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1836]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1837]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1838]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1839]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1840]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1841]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1842]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1843]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1844]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1845]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1846]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1847]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1848]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1849]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1850]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1851]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1852]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1853]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1854]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1855]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1856]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1857]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1858]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1859]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1860]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1861]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1862]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1863]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1864]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1865]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1866]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1867]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1868]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1869]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1870]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1871]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1872]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1873]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1874]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1875]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1876]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1877]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1878]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1879]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1880]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1881]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1882]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1883]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1884]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1885]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1886]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1887]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1888]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1889]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1890]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1891]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1892]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1893]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1894]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1895]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1896]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1897]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1898]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1899]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1900]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1901]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1902]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1903]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1904]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1905]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1906]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1907]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1908]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1909]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1910]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1911]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1912]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1913]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1914]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1915]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1916]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1917]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1918]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1919]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1920]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1921]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1922]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1923]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1924]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1925]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1926]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1927]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1928]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1929]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1930]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1931]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1932]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1933]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1934]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1935]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1936]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1937]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1938]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1939]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1940]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1941]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1942]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1943]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1944]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1945]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1946]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1947]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1948]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1949]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1950]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1951]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1952]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1953]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1954]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1955]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1956]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1957]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1958]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1959]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1960]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1961]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1962]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1963]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1964]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1965]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1966]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1967]=0.000069
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1968]=0.000485591
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1969]=0.000503887
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1970]=0.000108512
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1971]=0.0000426
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1972]=0.000043
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1973]=0.000055
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1974]=0.052416219
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1975]=0.19213674
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1976]=0.33759564
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1977]=0.42456315
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1978]=0.45249588
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1979]=0.42017076
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1980]=0.35605477
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1981]=0.32601335
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1982]=0.33083911
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1983]=0.33559498
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1984]=0.48356263
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1985]=0.56320674
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1986]=0.57273931
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1987]=0.79616882
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1988]=0.88192316
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1989]=0.82629641
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1990]=0.69729352
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1991]=0.70613627
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1992]=1.0018637
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1993]=1.5166355
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1994]=2.3253155
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1995]=3.4395305
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1996]=4.5014521
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1997]=5.5717023
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1998]=6.8917397
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[1999]=7.9486502
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2000]=8.5987563
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2001]=9.8521252
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2002]=11.617585
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2003]=13.114832
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2004]=13.097501
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2005]=12.434284
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2006]=14.118518
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2007]=16.399738
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2008]=17.544095
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2009]=21.142804
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2010]=20.460881
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2011]=22.158614
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2012]=21.423
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2013]=23.8069
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2014]=25.2487
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2015]=32.381
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2016]=38.77266
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2017]=45.16432
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2018]=51.55598
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2019]=57.94764
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2020]=64.3393
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2021]=66.04767
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2022]=67.75604
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2023]=69.46441
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2024]=71.17278
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2025]=72.88115
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2026]=74.58952
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2027]=76.29789
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2028]=78.00626
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2029]=79.71463
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2030]=81.423
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2031]=81.29742
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2032]=81.17184
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2033]=81.04626
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2034]=80.92068
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2035]=80.7951
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2036]=80.66952
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2037]=80.54394
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2038]=80.41836
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2039]=80.29278
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2040]=80.1672
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2041]=79.36518
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2042]=78.56316
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2043]=77.76114
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2044]=76.95912
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2045]=76.1571
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2046]=75.35508
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2047]=74.55306
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2048]=73.75104
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2049]=72.94902
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2050]=72.147
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2051]=72.71745
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2052]=73.2879
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2053]=73.85835
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2054]=74.4288
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2055]=74.99925
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2056]=75.5697
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2057]=76.14015
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2058]=76.7106
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2059]=77.28105
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2060]=77.8515
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2061]=78.27308
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2062]=78.69466
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2063]=79.11624
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2064]=79.53782
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2065]=79.9594
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2066]=80.38098
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2067]=80.80256
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2068]=81.22414
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2069]=81.64572
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2070]=82.0673
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2071]=82.27609
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2072]=82.48488
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2073]=82.69367
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2074]=82.90246
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2075]=83.11125
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2076]=83.32004
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2077]=83.52883
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2078]=83.73762
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2079]=83.94641
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2080]=84.1552
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2081]=84.37399
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2082]=84.59278
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2083]=84.81157
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2084]=85.03036
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2085]=85.24915
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2086]=85.46794
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2087]=85.68673
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2088]=85.90552
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2089]=86.12431
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2090]=86.3431
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2091]=85.86515
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2092]=85.3872
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2093]=84.90925
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2094]=84.4313
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2095]=83.95335
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2096]=83.4754
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2097]=82.99745
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2098]=82.5195
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2099]=82.04155
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2100]=81.5636
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2101]=81.01984267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2102]=80.47608533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2103]=79.932328
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2104]=79.38857067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2105]=78.84481333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2106]=78.301056
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2107]=77.75729867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2108]=77.21354133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2109]=76.669784
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2110]=76.12602667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2111]=75.58226933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2112]=75.038512
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2113]=74.49475467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2114]=73.95099733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2115]=73.40724
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2116]=72.86348267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2117]=72.31972533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2118]=71.775968
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2119]=71.23221067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2120]=70.68845333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2121]=70.144696
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2122]=69.60093867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2123]=69.05718133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2124]=68.513424
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2125]=67.96966667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2126]=67.42590933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2127]=66.882152
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2128]=66.33839467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2129]=65.79463733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2130]=65.25088
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2131]=64.70712267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2132]=64.16336533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2133]=63.619608
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2134]=63.07585067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2135]=62.53209333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2136]=61.988336
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2137]=61.44457867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2138]=60.90082133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2139]=60.357064
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2140]=59.81330667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2141]=59.26954933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2142]=58.725792
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2143]=58.18203467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2144]=57.63827733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2145]=57.09452
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2146]=56.55076267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2147]=56.00700533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2148]=55.463248
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2149]=54.91949067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2150]=54.37573333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2151]=53.831976
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2152]=53.28821867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2153]=52.74446133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2154]=52.200704
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2155]=51.65694667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2156]=51.11318933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2157]=50.569432
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2158]=50.02567467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2159]=49.48191733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2160]=48.93816
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2161]=48.39440267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2162]=47.85064533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2163]=47.306888
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2164]=46.76313067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2165]=46.21937333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2166]=45.675616
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2167]=45.13185867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2168]=44.58810133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2169]=44.044344
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2170]=43.50058667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2171]=42.95682933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2172]=42.413072
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2173]=41.86931467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2174]=41.32555733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2175]=40.7818
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2176]=40.23804267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2177]=39.69428533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2178]=39.150528
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2179]=38.60677067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2180]=38.06301333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2181]=37.519256
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2182]=36.97549867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2183]=36.43174133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2184]=35.887984
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2185]=35.34422667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2186]=34.80046933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2187]=34.256712
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2188]=33.71295467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2189]=33.16919733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2190]=32.62544
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2191]=32.08168267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2192]=31.53792533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2193]=30.994168
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2194]=30.45041067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2195]=29.90665333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2196]=29.362896
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2197]=28.81913867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2198]=28.27538133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2199]=27.731624
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2200]=27.18786667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2201]=26.64410933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2202]=26.100352
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2203]=25.55659467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2204]=25.01283733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2205]=24.46908
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2206]=23.92532267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2207]=23.38156533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2208]=22.837808
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2209]=22.29405067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2210]=21.75029333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2211]=21.206536
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2212]=20.66277867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2213]=20.11902133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2214]=19.575264
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2215]=19.03150667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2216]=18.48774933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2217]=17.943992
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2218]=17.40023467
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2219]=16.85647733
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2220]=16.31272
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2221]=15.76896267
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2222]=15.22520533
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2223]=14.681448
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2224]=14.13769067
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2225]=13.59393333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2226]=13.050176
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2227]=12.50641867
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2228]=11.96266133
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2229]=11.418904
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2230]=10.87514667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2231]=10.33138933
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2232]=9.787632
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2233]=9.243874667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2234]=8.700117333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2235]=8.15636
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2236]=7.612602667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2237]=7.068845333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2238]=6.525088
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2239]=5.981330667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2240]=5.437573333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2241]=4.893816
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2242]=4.350058667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2243]=3.806301333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2244]=3.262544
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2245]=2.718786667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2246]=2.175029333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2247]=1.631272
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2248]=1.087514667
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2249]=0.543757333
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2250]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2251]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2252]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2253]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2254]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2255]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2256]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2257]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2258]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2259]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2260]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2261]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2262]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2263]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2264]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2265]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2266]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2267]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2268]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2269]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2270]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2271]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2272]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2273]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2274]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2275]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2276]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2277]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2278]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2279]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2280]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2281]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2282]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2283]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2284]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2285]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2286]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2287]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2288]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2289]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2290]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2291]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2292]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2293]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2294]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2295]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2296]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2297]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2298]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2299]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2300]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2301]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2302]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2303]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2304]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2305]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2306]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2307]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2308]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2309]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2310]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2311]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2312]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2313]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2314]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2315]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2316]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2317]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2318]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2319]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2320]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2321]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2322]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2323]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2324]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2325]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2326]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2327]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2328]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2329]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2330]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2331]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2332]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2333]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2334]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2335]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2336]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2337]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2338]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2339]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2340]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2341]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2342]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2343]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2344]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2345]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2346]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2347]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2348]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2349]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2350]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2351]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2352]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2353]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2354]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2355]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2356]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2357]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2358]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2359]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2360]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2361]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2362]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2363]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2364]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2365]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2366]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2367]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2368]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2369]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2370]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2371]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2372]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2373]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2374]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2375]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2376]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2377]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2378]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2379]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2380]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2381]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2382]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2383]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2384]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2385]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2386]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2387]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2388]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2389]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2390]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2391]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2392]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2393]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2394]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2395]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2396]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2397]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2398]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2399]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2400]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2401]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2402]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2403]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2404]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2405]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2406]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2407]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2408]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2409]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2410]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2411]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2412]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2413]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2414]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2415]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2416]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2417]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2418]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2419]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2420]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2421]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2422]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2423]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2424]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2425]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2426]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2427]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2428]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2429]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2430]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2431]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2432]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2433]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2434]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2435]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2436]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2437]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2438]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2439]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2440]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2441]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2442]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2443]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2444]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2445]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2446]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2447]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2448]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2449]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2450]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2451]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2452]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2453]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2454]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2455]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2456]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2457]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2458]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2459]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2460]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2461]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2462]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2463]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2464]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2465]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2466]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2467]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2468]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2469]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2470]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2471]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2472]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2473]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2474]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2475]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2476]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2477]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2478]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2479]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2480]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2481]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2482]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2483]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2484]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2485]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2486]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2487]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2488]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2489]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2490]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2491]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2492]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2493]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2494]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2495]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2496]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2497]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2498]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2499]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting HFC143a_emissions[2500]=0
+Tue Mar 21 15:37:29 2023:DEBUG:setData: Setting molarMass[-1]=84.04
+Tue Mar 21 15:37:29 2023:DEBUG:prepareToRun: prepareToRun 
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1746 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1747 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1748 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1749 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1750 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1751 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1752 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1753 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1754 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1755 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1756 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1757 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1758 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1759 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1760 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1761 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1762 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1763 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1764 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1765 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1766 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1767 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1768 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1769 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1770 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1771 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1772 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1773 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1774 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1775 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1776 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1777 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1778 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1779 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1780 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1781 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1782 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1783 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1784 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1785 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1786 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1787 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1788 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1789 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1790 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1791 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1792 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1793 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1794 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1795 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1796 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1797 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1798 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1799 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1800 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1801 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1802 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1803 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1804 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1805 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1806 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1807 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1808 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1809 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1810 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1811 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1812 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1813 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1814 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1815 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1816 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1817 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1818 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1819 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1820 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1821 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1822 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1823 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1824 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1825 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1826 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1827 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1828 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1829 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1830 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1831 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1832 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1833 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1834 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1835 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1836 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1837 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1838 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1839 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1840 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1841 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1842 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1843 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1844 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1845 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1846 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1847 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1848 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1849 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1850 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1851 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1852 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1853 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1854 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1855 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1856 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1857 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1858 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1859 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1860 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1861 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1862 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1863 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1864 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1865 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1866 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1867 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1868 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1869 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1870 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1871 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1872 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1873 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1874 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1875 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1876 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1877 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1878 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1879 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1880 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1881 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1882 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1883 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1884 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1885 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1886 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1887 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1888 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1889 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1890 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1891 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1892 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1893 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1894 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1895 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1896 concentration: 0 pptv
+Tue Mar 21 15:37:30 2023:DEBUG:run: date: 1897 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1898 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1899 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1900 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1901 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1902 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1903 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1904 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1905 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1906 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1907 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1908 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1909 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1910 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1911 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1912 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1913 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1914 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1915 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1916 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1917 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1918 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1919 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1920 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1921 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1922 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1923 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1924 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1925 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1926 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1927 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1928 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1929 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1930 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1931 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1932 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1933 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1934 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1935 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1936 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1937 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1938 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1939 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1940 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1941 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1942 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1943 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1944 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1945 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1946 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1947 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1948 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1949 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1950 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1951 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1952 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1953 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1954 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1955 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1956 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1957 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1958 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1959 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1960 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1961 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1962 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1963 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1964 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1965 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1966 concentration: 0 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1967 concentration: 4.51774e-06 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1968 concentration: 3.62255e-05 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1969 concentration: 6.85273e-05 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1970 concentration: 7.43268e-05 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1971 concentration: 7.57003e-05 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1972 concentration: 7.70739e-05 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1973 concentration: 7.92069e-05 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1974 concentration: 0.00350962 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1975 concentration: 0.0160228 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1976 concentration: 0.0378216 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1977 concentration: 0.0648992 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1978 concentration: 0.09329 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1979 concentration: 0.119024 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1980 concentration: 0.140069 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1981 concentration: 0.158747 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1982 concentration: 0.177385 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1983 concentration: 0.195979 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1984 concentration: 0.223907 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1985 concentration: 0.256518 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1986 concentration: 0.289132 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1987 concentration: 0.335754 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1988 concentration: 0.387102 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1989 concentration: 0.43383 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1990 concentration: 0.471222 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1991 concentration: 0.50848 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1992 concentration: 0.564392 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1993 concentration: 0.652943 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1994 concentration: 0.792755 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1995 concentration: 1.00286 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1996 concentration: 1.27849 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1997 concentration: 1.61894 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1998 concentration: 2.03934 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 1999 concentration: 2.52093 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2000 concentration: 3.03591 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2001 concentration: 3.62315 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2002 concentration: 4.31479 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2003 concentration: 5.0913 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2004 concentration: 5.85187 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2005 concentration: 6.55454 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2006 concentration: 7.3541 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2007 concentration: 8.28779 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2008 concentration: 9.27862 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2009 concentration: 10.4862 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2010 concentration: 11.6261 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2011 concentration: 12.8555 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2012 concentration: 14.0133 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2013 concentration: 15.3052 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2014 concentration: 16.6668 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2015 concentration: 18.4695 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2016 concentration: 20.6563 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2017 concentration: 23.22 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2018 concentration: 26.1533 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2019 concentration: 29.4492 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2020 concentration: 33.1009 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2021 concentration: 36.7949 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2022 concentration: 40.5303 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2023 concentration: 44.3065 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2024 concentration: 48.1226 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2025 concentration: 51.9779 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2026 concentration: 55.8715 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2027 concentration: 59.8029 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2028 concentration: 63.7713 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2029 concentration: 67.7759 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2030 concentration: 71.8161 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2031 concentration: 75.7711 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2032 concentration: 79.6426 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2033 concentration: 83.4321 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2034 concentration: 87.1412 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2035 concentration: 90.7714 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2036 concentration: 94.3243 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2037 concentration: 97.8013 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2038 concentration: 101.204 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2039 concentration: 104.533 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2040 concentration: 107.791 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2041 concentration: 110.934 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2042 concentration: 113.965 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2043 concentration: 116.886 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2044 concentration: 119.699 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2045 concentration: 122.405 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2046 concentration: 125.007 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2047 concentration: 127.508 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2048 concentration: 129.908 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2049 concentration: 132.21 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2050 concentration: 134.415 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2051 concentration: 136.616 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2052 concentration: 138.813 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2053 concentration: 141.005 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2054 concentration: 143.192 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2055 concentration: 145.375 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2056 concentration: 147.554 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2057 concentration: 149.729 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2058 concentration: 151.9 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2059 concentration: 154.066 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2060 concentration: 156.229 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2061 concentration: 158.378 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2062 concentration: 160.514 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2063 concentration: 162.637 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2064 concentration: 164.747 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2065 concentration: 166.844 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2066 concentration: 168.929 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2067 concentration: 171.002 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2068 concentration: 173.063 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2069 concentration: 175.113 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2070 concentration: 177.15 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2071 concentration: 179.163 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2072 concentration: 181.151 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2073 concentration: 183.115 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2074 concentration: 185.056 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2075 concentration: 186.972 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2076 concentration: 188.866 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2077 concentration: 190.738 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2078 concentration: 192.588 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2079 concentration: 194.416 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2080 concentration: 196.223 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2081 concentration: 198.01 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2082 concentration: 199.777 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2083 concentration: 201.525 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2084 concentration: 203.254 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2085 concentration: 204.964 pptv
+Tue Mar 21 15:37:31 2023:DEBUG:run: date: 2086 concentration: 206.656 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2087 concentration: 208.33 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2088 concentration: 209.987 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2089 concentration: 211.626 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2090 concentration: 213.248 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2091 concentration: 214.809 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2092 concentration: 216.308 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2093 concentration: 217.747 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2094 concentration: 219.128 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2095 concentration: 220.451 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2096 concentration: 221.717 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2097 concentration: 222.929 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2098 concentration: 224.085 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2099 concentration: 225.189 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2100 concentration: 226.24 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2101 concentration: 227.236 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2102 concentration: 228.177 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2103 concentration: 229.064 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2104 concentration: 229.899 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2105 concentration: 230.682 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2106 concentration: 231.415 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2107 concentration: 232.099 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2108 concentration: 232.733 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2109 concentration: 233.32 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2110 concentration: 233.861 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2111 concentration: 234.355 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2112 concentration: 234.804 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2113 concentration: 235.21 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2114 concentration: 235.571 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2115 concentration: 235.891 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2116 concentration: 236.168 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2117 concentration: 236.405 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2118 concentration: 236.602 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2119 concentration: 236.759 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2120 concentration: 236.878 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2121 concentration: 236.959 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2122 concentration: 237.003 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2123 concentration: 237.01 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2124 concentration: 236.981 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2125 concentration: 236.918 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2126 concentration: 236.82 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2127 concentration: 236.688 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2128 concentration: 236.524 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2129 concentration: 236.326 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2130 concentration: 236.097 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2131 concentration: 235.837 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2132 concentration: 235.546 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2133 concentration: 235.225 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2134 concentration: 234.875 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2135 concentration: 234.495 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2136 concentration: 234.087 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2137 concentration: 233.652 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2138 concentration: 233.189 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2139 concentration: 232.699 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2140 concentration: 232.183 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2141 concentration: 231.641 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2142 concentration: 231.074 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2143 concentration: 230.483 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2144 concentration: 229.866 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2145 concentration: 229.226 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2146 concentration: 228.563 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2147 concentration: 227.876 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2148 concentration: 227.168 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2149 concentration: 226.437 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2150 concentration: 225.684 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2151 concentration: 224.91 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2152 concentration: 224.115 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2153 concentration: 223.3 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2154 concentration: 222.464 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2155 concentration: 221.609 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2156 concentration: 220.735 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2157 concentration: 219.841 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2158 concentration: 218.93 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2159 concentration: 217.999 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2160 concentration: 217.051 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2161 concentration: 216.086 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2162 concentration: 215.103 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2163 concentration: 214.103 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2164 concentration: 213.087 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2165 concentration: 212.055 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2166 concentration: 211.006 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2167 concentration: 209.942 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2168 concentration: 208.863 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2169 concentration: 207.768 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2170 concentration: 206.659 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2171 concentration: 205.535 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2172 concentration: 204.398 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2173 concentration: 203.246 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2174 concentration: 202.08 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2175 concentration: 200.901 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2176 concentration: 199.709 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2177 concentration: 198.504 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2178 concentration: 197.287 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2179 concentration: 196.057 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2180 concentration: 194.815 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2181 concentration: 193.561 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2182 concentration: 192.295 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2183 concentration: 191.018 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2184 concentration: 189.729 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2185 concentration: 188.429 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2186 concentration: 187.119 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2187 concentration: 185.798 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2188 concentration: 184.466 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2189 concentration: 183.124 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2190 concentration: 181.773 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2191 concentration: 180.411 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2192 concentration: 179.04 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2193 concentration: 177.659 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2194 concentration: 176.269 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2195 concentration: 174.869 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2196 concentration: 173.461 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2197 concentration: 172.044 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2198 concentration: 170.618 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2199 concentration: 169.184 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2200 concentration: 167.742 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2201 concentration: 166.292 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2202 concentration: 164.833 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2203 concentration: 163.367 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2204 concentration: 161.893 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2205 concentration: 160.411 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2206 concentration: 158.923 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2207 concentration: 157.426 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2208 concentration: 155.923 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2209 concentration: 154.413 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2210 concentration: 152.896 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2211 concentration: 151.372 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2212 concentration: 149.842 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2213 concentration: 148.305 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2214 concentration: 146.762 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2215 concentration: 145.213 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2216 concentration: 143.657 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2217 concentration: 142.096 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2218 concentration: 140.529 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2219 concentration: 138.956 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2220 concentration: 137.377 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2221 concentration: 135.793 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2222 concentration: 134.203 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2223 concentration: 132.609 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2224 concentration: 131.008 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2225 concentration: 129.403 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2226 concentration: 127.793 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2227 concentration: 126.178 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2228 concentration: 124.558 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2229 concentration: 122.933 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2230 concentration: 121.303 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2231 concentration: 119.669 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2232 concentration: 118.031 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2233 concentration: 116.388 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2234 concentration: 114.741 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2235 concentration: 113.089 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2236 concentration: 111.434 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2237 concentration: 109.774 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2238 concentration: 108.11 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2239 concentration: 106.443 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2240 concentration: 104.771 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2241 concentration: 103.096 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2242 concentration: 101.417 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2243 concentration: 99.7349 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2244 concentration: 98.0488 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2245 concentration: 96.3593 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2246 concentration: 94.6663 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2247 concentration: 92.97 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2248 concentration: 91.2704 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2249 concentration: 89.5676 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2250 concentration: 87.8616 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2251 concentration: 86.1881 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2252 concentration: 84.5465 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2253 concentration: 82.9361 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2254 concentration: 81.3564 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2255 concentration: 79.8068 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2256 concentration: 78.2868 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2257 concentration: 76.7956 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2258 concentration: 75.3329 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2259 concentration: 73.898 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2260 concentration: 72.4905 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2261 concentration: 71.1098 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2262 concentration: 69.7553 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2263 concentration: 68.4267 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2264 concentration: 67.1234 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2265 concentration: 65.8449 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2266 concentration: 64.5907 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2267 concentration: 63.3605 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2268 concentration: 62.1536 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2269 concentration: 60.9698 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2270 concentration: 59.8085 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2271 concentration: 58.6693 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2272 concentration: 57.5518 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2273 concentration: 56.4556 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2274 concentration: 55.3803 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2275 concentration: 54.3255 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2276 concentration: 53.2908 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2277 concentration: 52.2757 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2278 concentration: 51.28 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2279 concentration: 50.3033 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2280 concentration: 49.3452 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2281 concentration: 48.4053 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2282 concentration: 47.4833 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2283 concentration: 46.5789 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2284 concentration: 45.6917 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2285 concentration: 44.8214 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2286 concentration: 43.9677 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2287 concentration: 43.1302 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2288 concentration: 42.3087 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2289 concentration: 41.5029 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2290 concentration: 40.7124 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2291 concentration: 39.9369 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2292 concentration: 39.1762 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2293 concentration: 38.4301 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2294 concentration: 37.6981 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2295 concentration: 36.98 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2296 concentration: 36.2757 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2297 concentration: 35.5847 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2298 concentration: 34.907 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2299 concentration: 34.2421 pptv
+Tue Mar 21 15:37:32 2023:DEBUG:run: date: 2300 concentration: 33.5899 pptv

@@ -1,0 +1,16 @@
+"model","discountrate","scc"
+"AgMIP_All","2.5% constant",-1.73885162657802
+"AgMIP_All","3% constant",-1.68262826496672
+"AgMIP_All","5% constant",-1.34064681862868
+"AgMIP_NoN","2.5% constant",4.89451684982614
+"AgMIP_NoN","3% constant",3.54801228056715
+"AgMIP_NoN","5% constant",1.20128196211322
+"GTAPAgHigh","2.5% constant",-0.414741724254892
+"GTAPAgHigh","3% constant",-0.675292135266156
+"GTAPAgHigh","5% constant",-0.921883023357
+"GTAPAgLow","2.5% constant",37.298807625609
+"GTAPAgLow","3% constant",31.7605027080817
+"GTAPAgLow","5% constant",17.9707113843351
+"GTAPAgMid","2.5% constant",10.8001490553348
+"GTAPAgMid","3% constant",8.47711282120108
+"GTAPAgMid","5% constant",3.99236737617266

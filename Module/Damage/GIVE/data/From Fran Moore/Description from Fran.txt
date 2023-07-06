@@ -1,0 +1,42 @@
+I'm attaching a .csv file with our welfare changes for the FUND regions (% change in the agricultural sector) that we used to parameterize the damage functions. The "Meta-Analysis" is our analysis of the IPCC results (which also has results for the error bars), and AgMIP NoN is our preferred AgMIP ensemble. 
+
+Delavane did both a linear interpolation between these points and fit a quadratic through them to get the damage function. The R code she used to do that based on the attached is copied below.
+
+Let me know if there's anything else you need. Did you end up submitting an SCC session to the World Congress? 
+
+Best,
+Fran
+
+# ImpactAgricultureComponent
+agrate[t,r,'ref'] = if (t==1) agrbm * (0.005 / 0.04)^agnl * agtime else agrbm * (dtemp / 0.04)^agnl + (1- 1/ agtime) * agrate[t-1,r,'ref']
+aglevel[t,r,'ref'] = aglparl * deltat[t] + aglparq * (deltat[t]^2)
+agco2[t,r,'ref'] = if (t==1) 0 else agcbm /log(2) * log(conc[t - 1] / concpre) 
+
+# Ag damages are fractional loss of Regional Ag Product - damages are negative
+AgLossFUND[t,r,'ref']=max(-1,agrate[t,r,'ref'] + aglevel[t,r,'ref'] + agco2[t,r,'ref'])
+
+damages[t,r,'Agriculture',i] = -1*income[t, r]*agrish0*( ypc_F[t,r] / ypc90[r])^-agel*AgLossFUND[t,r,'ref']
+
+
+
+# Read data for GTAP DFs ---------------------------------------------------------------
+load("welfarewithFUNDregions.Rdat")
+# Formulate alternative, linear damage functions of temperature change using point estimates 
+# midDF takes temperature as x and returns welfare % change (neg is loss)
+midDF=acast(regiondata[which(regiondata$Model=='Meta-Analysis'),c('Temp','FUND','mid')], Temp ~ FUND)
+lowDF=acast(regiondata[which(regiondata$Model=='Meta-Analysis'),c('Temp','FUND','low')], Temp ~ FUND)
+highDF=acast(regiondata[which(regiondata$Model=='Meta-Analysis'),c('Temp','FUND','high')], Temp ~ FUND)
+AgMIP_NoNDF=acast(regiondata[which(regiondata$Model=='AgMIP_NoN'),c('Temp','FUND','mid')], Temp ~ FUND)
+AgMIP_AllDF=acast(regiondata[which(regiondata$Model=='AgMIP_All'),c('Temp','FUND','mid')], Temp ~ FUND)
+
+
+# GTAP damages are not time dependent, so compute outside of the time loop
+# selectedAgDF is one of the DFs constructed above
+# deltat and Pulsedeltat are the timeseries of temperature change
+for (r in FUNDregions) {
+  AgLossGTAP[,r,'ref']=pmax(-100,approxExtrap(0:3,c(0,selectedAgDF[,r]),xout=deltat)$y)/100
+  AgLossGTAP[,r,'pulse']=pmax(-100,approxExtrap(0:3,c(0,selectedAgDF[,r]),xout=Pulsedeltat)$y)/100
+}
+
+damages[t,r,'Agriculture',i] = -1*income[t, r]*agrish0*( ypc_F[t,r] / ypc90[r])^-agel*AgLossGTAP[t,r,'ref']
+
