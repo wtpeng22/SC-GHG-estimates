@@ -1,0 +1,395 @@
+library(data.table)
+library(openxlsx)
+library(arrow)
+library(dplyr);
+
+## Burke et al. damage function
+setwd("/Users/tianpeng/Desktop/nonCO2-cost/NCC_revise");
+# setwd("/WORK/tsinghua_fteng_1/NCC_revise");
+
+simulation_no = 100
+
+## Climate responses 
+year_target=2019:2100;
+FAIR_row_target = year_target-1765;
+
+FAIR_data_T_ssp245_base = fread("./Module/Climate/FAIR/outputs/ssp245/T_base.csv",encoding = "UTF-8",header = T);
+FAIR_data_T_ssp245_base = as.matrix(FAIR_data_T_ssp245_base[V1 %in% FAIR_row_target,-1]);
+
+FAIR_data_T_ssp245_CO2 = fread("./Module/Climate/FAIR/outputs/ssp245/T_extra_CO2.csv",encoding = "UTF-8",header = T);
+FAIR_data_T_ssp245_CO2 = as.matrix(FAIR_data_T_ssp245_CO2[V1 %in% FAIR_row_target,-1]);
+
+FAIR_data_T_ssp245_CH4 = fread("./Module/Climate/FAIR/outputs/ssp245/T_extra_CH4.csv",encoding = "UTF-8",header = T);
+FAIR_data_T_ssp245_CH4 = as.matrix(FAIR_data_T_ssp245_CH4[V1 %in% FAIR_row_target,-1]);
+
+FAIR_data_T_ssp245_N2O = fread("./Module/Climate/FAIR/outputs/ssp245/T_extra_N2O.csv",encoding = "UTF-8",header = T);
+FAIR_data_T_ssp245_N2O = as.matrix(FAIR_data_T_ssp245_N2O[V1 %in% FAIR_row_target,-1]);
+
+Monte_Carlo_T <-function(){
+  # 
+  if(MarginalEmission_CO2 == TRUE & MarginalEmission_CH4 == FALSE & MarginalEmission_N2O == FALSE){
+    ssp_glob_temp_target <<- FAIR_data_T_ssp245_base[,target_climate];
+    ssp_glob_temp_pulse_target <<- FAIR_data_T_ssp245_CO2[,target_climate];
+  }
+  
+  if(MarginalEmission_CO2 == FALSE & MarginalEmission_CH4 == TRUE & MarginalEmission_N2O == FALSE){
+    ssp_glob_temp_target <<- FAIR_data_T_ssp245_base[,target_climate];
+    ssp_glob_temp_pulse_target <<- FAIR_data_T_ssp245_CH4[,target_climate];
+  }
+  
+  if(MarginalEmission_CO2 == FALSE & MarginalEmission_CH4 == FALSE & MarginalEmission_N2O == TRUE){
+    ssp_glob_temp_target <<- FAIR_data_T_ssp245_base[,target_climate];
+    ssp_glob_temp_pulse_target <<- FAIR_data_T_ssp245_N2O[,target_climate];
+  }
+  
+  ssp_glob_temp <<- ssp_glob_temp_target[-1] - ssp_glob_temp_target[1];
+  ssp_glob_temp_pulse <<- ssp_glob_temp_pulse_target[-1] - ssp_glob_temp_pulse_target[1];
+}
+
+# downscale the global climate responses to countrial/regional level
+T_downscale_country = read.xlsx("Module/Climate/downscale/Downscale_temp_coeff.xlsx",sheet = "country_temp_coeff",startRow = 1);
+colnames(T_downscale_country)  = c("ISO3","tempcoeff")
+
+###BHM climate damage function
+pb = fread("Module/Damage/BHM/bootstrap.csv");
+
+# load("../Damage_model/Burke_damage/baseline.Rdata");
+# baseline_refer = baseline
+gdpcap_baseline = read.xlsx("Module/Socioeconomic/outputs/Country_level/Baseline_data.xlsx",sheet = "Country-level-data",startRow = 1)
+
+base_year = 2019;
+pro_years = 2020:2200;
+pro_years_2100 = 2020:2100;
+
+Country_num = length(T_downscale_country$ISO3)
+Year_num = length(pro_years)
+
+target_country = c("CAN","CHN","IND","RUS","USA");
+
+nid_sample = read.csv("Module/Sample/nid_sample.csv");
+
+gdp_ssp2 = read.xlsx("Module/Socioeconomic/outputs/Country_level/SSP2/gdp.xlsx")
+pop_ssp2 = read.xlsx("Module/Socioeconomic/outputs/Country_level/SSP2/pop.xlsx")
+ssp_pop_income = matrix(nrow = nrow(gdp_ssp2)*length(seq(2020,2300,5)),ncol = 4)
+ssp_pop_income[,1] = rep(gdp_ssp2$ISO3,each = length(seq(2020,2300,5)))
+ssp_pop_income[,2] = rep(seq(2020,2300,5),nrow(gdp_ssp2))
+ssp_pop_income[,3] = c(t(as.matrix(pop_ssp2[,-(1:6)])))
+ssp_pop_income[,4] = c(t(as.matrix(gdp_ssp2[,-(1:6)])))
+ssp_pop_income = as.data.table(ssp_pop_income)
+colnames(ssp_pop_income) = c("ISO3","year","pop","gdp")
+ssp_pop_income$year = as.numeric(ssp_pop_income$year)
+ssp_pop_income$pop = as.numeric(ssp_pop_income$pop)
+ssp_pop_income$gdp = as.numeric(ssp_pop_income$gdp)
+ssp_pop_income$gdpcap = ssp_pop_income$gdp/ssp_pop_income$pop
+
+prtps = c(0.2) # %
+etas = c(1.24) 
+
+Diagnostic_SC_GHG <- function(damage_type,gases_target,run_time){
+  
+  damage_module <<- damage_type;
+  target_climate <<- run_time;
+
+  ##sample scenario
+  ssp_growthrate_sample_pro <<- ssp_pop_income[, annual_gdp_pop_g(.SD), by = c("ISO3")]
+  ssp_growthrate_sample_2020 <<- ssp_growthrate_sample_pro[ssp_growthrate_sample_pro$year==(base_year+2),]
+  ssp_growthrate_sample_2020$year <<- base_year+1
+  ssp_growthrate_sample <<- rbind(ssp_growthrate_sample_2020,ssp_growthrate_sample_pro)
+  growthrate_sample <<- ssp_growthrate_sample[ssp_growthrate_sample$ISO3 %in% gdpcap_baseline$ISO3,]
+  growthrate_sample <<- growthrate_sample[order(ISO3),]
+  
+  ##sample damage function
+  # nid <<-0;
+  nid <<-nid_sample$x[run_time];
+  
+  # change the spec with different lag (short term verus long term)
+  if(damage_module == "lag0"){
+    mb <<- as.matrix(pb[pb$spec=="country-lag0",.(b1,b2)])
+  }
+  
+  if(damage_module == "lag5"){
+    mb <<- as.matrix(pb[pb$spec=="country-lag5",.(b1,b2)])
+  }
+  
+  ###run climate and damage models
+  MarginalEmission_CO2<<-FALSE;
+  MarginalEmission_CH4<<-FALSE;
+  MarginalEmission_N2O<<-FALSE;
+  
+  if(gases_target=="CO2"){
+    MarginalEmission_CO2<<-TRUE
+    Monte_Carlo_T();
+    Playground_Burke();
+    MarginalEmission_CO2<<-FALSE
+  }
+  
+  if(gases_target=="CH4"){
+    MarginalEmission_CH4<<-TRUE
+    Monte_Carlo_T();
+    Playground_Burke();
+    MarginalEmission_CH4<<-FALSE
+  }
+  
+  if(gases_target=="N2O"){
+    MarginalEmission_N2O<<-TRUE
+    Monte_Carlo_T();
+    Playground_Burke();
+    MarginalEmission_N2O<<-FALSE
+  }
+  
+  ##Country level
+  res_scc <<- ssp_gdpr[,project_gdpcap(.SD),by = c("ISO3")];
+  gdprate_cc_impulse_year = res_scc[year == impulse_year,
+                                    .(gdpcap_cc_impulse_year = gdpcap_cc),
+                                    by = c("ISO3")];
+  res_scc <- merge(res_scc,gdprate_cc_impulse_year,by = c("ISO3"));
+  res_scc[, gdprate_cc_avg := ifelse(year == impulse_year,
+                                     gdprate_cc,
+                                     (gdpcap_cc/gdpcap_cc_impulse_year)^(1/(year - impulse_year)) - 1)];
+  res_wscc <<- res_scc[,.(gdpcap_cc = weighted.mean(gdpcap_cc,pop)),by = c("year")];
+  
+  #World
+  res_wscc <<- transform(res_wscc, gdpcap_cc_impulse_year = res_wscc[year==impulse_year]$gdpcap_cc);
+  res_wscc[, gdprate_cc_avg := ifelse(year == impulse_year,
+                                      NA,
+                                      (gdpcap_cc/gdpcap_cc_impulse_year)^(1/(year - impulse_year)) - 1)]
+  res_wscc <<- transform(res_wscc,gdprate_cc_avg_impulse_year = res_wscc[year == (impulse_year + 1)]$gdprate_cc_avg);
+  res_wscc[year == impulse_year,gdprate_cc_avg := gdprate_cc_avg_impulse_year]
+  res_wscc[,gdprate_cc_avg_impulse_year := NULL]
+  
+  # Compute SCC according to paper by Rennert et al. published on Nature
+  # approximate by change in GDP rather than consumption
+  res_scc[, scc := -(gdpcap_imp - gdpcap_cc) * pop * (1 / pulse_scale)] # $2010/tCO2
+  
+  global_damage = res_scc[,sum(gdpcap_cc*pop),by=c("year")]
+  global_damage_impulse = res_scc[,sum(gdpcap_imp*pop),by=c("year")]
+  colnames(global_damage)[2]="global_damage"
+  colnames(global_damage_impulse)[2]="global_damage_impulse"
+  
+  res_wscc <<- merge(res_wscc,res_scc[, .(scc = sum(scc)),by = c("year")],
+                     by = c("year"))
+  
+  
+  ## project the SCC and gdp growth rate from 2100 to 2200 as constant with year 2100
+  res_scc_future <- res_scc[,extrapolate_scc(.SD),by = c("ISO3")]
+  res_wscc_future <- res_wscc[,extrapolate_scc(.SD)]
+  res_scc <- rbindlist(list(res_scc,res_scc_future),fill = T)
+  res_wscc <- rbindlist(list(res_wscc,res_wscc_future),fill = T)
+  colnames(res_wscc) = c("year","global_gdpcap_cc","global_gdpcap_cc_impulse_year","global_gdprate_cc_avg","global_scc")
+  res_scc = merge(res_scc,res_wscc,by = "year")
+  
+  # Discount SCC according to timevarying discount rate by Rennert et al. published on Nature
+  # elasticity of marginal utility of consumption = 1.24
+  # added 0.2% prtp to be compatible with EPA
+  
+  cscc1 = NULL
+  cscc2 = NULL
+  
+  for (.prtp in prtps) {
+    for (.eta in etas) {
+      dscc <<- res_scc[,list(ISO3,year,gdprate_cc,gdprate_cc_avg,scc,global_gdprate_cc_avg,global_gdpcap_cc)]
+      dscc[,global_gdpcap_cc := dscc[year == impulse_year, global_gdpcap_cc][1]*(1+dscc[year >= impulse_year, global_gdprate_cc_avg])^(dscc[year >= impulse_year, year-impulse_year])]
+      dscc[,cpc_value := global_gdpcap_cc*(1-saving_rate)];
+      # dscc[,dfac := (1/((1 + .prtp/100)^(year - impulse_year))*(((1+gdprate_cc_avg)^(year - impulse_year))^(0-.eta)))]
+      dscc[,dfac := (1/((1 + .prtp/100)^(year - impulse_year))*(((1+global_gdprate_cc_avg)^(year - impulse_year))^(0-.eta)))]
+      dscc[,dfac_ces := (1/((1 + .prtp/100)^(year - impulse_year))*((cpc_value)^(0-.eta)))]
+      
+      dscc[,dscc := dfac * scc]
+      dscc[,dscc_ces := dfac_ces * scc]
+      
+      cscc1 = rbind(cscc1,dscc[,.(prtp = .prtp,eta = .eta,scc = sum(dscc)),
+                               by = c("ISO3")],fill = T)
+      cscc2 = rbind(cscc2,dscc[,.(prtp = .prtp,eta = .eta,scc = sum(dscc_ces)),
+                               by = c("ISO3")],fill = T)
+      global_cpc_value = dscc[ISO3 == "CHN",cpc_value]
+    }
+  }
+  
+  # Comparison EPA (SC-CO2) [[http://www3.epa.gov/climatechange/EPAactivities/economics/scc.html]]
+  drs <<- c(1.5,2,3,5) #%
+  
+  cscc0 <<- NULL
+  
+  for (.dr in drs) {
+    ## project the SCC from 2100 to 2200 as constant with year 2100
+    dscc <<- res_scc[,list(ISO3,year,gdprate_cc,gdprate_cc_avg,scc)]
+    dscc[,dfac := (1/(1 + .dr/100)^(year - impulse_year+1))]
+    dscc[,dscc := dfac * scc]
+    cscc0 <<- rbind(cscc0,dscc[,.(dr = .dr,scc = sum(dscc)),by = c("ISO3")])
+  }
+  cscc1$dr=-1;
+  cscc2$dr=-2;
+  cscc = rbindlist(list(cscc0,cscc1,cscc2),fill = T);
+  wscc = cscc[,(scc = sum(scc)),by = c("dr")];
+  wscc = cbind(rep("World",6),wscc)
+  colnames(wscc)[1]="ISO3"
+  colnames(wscc)[3]="scc"
+  country_damage = res_scc[ISO3 %in% target_country]
+  return(list(cscc,wscc,country_damage,global_damage,global_damage_impulse,global_cpc_value));
+}
+
+
+MarginalEmission_CO2<<-FALSE
+MarginalEmission_CH4<<-TRUE
+MarginalEmission_N2O<<-FALSE
+
+pulse_scale = 1e9;
+gases_types = c("CO2","CH4","N2O")
+discount_types = c("fixed_1.5","fixed_2","fixed_3","fixed_5","timevarying","timevarying_ces")
+
+CSC_CO2 = matrix(nrow = simulation_no,ncol = Country_num*length(discount_types))
+WSC_CO2 = matrix(nrow = simulation_no,ncol = length(discount_types))
+CSC_CH4 = matrix(nrow = simulation_no,ncol = Country_num*length(discount_types))
+WSC_CH4 = matrix(nrow = simulation_no,ncol = length(discount_types))
+CSC_N2O = matrix(nrow = simulation_no,ncol = Country_num*length(discount_types))
+WSC_N2O = matrix(nrow = simulation_no,ncol = length(discount_types))
+Country_target_gdpcap_base = matrix(nrow = simulation_no,ncol = length(pro_years_2100)*length(target_country))
+Country_target_gdpcap_cc = matrix(nrow = simulation_no,ncol = length(pro_years_2100)*length(target_country))
+Country_target_gdpcap_imp_CO2 = matrix(nrow = simulation_no,ncol = length(pro_years_2100)*length(target_country))
+Country_target_gdpcap_imp_CH4 = matrix(nrow = simulation_no,ncol = length(pro_years_2100)*length(target_country))
+Country_target_gdpcap_imp_N2O = matrix(nrow = simulation_no,ncol = length(pro_years_2100)*length(target_country))
+Global_damage_base = matrix(nrow = simulation_no,ncol = length(pro_years_2100))
+Global_damage_imp_CO2 = matrix(nrow = simulation_no,ncol = length(pro_years_2100))
+Global_damage_imp_CH4 = matrix(nrow = simulation_no,ncol = length(pro_years_2100))
+Global_damage_imp_N2O = matrix(nrow = simulation_no,ncol = length(pro_years_2100))
+Global_CPC_CO2 = matrix(nrow = simulation_no,ncol = length(pro_years))
+Global_CPC_CH4 = matrix(nrow = simulation_no,ncol = length(pro_years))
+Global_CPC_N2O = matrix(nrow = simulation_no,ncol = length(pro_years))
+
+damage_module = "lag5"
+source("Module/Damage/BHM/BHM_damage.R");
+
+library(parallel)
+
+#####lag5 damage
+res1.p = mclapply(1:simulation_no,FUN = function(run_time) {Diagnostic_SC_GHG("lag5","CO2",run_time)},mc.cores = 2);
+
+for (run_time in 1:simulation_no) {
+    CSC_CO2[run_time,] = res1.p[[run_time]][[1]]$scc/100;
+    WSC_CO2[run_time,] = res1.p[[run_time]][[2]]$scc/100;
+
+    Country_target_gdpcap_base[run_time,] = res1.p[[run_time]][[3]]$gdpcap[1:(5*length(pro_years_2100))];
+    Country_target_gdpcap_cc[run_time,] = res1.p[[run_time]][[3]]$gdpcap_cc[1:(5*length(pro_years_2100))];
+    Country_target_gdpcap_imp_CO2[run_time,] = res1.p[[run_time]][[3]]$gdpcap_imp[1:(5*length(pro_years_2100))];
+    
+    Global_damage_base[run_time,] = res1.p[[run_time]][[4]]$global_damage;
+    Global_damage_imp_CO2[run_time,] = res1.p[[run_time]][[5]]$global_damage_impulse;
+    Global_CPC_CO2[run_time,] = res1.p[[run_time]][[6]];
+}
+
+WSC_CO2[,6] = WSC_CO2[,6]*1/mean(Global_CPC_CO2[,impulse_year-base_year]^(0-etas))
+CSC_CO2[,(Country_num*5+1):(Country_num*6)] = CSC_CO2[,(Country_num*5+1):(Country_num*6)]*1/mean(Global_CPC_CO2[,impulse_year-base_year]^(0-etas))
+
+res2.p = mclapply(1:simulation_no,FUN = function(run_time) {Diagnostic_SC_GHG("lag5","CH4",run_time)},mc.cores = 2);
+
+for (run_time in 1:simulation_no) {
+  CSC_CH4[run_time,] = res2.p[[run_time]][[1]]$scc;
+  WSC_CH4[run_time,] = res2.p[[run_time]][[2]]$scc;
+  
+  Country_target_gdpcap_imp_CH4[run_time,] = res2.p[[run_time]][[3]]$gdpcap_imp[1:(5*length(pro_years_2100))];
+  Global_damage_imp_CH4[run_time,] = res2.p[[run_time]][[5]]$global_damage_impulse;
+  Global_CPC_CH4[run_time,] = res1.p[[run_time]][[6]];
+}
+
+WSC_CH4[,6] = WSC_CH4[,6]*1/mean(Global_CPC_CH4[,impulse_year-base_year]^(0-etas))
+CSC_CH4[,(Country_num*5+1):(Country_num*6)] = CSC_CH4[,(Country_num*5+1):(Country_num*6)]*1/mean(Global_CPC_CH4[,impulse_year-base_year]^(0-etas))
+
+res3.p = mclapply(1:simulation_no,FUN = function(run_time) {Diagnostic_SC_GHG("lag5","N2O",run_time)},mc.cores = 2);
+
+for (run_time in 1:simulation_no) {
+  CSC_N2O[run_time,] = res3.p[[run_time]][[1]]$scc*10;
+  WSC_N2O[run_time,] = res3.p[[run_time]][[2]]$scc*10;
+  
+  Country_target_gdpcap_imp_N2O[run_time,] = res3.p[[run_time]][[3]]$gdpcap_imp[1:(5*length(pro_years_2100))];
+  Global_damage_imp_N2O[run_time,] = res3.p[[run_time]][[5]]$global_damage_impulse;
+  Global_CPC_N2O[run_time,] = res1.p[[run_time]][[6]];
+}
+
+WSC_N2O[,6] = WSC_N2O[,6]*1/mean(Global_CPC_N2O[,impulse_year-base_year]^(0-etas))
+CSC_N2O[,(Country_num*5+1):(Country_num*6)] = CSC_N2O[,(Country_num*5+1):(Country_num*6)]*1/mean(Global_CPC_N2O[,impulse_year-base_year]^(0-etas))
+
+write.csv(CSC_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/CSC_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(WSC_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/WSC_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(CSC_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/CSC_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(WSC_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/WSC_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(CSC_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/CSC_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(WSC_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/WSC_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+
+write.csv(Country_target_gdpcap_base,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/gdpcap_base_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_cc,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/gdpcap_cc_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_imp_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/gdpcap_imp_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_imp_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/gdpcap_imp_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_imp_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/gdpcap_imp_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_base,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/Global_damage_base_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_imp_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/Global_damage_imp_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_imp_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/Global_damage_imp_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_imp_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag5/Global_damage_imp_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+
+#####lag0 damage
+system.time(
+{
+  res1.p = mclapply(1:simulation_no,FUN = function(run_time) {Diagnostic_SC_GHG("lag0","CO2",run_time)},mc.cores = 2)
+ }
+)
+
+for (run_time in 1:simulation_no) {
+  CSC_CO2[run_time,] = res1.p[[run_time]][[1]]$scc/100;
+  WSC_CO2[run_time,] = res1.p[[run_time]][[2]]$scc/100;
+  
+  Country_target_gdpcap_base[run_time,] = res1.p[[run_time]][[3]]$gdpcap[1:(5*length(pro_years_2100))];
+  Country_target_gdpcap_cc[run_time,] = res1.p[[run_time]][[3]]$gdpcap_cc[1:(5*length(pro_years_2100))];
+  Country_target_gdpcap_imp_CO2[run_time,] = res1.p[[run_time]][[3]]$gdpcap_imp[1:(5*length(pro_years_2100))];
+  
+  Global_damage_base[run_time,] = res1.p[[run_time]][[4]]$global_damage;
+  Global_damage_imp_CO2[run_time,] = res1.p[[run_time]][[5]]$global_damage_impulse;
+  Global_CPC_CO2[run_time,] = res1.p[[run_time]][[6]];
+}
+
+WSC_CO2[,6] = WSC_CO2[,6]*1/mean(Global_CPC_CO2[,impulse_year-base_year]^(0-etas))
+CSC_CO2[,(Country_num*5+1):(Country_num*6)] = CSC_CO2[,(Country_num*5+1):(Country_num*6)]*1/mean(Global_CPC_CO2[,impulse_year-base_year]^(0-etas))
+
+res2.p = mclapply(1:simulation_no,FUN = function(run_time) {Diagnostic_SC_GHG("lag0","CH4",run_time)},mc.cores = 2);
+
+for (run_time in 1:simulation_no) {
+  CSC_CH4[run_time,] = res2.p[[run_time]][[1]]$scc;
+  WSC_CH4[run_time,] = res2.p[[run_time]][[2]]$scc;
+  
+  Country_target_gdpcap_imp_CH4[run_time,] = res2.p[[run_time]][[3]]$gdpcap_imp[1:(5*length(pro_years_2100))];
+  Global_damage_imp_CH4[run_time,] = res2.p[[run_time]][[5]]$global_damage_impulse;
+  Global_CPC_CH4[run_time,] = res1.p[[run_time]][[6]];
+}
+
+WSC_CH4[,6] = WSC_CH4[,6]*1/mean(Global_CPC_CH4[,impulse_year-base_year]^(0-etas))
+CSC_CH4[,(Country_num*5+1):(Country_num*6)] = CSC_CH4[,(Country_num*5+1):(Country_num*6)]*1/mean(Global_CPC_CH4[,impulse_year-base_year]^(0-etas))
+
+res3.p = mclapply(1:simulation_no,FUN = function(run_time) {Diagnostic_SC_GHG("lag0","N2O",run_time)},mc.cores = 2);
+
+for (run_time in 1:simulation_no) {
+  CSC_N2O[run_time,] = res3.p[[run_time]][[1]]$scc*10;
+  WSC_N2O[run_time,] = res3.p[[run_time]][[2]]$scc*10;
+  
+  Country_target_gdpcap_imp_N2O[run_time,] = res3.p[[run_time]][[3]]$gdpcap_imp[1:(5*length(pro_years_2100))];
+  Global_damage_imp_N2O[run_time,] = res3.p[[run_time]][[5]]$global_damage_impulse;
+  Global_CPC_N2O[run_time,] = res1.p[[run_time]][[6]];
+}
+
+WSC_N2O[,6] = WSC_N2O[,6]*1/mean(Global_CPC_N2O[,impulse_year-base_year]^(0-etas))
+CSC_N2O[,(Country_num*5+1):(Country_num*6)] = CSC_N2O[,(Country_num*5+1):(Country_num*6)]*1/mean(Global_CPC_N2O[,impulse_year-base_year]^(0-etas))
+
+write.csv(CSC_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/CSC_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(WSC_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/WSC_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(CSC_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/CSC_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(WSC_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/WSC_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(CSC_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/CSC_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(WSC_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/WSC_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+
+write.csv(Country_target_gdpcap_base,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/gdpcap_base_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_cc,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/gdpcap_cc_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_imp_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/gdpcap_imp_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_imp_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/gdpcap_imp_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Country_target_gdpcap_imp_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/gdpcap_imp_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_base,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/Global_damage_base_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_imp_CO2,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/Global_damage_imp_CO2_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_imp_CH4,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/Global_damage_imp_CH4_FAIR_BHM.csv",quote = F,row.names = F)
+write.csv(Global_damage_imp_N2O,"Compute_SC_GHG/SC_FAIR_climate/SC_FAIR_BHM/ssp245/lag0/Global_damage_imp_N2O_FAIR_BHM.csv",quote = F,row.names = F)
+
