@@ -1,0 +1,321 @@
+# 2-montecarlo.R
+# Run Hector Monte Carlo for ocean acidification paper
+# Ben Bond-Lamberty January 2016
+setwd("/Users/tianpeng/Desktop/nonCO2-cost/NCC_revise/Module/Climate/Hector")
+target_scenario = "ssp245"
+source("0-functions.R")  # support functions
+
+SCRIPTNAME  	<- "2-montecarlo.R"
+PROBLEM       <- FALSE
+TESTING       <- FALSE   # if TRUE, don't actually run model
+TESTING_DELAY <- 0      # "model run time" (with no real model)
+
+# Hector-related settings (constant)
+HECTOR_INPUTS     <- "/Users/tianpeng/Desktop/hector-master/inst"  # base input files
+HECTOR_OUTPUT_FILE <- "output/outputstream.csv" # pattern (relative to temp directory)
+HECTOR_EXE <- "/Users/tianpeng/Library/Developer/Xcode/DerivedData/hector-ambzqnanaajzbiewrlifpgjzvxtk/build/products/debug/hector"
+# Monte Carlo settings - all runs
+MAX_N_MC     <- 1e6  # overrides vardata length
+PARALLELIZE  <- TRUE
+
+# Output processing settings
+OUTPUT_MC                 <- "output/"
+HECTOR_OUTPUT_VARIABLES   <- c("Tgav", 
+                               "Ca", 
+                               "slr")
+
+HECTOR_OUTPUT_YEARRANGE   <- 2000:2300 # save space by filtering Hector outputs to this range
+
+
+# -----------------------------------------------------------------------------
+# Insert run number into a filename, e.g. path/file.ext -> path/file_x.ext
+makename <- function(fqfn, x, sep = "_") {
+  fn <- basename(fqfn) %>%
+    strsplit(split = ".", fixed = TRUE) %>%
+    .[[1]]
+  if(is.na(fn[2])) { # no extension
+    newfn <- paste0(fn[1], sep, x)
+  } else {
+    newfn <- paste0(fn[1], sep, x, ".", fn[2])
+  }
+  file.path(dirname(fqfn), newfn)
+}
+
+# -----------------------------------------------------------------------------
+# Substitute a new parameter value into an in-memory input file
+subparam <- function(flines, section, parameter, newvalue) {
+  
+  printlog("Looking for", parameter, "in [", section, "]")
+  # Find 'section' and the next one after that
+  secline <- grep(paste0("^\\[", section, "\\]$"), flines) 
+  stopifnot(length(secline) > 0)
+  nextsecline <- secline + grep("^\\[[a-zA-Z0-9_]*\\]$", flines[secline+1:length(flines)])[1]
+  if(length(nextsecline) == 0) {
+    nextsecline <- length(flines)
+  }
+  #  printlog("[", section, "] lines", secline, "-", nextsecline)
+  
+  # Find variable name occuring within the section
+  varline <- secline - 1 + grep(paste0("^", parameter), flines[secline:nextsecline])
+  stopifnot(length(varline) == 1)
+  
+  # Overwrite with new value
+  flines[varline] <- paste0(parameter, "=", newvalue, " ; [MODIFIED ", date(), "]")
+  printlog("New line", varline, ":", flines[varline]) 
+  flines
+}
+
+# -----------------------------------------------------------------------------
+# run an entire Monte Carlo set
+
+run_mc <- function(rn, # run number
+                   runname_mc,
+                   rundata_file,
+                   hector_ini_file,
+                   hector_csv_file) {
+  
+  starttime <- Sys.time()
+
+  # Open a new log file, and ensure it will be closed
+  logfile <- paste0(SCRIPTNAME, "_", RUNSET_NAME, "_", runname_mc, ".log.txt") %>%
+    file.path(outputdir(), .)
+  openlog(logfile, sink = TRUE)
+  on.exit(closelog())
+  
+  printlog(SEPARATOR)
+  printlog("run_mc: starting new run", runname_mc)
+  printlog("Writing to", logfile)
+  
+  # Copy input data to a new temporary directory
+  tmpdir <- tempdir()
+  # Ensure that it doesn't already exist; this affects behavior of GNU cp 
+  printlog("Removing temp dir...")
+  try(system2("rm", args = c("-rf", tmpdir)))  # rm -rf
+  #printlog(tmpdir, "exists:", dir.qexists(tmpdir))
+  
+  # GNU and BSD `cp` vary in their behavior if a slash is at the end
+  # Make sure one is there, as we want to copy contents of directory
+  #  hectorinputs <- gsub("/$", "", HECTOR_INPUTS)
+  hectorinputs <- paste0(HECTOR_INPUTS, "/")
+  printlog("Copying", hectorinputs, "to", tmpdir)
+  if(system2("cp", args = c("-Rf", hectorinputs, tmpdir))) {  # cp -R
+    stop("Couldn't create temp directory")
+  }
+  #print(list.files(tmpdir))
+  
+  outdir <- file.path(tmpdir, "output")
+  if(!dir.exists(outdir)) {
+    printlog("Creating", outdir)
+    dir.create(outdir)
+  }
+  
+  rundir <- tmpdir
+  printlog("rundir is", rundir)
+  
+  #   Load pristine input files and variable value data
+  read_csv(rundata_file, col_types = "cddidic", comment = "#") %>%
+    filter(run_number == rn) -> 
+    rundata
+  rundata %>%
+    select(-mean, -SD, -param_set, -run_number, -runname_mc) ->
+    vardata
+  printlog("Reading", hector_ini_file)
+  inifile_original <- readLines(file.path(rundir, hector_ini_file))
+  emissions_original <- read.csv(file.path(rundir,hector_csv_file),header = F)
+  
+  # Loop through all runs
+  N <- min(nrow(vardata), MAX_N_MC)
+  problemlist <- c()
+  printlog("Starting", N, "simulations")
+  # for(i in seq_len(N)) {
+  for(i in 5557:5557) {
+    # ###Emissions csv file adjust
+    emissions <- emissions_original
+    fq_emissions_name <- file.path(tmpdir, hector_csv_file)
+
+    if(runname_mc == "ssp245_1"){
+      emissions_baseline = emissions;
+      write.table(emissions_baseline, fq_emissions_name,quote = F,row.names = F,col.names =F,sep=",")
+    }
+    if(runname_mc == "ssp245_2"){
+      emissions_extraCO2 = emissions;
+      emissions_extraCO2[(2020-1765+5),2] = as.numeric(emissions[(2020-1765+5),2]) + 100*12/44;
+      write.table(emissions_extraCO2, fq_emissions_name,quote = F,row.names = F,col.names =F,sep=",")
+    }
+    if(runname_mc == "ssp245_3"){
+      emissions_extraCH4 = emissions;
+      emissions_extraCH4[(2020-1765+5),4] = as.numeric(emissions[(2020-1765+5),4]) + 1000;
+      write.table(emissions_extraCH4, fq_emissions_name,quote = F,row.names = F,col.names =F,sep=",")
+    }
+    if(runname_mc == "ssp245_4"){
+      emissions_extraN2O = emissions;
+      emissions_extraN2O[(2020-1765+5),5] = as.numeric(emissions[(2020-1765+5),5]) + 100*28/44;
+      write.table(emissions_extraN2O, fq_emissions_name,quote = F,row.names = F,col.names =F,sep=",")
+    }
+    
+    prob <- single_hector_run(i, inifile_original, vardata, runname_mc, hector_ini_file, rundir)
+    problemlist <- c(problemlist, prob)  # prob is NULL if no problem
+  } # for
+  
+  # ------------ Almost done! Copy and gzip results
+  
+  # Copy results into a single file and write to output directory
+  printlog("Copying and assembling output files...")
+  ofile <- paste0(RUNSET_NAME, "_", runname_mc, "_", format(Sys.time(), "%Y%m%d%H%M"), ".csv") %>%
+    file.path(RUNSET_OUTPUT_DIR, .)
+  files <- list.files(rundir, pattern = paste0(runname_mc, "_[0-9]+.csv"))
+  for(f in files) {
+    readr::read_csv(file.path(rundir, f), col_types = "icdi") %>%
+      write_csv(ofile, append = file.exists(ofile))
+  }
+  if(require(R.utils)) {  # R.utils not automatically available on Linux R
+    printlog("gzipping", ofile, "...")
+    R.utils::gzip(ofile, overwrite = TRUE)
+    ofile_gzip <- paste0(ofile, ".gz")
+    ofile_general <- file.path(RUNSET_OUTPUT_DIR, 
+                               paste0(RUNSET_NAME, "_", runname_mc, ".csv.gz"))
+    printlog("Creating", ofile_general)
+    file.copy(ofile_gzip, ofile_general, overwrite = TRUE)
+  }
+  
+  # delete tmp directory  
+  printlog("Removing temp dir...")
+  try(system2("rm", args = c("-rf", tmpdir)))  # rm -rf
+  
+  # ------------ Done
+  
+  if(!is.null(problemlist)) {
+    printlog(length(problemlist), "problem(s):", paste(problemlist, collapse = " "))
+    save_data(problemlist, fname = paste0("problems_", runname_mc, ".csv"))
+  }
+  printlog("Elapsed time:", round(difftime(Sys.time(), starttime, units = "mins"), 1), "minutes")
+  
+  printlog("All done with", SCRIPTNAME, "run", runname_mc)
+  
+  if(PROBLEM) warning("There was a problem - see log")
+  ofile_gzip
+} # run_mc
+
+# -----------------------------------------------------------------------------
+# Set up and run Hector for a single MC instance
+single_hector_run <- function(i, inifile_original, vardata, runname_mc, hector_ini_file, tmpdir) {
+  problem_encountered <- NULL  
+  # Substitute a new value for each variable
+  # Data frame headers are of form {INI section}.{variable}
+  printlog(SEPARATOR, RUNSET_NAME, runname_mc, i)
+  inifile <- inifile_original
+  
+  # Look for variable columns of form "component.parameter"
+  paramcols <- grep("[a-zA-Z0-9]\\.[a-zA-Z0-9]", names(vardata))
+  stopifnot(length(paramcols) > 0)
+  
+  for(v in paramcols) {
+    vn <- strsplit(names(vardata)[v], ".", fixed = TRUE)[[1]]
+    if(vardata[i, v]$temperature.S<0.3) vardata[i, v]$temperature.S <- 0.3
+    inifile <- subparam(inifile, vn[1], vn[2], vardata[i, v])  
+  }
+  
+  # Substitute new run name
+  printlog("Making new run name...")
+  run_name <- paste(runname_mc, i, sep="_")
+  inifile <- subparam(inifile, "core", "run_name", run_name)
+  
+  #   Write out new INI file
+  inifile_name <- makename(hector_ini_file, run_name)
+  fq_inifile_name <- file.path(tmpdir, inifile_name)
+  printlog("Writing", inifile_name)
+  writeLines(inifile, fq_inifile_name)
+  
+  #   Run Hector
+  hector_ofile <- makename(HECTOR_OUTPUT_FILE, run_name) %>% file.path(tmpdir, .)
+  if(TESTING) {  # copy output file, as if model ran
+    printlog("Pretending to run model...")
+    file.copy(file.path(tmpdir, "output/sample_outputstream_rcp45.csv"), hector_ofile)
+    Sys.sleep(TESTING_DELAY)
+  } else {
+    printlog("Running model...")
+    olddir <- getwd()
+    setwd(tmpdir)
+    result <- system2(HECTOR_EXE, inifile_name, stdout = FALSE)
+    setwd(olddir)
+    
+    if(result) {
+      flaglog("Uh oh, Hector didn't exit normally:", result)
+      printlog(runname_mc, i)
+      problem_encountered <- i
+    }
+  }
+  
+  #   Load results, filter, write to temporary file
+  if(file.exists(hector_ofile)) {
+    printlog("Loading and filtering Hector output...")
+    ofile <- paste0(run_name, ".csv") %>% file.path(tmpdir, .)
+    readr::read_csv(hector_ofile, skip = 1, col_types = "iciccdc") %>%
+      filter(variable %in% HECTOR_OUTPUT_VARIABLES, 
+             !spinup, 
+             year %in% HECTOR_OUTPUT_YEARRANGE) %>%
+      select(-spinup, -run_name, -component, -units) %>%   # reduce file size
+      mutate(run_number = i) %>%
+      write_csv(ofile)
+    printlog("Written to", ofile)
+  } else {
+    flaglog("No output file generated!")
+  }
+  problem_encountered   # return NULL (no problem) or i (if yes)
+}
+
+
+# ==============================================================================
+# Main 
+
+#debug(single_hector_run)
+
+if(!file.exists(HECTOR_EXE)) {
+  stop("Hector executable", HECTOR_EXE, "doesn't exist!")  
+}
+
+# Load the runset file, and do all the runs listed in it
+runset <- readr::read_csv(RUNSET_FILE, col_types = "cicc")
+stopifnot(nrow(runset) > 0)
+
+if(require(foreach) & require(doParallel) & PARALLELIZE) {
+  # Run in parallel, with each processor handling a different runset entry
+  library(doParallel)  # doParallel_1.0.10
+  cl <- makeCluster(4)
+  registerDoParallel(cl)
+  cat("Starting parallel backend:", getDoParName(), getDoParVersion(), "\n")
+  cat(capture.output(cl))
+  
+  foreach(i = 1:nrow(runset),
+  # foreach(i = 1:1,            
+          .packages = c("luzlogr", "dplyr", "readr"),
+          .export = c("single_hector_run", "SEPARATOR", "subparam", "makename",
+                      "TESTING", "TESTING_DELAY",
+                      "RUNSET_NAME",
+                      "HECTOR_OUTPUT_FILE", "HECTOR_EXE",
+                      "HECTOR_OUTPUT_YEARRANGE", "HECTOR_OUTPUT_VARIABLES"),
+          .inorder = FALSE,
+          .verbose = TRUE) %dopar%
+    run_mc(i, runset$runname_mc[i], RUNDATA_FILE, runset$hector_ini_file[i],runset$hector_csv_file[i])
+  
+  cat("Stopping cluster...\n")
+  stopCluster(cl)
+  
+} else {
+  # Run in serial
+  if(PARALLELIZE) {
+    warning("PARALLELIZE requested but required packages not available")
+  }
+  for(i in 1:nrow(runset)) {
+    run_mc(i, runset$runname_mc[i], RUNDATA_FILE, runset$hector_ini_file[i],runset$hector_csv_file[i])
+  }
+}
+
+# # i = 2  ##seqN = 5539
+# i = 3  ##seqN = 5557
+# rn = i
+# runname_mc = runset$runname_mc[i]
+# rundata_file = RUNDATA_FILE
+# hector_ini_file = runset$hector_ini_file[i]
+# hector_csv_file = runset$hector_csv_file[i]
+  

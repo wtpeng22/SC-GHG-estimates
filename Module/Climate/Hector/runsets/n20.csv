@@ -1,0 +1,5 @@
+runname_mc,n_samples,climate_sens_file,hector_ini_file,hector_csv_file
+rffsps_1,10000,S_files/AR5.csv,input/hector_rffsps_baseline.ini,input/emissions/hector_rffsps_baseline.csv
+rffsps_2,10000,S_files/AR5.csv,input/hector_rffsps_CO2.ini,input/emissions/hector_rffsps_CO2.csv
+rffsps_3,10000,S_files/AR5.csv,input/hector_rffsps_CH4.ini,input/emissions/hector_rffsps_CH4.csv
+rffsps_4,10000,S_files/AR5.csv,input/hector_rffsps_N2O.ini,input/emissions/hector_rffsps_N2O.csv

@@ -1,0 +1,5 @@
+# List of climate sensitivity PDF types and parameters,,,
+# AR5 consistent ecs distribution,,,
+# Note that 'type' is the ACTUAL NAME OF THE FUNCTION to call in 1-generate_paramdata.R,,,
+type,mean,SD,reference
+AR5,3,nan,IPCC

@@ -1,0 +1,5 @@
+# List of climate sensitivity PDF types and parameters,,,
+# Currently these can be Roe & Baker type functions or custom,,,
+# Note that 'type' is the ACTUAL NAME OF THE FUNCTION to call in 1-generate_paramdata.R,,,
+type,mean,SD,reference
+roebaker,0.67,0.12,Sanderson et al 2007

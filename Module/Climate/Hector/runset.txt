@@ -1,0 +1,7 @@
+n20
+
+The `0-functions` script looks at the first line of this file to determine
+the active runset. It then finds that name in the `runsets/` directory.
+
+This makes it easy to change the active runset without modifying code,
+and easy to do so programatically–just changing the first line of this file.

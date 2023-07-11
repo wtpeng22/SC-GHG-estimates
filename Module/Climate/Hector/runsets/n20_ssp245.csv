@@ -1,0 +1,5 @@
+runname_mc,n_samples,climate_sens_file,hector_ini_file,hector_csv_file
+ssp245_1,10000,S_files/AR5.csv,input/hector_ssp245_baseline.ini,input/emissions/hector_ssp245_baseline.csv
+ssp245_2,10000,S_files/AR5.csv,input/hector_ssp245_CO2.ini,input/emissions/hector_ssp245_CO2.csv
+ssp245_3,10000,S_files/AR5.csv,input/hector_ssp245_CH4.ini,input/emissions/hector_ssp245_CH4.csv
+ssp245_4,10000,S_files/AR5.csv,input/hector_ssp245_N2O.ini,input/emissions/hector_ssp245_N2O.csv
